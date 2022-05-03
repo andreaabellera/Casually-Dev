@@ -1,5 +1,5 @@
 <div class="blog-feat-ctr">
-    <h2> BLOG </h2>
+    <h2 class="taviraj"> BLOG </h2>
 </div>
 
 <style>

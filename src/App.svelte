@@ -5,7 +5,7 @@
 	let title = 'Quaintrellex';
 </script>
 
-<h1> {title} </h1>
+<h1 class="mrDeHaviland"> {title} </h1>
 <BlogFeat />
 <JournalFeat />
 <GirlCave />

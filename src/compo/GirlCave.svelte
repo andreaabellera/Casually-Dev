@@ -1,5 +1,5 @@
 <div class="girlcave-ctr">
-    <h2> GIRLCAVE </h2>
+    <h1 class="mrDeHaviland"> Girl Cave </h1>
 </div>
 
 <style>

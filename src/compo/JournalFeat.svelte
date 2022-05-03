@@ -3,7 +3,7 @@
 </script>
 
 <div class="journal-feat-ctr">
-    <h2> JOURNALS </h2>
+    <h2 class="taviraj"> JOURNALS </h2>
     <div id="journal-array">
         <JournalCover>
             <h4>Hi!</h4>
