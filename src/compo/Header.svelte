@@ -17,7 +17,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        background-image: linear-gradient(to bottom, #BC9067, rgba(255,238,223,0.5), rgba(255,255,255,0));
+        background-image: linear-gradient(to bottom, var(--linen), rgba(255,238,223,0.35), rgba(255,255,255,0));
     }
 
     .title-container{
