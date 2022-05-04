@@ -1,9 +1,10 @@
 <script>
+    import Heading from './Heading.svelte';
 	import JournalCover from './JournalCover.svelte';
 </script>
 
 <div class="journal-feat-ctr">
-    <h2 class="taviraj"> JOURNALS </h2>
+    <Heading title={"JOURNALS"} />
     <div id="journal-array">
         <JournalCover>
             <h4>Hi!</h4>

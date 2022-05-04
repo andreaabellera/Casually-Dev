@@ -1,5 +1,9 @@
+<script>
+    import Heading from './Heading.svelte';
+</script>
+
 <div class="blog-feat-ctr">
-    <h2 class="taviraj"> BLOG </h2>
+    <Heading title={"BLOG"} />
 </div>
 
 <style>

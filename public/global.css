@@ -1,3 +1,49 @@
+/*==============
+    META
+  ==============*/
+:root{
+	--chartreuse: #CDFF9B;
+	--denim: #6CA6B8;
+	--linen: #DDC094;
+	--ink: #3E3E3E;
+	--pearl: linear-gradient(204deg, #EEEEE6 0%, #F7FAF0 60%, #F0FFF1 75%, #FFFFFF 100%);
+	--oyster: #EEEEE6;
+	--passione: #8E2929;
+	--mocha: #8D4B26;
+	--coffee: #3C0404;
+	--oysterDark: #D8D9D5;
+}
+
+html, body {
+	margin: 0;
+  	padding: 0;
+  	height: 100vh;
+  	width: 100vw;
+	background-color: var(--linen);
+}
+
+::selection{
+	background-color: rgba(0,0,0,0);
+	color: salmon;
+}
+
+a {
+	color: var(--passione);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--mocha);
+}
+
+/*================
+    FONT KIT
+  ================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
 .mrDeHaviland{
 	  font-family: 'Mr De Haviland', cursive;
@@ -31,47 +77,11 @@
 	  font-family: 'La Belle Aurore', cursive;
 }
 
-html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	color: #333;
-	background-color: #DDC094;
-	margin: 0;
-	padding: 8px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-::selection{
-	background-color: rgba(0,0,0,0);
-	color: salmon;
-}
-
-h2{
-	margin: 8vh 0 8vh 0;
-}
-
-
 /*====================
     WORK IN PROGRESS
   ====================*/
 
-a {
-	color: rgb(0,100,200);
-	text-decoration: none;
-}
 
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
-}
 
 label {
 	display: block;

@@ -12,9 +12,9 @@
 	.cover-ctr {
         height: 14em;
 		width: 10em;
-        border: 0.3em solid #CDFF9B;
+        border: 0.3em solid var(--chartreuse);
         box-shadow: 0.05em 0.1em 0.3em rgba(0,0,0,0.2);
-        background-image: linear-gradient(204deg, #EEEEE6 0%, #F7FAF0 60%, #F0FFF1 75%, #FFFFFF 100%);
+        background-image: var(--pearl);
         margin-left: 8vw;
         cursor: pointer;
 	}
@@ -35,7 +35,7 @@
     .cover{
         height: 90%;
         width: 90%;
-        color: #3E3E3E;
+        color: var(--ink);
         overflow: hidden;
         display: grid;
         justify-items: center;
