@@ -46,8 +46,8 @@
 	position: absolute;
 	height: 700vh;
 	width: 100%;
-	background: url(https://ipfs.io/ipfs/bafybeibqzapb247u47mvsyh24gf6jniwab4j7snl2oixs3kqmjw3jeo5eu);
-	opacity: 15%;
+	background: url(https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/linenTexture.png);
+	opacity: 80%;
 	background-repeat: repeat;
 	z-index: 1;
 }

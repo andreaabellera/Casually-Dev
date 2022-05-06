@@ -12,14 +12,14 @@
             tags = {"Fresh 🌿"}
             title = {"And I became a dog"}
             date = {"May 31, 2022"}
-            content = {contentSample}
+            blurb = {contentSample}
         ></BlogCover>
         
         <BlogCover
             image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
             title = {"Game Jam Creation"}
             date = {"May 28, 2022"}
-            content = {contentSample}
+            blurb = {contentSample}
         ></BlogCover>
     </div>
 </div>
@@ -31,6 +31,7 @@
         display: grid;
         grid-column-gap: 6vh;
         grid-template-rows: auto 1fr;
+        margin-bottom: 5vh;
     }
 
     #blog-array{
