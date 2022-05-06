@@ -6,24 +6,29 @@
 	import Galerie from './compo/Galerie.svelte';
 	import Revues from './compo/Revues.svelte';
 	import Andrea from './compo/Andrea.svelte';
-	let swap = 0;
+	let currNav = "nav-chezmoi";
+	$: swap = currNav
+
+	function selectNav(event) {
+		currNav = event.detail.id;
+	}
 </script>
 
 <div class="view">
-	<Header />
+	<Header on:selection={selectNav} />
 	<div class="linen"></div>
 	<div class="content">
-		{#if swap === 0}
+		{#if swap === "nav-chezmoi"}
 			<ChezMoi />
-		{:else if swap === 1}
+		{:else if swap === "nav-blog"}
 			<Blog />
-		{:else if swap === 2}
+		{:else if swap === "nav-journals"}
 			<Journals />
-		{:else if swap === 3}
+		{:else if swap === "nav-galerie"}
 			<Galerie />
-		{:else if swap === 4}
+		{:else if swap === "nav-revues"}
 			<Revues />
-		{:else if swap === 5}
+		{:else if swap === "nav-andrea"}
 			<Andrea />
 		{/if}
 	</div>
