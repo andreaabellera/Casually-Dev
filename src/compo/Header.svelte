@@ -63,6 +63,7 @@
         font-family: 'Gentium Basic', serif;
         font-size: 0.9em;
         margin-left: 4.5vw;
+        width: 100%;
         transform: translateY(-2.2em);
     }
 
@@ -78,7 +79,7 @@
         display: relative;
         z-index: 9;
         display: grid;
-        grid-template-columns: 16% 16% 16% 16% 16% 16%;
+        grid-template-columns: 20% 16% 16% 16% 16% 16%;
         justify-items: center;
         height: 50%;
         margin: 4vh 0 0 10vw;

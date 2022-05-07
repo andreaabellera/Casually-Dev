@@ -4,6 +4,7 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <div class="journal-feat-ctr">
     <Heading title={"JOURNALS"} />
     <div id="journal-array">
@@ -26,6 +27,7 @@
             <p class="cousine"> Merkle DAG </p>
         </JournalCover>
     </div>
+    <div id="blog-see-more" class="laBelleAurore"><div> see more journals </div></div>
 </div>
 
 <style>
@@ -34,12 +36,14 @@
         width: 100%;
         display: grid;
         grid-template-rows: auto 1fr;
+        margin-bottom: 10vh;
     }
 
     #journal-array {
         display: flex;
         width: 100%;
         align-items: center;
+        margin-bottom: 5vh;
     }
 
     @media (max-width: 600px) {

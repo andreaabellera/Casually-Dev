@@ -1,13 +1,14 @@
+<script>
+    import GalleryFeat from './GalleryFeat.svelte';
+    import ProjectFeat from './ProjectFeat.svelte';
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
 <div class="girlcave-ctr">
-    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
     <div class="girlCaveTitle"> Girl Cave </div>
     <div class="girlCavePromos">
-        <div class="galleryFeat">
-            Original artwork
-        </div>
-        <div class="projectFeat">
-            Casually CSS
-        </div>
+        <GalleryFeat image={"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/The Queen Moves Forward.jpg"}></GalleryFeat>
+        <ProjectFeat></ProjectFeat>
     </div>
 </div>
 
@@ -26,7 +27,7 @@
         color: var(--passione);
         text-shadow: -4px 4px #FFDBDB;
         margin-left: 2vw;
-        margin: 12vh 0 12vh 2vw;
+        margin: 6vh 0 12vh 2vw;
     }
 
     .girlCavePromos{
@@ -36,19 +37,4 @@
         flex-direction: column;
     }
 
-    .girlCavePromos div{
-        margin-bottom: 5vh;
-    }
-
-    .galleryFeat{
-        background-color: var(--bark);
-        height: 80vh;
-        width: 100%;
-    }
-
-    .projectFeat{
-        background-color: var(--smudge);
-        height: 80vh;
-        width: 100%;
-    }
 </style>

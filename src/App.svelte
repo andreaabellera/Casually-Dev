@@ -6,6 +6,8 @@
 	import Galerie from './compo/Galerie.svelte';
 	import Revues from './compo/Revues.svelte';
 	import Andrea from './compo/Andrea.svelte';
+	import Footer from './compo/Footer.svelte';
+
 	let currNav = "nav-chezmoi";
 	$: swap = currNav
 
@@ -31,6 +33,7 @@
 			<Andrea />
 		{/if}
 	</div>
+	<Footer />
 </div>
 
 <style>

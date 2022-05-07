@@ -1,6 +1,6 @@
 <script>
     // Props
-	export let image = "";
+	export let image = null;
     export let tags = [];
     export let title = "Untitled Blog Post";
     export let date = "No date provided";
@@ -14,7 +14,9 @@
     <div class="cover-border"> <p style="margin-right: 2vw;"> read more </p> </div>
     <div class="cover">
         <div class="cover-inner">
+            {#if image}
             <div class="blogThumb" style="background-image:url({image});"></div>
+            {/if}
             <div class="blogContent">
                 <div class="blogTags">
                     {#each tags as tag}
@@ -24,6 +26,9 @@
                 <div class="blogTitle"> {title} </div>
                 <div class="blogDate"> {date} </div>
                 <p class="blogBlurb"> {blurb} </p>
+            </div>
+            <div class="readMore">
+                <span style="padding: 5em 1em 4em 0;"> tap to read more </span>
             </div>
         </div>
     </div>
@@ -83,23 +88,23 @@
         height: 85%;
         width: 92%;
         display: grid;
-        grid-template-columns: 25% 1fr;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr auto;
         grid-column-gap: 4vw;
         font-family: 'PT Sans', sans-serif;
         color: var(--ink);
+        overflow: hidden;
     }
 
     .blogThumb{
         height: 100%;
-        width: 100%;
+        width: 8em;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
-    }
-
-    .blogContent{
-        
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
 
     .blogTags{
@@ -131,10 +136,23 @@
         color: var(--oyster);
     }
 
+    .readMore{
+        display: none;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        color: var(--ink);
+        font-family: 'La Belle Aurore', cursive;
+        text-align: right;
+        background-image: linear-gradient(to top, var(--linen), rgba(0,0,0,0));
+        opacity: 60%;
+        width: 100%;
+    }
+
     @media (max-width: 600px) {
         .cover-ctr{
             height: 22em;
-		    width: 90%;
+		    width: 100%;
+            margin: 0 0 3vh 0;
         }
 
         .cover{
@@ -145,6 +163,27 @@
         .cover-border{
             display: none;
         }
-    }
 
+        .cover{
+            height: 100%;
+            width: 100%;
+        }
+
+        .cover-inner{
+            border-bottom: 2px solid var(--bark);
+        }
+
+        .blogThumb{
+            width: 5em;
+            box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
+        }
+
+        .blogBlurb{
+            color: var(--ink);
+        }
+
+        .readMore{
+            display: block;
+        }
+    }
 </style>

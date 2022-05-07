@@ -33,7 +33,7 @@
     }
 
     .cover{
-        height: 90%;
+        height: 70%;
         width: 90%;
         color: var(--ink);
         overflow: hidden;
