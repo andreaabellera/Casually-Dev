@@ -16,7 +16,6 @@
 
 <div class="view">
 	<Header on:selection={selectNav} />
-	<div class="linen"></div>
 	<div class="content">
 		{#if swap === "nav-chezmoi"}
 			<ChezMoi />
@@ -38,24 +37,14 @@
 
 .view{
 	position: relative;
-	height: inherit;
+	height: max-content;
 	width: inherit;
-}
-
-.linen{
-	position: absolute;
-	height: 700vh;
-	width: 100%;
-	background: url(https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/linenTexture.png);
-	opacity: 80%;
-	background-repeat: repeat;
-	z-index: 1;
+	display: grid;
 }
 
 .content{
-	position: absolute;
 	z-index: 2;
-	margin-top: 10vh;
+	margin-top: 9vh;
 }
 
 </style>

@@ -24,10 +24,6 @@
     margin-left: 6vw;
 }
 
-.title::selection{
-    color: var(--oysterDark);
-}
-
 .hr{
     height: 0.4em;
     width: 35vw;

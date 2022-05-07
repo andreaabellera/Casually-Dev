@@ -13,7 +13,7 @@
         height: 14em;
 		width: 10em;
         border: 0.3em solid var(--chartreuse);
-        box-shadow: 0.05em 0.1em 0.3em rgba(0,0,0,0.2);
+        box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
         background-image: var(--pearl);
         margin-left: 8vw;
         cursor: pointer;
@@ -29,7 +29,7 @@
         display: grid;
         justify-items: center;
         align-items: center;
-        box-shadow: inset 0.05em 0.1em 0.3em rgba(0,0,0,0.2);
+        box-shadow: inset 0.05em 0.1em 0.3em rgba(0,0,0,0.3);
     }
 
     .cover{

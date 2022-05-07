@@ -3,21 +3,27 @@
 	import JournalCover from './JournalCover.svelte';
 </script>
 
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <div class="journal-feat-ctr">
     <Heading title={"JOURNALS"} />
     <div id="journal-array">
         <JournalCover>
-            <h4>Hi!</h4>
-            <p>I am the Journal Cover's content</p>
+            <p class="cousine" style="font-size: 75%;"> Breaking into </p>
+            <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
+            <p class="syncopate"> HANDBOOK </p>
         </JournalCover>
         <JournalCover>
-            <p>Baby don't hurt me no more</p>
+            <p class="cousine" style="font-size: 75%;"> Breaking into </p>
+            <p class="cousine" style="font-size: 110%;"> Open Source </p>
+            <p class="syncopate"> HANDBOOK </p>
         </JournalCover>
         <JournalCover>
-            <p>Can I have a Venti Cafe Misto with some caramel drizzle?</p>
+            <p class="syncopate"> ALGORITHM STUDY </p>
+            <p class="cousine"> Alpha-Beta Pruning</p>
         </JournalCover>
         <JournalCover>
-            <!-- Hehe -->
+            <p class="syncopate"> DATA STRUCTURE STUDY </p>
+            <p class="cousine"> Merkle DAG </p>
         </JournalCover>
     </div>
 </div>

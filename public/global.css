@@ -7,7 +7,7 @@
 	--linen: #DDC094;
 	--bark: rgba(184,144,108,0.36);
 	--ink: #3E3E3E;
-	--smudge: rgba(132,121,121,0.36);
+	--smudge: rgba(132,121,121,0.8);
 	--pearl: linear-gradient(204deg, #EEEEE6 0%, #F7FAF0 60%, #F0FFF1 75%, #FFFFFF 100%);
 	--oyster: #EEEEE6;
 	--passione: #8E2929;
@@ -21,12 +21,11 @@ html, body {
   	padding: 0;
   	height: 100vh;
   	width: 100vw;
-	background-color: var(--linen);
+	background: url(https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/linenTexture.png);
 }
 
 ::selection{
 	background-color: rgba(0,0,0,0);
-	color: salmon;
 }
 
 a {
@@ -70,6 +69,7 @@ a:visited {
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 .syncopate{
 	  font-family: 'Syncopate', sans-serif;
+	  font-weight: bold;
 }
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .cousine{
