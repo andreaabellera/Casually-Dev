@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <div class="title-container">
         <div class="qtrlex"> Quaintrellex </div>
-        <div class="tagline"> perhaps an existential blogspot </div>
+        <div class="tagline"> Bonne nouvelle journée </div>
     </div>
     <div class="nav-container">
         <div class="nav-array gentiumBasic">
@@ -48,7 +48,7 @@
     .title-container{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
     }
 
     .qtrlex{
@@ -180,7 +180,7 @@
         }
 
         .tagline{
-            margin-left: 10vw;
+            margin-left: 13vw;
         }
     }
 

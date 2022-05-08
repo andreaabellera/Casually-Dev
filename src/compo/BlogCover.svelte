@@ -28,7 +28,7 @@
                 <p class="blogBlurb"> {blurb} </p>
             </div>
             <div class="readMore">
-                <span style="padding: 5em 1em 4em 0;"> tap to read more </span>
+                <span style="padding: 0 1em 6em 0;"> tap to read </span>
             </div>
         </div>
     </div>
@@ -109,7 +109,7 @@
 
     .blogTags{
         display: flex;
-        margin-bottom: 1.5vh;
+        margin: 1vh 0 1.5vh 0;
     }
 
     .blogTag{
@@ -129,11 +129,12 @@
 
     .blogDate{
         font-size: 0.8em;
-        margin-bottom: 1vh;
+        margin: 1vh 0 1vh 0;
     }
 
     .blogBlurb{
         color: var(--oyster);
+        font-size: 0.9em;
     }
 
     .readMore{
@@ -146,6 +147,11 @@
         background-image: linear-gradient(to top, var(--linen), rgba(0,0,0,0));
         opacity: 60%;
         width: 100%;
+    }
+
+    .readMore:hover{
+        opacity: 100%;
+        transition: 0.3s;
     }
 
     @media (max-width: 600px) {
