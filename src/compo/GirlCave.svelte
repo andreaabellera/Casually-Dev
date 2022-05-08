@@ -1,5 +1,5 @@
 <script>
-    import GalleryFeat from './GalleryFeat.svelte';
+    import GalerieFeat from './GalerieFeat.svelte';
     import ProjectFeat from './ProjectFeat.svelte';
 </script>
 
@@ -7,7 +7,7 @@
 <div class="girlcave-ctr">
     <div class="girlCaveTitle"> Girl Cave </div>
     <div class="girlCavePromos">
-        <GalleryFeat image={"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/The Queen Moves Forward.jpg"}></GalleryFeat>
+        <GalerieFeat title={"The Queen Moves Forward"} image={"https://ipfs.fleek.co/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}></GalerieFeat>
         <ProjectFeat></ProjectFeat>
     </div>
 </div>
