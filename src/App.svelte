@@ -8,19 +8,23 @@
 	import Andrea from './compo/Andrea.svelte';
 	import Footer from './compo/Footer.svelte';
 
-	let currNav = "nav-chezmoi";
+	let currNav = "nav-chezmoi"
 	$: swap = currNav
 
 	function selectNav(event) {
-		currNav = event.detail.id;
+		let theId = event.detail.id
+		document.getElementsByClassName("selected")[0].classList.remove("selected")
+        document.getElementById(theId).classList.add("selected")
+		currNav = theId
 	}
+
 </script>
 
 <div class="view">
 	<Header on:selection={selectNav} />
 	<div class="content">
 		{#if swap === "nav-chezmoi"}
-			<ChezMoi />
+			<ChezMoi on:selection={selectNav}/>
 		{:else if swap === "nav-blog"}
 			<Blog />
 		{:else if swap === "nav-journals"}

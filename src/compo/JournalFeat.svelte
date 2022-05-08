@@ -1,6 +1,15 @@
 <script>
     import Heading from './Heading.svelte';
 	import JournalCover from './JournalCover.svelte';
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+
+    function selectNav() {
+        dispatch("selection", {
+            id: "nav-journals"
+        });
+    }
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
@@ -27,7 +36,7 @@
             <p class="cousine"> Merkle DAG </p>
         </JournalCover>
     </div>
-    <div id="blog-see-more" class="laBelleAurore"><div> see more journals </div></div>
+    <div id="blog-see-more" class="laBelleAurore" on:click={selectNav}><div> see more journals </div></div>
 </div>
 
 <style>

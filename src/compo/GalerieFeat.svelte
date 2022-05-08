@@ -1,9 +1,18 @@
 <script>
     export let title = "Collection of Artworks";
     export let image = "";
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+
+    function selectNav() {
+        dispatch("selection", {
+            id: "nav-galerie"
+        });
+    }
 </script>
 
-<div class="gallery-feat-ctr">
+<div class="gallery-feat-ctr" on:click={selectNav}>
     <div class="original-text syncopate"> ORIGINAL ARTWORKS </div>
     <div class="title-text mrDeHaviland"> {title} </div>
     <div class="view-text lancelot"> view gallery </div>

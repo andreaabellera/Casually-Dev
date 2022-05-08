@@ -1,5 +1,6 @@
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <div class="footer-ctr">
-    <div class="footer-inner syncopate">
+    <div class="footer-inner">
         <div>
             <b>Andrea Abellera</b> © 2022 <br>
         </div>
@@ -14,6 +15,7 @@
         position: relative;
         height: max-content;
         width: 100%;
+        font-family: 'Syncopate', sans-serif;
     }
 
     .footer-inner {

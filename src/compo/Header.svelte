@@ -4,8 +4,6 @@
     const dispatch = createEventDispatcher();
 
     function selectNav() {
-        document.getElementsByClassName("selected")[0].classList.remove("selected");
-        this.classList.add("selected");
         dispatch("selection", {
             id: this.id
         });

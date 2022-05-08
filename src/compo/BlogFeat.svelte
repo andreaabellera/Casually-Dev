@@ -1,6 +1,16 @@
 <script>
     import Heading from './Heading.svelte';
     import BlogCover from './BlogCover.svelte';
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+
+    function selectNav() {
+        dispatch("selection", {
+            id: "nav-blog"
+        });
+    }
+
     let contentSample = "Text generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks you reached the end";
 
     // Detect mobile
@@ -42,7 +52,7 @@
             blurb = {cutContent(contentSample)}
         ></BlogCover>
     </div>
-    <div id="blog-see-more" class="laBelleAurore"><div> see more blogs </div></div>
+    <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
 </div>
 
 <style>
