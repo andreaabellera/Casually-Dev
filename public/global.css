@@ -26,6 +26,7 @@ html, body {
 	scroll-behavior: smooth;
 	scrollbar-width: 0.5em;
 	scrollbar-color: var(--denim) var(--linen);
+	/* cursor: url(https://ipfs.fleek.co/ipfs/bafybeig2afgdlpkc3end3mhmnrl23itdyoofsk3dmbpyf4rznzpwgotbbq), auto; */
 }
 
 ::selection{

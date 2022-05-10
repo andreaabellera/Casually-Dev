@@ -1,6 +1,6 @@
 <script>
-    import Hippo from './Hippo.svelte';
-    import Bison from './Bison.svelte';
+    import Hippo from './art/Hippo.svelte';
+    import Bison from './art/Bison.svelte';
 
     /* Attributions
     <a href='https://www.freepik.com/vectors/flat-nature'>Flat nature vector created by freepik - www.freepik.com</a>
@@ -42,10 +42,10 @@
         </a>
     </div>
     <div class="hippo-ctr">
-        <Hippo></Hippo>
+        <Hippo />
     </div>
     <div class="bison-ctr">
-        <Bison></Bison>
+        <Bison />
     </div>
 </div>
 
@@ -175,7 +175,7 @@
         }
 
         .bison-ctr{
-            transform: scale(0.45) translate(20%, 50%);
+            transform: scale(0.45) translate(40%, 50%);
             right: 0;
             bottom: 0;
         }

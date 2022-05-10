@@ -1,4 +1,9 @@
-<div class="meta-container">
+<script>
+  export let height = "18em";
+  export let width = "30em";
+</script>
+
+<div class="meta-container" style="height:{height}; width:{width};">
     <div class="artboard">
         <div class="hippo">
             <span class="hippo-bod">
@@ -68,14 +73,14 @@
 
 <style>
     .meta-container{
-        height: 18em;
-        width: 30em;
+        /* height: 18em;
+        width: 30em; */
     }
 
     :root{
-    --outline: black;
-    --body: darkgrey;
-    --eye: black;
+    --outline: #222222;
+    --body: #BDB8AA;
+    --eye: #222222;
     --ear: #F0B3BF;
     --teeth: whitesmoke;
     --mouth: #E0A3AF; 

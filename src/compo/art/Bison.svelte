@@ -92,11 +92,11 @@
     }
 
     :root{
-    --outlineBison: black;
-    --hair: #37291E;
-    --fur: #564C45;
+    --outlineBison: #222222;
+    --hair: #564C45;
+    --fur: #80725E;
     --horn: #E7E3DA;
-    --nose: #3F3F3F;
+    --nose: #554D50;
     }
 
     .artboard{

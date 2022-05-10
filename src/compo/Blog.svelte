@@ -11,6 +11,12 @@
     function cutContent(content){
         return content.substring(0, 160) + "...";
     }
+
+    /* RESOURCES
+    https://svelte.dev/examples/deferred-transitions
+    https://stackoverflow.com/questions/5020351/how-to-load-the-web-page-content-based-on-user-scrolling
+    https://gist.github.com/quawn/8560746
+    */
 </script>
 
 <div class="blog-feat-ctr">

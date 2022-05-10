@@ -1,3 +1,20 @@
+<script>
+    /* Attributions
+    Instagram icon
+    <a target="_blank" href="https://icons8.com/icon/42328/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    Github icon
+    <a target="_blank" href="https://icons8.com/icon/101795/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    Linkedin icon
+    <a target="_blank" href="https://icons8.com/icon/42453/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    Twitter icon
+    <a target="_blank" href="https://icons8.com/icon/42403/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    Youtube icon
+    <a target="_blank" href="https://icons8.com/icon/42493/youtube">YouTube</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    Reddit icon
+    <a target="_blank" href="https://icons8.com/icon/44182/reddit">Reddit</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    */
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <div class="footer-ctr">
     <div class="footer-inner">
