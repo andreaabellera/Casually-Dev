@@ -50,6 +50,12 @@
     </div>
 </div>
 
+{#if isMobile}
+    <script>
+        document.getElementsByClassName("blog-feat-ctr")[0].style.marginTop = "-20vh";
+    </script>
+{/if}
+
 <style>
     .blog-feat-ctr {
         height: max-content;
@@ -57,6 +63,7 @@
         display: grid;
         grid-column-gap: 6vh;
         grid-template-rows: auto 1fr;
+        margin-top: -8vh;
         margin-bottom: 10vh;
     }
 

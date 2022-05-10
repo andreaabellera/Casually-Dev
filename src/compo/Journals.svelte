@@ -42,7 +42,7 @@
         width: 100%;
         display: grid;
         grid-template-rows: auto 1fr;
-        margin-bottom: 10vh;
+        margin: -8vh 0 10vh 0;
     }
 
     #journal-array {

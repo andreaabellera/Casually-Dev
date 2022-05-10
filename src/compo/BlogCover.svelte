@@ -67,7 +67,6 @@
         width: 120%;
         transform: translate(2.8%, 2.3%);
         transition: 0.4s ease-in-out;
-        border-color: rgba(132,121,121,0.5);
         color: rgb(111, 102, 102);
     }
 

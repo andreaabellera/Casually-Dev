@@ -62,7 +62,7 @@
         display: grid;
         grid-column-gap: 6vh;
         grid-template-rows: auto 1fr;
-        margin-bottom: 10vh;
+        margin: -8vh 0 10vh 0;
     }
 
     #blog-array{
@@ -73,7 +73,7 @@
 
     @media (max-width: 600px) {
         #blog-array{
-            margin-top: 12vh;
+            margin-top: 0vh;
         }
     }
 </style>
