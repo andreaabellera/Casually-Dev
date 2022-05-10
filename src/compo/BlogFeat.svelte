@@ -1,6 +1,7 @@
 <script>
     import Heading from './Heading.svelte';
     import BlogCover from './BlogCover.svelte';
+    import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
 
     const dispatch = createEventDispatcher();
@@ -52,7 +53,9 @@
             blurb = {cutContent(contentSample)}
         ></BlogCover>
     </div>
-    <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
+    <Link to="blog">
+        <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
+    </Link>
 </div>
 
 <style>

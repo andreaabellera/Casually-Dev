@@ -1,4 +1,5 @@
 <script>
+    import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
 
     // Detect mobile
@@ -83,59 +84,93 @@
         </div>
         <div id="nav-ctr-mbl" class="nav-container">
             <div id="nav-array-mbl" class="gentiumBasic">
-                <div id="nav-chezmoi" class="nav selected" on:click={selectNav}> 
-                    <section></section>
-                    <span> chez moi </span> 
-                </div>
-                <div id="nav-blog" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> blog </span> 
-                </div>
-                <div id="nav-galerie" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> galerie </span> 
-                </div>
-                <div id="nav-journals" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> journals </span> 
-                </div>
-                <div id="nav-revues" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> revues </span> 
-                </div>
-                <div id="nav-andrea" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> andrea </span>  
-                </div>
+                <Link to="/">
+                    <div id="nav-chezmoi" class="nav selected" on:click={selectNav}> 
+                        <section></section>
+                        <span> chez moi </span> 
+                    </div>
+                </Link>
+
+                <Link to="blog">
+                    <div id="nav-blog" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> blog </span> 
+                    </div>
+                </Link>
+
+                <Link to="galerie">
+                    <div id="nav-galerie" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> galerie </span> 
+                    </div>
+                </Link>
+
+                <Link to="journals">
+                    <div id="nav-journals" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> journals </span> 
+                    </div>
+                </Link>
+
+                <Link to="revues">
+                    <div id="nav-revues" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> revues </span> 
+                    </div>
+                </Link>
+
+                <Link to="andrea">
+                    <div id="nav-andrea" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> andrea </span>  
+                    </div>
+                </Link>
             </div>
         </div>
     {:else}
         <div id="nav-ctr" class="nav-container">
             <div class="nav-array gentiumBasic">
-                <div id="nav-chezmoi" class="nav selected" on:click={selectNav}> 
-                    <section></section>
-                    <span> chez moi </span> 
-                </div>
-                <div id="nav-blog" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> blog </span> 
-                </div>
-                <div id="nav-galerie" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> galerie </span> 
-                </div>
-                <div id="nav-journals" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> journals </span> 
-                </div>
-                <div id="nav-revues" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> revues </span> 
-                </div>
-                <div id="nav-andrea" class="nav" on:click={selectNav}> 
-                    <section></section>
-                    <span> andrea </span>  
-                </div>
+                <Link to="/">
+                    <div id="nav-chezmoi" class="nav selected" on:click={selectNav}> 
+                        <section></section>
+                        <span> chez moi </span> 
+                    </div>
+                </Link>
+
+                <Link to="blog">
+                    <div id="nav-blog" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> blog </span> 
+                    </div>
+                </Link>
+
+                <Link to="galerie">
+                    <div id="nav-galerie" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> galerie </span> 
+                    </div>
+                </Link>
+
+                <Link to="journals">
+                    <div id="nav-journals" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> journals </span> 
+                    </div>
+                </Link>
+
+                <Link to="revues">
+                    <div id="nav-revues" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> revues </span> 
+                    </div>
+                </Link>
+
+                <Link to="andrea">
+                    <div id="nav-andrea" class="nav" on:click={selectNav}> 
+                        <section></section>
+                        <span> andrea </span>  
+                    </div>
+                </Link>
             </div>
             <div class="ribbon">
                 <!-- <div class="bow"></div> -->

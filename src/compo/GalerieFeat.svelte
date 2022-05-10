@@ -1,6 +1,7 @@
 <script>
     export let title = "Collection of Artworks";
     export let image = "";
+    import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
 
     const dispatch = createEventDispatcher();
@@ -12,13 +13,15 @@
     }
 </script>
 
-<div class="gallery-feat-ctr" on:click={selectNav}>
-    <div class="original-text syncopate"> ORIGINAL ARTWORKS </div>
-    <div class="title-text mrDeHaviland"> {title} </div>
-    <div class="view-text lancelot"> view gallery </div>
-    <div class="grad"></div>
-    <div class="img-ctr" style="background-image:url({image});"></div>
-</div>
+<Link to="galerie">
+    <div class="gallery-feat-ctr" on:click={selectNav}>
+        <div class="original-text syncopate"> ORIGINAL ARTWORKS </div>
+        <div class="title-text mrDeHaviland"> {title} </div>
+        <div class="view-text lancelot"> view gallery </div>
+        <div class="grad"></div>
+        <div class="img-ctr" style="background-image:url({image});"></div>
+    </div>
+</Link>
 
 <style>
     .gallery-feat-ctr {

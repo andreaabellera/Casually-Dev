@@ -1,4 +1,5 @@
 <script>
+	import { Router, Route } from "svelte-routing";
 	import Header from './compo/Header.svelte';
 	import ChezMoi from './compo/ChezMoi.svelte';
 	import Blog from './compo/Blog.svelte';
@@ -17,25 +18,36 @@
         document.getElementById(theId).classList.add("selected")
 		currNav = theId
 	}
+
+	export let url=""
 </script>
 
 <div class="view">
-	<Header on:selection={selectNav} />
-	<div id="content" class="content">
-		{#if swap === "nav-chezmoi"}
-			<ChezMoi on:selection={selectNav}/>
-		{:else if swap === "nav-blog"}
-			<Blog />
-		{:else if swap === "nav-journals"}
-			<Journals />
-		{:else if swap === "nav-galerie"}
-			<Galerie />
-		{:else if swap === "nav-revues"}
-			<Revues />
-		{:else if swap === "nav-andrea"}
-			<Andrea />
-		{/if}
-	</div>
+	<Router url={url}>
+		<Header on:selection={selectNav} />
+		<div id="content" class="content">
+			<Route path="/"><ChezMoi on:selection={selectNav}/></Route>
+			<Route path="blog" component="{Blog}" />
+			<Route path="journals" component="{Journals}" />
+			<Route path="galerie" component="{Galerie}" />
+			<Route path="revues" component="{Revues}" />
+			<Route path="andrea" component="{Andrea}" />
+			<!-- {#if swap === "nav-chezmoi"}
+				<ChezMoi on:selection={selectNav}/>
+			{:else if swap === "nav-blog"}
+				<Blog />
+			{:else if swap === "nav-journals"}
+				<Journals />
+			{:else if swap === "nav-galerie"}
+				<Galerie />
+			{:else if swap === "nav-revues"}
+				<Revues />
+			{:else if swap === "nav-andrea"}
+				<Andrea />
+			{/if} -->
+		</div>
+	</Router>
+
 	<Footer />
 
 	<script>

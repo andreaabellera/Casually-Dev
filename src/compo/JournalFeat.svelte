@@ -1,6 +1,7 @@
 <script>
     import Heading from './Heading.svelte';
 	import JournalCover from './JournalCover.svelte';
+    import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
 
     const dispatch = createEventDispatcher();
@@ -36,7 +37,9 @@
             <p class="cousine"> Merkle DAG </p>
         </JournalCover>
     </div>
-    <div id="blog-see-more" class="laBelleAurore" on:click={selectNav}><div> see more journals </div></div>
+    <Link to="journals">
+        <div id="blog-see-more" class="laBelleAurore" on:click={selectNav}><div> see more journals </div></div>
+    </Link>
 </div>
 
 <style>
