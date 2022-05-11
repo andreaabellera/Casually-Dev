@@ -69,9 +69,9 @@
         top: 50%;
         left: 70%;
         transform: translate(-50%, -30%);
-        font-size: 9em;
+        font-size: 8em;
         color: var(--oyster);
-        text-shadow: -4px 4px var(--passione);
+        /* text-shadow: -4px 4px var(--passione); */
         opacity: 70%;
         animation: fadeFlyInTitle 3.5s ease-in-out;
     }
@@ -162,7 +162,7 @@
 
         .title-text{
             width: auto;
-            font-size: 4.5em;
+            font-size: 3em;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);

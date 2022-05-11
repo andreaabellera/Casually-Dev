@@ -256,7 +256,8 @@
         width: 8.3em;
         display: none;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        transform: translateX(5vw);
         background-image: linear-gradient(270deg, var(--linen) 10%, rgba(255,255,255,0));
     }
 
@@ -375,22 +376,22 @@
         }
     }
 
-    .nav-array div:nth-of-type(1):hover, .nav-array div:nth-of-type(1).selected{
+    .nav-array #nav-chezmoi:hover{
         transform: rotateZ(5deg);
     }
 
-    .nav-array div:nth-of-type(2):hover, .nav-array div:nth-of-type(2).selected{
+    .nav-array #nav-blog:hover{
         transform: rotateZ(-6deg);
     }
 
-    .nav-array div:nth-of-type(3):hover, .nav-array div:nth-of-type(3).selected{
+    .nav-array #nav-galerie:hover{
         transform: rotateZ(-3deg);
     }
 
-    .nav-array div:nth-of-type(4):hover, .nav-array div:nth-of-type(4).selected{
+    .nav-array #nav-journals:hover{
         transform: rotateZ(6deg);
     }
-    .nav-array div:nth-of-type(5):hover, .nav-array div:nth-of-type(5).selected{
+    .nav-array #nav-revues:hover{
         transform: rotateZ(-4deg);
     }
 
@@ -428,6 +429,10 @@
     }
 
     @media (max-width: 600px) {
+        .qtrlex{
+            font-size: 4.5em;
+        }
+
         .nav-container{
             display: none;
         }

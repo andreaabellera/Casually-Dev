@@ -39,12 +39,13 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 a:visited {
 	color: var(--mocha);
+	text-decoration: none;
 }
 
 /*================
