@@ -59,6 +59,7 @@
                     navCtr.style.display = "none"
                     toggled = false
                     navBtn.classList.remove("spinner")
+                    fixedCtr.style.height = "0vh"
                     clearInterval(id)
                 }
             }
