@@ -1,6 +1,7 @@
 <script>
     import { fly } from 'svelte/transition';
 	import Heading from './Heading.svelte';
+    import Boba from './art/Boba.svelte';
 
 	// Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -18,9 +19,28 @@
 {#if visible}
 <div class="revues-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}
-        <Heading title={"REVIEWS"} />
+        <Heading title={"REVIEWS (COMING SOON)"} />
     {/if}
-
+    <div class="revues-inner">
+        <Boba />
+    </div>
 </div>
 {/if}
 
+<style>
+    .revues-feat-ctr {
+        height: max-content;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        margin: -8vh 0 10vh 0;
+    }
+
+    .revues-inner {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+</style>
