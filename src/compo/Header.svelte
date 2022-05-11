@@ -31,7 +31,7 @@
 
             let width = 0
             navCtr.style.display = "flex"
-            let id = setInterval(frame, 20);
+            let id = setInterval(frame, 10);
             function frame() {
                 if(width < 8.3){
                     width += 0.3
@@ -49,7 +49,7 @@
             navBtn.classList.add("spinner")
 
             let width = 8.3
-            let id = setInterval(frame, 20);
+            let id = setInterval(frame, 10);
             function frame() {
                 if(width > 0){
                     width -= 0.3
@@ -257,7 +257,7 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        transform: translateX(5vw);
+        transform: translateX(3vw);
         background-image: linear-gradient(270deg, var(--linen) 10%, rgba(255,255,255,0));
     }
 

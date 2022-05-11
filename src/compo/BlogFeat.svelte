@@ -1,4 +1,5 @@
 <script>
+    import { fly } from 'svelte/transition';
     import Heading from './Heading.svelte';
     import BlogCover from './BlogCover.svelte';
     import { Link } from "svelte-routing";
@@ -22,40 +23,69 @@
     function cutContent(content){
         return content.substring(0, 160) + "...";
     }
+
+    // Transition effect
+    let visible = [false, false, false, false]
+    let currV = 0
+    let id = setInterval(loadEntries, 200)
+    function loadEntries() {
+        visible[currV] = true
+        currV++
+
+        if(currV == visible.length)
+            clearInterval(id)
+    }
 </script>
 
-<div class="blog-feat-ctr">
+<div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}
         <Heading title={"BLOG"} />
     {/if}
 
     <div id="blog-array">
-        <BlogCover
-            image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/andrea%20libertie%20full.jpg"}
-            tags = {["Fresh 🌿", "Life 💃"]}
-            title = {"And I became a dog"}
-            date = {"May 31, 2022"}
-            blurb = {cutContent(contentSample)}
-        ></BlogCover>
-        
-        <BlogCover
-            image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
-            tags = {["Develop ⚙️"]}
-            title = {"Game Jam Creation"}
-            date = {"May 28, 2022"}
-            blurb = {cutContent(contentSample)}
-        ></BlogCover>
+        {#if visible[0]}
+        <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+            <BlogCover
+                image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/andrea%20libertie%20full.jpg"}
+                tags = {["Fresh 🌿", "Life 💃"]}
+                title = {"And I became a dog"}
+                date = {"May 31, 2022"}
+                blurb = {cutContent(contentSample)}
+            />
+        </div>
+        {/if}
 
-        <BlogCover
-            tags = {["Random 🍡"]}
-            title = {"Imageless"}
-            date = {"May 27, 2022"}
-            blurb = {cutContent(contentSample)}
-        ></BlogCover>
+        {#if visible[1]}
+        <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+            <BlogCover
+                image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
+                tags = {["Develop ⚙️"]}
+                title = {"Game Jam Creation"}
+                date = {"May 28, 2022"}
+                blurb = {cutContent(contentSample)}
+            />
+        </div>
+        {/if}
+
+        {#if visible[2]}
+        <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+            <BlogCover
+                tags = {["Random 🍡"]}
+                title = {"Imageless"}
+                date = {"May 27, 2022"}
+                blurb = {cutContent(contentSample)}
+            />
+        </div>
+        {/if}
     </div>
-    <Link to="blog">
-        <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
-    </Link>
+
+    {#if visible[3]}
+    <div transition:fly="{{ y: 50, duration: 800 }}">
+        <Link to="blog">
+            <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
+        </Link>
+    </div>
+    {/if}
 </div>
 
 <style>
