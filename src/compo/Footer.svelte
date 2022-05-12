@@ -40,7 +40,7 @@
                 <a href="https://www.instagram.com/ateawa/"><img src="https://ipfs.fleek.co/ipfs/bafybeig22agaavqyvfjbfzudd6md64qfox32bun2vrgmwcfi3cluqd4qya" alt="Instagram" /></a>
                 <a href="https://github.com/andreaabellera"><img src="https://ipfs.fleek.co/ipfs/bafybeiarmhb7kqwivorqeokim5py4kubdu7ouwn47w6yop45llogegs55e" alt="Github" /></a>
                 <a href="https://www.linkedin.com/in/aabellera"><img src="https://ipfs.fleek.co/ipfs/bafybeid5jlfpfybb7z6ck2wko5rkirhfmdh2lmgv3oayqu74xvaxaupxku" alt="Linkedin" /></a>
-                <a href="#"><img src="https://ipfs.fleek.co/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" /></a>
+                <a href="https://www.reddit.com/"><img src="https://ipfs.fleek.co/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" /></a>
             </div>
             <div class="ptSans thanks"> Special thanks to <a href="https://icons8.com/icon/set/social-media/dotty"> ICONS8 </a> </div>
         </div>
@@ -102,12 +102,20 @@
         margin-left: 0.3em;
     }
 
-    @media (max-width: 600px) {
-        /* .footer-inner{
-            flex-direction: column;
-            align-items: flex-end;
-        } */
+    .footer-social img:hover{
+        animation: up 0.4s ease-out;
+    }
 
+    @keyframes up{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(-0.6em);
+        }
+    }
+
+    @media (max-width: 600px) {
         .footer-inner div {
             margin: 0.5em 0 0.5em 0;
         }

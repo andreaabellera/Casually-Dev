@@ -19,28 +19,35 @@
 
     // Page transition
     let visible = false
-    let id1 = setInterval(loadPage, 300)
+    let id1 = setInterval(loadPage, 200)
     function loadPage() {
         visible = true
         clearInterval(id1)
     }
     // Entries transition
     let visibles = [false, false, false]
-    let id2 = setInterval(loadEntries, 400)
+    let id2 = setInterval(loadEntries, 200)
+    let delay = 0
     let currV = 0
     function loadEntries() {
-        visibles[currV] = true
-        currV++
+        if(delay==3){
+            visibles[currV] = true
+            currV++
 
-        if(currV == visibles.length)
-            clearInterval(id2)
+            if(currV == visibles.length)
+                clearInterval(id2)
+        }
+        else
+            delay++
     }
 </script>
 
 {#if visible}
 <div class="blog-feat-ctr" style="margin-top:{adjust};" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}
+    <div class="blog-heading">
         <Heading title={"BLOG"} />
+    </div>
     {/if}
 
     <div id="blog-array">
@@ -79,6 +86,21 @@
         </div>
         {/if}
     </div>
+
+    <div class="filter">
+        <div class="filter-box">
+            <div class="filter-box-title lancelot"> Filters </div>
+            <div class="filter-box-content ptSans"> 
+                <div class="fselect"><p> Develop ⚙️ </p></div>
+                <div><p> Programming 👩🏻‍💻 </p></div>
+                <div><p> Art 🖼️ </p></div>
+                <div><p> Life 💃🏻 </p></div>
+                <div><p> Random 🍡 </p></div>
+                <div><p> Petty 🙉 </p></div>
+            </div>
+        </div>
+    </div>
+
 </div>
 {/if}
 
@@ -89,7 +111,13 @@
         display: grid;
         grid-column-gap: 6vh;
         grid-template-rows: auto 1fr;
+        grid-template-columns: auto 1fr;
         margin-bottom: 10vh;
+    }
+
+    .blog-heading{
+        grid-row: 1/2;
+        grid-column: 1/3;
     }
 
     #blog-array{
@@ -98,9 +126,64 @@
         margin-bottom: 5vh;
     }
 
+    .filter{
+        display: none;
+        justify-items: center;
+        transform: translateY(-15vh);
+    }
+
+    .filter-box-title{
+        font-size: 3em;
+        margin-bottom: 3vh;
+        width: 25vw;
+        padding-bottom: 0.2em;
+        border-bottom: solid 1px var(--smudge);
+    }
+
+    .filter-box-content{
+        display: grid;
+        grid-template-rows: 3em 3em 3em 3em 3em 3em;
+        grid-gap: 1.5vh;
+    }
+
+    .filter-box-content div{
+        width: 100%;
+        height: 100%;
+        background-color: var(--bark);
+        color: var(--oyster);
+        margin-bottom: 2vh;
+        text-align: center;
+        /* padding: 1.5vh 0 1.5vh 0; */
+        /* border: double 0.3em var(--smudge); */
+        box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .filter-box-content p{
+        width: 100%;
+    }
+
+    .filter-box-content div:hover{
+        cursor: pointer;
+    }
+
+    .filter-box-content p:hover{
+        cursor: pointer;
+        font-size: 1.5em;
+        transform: translateY(-0.6em);
+        transition: 0.3s ease-in-out;
+    }
+
+    .fselect{
+        background-color: rgba(141,75,38,0.45) !important;
+    }
+
     @media (max-width: 600px) {
         #blog-array{
             margin-top: 12vh;
+            grid-column: 1/3;
         }
     }
 </style>

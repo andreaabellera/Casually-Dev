@@ -10,7 +10,7 @@
 
     // Page transition
     let visible = false
-    let id1 = setInterval(loadPage, 300)
+    let id1 = setInterval(loadPage, 200)
     function loadPage() {
         visible = true
         clearInterval(id1)
@@ -18,14 +18,19 @@
 
     // Entries transition
     let visibles = [false, false, false, false]
-    let id2 = setInterval(loadEntries, 550)
+    let id2 = setInterval(loadEntries, 350)
+    let delay = 0
     let currV = 0
     function loadEntries() {
-        visibles[currV] = true
-        currV++
+        if(delay==2){
+            visibles[currV] = true
+            currV++
 
-        if(currV == visibles.length)
-            clearInterval(id2)
+            if(currV == visibles.length)
+                clearInterval(id2)
+        }
+        else
+            delay++
     }
 
     // Zoom out
@@ -36,7 +41,7 @@
 				const eased = elasticOut(t);
 				return `transform: scale(${eased});`
 			}
-		};
+		}
 	}
 
 </script>

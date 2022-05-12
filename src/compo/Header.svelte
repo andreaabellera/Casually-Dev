@@ -219,7 +219,7 @@
         height: 4em;
         width: 4em;
         border-radius: 50%;
-        border: 0.3em solid var(--denim);
+        border: 0.3em solid var(--bark);
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
         margin: 15px 15px 0 0;
         overflow: hidden;
@@ -234,14 +234,14 @@
         align-items: center;
         box-shadow: inset 0.05em 0.05em 0.2em rgba(0,0,0,0.3);
         color: var(--ink);
-        background-image: var(--pearl);
+        background-color: rgba(221,192,148,0.85);
     }
 
     .round{
         height: 0.5em;
         width: 0.5em;
         border-radius: 50%;
-        background-color: var(--ink);
+        background-color: rgba(141,75,38,0.45);
     }
 
     .nav-container{

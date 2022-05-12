@@ -39,7 +39,9 @@
 
 <div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}
+    <div class="blog-heading">
         <Heading title={"BLOG"} />
+    </div>
     {/if}
 
     <div id="blog-array">
@@ -79,8 +81,17 @@
         {/if}
     </div>
 
+    <div class="filter">
+        <div class="filter-box">
+            <div class="filter-box-title lancelot"> FILTER  </div>
+            <div class="filter-box-content ptSans"> 
+               An introductory plaque to the blog perhaps
+            </div>
+        </div>
+    </div>
+
     {#if visible[3]}
-    <div transition:fly="{{ y: 50, duration: 800 }}">
+    <div class="blog-sm" transition:fly="{{ y: 50, duration: 800 }}">
         <Link to="blog">
             <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
         </Link>
@@ -94,7 +105,8 @@
         width: 100%;
         display: grid;
         grid-column-gap: 6vh;
-        grid-template-rows: auto 1fr;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
         margin: -8vh 0 10vh 0;
     }
 
@@ -104,9 +116,29 @@
         margin-bottom: 5vh;
     }
 
+    .blog-heading{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+
+    .blog-sm{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    .filter{
+        display: none;
+        justify-items: center;
+    }
+
     @media (max-width: 600px) {
         #blog-array{
             margin-top: 0vh;
+            grid-column: 1/3;
+        }
+
+        .filter{
+            display: none;
         }
     }
 </style>

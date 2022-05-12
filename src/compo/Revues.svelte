@@ -14,16 +14,35 @@
         visible = true
         clearInterval(id1)
     }
+
+    // Content transition
+    let visibleC = false
+    let delay = 0
+    let id2 = setInterval(loadContent, 500)
+    function loadContent() {
+        if(delay==1){
+            visibleC = true
+            clearInterval(id2)
+        }
+        else
+            delay++
+    }
 </script>
 
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
 {#if visible}
-<div class="revues-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="revues-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">}
     {#if !isMobile}
-        <Heading title={"REVIEWS (COMING SOON)"} />
+        <Heading title={"REVIEWS"} />
     {/if}
-    <div class="revues-inner">
-        <Boba />
-    </div>
+
+    {#if visibleC}
+        <div class="revues-inner" transition:fly="{{y:100, duration: 800}}">
+            <Boba />
+            <div class="coming-soon"> Coming soon! </div>
+        </div>
+    {/if}
 </div>
 {/if}
 
@@ -37,10 +56,18 @@
     }
 
     .revues-inner {
-        display: flex;
+        display: grid;
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-items: center;
+        margin-top: -2vh;
         margin-bottom: 5vh;
+    }
+
+    .coming-soon {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 3em;
+        margin-top: 1.5vh;
+        color: var(--coffee);
     }
 </style>

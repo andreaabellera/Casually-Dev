@@ -124,7 +124,7 @@
 
     a:hover{
         text-decoration: none;
-        filter: brightness(0.9);
+        filter: brightness(0.95);
         transition: 0.1s;
         transform: translate(-2px, 2px);
     }
