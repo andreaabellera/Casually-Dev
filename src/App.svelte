@@ -3,7 +3,9 @@
 	import Header from './compo/Header.svelte';
 	import ChezMoi from './compo/ChezMoi.svelte';
 	import Blog from './compo/Blog.svelte';
+	import BlogPage from './compo/BlogPage.svelte';
 	import Journals from './compo/Journals.svelte';
+	import JournalPage from './compo/JournalPage.svelte';
 	import Galerie from './compo/Galerie.svelte';
 	import Revues from './compo/Revues.svelte';
 	import Andrea from './compo/Andrea.svelte';
@@ -28,7 +30,9 @@
 		<div id="content" class="content">
 			<Route path="/"><ChezMoi on:selection={selectNav}/></Route>
 			<Route path="blog" component="{Blog}" />
+			<Route path="blog/:id" component="{BlogPage}" />
 			<Route path="journals" component="{Journals}" />
+			<Route path="journals/:id" component="{JournalPage}" />
 			<Route path="galerie" component="{Galerie}" />
 			<Route path="revues" component="{Revues}" />
 			<Route path="andrea" component="{Andrea}" />

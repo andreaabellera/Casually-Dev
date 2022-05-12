@@ -1,5 +1,6 @@
 <script>
     import { fly } from 'svelte/transition';
+    import { Link } from "svelte-routing";
 	import Heading from './Heading.svelte';
 	import BlogCover from './BlogCover.svelte';
 	let contentSample = "Text generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks you reached the end";
@@ -52,38 +53,44 @@
 
     <div id="blog-array">
         {#if visibles[0]}
-        <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-            <BlogCover
-                image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/andrea%20libertie%20full.jpg"}
-                tags = {["Fresh 🌿", "Life 💃"]}
-                title = {"And I became a dog"}
-                date = {"May 31, 2022"}
-                blurb = {cutContent(contentSample)}
-            />
-        </div>
+        <Link to="/blog/title0">
+            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                <BlogCover
+                    image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/andrea%20libertie%20full.jpg"}
+                    tags = {["Fresh 🌿", "Life 💃"]}
+                    title = {"And I became a dog"}
+                    date = {"May 31, 2022"}
+                    blurb = {cutContent(contentSample)}
+                />
+            </div>
+        </Link>
         {/if}
 
         {#if visibles[1]}
-        <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-            <BlogCover
-                image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
-                tags = {["Develop ⚙️"]}
-                title = {"Game Jam Creation"}
-                date = {"May 28, 2022"}
-                blurb = {cutContent(contentSample)}
-            />
-        </div>
+        <Link to="/blog/title1">
+            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                <BlogCover
+                    image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
+                    tags = {["Develop ⚙️"]}
+                    title = {"Game Jam Creation"}
+                    date = {"May 28, 2022"}
+                    blurb = {cutContent(contentSample)}
+                />
+            </div>
+        </Link>
         {/if}
 
         {#if visibles[2]}
-        <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-            <BlogCover
-                tags = {["Random 🍡"]}
-                title = {"Imageless"}
-                date = {"May 27, 2022"}
-                blurb = {cutContent(contentSample)}
-            />
-        </div>
+        <Link to="/blog/title2">
+            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                <BlogCover
+                    tags = {["Random 🍡"]}
+                    title = {"Imageless"}
+                    date = {"May 27, 2022"}
+                    blurb = {cutContent(contentSample)}
+                />
+            </div>
+        </Link>
         {/if}
     </div>
 

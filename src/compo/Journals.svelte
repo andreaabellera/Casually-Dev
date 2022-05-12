@@ -1,6 +1,7 @@
 <script>
     import { fly } from 'svelte/transition';
     import { elasticOut } from 'svelte/easing';
+    import { Link } from "svelte-routing";
 	import Heading from './Heading.svelte';
 	import JournalCover from './JournalCover.svelte';
 
@@ -58,41 +59,49 @@
     <div id="journal-array">
 
         {#if visibles[0]}
-        <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
-            <JournalCover>
-                <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-                <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
-                <p class="syncopate"> HANDBOOK </p>
-            </JournalCover>
-        </div>
+        <Link to="/journals/title0">
+            <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <JournalCover>
+                    <p class="cousine" style="font-size: 75%;"> Breaking into </p>
+                    <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
+                    <p class="syncopate"> HANDBOOK </p>
+                </JournalCover>
+            </div>
+        </Link>
         {/if}
 
         {#if visibles[1]}
-        <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
-            <JournalCover>
-                <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-                <p class="cousine" style="font-size: 110%;"> Open Source </p>
-                <p class="syncopate"> HANDBOOK </p>
-            </JournalCover>
-        </div>
+        <Link to="/journals/title1">
+            <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <JournalCover>
+                    <p class="cousine" style="font-size: 75%;"> Breaking into </p>
+                    <p class="cousine" style="font-size: 110%;"> Open Source </p>
+                    <p class="syncopate"> HANDBOOK </p>
+                </JournalCover>
+            </div>
+        </Link>
         {/if}
 
         {#if visibles[2]}
-        <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
-            <JournalCover>
-                <p class="syncopate"> ALGORITHM STUDY </p>
-                <p class="cousine"> Alpha-Beta Pruning</p>
-            </JournalCover>
-        </div>
+        <Link to="/journals/title2">
+            <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <JournalCover>
+                    <p class="syncopate"> ALGORITHM STUDY </p>
+                    <p class="cousine"> Alpha-Beta Pruning</p>
+                </JournalCover>
+            </div>
+        </Link>
         {/if}
 
         {#if visibles[3]}
-        <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
-            <JournalCover>
-                <p class="syncopate"> DATA STRUCTURE STUDY </p>
-                <p class="cousine"> Merkle DAG </p>
-            </JournalCover>
-        </div>
+        <Link to="/journals/title3">
+            <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <JournalCover>
+                    <p class="syncopate"> DATA STRUCTURE STUDY </p>
+                    <p class="cousine"> Merkle DAG </p>
+                </JournalCover>
+            </div>
+        </Link>
         {/if}
     </div>
 </div>

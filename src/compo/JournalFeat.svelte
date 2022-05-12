@@ -18,24 +18,32 @@
 <div class="journal-feat-ctr">
     <Heading title={"JOURNALS"} />
     <div id="journal-array">
-        <JournalCover>
-            <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-            <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
-            <p class="syncopate"> HANDBOOK </p>
-        </JournalCover>
-        <JournalCover>
-            <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-            <p class="cousine" style="font-size: 110%;"> Open Source </p>
-            <p class="syncopate"> HANDBOOK </p>
-        </JournalCover>
-        <JournalCover>
-            <p class="syncopate"> ALGORITHM STUDY </p>
-            <p class="cousine"> Alpha-Beta Pruning</p>
-        </JournalCover>
-        <JournalCover>
-            <p class="syncopate"> DATA STRUCTURE STUDY </p>
-            <p class="cousine"> Merkle DAG </p>
-        </JournalCover>
+        <Link to="/journals/title0">
+            <JournalCover>
+                <p class="cousine" style="font-size: 75%;"> Breaking into </p>
+                <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
+                <p class="syncopate"> HANDBOOK </p>
+            </JournalCover>
+        </Link>
+        <Link to="/journals/title1">
+            <JournalCover>
+                <p class="cousine" style="font-size: 75%;"> Breaking into </p>
+                <p class="cousine" style="font-size: 110%;"> Open Source </p>
+                <p class="syncopate"> HANDBOOK </p>
+            </JournalCover>
+        </Link>
+        <Link to="/journals/title2">
+            <JournalCover>
+                <p class="syncopate"> ALGORITHM STUDY </p>
+                <p class="cousine"> Alpha-Beta Pruning</p>
+            </JournalCover>
+        </Link>
+        <Link to="/journals/title3">
+            <JournalCover>
+                <p class="syncopate"> DATA STRUCTURE STUDY </p>
+                <p class="cousine"> Merkle DAG </p>
+            </JournalCover>
+        </Link>
     </div>
     <Link to="journals">
         <div id="blog-see-more" class="laBelleAurore" on:click={selectNav}><div> see more journals </div></div>
