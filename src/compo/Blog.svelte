@@ -31,7 +31,7 @@
     let delay = 0
     let currV = 0
     function loadEntries() {
-        if(delay==3){
+        if(delay==4){
             visibles[currV] = true
             currV++
 

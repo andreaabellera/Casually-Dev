@@ -241,7 +241,20 @@
         height: 0.5em;
         width: 0.5em;
         border-radius: 50%;
-        background-color: rgba(141,75,38,0.45);
+        /* background-color: rgba(141,75,38,0.45); */
+        opacity: 0.5;
+    }
+
+    .round:nth-of-type(1){
+        background-color: var(--chartreuse);
+    }
+
+    .round:nth-of-type(2){
+        background-color: var(--passione);
+    }
+
+    .round:nth-of-type(3){
+        background-color: var(--denim);
     }
 
     .nav-container{
