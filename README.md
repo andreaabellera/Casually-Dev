@@ -18,3 +18,5 @@ Since the site is open source, all production code is available in this reposito
 2. Enter `npm run dev`
 
 You can replicate, modify or improve the stack, look and feel of the qtrlex site for yourself ❤
+
+*But the development journey and lessons learned from building the site is mine mueheheh*
