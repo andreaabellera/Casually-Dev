@@ -3,7 +3,7 @@
 Woot woot! Let's go
 
 ## Hi, I'm Andrea! Welcome to qtrlex
-I am excited to present to you **qtrlex** (pronounced co-trol-ex or cutie-arrgh-lex), my personal blogsite and portfolio! This will be my summer pilot project integrating content creation with lifestyle. **qtrlex** will be my personal girl cave where I would write about my development experiences and milestones, share verses and stories, journal my programming studies, post art and photos, vent on life (moderately), and include anything that I'd be inclined to share! 
+I am excited to present to you **qtrlex**, my personal blogsite and portfolio! This will be my summer pilot project integrating content creation with lifestyle. **qtrlex** will be my personal girl cave where I would write about my development experiences and milestones, share verses and stories, journal my programming studies, post art and photos, vent on life (moderately), and include anything that I'd be inclined to share! 
 
 Appearances of other names and faces will only be done with consent. Mentions of interactions or other perspectives will be coded with common terms as "friend" and "colleague"
 
