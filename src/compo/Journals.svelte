@@ -19,7 +19,7 @@
     }
 
     // Entries transition
-    let visibles = [false, false, false, false]
+    let visibles = [false, false, false, false, false, false]
     let id2 = setInterval(loadEntries, 350)
     let delay = 0
     let currV = 0
@@ -100,6 +100,26 @@
             </div>
         </Link>
         {/if}
+
+        {#if visibles[4]}
+        <Link to="/journals/{journals[4].id}">
+            <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <JournalCover>
+                    {@html journals[4].cover}
+                </JournalCover>
+            </div>
+        </Link>
+
+        {#if visibles[5]}
+        <Link to="/journals/{journals[5].id}">
+            <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <JournalCover>
+                    {@html journals[5].cover}
+                </JournalCover>
+            </div>
+        </Link>
+        {/if}
+        {/if}
     </div>
 </div>
 {/if}
@@ -118,6 +138,7 @@
         width: 100%;
         align-items: center;
         margin-bottom: 5vh;
+        flex-wrap: wrap;
     }
 
     @media (max-width: 600px) {

@@ -13,26 +13,60 @@
     if (isMobile)
         adjust = "-20vh"
 
+    // Show and hide blogs based on filters
+    let filters = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
+    function fselect(){
+        let classes = this.classList;
+        if(classes.contains("fselect")){
+            this.classList.remove("fselect")
+            let ind = filters.indexOf(this.innerText)
+            filters.splice(ind, 1)
+
+            if(filters.length == 0)
+                filters = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
+        }
+        else{
+            if(filters.length == 6)
+                filters = []
+
+            this.classList.add("fselect")
+            filters.push(this.innerText)
+        }
+
+        for(let v in visibles)
+            visibles[v] = false
+            
+        for(let i=0; i < blogs.length; i++){
+            let blogTags = blogs[i].tags
+            for(let f of filters){
+                if(blogTags.includes(f))
+                    visibles[i] = true
+            }
+        }
+    }
+
     // Cut blurb content
     function cutContent(content){
-        return content.substring(0, 160) + "...";
+        return content.substring(0, 160) + "..."
     }
 
     // Page transition
     let visible = false
+    let filterVisible = false
     let id1 = setInterval(loadPage, 200)
     function loadPage() {
         visible = true
         clearInterval(id1)
     }
     // Entries transition
-    let visibles = [false, false, false]
+    let visibles = [false, false, false, false]
     let id2 = setInterval(loadEntries, 200)
     let delay = 0
     let currV = 0
     function loadEntries() {
         if(delay==4){
             visibles[currV] = true
+            filterVisible = true
             currV++
 
             if(currV == visibles.length)
@@ -95,25 +129,42 @@
             </div>
         </Link>
         {/if}
+
+        {#if visibles[3]}
+        <Link to="/blog/{blogs[3].id}">
+            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                <BlogCover
+                    image = {blogs[3].image}
+                    tags = {blogs[3].tags}
+                    title = {blogs[3].title}
+                    date = {blogs[3].date}
+                    blurb = {cutContent(blogs[3].blurb)}
+                />
+            </div>
+        </Link>
+        {/if}
     </div>
 
-    <div class="filter">
+    {#if filterVisible}
+    <div class="filter" in:fly="{{ y: 500, duration: 600 }}" out:fly="{{ x: 800, duration: 400 }}">
         <div class="filter-box">
             <div class="filter-box-title lancelot"> Filters </div>
             <div class="filter-box-content ptSans"> 
-                <div class="fselect"><p> Develop ⚙️ </p></div>
-                <div><p> Programming 👩🏻‍💻 </p></div>
-                <div><p> Art 🖼️ </p></div>
-                <div><p> Life 💃🏻 </p></div>
-                <div><p> Games 🎲 </p></div>
-                <div><p> Random 🍡 </p></div>
-                <div><p> Petty 🙉 </p></div>
+                <div on:click={fselect}><p>Develop ⚙️</p></div>
+                <div on:click={fselect}><p>Programming 👩🏻‍💻</p></div>
+                <div on:click={fselect}><p>Art 🖼️</p></div>
+                <div on:click={fselect}><p>Life 💃🏻</p></div>
+                <div on:click={fselect}><p>Games 🎲</p></div>
+                <div on:click={fselect}><p>Random 🍡</p></div>
             </div>
         </div>
     </div>
+    {/if}
 
 </div>
 {/if}
+
+<span class="fselect"></span>
 
 <style>
     .blog-feat-ctr {
@@ -138,7 +189,7 @@
     }
 
     .filter{
-        display: none;
+        display: grid;
         justify-items: center;
         transform: translateY(-15vh);
     }
@@ -184,17 +235,21 @@
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         font-size: 1.5em;
         transform: translateY(-0.6em);
-        transition: 0.3s ease-in-out;
+        transition: 0.1s ease-in-out;
     }
 
     .fselect{
         background-color: rgba(141,75,38,0.45) !important;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         #blog-array{
             margin-top: 12vh;
             grid-column: 1/3;
+        }
+
+        .filter{
+            display: none;
         }
     }
 </style>

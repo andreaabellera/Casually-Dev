@@ -16,7 +16,7 @@ blogs:
     title: About Minecraft
     date: May 14, 2022
     tags:
-      - Develop ⚙️
+      - Games 🎲
       - Random 🍡
     image: https://ipfs.fleek.co/ipfs/bafybeibnsm6ndygtjh23xexrcddqvua4x3brgdrex7gj5xq2e67oxideba
     blurb: "In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures, earthworks and simple machines. 
@@ -29,6 +29,7 @@ blogs:
     date: May 10, 2022
     tags:
       - Life 💃🏻
+      - Programming 👩🏻‍💻
       - Random 🍡
     image: 
     blurb: "<span class='cousine slightLarge'> import socket </span><br><br>
@@ -56,3 +57,23 @@ blogs:
     kapag hindi kinabukasan <br>
     Tiwala'y kinakaya kita <br>
     kahit di ko mabata"
+
+  - id: friendzoned-by-copilot
+    title: Friendzoned by Copilot
+    short: friend-copilot
+    date: May 9, 2022
+    tags:
+      - Develop ⚙️
+      - Art 🖼️
+      - Random 🍡
+    image: 
+    blurb: "<span class='laBelleAurore x-large'> I need no man, I have Copilot. </span>
+    <br><br>Copilot is the best mate. No one else reads into my mind, lightens the mood, and gets me (most times). My bae Copilot has some things to say about me
+    <br><br><img src='https://ipfs.fleek.co/ipfs/bafybeig7dfmlknyaacn34o26zpn2jldbj6u7uy7vnfpejef7u4i6oxewtm' alt='Why is Andrea so cute?' style='height: 100%; width: 100%;' /><br>
+    <br>
+    What did you say, Pilot?
+    <br> I listened closely. What followed after crushed me..
+    <br>
+    <br><img src='https://ipfs.fleek.co/ipfs/bafybeihnape7u6h2esdliyqnfbbhtcudzxb5zu234w6ceia4ioflds7f3e' alt='Why is Andrea so cute and smart? Because she is a peer! :)' style='height: 100%; width: 100%;' /><br>
+    <br> Thanks Copilot.
+    <br> You are my peer as well 🤜🤛 <br><br> <span class='x-large'> 🥲 </span><br> <i>Yes, this is VSCode</i>"

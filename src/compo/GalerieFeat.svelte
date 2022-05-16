@@ -1,8 +1,10 @@
 <script>
     export let title = "Collection of Artworks";
     export let image = "";
+    export let adjust = "0 0"
     import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
+    import artData from '../content/artifacts.yml'; 
 
     const dispatch = createEventDispatcher();
 
@@ -12,11 +14,11 @@
         });
     }
 
+    // Play banner animation upon mouse enter
     function play(){
         let img = document.getElementById("img-ctr")
         let title = document.getElementById("title-text")
         let grad = document.getElementById("grad")
-
         let id1 = setInterval(play, 40)
         let delay = 0
         function play() {
@@ -26,16 +28,23 @@
                 grad.style.height = "0%"
             }
             else if(delay >= 10 && delay < 18){
-                title.style.opacity = (delay-10) + "0%"
+                title.style.opacity = (delay-8) + "0%"
                 title.style.top = (72-delay-8) + "%"
                 grad.style.height = (delay-10) + "0%"
             }
             else
                 clearInterval(id1)
-            
             delay += 1
         }
     }
+
+    // Get art data
+    let feats = artData.collections.general
+    let rng = Math.floor(Math.random() * feats.length)
+    title = feats[rng].title
+    image = feats[rng].image
+    adjust = feats[rng].adjust
+
 </script>
 
 <Link to="galerie">
@@ -44,7 +53,7 @@
         <div id="title-text" class="mrDeHaviland"> {title} </div>
         <div class="view-text lancelot"> view gallery </div>
         <div id="grad"></div>
-        <div id="img-ctr" style="background-image:url({image});"></div>
+        <div id="img-ctr" style="background-image:url({image}); background-position: {adjust};"></div>
     </div>
 </Link>
 <span class="imageAnimation titleTextAnimation gradAnimation">
@@ -80,7 +89,6 @@
         z-index: 3;
         height: 100%;
         width: 100%;
-        background-position: 0 10%;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: inset 1.5em 1em 6em rgba(0,0,0,0.8);

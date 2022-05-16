@@ -16,6 +16,7 @@
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
         background-image: var(--pearl);
         margin-left: 8vw;
+        margin-bottom: 8vh;
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicukkuk4n3ry2m6krh5fyth6wsbekzfeldfmmldnqh7gcufs42zoi), pointer;
 	}
 
@@ -47,6 +48,7 @@
         .cover-ctr{
             margin-left: 8vw;
             margin-top: 4vh;
+            margin-bottom: 2vh;
         }
     }
 
