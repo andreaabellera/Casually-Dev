@@ -4,6 +4,7 @@
     import BlogCover from './BlogCover.svelte';
     import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
+    import blogData from '../content/blogs.yml'; 
 
     const dispatch = createEventDispatcher();
 
@@ -12,8 +13,6 @@
             id: "nav-blog"
         });
     }
-
-    let contentSample = "Text generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks you reached the end";
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -35,6 +34,25 @@
         if(currV == visible.length)
             clearInterval(id)
     }
+
+    // Get first three blog data entries
+    let blog0 = blogData.blogs[0]
+    let blog1 = blogData.blogs[1]
+    let blog2 = blogData.blogs[2]
+
+    // Get blog blurb content (SERVER UNDER CONSTRUCTION)
+    function getBlurb(src){
+        let link = `./blogPages/${src}`
+        const req = new XMLHttpRequest();
+        req.onreadystatechange=function(){
+            if (req.readyState==4 && req.status==200)
+                return req.responseText
+            else
+                return "Error loading blog"
+        }
+        req.open("GET", link, true);
+        req.send();
+    }
 </script>
 
 <div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
@@ -46,41 +64,42 @@
 
     <div id="blog-array">
         {#if visible[0]}
-        <Link to="/blog/title0">
+        <Link to="/blog/{blog0.id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/andrea%20libertie%20full.jpg"}
-                    tags = {["Fresh 🌿", "Life 💃"]}
-                    title = {"And I became a dog"}
-                    date = {"May 31, 2022"}
-                    blurb = {cutContent(contentSample)}
+                    image = {blog0.image}
+                    tags = {blog0.tags}
+                    title = {blog0.title}
+                    date = {blog0.date}
+                    blurb = {cutContent(blog0.blurb)}
                 />
             </div>
         </Link>
         {/if}
 
         {#if visible[1]}
-        <Link to="/blog/title1">
+        <Link to="/blog/{blog1.id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
-                    tags = {["Develop ⚙️"]}
-                    title = {"Game Jam Creation"}
-                    date = {"May 28, 2022"}
-                    blurb = {cutContent(contentSample)}
+                    image = {blog1.image}
+                    tags = {blog1.tags}
+                    title = {blog1.title}
+                    date = {blog1.date}
+                    blurb = {cutContent(blog1.blurb)}
                 />
             </div>
         </Link>
         {/if}
 
         {#if visible[2]}
-        <Link to="/blog/title2">
+        <Link to="/blog/{blog2.id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    tags = {["Random 🍡"]}
-                    title = {"Imageless"}
-                    date = {"May 27, 2022"}
-                    blurb = {cutContent(contentSample)}
+                    image = {blog2.image}
+                    tags = {blog2.tags}
+                    title = {blog2.title}
+                    date = {blog2.date}
+                    blurb = {cutContent(blog2.blurb)}
                 />
             </div>
         </Link>

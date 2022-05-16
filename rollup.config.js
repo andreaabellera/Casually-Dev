@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import yaml from '@rollup/plugin-yaml';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -37,6 +38,10 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		
+		// Allows importing of .yml files which are directly parsed into JS objects
+		yaml(),
+
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production

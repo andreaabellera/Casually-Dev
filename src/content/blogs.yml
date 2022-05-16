@@ -1,0 +1,57 @@
+blogs:
+  - id: terraria_woohoo
+    title: Terraria Woohoo
+    date: May 15, 2022
+    tags:
+      - Games 🎲
+    image: https://ipfs.fleek.co/ipfs/bafybeian3spqzxy6ol2xxzx7fgai4w7p5g4rv3o4iv6mhfwaqxumpbftwm
+    blurb: "Terraria is a land of adventure! 
+    A land of mystery!
+    A land that's yours to shape, defend, and enjoy. Your options in Terraria are limitless.
+    Are you an action gamer with an itchy trigger finger? A master builder? A collector? An explorer? There's something for everyone. 
+    Start by building basic shelter, then dig for ore and other resources. 
+    Discover and craft over 500 weapons of magic, ranged, melee and summon varieties, as well as armor, and use them to battle hundreds of different enemies. 
+    Soon you'll be going head-to-head with any of a dozen enormous bosses. Go fishing, ride a mount, find Floating Islands, build houses for helpful NPCs, and much, much more."
+
+  - id: about_minecraft
+    title: About Minecraft
+    date: May 14, 2022
+    tags:
+      - Develop ⚙️
+      - Random 🍡
+    image: https://ipfs.fleek.co/ipfs/bafybeibnsm6ndygtjh23xexrcddqvua4x3brgdrex7gj5xq2e67oxideba
+    blurb: "In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures, earthworks and simple machines. 
+    Depending on game mode, players can fight computer-controlled mobs, as well as cooperate with or compete against other players in the same world. Game modes include a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode where players have unlimited resources and access to flight. 
+    Players can modify the game to create new gameplay mechanics, items, and assets."
+
+  - id: import_socket
+    title: Import Socket (Poem)
+    short: socket
+    date: May 10, 2022
+    tags:
+      - Life 💃🏻
+      - Random 🍡
+    image: 
+    blurb: "Ang socket ay masakit, 
+    kailangan mo kalasin
+    ang socket na masakit
+    kundi masasaktan ka rin
+
+    Napakasakit kumonekta
+    sa socket na masakit
+    Nakukuryente kita
+    Kapag ako'y nakakabit
+
+    Kailan kakalasin
+    ang socket na masakim
+
+    Kailan ako kakawala?
+    kung di ako aapila
+
+    Kailan kakaltasan
+    ang kapos kapalaran
+
+    Kakayanan ko'y kaltasan
+    kapag hindi kinabukasan
+    Tiwala'y kinakaya kita
+    kahit di ko mabata"

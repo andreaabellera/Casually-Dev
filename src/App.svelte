@@ -30,9 +30,13 @@
 		<div id="content" class="content">
 			<Route path="/"><ChezMoi on:selection={selectNav}/></Route>
 			<Route path="blog" component="{Blog}" />
-			<Route path="blog/:id" component="{BlogPage}" />
+			<Route path="blog/:id" let:params>
+				<BlogPage id="{params.id}" />
+			</Route>
 			<Route path="journals" component="{Journals}" />
-			<Route path="journals/:id" component="{JournalPage}" />
+			<Route path="journals/:id" let:params>
+				<JournalPage id="{params.id}" />
+			</Route>
 			<Route path="galerie" component="{Galerie}" />
 			<Route path="revues" component="{Revues}" />
 			<Route path="andrea" component="{Andrea}" />

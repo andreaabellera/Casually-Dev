@@ -3,7 +3,7 @@
     import { Link } from "svelte-routing";
 	import Heading from './Heading.svelte';
 	import BlogCover from './BlogCover.svelte';
-	let contentSample = "Text generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks you reached the end";
+    import blogData from '../content/blogs.yml'; 
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -41,6 +41,9 @@
         else
             delay++
     }
+
+    // Get blog data
+    let blogs = blogData.blogs
 </script>
 
 {#if visible}
@@ -53,41 +56,41 @@
 
     <div id="blog-array">
         {#if visibles[0]}
-        <Link to="/blog/title0">
+        <Link to="/blog/{blogs[0].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/andrea%20libertie%20full.jpg"}
-                    tags = {["Fresh 🌿", "Life 💃"]}
-                    title = {"And I became a dog"}
-                    date = {"May 31, 2022"}
-                    blurb = {cutContent(contentSample)}
+                    image = {blogs[0].image}
+                    tags = {blogs[0].tags}
+                    title = {blogs[0].title}
+                    date = {blogs[0].date}
+                    blurb = {cutContent(blogs[0].blurb)}
                 />
             </div>
         </Link>
         {/if}
 
         {#if visibles[1]}
-        <Link to="/blog/title1">
+        <Link to="/blog/{blogs[1].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {"https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/Snapchat-576771154.jpg"}
-                    tags = {["Develop ⚙️"]}
-                    title = {"Game Jam Creation"}
-                    date = {"May 28, 2022"}
-                    blurb = {cutContent(contentSample)}
+                    image = {blogs[1].image}
+                    tags = {blogs[1].tags}
+                    title = {blogs[1].title}
+                    date = {blogs[1].date}
+                    blurb = {cutContent(blogs[1].blurb)}
                 />
             </div>
         </Link>
         {/if}
 
         {#if visibles[2]}
-        <Link to="/blog/title2">
+        <Link to="/blog/{blogs[2].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    tags = {["Random 🍡"]}
-                    title = {"Imageless"}
-                    date = {"May 27, 2022"}
-                    blurb = {cutContent(contentSample)}
+                    tags = {blogs[2].tags}
+                    title = {blogs[2].title}
+                    date = {blogs[2].date}
+                    blurb = {cutContent(blogs[2].blurb)}
                 />
             </div>
         </Link>
@@ -102,6 +105,7 @@
                 <div><p> Programming 👩🏻‍💻 </p></div>
                 <div><p> Art 🖼️ </p></div>
                 <div><p> Life 💃🏻 </p></div>
+                <div><p> Games 🎲 </p></div>
                 <div><p> Random 🍡 </p></div>
                 <div><p> Petty 🙉 </p></div>
             </div>
