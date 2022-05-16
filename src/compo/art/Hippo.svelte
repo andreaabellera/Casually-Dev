@@ -97,7 +97,7 @@
     }
 
     .hippo:hover{
-    cursor: pointer;
+      cursor: url(https://ipfs.fleek.co/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
     }
 
     .hippo-bod{

@@ -30,7 +30,7 @@
         height: 70vh;
         width: 100%;
         margin-bottom: 5vh;
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeiaamj5yfttqkvs5mx5jre4t43d5syiclw6b4bhjuykpw3d7c4gch4), pointer;
     }
 
     .gallery-feat-ctr:hover {

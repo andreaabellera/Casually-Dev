@@ -40,7 +40,7 @@
         height: 15em;
 		width: 42em;
         margin: 0 0 3vh 6vw;
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
         align-items: center;

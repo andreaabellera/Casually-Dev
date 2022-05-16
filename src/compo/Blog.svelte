@@ -173,11 +173,11 @@
     }
 
     .filter-box-content div:hover{
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .filter-box-content p:hover{
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         font-size: 1.5em;
         transform: translateY(-0.6em);
         transition: 0.3s ease-in-out;

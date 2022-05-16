@@ -187,7 +187,7 @@
         z-index: 20;
         display: flex;
         right: 0;
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .title-container{
@@ -301,7 +301,7 @@
     }
 
     .nav{
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         background-image: radial-gradient(rgba(0,0,0,0));
         color: var(--ink);
         display: grid;

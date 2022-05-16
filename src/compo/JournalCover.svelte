@@ -16,7 +16,7 @@
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
         background-image: var(--pearl);
         margin-left: 8vw;
-        cursor: pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicukkuk4n3ry2m6krh5fyth6wsbekzfeldfmmldnqh7gcufs42zoi), pointer;
 	}
 
     .cover-ctr:hover{
