@@ -48,6 +48,23 @@ html, body {
 	border-radius: 10px;
 }
 
+/* Invisible scrollbar on mobile */
+
+@media screen and (max-width: 600px) {
+	::-webkit-scrollbar {
+		width: 0px;
+	}
+	  
+	::-webkit-scrollbar-track {
+		box-shadow: none; 
+	}
+	   
+	::-webkit-scrollbar-thumb {
+		background: rgba(0,0,0,0); 
+		box-shadow: none; 
+	}
+}
+
 ::-webkit-scrollbar-thumb:hover {
 	cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), auto;
 }
