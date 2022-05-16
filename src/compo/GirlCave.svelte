@@ -38,7 +38,7 @@
         font-family: 'Mr De Haviland', cursive;
         font-size: 8.5em;
         color: var(--passione);
-        text-shadow: -4px 4px #FFDBDB;
+        text-shadow: -4px 4px var(--blossom);
         margin-left: 2vw;
         margin: 6vh 0 12vh 2vw;
     }

@@ -60,7 +60,6 @@
             let date = new Date(blogs[i].date)
             let diff = Math.abs(curr - date)
             let days = Math.floor(diff / (1000 * 60 * 60 * 24))
-            console.log(date + ": " + days)
             if (days <= 3)
                 blogs[i].tags.unshift("Fresh 🌿")
         }
