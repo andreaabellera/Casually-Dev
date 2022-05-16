@@ -3,6 +3,7 @@
 	import JournalCover from './JournalCover.svelte';
     import { Link } from "svelte-routing";
     import { createEventDispatcher } from 'svelte';
+    import journalData from '../content/journals.yml'; 
 
     const dispatch = createEventDispatcher();
 
@@ -11,6 +12,9 @@
             id: "nav-journals"
         });
     }
+
+    // Get blog data
+    let journals = journalData.journals
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
@@ -18,30 +22,24 @@
 <div class="journal-feat-ctr">
     <Heading title={"JOURNALS"} />
     <div id="journal-array">
-        <Link to="/journals/title0">
+        <Link to="/journals/{journals[0].id}">
             <JournalCover>
-                <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-                <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
-                <p class="syncopate"> HANDBOOK </p>
+                {@html journals[0].cover}
             </JournalCover>
         </Link>
-        <Link to="/journals/title1">
+        <Link to="/journals/{journals[1].id}">
             <JournalCover>
-                <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-                <p class="cousine" style="font-size: 110%;"> Open Source </p>
-                <p class="syncopate"> HANDBOOK </p>
+                {@html journals[1].cover}
             </JournalCover>
         </Link>
-        <Link to="/journals/title2">
+        <Link to="/journals/{journals[2].id}">
             <JournalCover>
-                <p class="syncopate"> ALGORITHM STUDY </p>
-                <p class="cousine"> Alpha-Beta Pruning</p>
+                {@html journals[2].cover}
             </JournalCover>
         </Link>
-        <Link to="/journals/title3">
+        <Link to="/journals/{journals[3].id}">
             <JournalCover>
-                <p class="syncopate"> DATA STRUCTURE STUDY </p>
-                <p class="cousine"> Merkle DAG </p>
+                {@html journals[3].cover}
             </JournalCover>
         </Link>
     </div>

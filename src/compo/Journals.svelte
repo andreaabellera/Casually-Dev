@@ -4,6 +4,7 @@
     import { Link } from "svelte-routing";
 	import Heading from './Heading.svelte';
 	import JournalCover from './JournalCover.svelte';
+    import journalData from '../content/journals.yml'; 
 
 	// Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -45,6 +46,8 @@
 		}
 	}
 
+    // Get blog data
+    let journals = journalData.journals
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
@@ -59,46 +62,40 @@
     <div id="journal-array">
 
         {#if visibles[0]}
-        <Link to="/journals/title0">
+        <Link to="/journals/{journals[0].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
-                    <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-                    <p class="cousine" style="font-size: 110%;"> Competitive Programming</p>
-                    <p class="syncopate"> HANDBOOK </p>
+                    {@html journals[0].cover}
                 </JournalCover>
             </div>
         </Link>
         {/if}
 
         {#if visibles[1]}
-        <Link to="/journals/title1">
+        <Link to="/journals/{journals[1].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
-                    <p class="cousine" style="font-size: 75%;"> Breaking into </p>
-                    <p class="cousine" style="font-size: 110%;"> Open Source </p>
-                    <p class="syncopate"> HANDBOOK </p>
+                    {@html journals[1].cover}
                 </JournalCover>
             </div>
         </Link>
         {/if}
 
         {#if visibles[2]}
-        <Link to="/journals/title2">
+        <Link to="/journals/{journals[2].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
-                    <p class="syncopate"> ALGORITHM STUDY </p>
-                    <p class="cousine"> Alpha-Beta Pruning</p>
+                    {@html journals[2].cover}
                 </JournalCover>
             </div>
         </Link>
         {/if}
 
         {#if visibles[3]}
-        <Link to="/journals/title3">
+        <Link to="/journals/{journals[3].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
-                    <p class="syncopate"> DATA STRUCTURE STUDY </p>
-                    <p class="cousine"> Merkle DAG </p>
+                    {@html journals[3].cover}
                 </JournalCover>
             </div>
         </Link>

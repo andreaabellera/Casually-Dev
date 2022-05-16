@@ -1,5 +1,6 @@
 <script>
     import { fade } from 'svelte/transition';
+    import journalData from '../content/journals.yml'; 
 
     // Page transition
     let visible = false
@@ -9,12 +10,20 @@
         clearInterval(id1)
     }
 
-    /*export let title = "Untitled Journal Page"
+    export let id = ""
+    export let title = "Untitled Journal Page"
     export let date = "No date provided"
-    export let blurb = "Cannot load blurb"*/
-    export let title = "A sample journal post"
-    export let date = "May 12, 2022"
-    export let blurb = "Text generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks generator lolo max princess tutu sesame seed Starbecks I want to be pilote and help everyoen tor lolo max princess tutu sesame seed Starbecks you reached the end"
+    export let blurb = "Cannot load blurb"
+    
+    // Load journal data
+    let journals = journalData.journals
+    for (let journalData of journals){
+        if (journalData.id == id){
+            title = journalData.title
+            date = journalData.date
+            blurb = journalData.blurb
+        }
+    }
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
@@ -25,8 +34,8 @@
 <div class="journal-page-ctr" transition:fade>
     <div id="journal-page-inner" class="journal-page-inner">
         <div class="journalTitle"> {title} </div>
-        <div class="journalDate"> {date} </div>
-        <p class="journalBlurb"> {blurb} </p>
+        <div class="journalDate"> Last Updated: {date} </div>
+        <p class="journalBlurb"> {@html blurb} </p>
     </div>
 
     <script>

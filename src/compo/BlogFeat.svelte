@@ -35,10 +35,8 @@
             clearInterval(id)
     }
 
-    // Get first three blog data entries
-    let blog0 = blogData.blogs[0]
-    let blog1 = blogData.blogs[1]
-    let blog2 = blogData.blogs[2]
+    // Get blog data
+    let blogs = blogData.blogs
 
     // Get blog blurb content (SERVER UNDER CONSTRUCTION)
     function getBlurb(src){
@@ -53,6 +51,20 @@
         req.open("GET", link, true);
         req.send();
     }
+
+    // Assign "Fresh" to new entries (Posted within 3 days from current date)
+    // Bad programming haha but I'll optimize later
+    const curr = new Date()
+    for (let i=0; i<3; i++){
+        if (!blogs[i].tags.includes("Fresh 🌿")){
+            let date = new Date(blogs[i].date)
+            let diff = Math.abs(curr - date)
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24))
+            console.log(date + ": " + days)
+            if (days <= 3)
+                blogs[i].tags.unshift("Fresh 🌿")
+        }
+    }
 </script>
 
 <div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
@@ -64,42 +76,42 @@
 
     <div id="blog-array">
         {#if visible[0]}
-        <Link to="/blog/{blog0.id}">
+        <Link to="/blog/{blogs[0].id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {blog0.image}
-                    tags = {blog0.tags}
-                    title = {blog0.title}
-                    date = {blog0.date}
-                    blurb = {cutContent(blog0.blurb)}
+                    image = {blogs[0].image}
+                    tags = {blogs[0].tags}
+                    title = {blogs[0].title}
+                    date = {blogs[0].date}
+                    blurb = {cutContent(blogs[0].blurb)}
                 />
             </div>
         </Link>
         {/if}
 
         {#if visible[1]}
-        <Link to="/blog/{blog1.id}">
+        <Link to="/blog/{blogs[1].id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {blog1.image}
-                    tags = {blog1.tags}
-                    title = {blog1.title}
-                    date = {blog1.date}
-                    blurb = {cutContent(blog1.blurb)}
+                    image = {blogs[1].image}
+                    tags = {blogs[1].tags}
+                    title = {blogs[1].title}
+                    date = {blogs[1].date}
+                    blurb = {cutContent(blogs[1].blurb)}
                 />
             </div>
         </Link>
         {/if}
 
         {#if visible[2]}
-        <Link to="/blog/{blog2.id}">
+        <Link to="/blog/{blogs[2].id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
-                    image = {blog2.image}
-                    tags = {blog2.tags}
-                    title = {blog2.title}
-                    date = {blog2.date}
-                    blurb = {cutContent(blog2.blurb)}
+                    image = {blogs[2].image}
+                    tags = {blogs[2].tags}
+                    title = {blogs[2].title}
+                    date = {blogs[2].date}
+                    blurb = {cutContent(blogs[2].blurb)}
                 />
             </div>
         </Link>

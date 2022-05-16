@@ -1,19 +1,18 @@
 blogs:
-  - id: terraria_woohoo
+  - id: about-terraria
     title: Terraria Woohoo
     date: May 15, 2022
     tags:
       - Games 🎲
     image: https://ipfs.fleek.co/ipfs/bafybeian3spqzxy6ol2xxzx7fgai4w7p5g4rv3o4iv6mhfwaqxumpbftwm
-    blurb: "Terraria is a land of adventure! 
-    A land of mystery!
-    A land that's yours to shape, defend, and enjoy. Your options in Terraria are limitless.
+    blurb: "Terraria is a land of <span class='laBelleAurore x-large'> adventure.</span> A land of <span class='taviraj large'> mystery.</span>
+    A land that's yours to shape, defend, and enjoy. Your options in Terraria are limitless.<br><br>
     Are you an action gamer with an itchy trigger finger? A master builder? A collector? An explorer? There's something for everyone. 
     Start by building basic shelter, then dig for ore and other resources. 
     Discover and craft over 500 weapons of magic, ranged, melee and summon varieties, as well as armor, and use them to battle hundreds of different enemies. 
     Soon you'll be going head-to-head with any of a dozen enormous bosses. Go fishing, ride a mount, find Floating Islands, build houses for helpful NPCs, and much, much more."
 
-  - id: about_minecraft
+  - id: about-minecraft
     title: About Minecraft
     date: May 14, 2022
     tags:
@@ -24,7 +23,7 @@ blogs:
     Depending on game mode, players can fight computer-controlled mobs, as well as cooperate with or compete against other players in the same world. Game modes include a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode where players have unlimited resources and access to flight. 
     Players can modify the game to create new gameplay mechanics, items, and assets."
 
-  - id: import_socket
+  - id: import-socket
     title: Import Socket (Poem)
     short: socket
     date: May 10, 2022
@@ -32,26 +31,28 @@ blogs:
       - Life 💃🏻
       - Random 🍡
     image: 
-    blurb: "Ang socket ay masakit, 
-    kailangan mo kalasin
-    ang socket na masakit
-    kundi masasaktan ka rin
+    blurb: "<span class='cousine slightLarge'> import socket </span><br><br>
 
-    Napakasakit kumonekta
-    sa socket na masakit
-    Nakukuryente kita
-    Kapag ako'y nakakabit
+    Ang socket ay masakit, <br>
+    kailangan mo kalasin <br>
+    ang socket na masakit <br>
+    kundi masasaktan ka rin <br><br>
+    
+    Napakasakit kumonekta <br>
+    sa socket na masakit <br>
+    Nakukuryente kita <br>
+    Kapag ako'y nakakabit <br><br>
 
-    Kailan kakalasin
-    ang socket na masakim
+    Kailan kakalasin <br>
+    ang socket na masakim <br><br>
 
-    Kailan ako kakawala?
-    kung di ako aapila
+    Kailan ako kakawala? <br>
+    kung di ako aapila <br><br>
 
-    Kailan kakaltasan
-    ang kapos kapalaran
+    Kailan kakaltasan <br>
+    ang kapos kapalaran <br><br>
 
-    Kakayanan ko'y kaltasan
-    kapag hindi kinabukasan
-    Tiwala'y kinakaya kita
+    Kakayanan ko'y kaltasan <br>
+    kapag hindi kinabukasan <br>
+    Tiwala'y kinakaya kita <br>
     kahit di ko mabata"

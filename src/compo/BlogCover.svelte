@@ -25,7 +25,7 @@
                 </div>
                 <div class="blogTitle"> {title} </div>
                 <div class="blogDate"> {date} </div>
-                <p class="blogBlurb"> {blurb} </p>
+                <p class="blogBlurb"> {@html blurb} </p>
             </div>
             <div class="readMore">
                 <span style="padding: 0 1em 6em 0;"> tap to read </span>
