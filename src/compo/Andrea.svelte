@@ -1,6 +1,7 @@
 <script>
     import { fly } from 'svelte/transition';
 	import Heading from './Heading.svelte';
+    import Octopus from './art/Octopus.svelte';
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -13,14 +14,61 @@
         visible = true
         clearInterval(id1)
     }
+
+    // Content transition
+    let visibleC = false
+    let delay = 0
+    let id2 = setInterval(loadContent, 500)
+    function loadContent() {
+        if(delay==1){
+            visibleC = true
+            clearInterval(id2)
+        }
+        else
+            delay++
+    }
 </script>
 
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
 {#if visible}
-<div class="profile-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="andrea-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}
         <Heading title={"ABOUT"} />
     {/if}
 
+    {#if visibleC}
+        <div class="andrea-inner" transition:fly="{{y:100, duration: 800}}">
+            <Octopus />
+            <div class="coming-soon"> Coming next! </div> 
+        </div>
+    {/if}
 </div>
 {/if}
+
+<style>
+    .andrea-ctr {
+        height: max-content;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        margin: -8vh 0 10vh 0;
+    }
+
+    .andrea-inner {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        margin-top: -2vh;
+        margin-bottom: 5vh;
+    }
+
+    .coming-soon {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 3em;
+        margin-top: 1.5vh;
+        color: var(--coffee);
+    }
+</style>
 
