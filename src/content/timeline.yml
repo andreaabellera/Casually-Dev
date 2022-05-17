@@ -1,0 +1,72 @@
+timeline:
+    fall2019:
+        image: yes
+        title: Fall 2019
+        milestones: 
+            - one
+            - two
+            - three
+
+    winter2020:
+        image: yes
+        title: Winter 2020
+        milestones: 
+            - one
+            - two
+            - three
+
+    summer2020:
+        image: yes
+        title: Summer 2020
+        milestones: 
+            - one
+            - two
+            - three
+
+    fall2020:
+        image: yes
+        title: Fall 2020
+        milestones: 
+            - one
+            - two
+            - three
+
+    winter2021:
+        image: yes
+        title: Winter 2021
+        milestones: 
+            - one
+            - two
+            - three
+
+    summer2021:
+        image: yes
+        title: Summer 2021
+        milestones: 
+            - one
+            - two
+            - three
+
+    fall2021:
+        image: yes
+        title: Fall 2021
+        milestones: 
+            - one
+            - two
+            - three
+
+    winter2022:
+        image: yes
+        title: Winter 2022
+        milestones: 
+            - one
+            - two
+            - three
+
+    summer2022:
+        image: yes
+        title: Summer 2022
+        milestones: 
+            - one
+            - two
+            - three

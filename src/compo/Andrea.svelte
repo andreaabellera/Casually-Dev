@@ -60,7 +60,7 @@
         width: 100%;
         align-items: center;
         justify-items: center;
-        margin-top: -2vh;
+        margin-top: -15vh;
         margin-bottom: 5vh;
     }
 
