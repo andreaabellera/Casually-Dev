@@ -20,11 +20,11 @@
 
     // Entries transition
     let visibles = [false, false, false, false, false, false]
-    let id2 = setInterval(loadEntries, 350)
+    let id2 = setInterval(loadEntries, 150)
     let delay = 0
     let currV = 0
     function loadEntries() {
-        if(delay==2){
+        if(delay==5){
             visibles[currV] = true
             currV++
 
@@ -61,7 +61,7 @@
 
     <div id="journal-array">
 
-        {#if visibles[0]}
+    {#if visibles[0]}
         <Link to="/journals/{journals[0].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
@@ -119,7 +119,7 @@
             </div>
         </Link>
         {/if}
-        {/if}
+    {/if}
     </div>
 </div>
 {/if}
