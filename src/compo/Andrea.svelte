@@ -32,22 +32,54 @@
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
 {#if visible}
-<div class="andrea-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="about-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}
         <Heading title={"ABOUT"} />
     {/if}
 
     {#if visibleC}
-        <div class="andrea-inner" transition:fly="{{y:100, duration: 800}}">
+        <!-- <div class="andrea-inner" transition:fly="{{y:100, duration: 800}}">
             <Octopus />
             <div class="coming-soon"> Coming next! </div> 
+        </div> -->
+
+        <div id="about-ctr-inner">
+            <div class="photo-sect">
+                <div class="photo-ctr">
+                    <div class="fleur"></div>
+                    <div class="frame">
+                        <div class="photo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-box-inner">
+                    <div class="primary-text">
+                        <div class="greeting"> HOWDY </div>
+                        <div class="text"> My name is Andrea. I am a student in the university of machine gun </div>
+                        <div id="u-of-m" class="logoBadge"></div>
+                        <div class="text"> More things to share </div>
+                        <div id="td" class="logoBadge"></div>
+                        <div class="text"> Send me a message on <a href="https://www.linkedin.com/in/aabellera/">LinkedIn</a> or <a href="https://www.instagram.com/ateawa/">Instagram</a>.</div>
+                    </div>
+                    <div class="action-btns">
+                        <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div>
+                        <div id="resume" class="action-btn"> or Download my Résumé </div>
+                    </div>
+                    <div class="for-fun">
+                        <div id="stamp-collection"></div>
+                        <div id="drink-tier-list"></div>
+                        <div id="stone-bridges"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     {/if}
 </div>
 {/if}
 
 <style>
-    .andrea-ctr {
+    .about-ctr {
         height: max-content;
         width: 100%;
         display: grid;
