@@ -30,6 +30,9 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 {#if visible}
 <div class="about-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
@@ -43,33 +46,54 @@
             <div class="coming-soon"> Coming next! </div> 
         </div> -->
 
-        <div id="about-ctr-inner">
-            <div class="photo-sect">
+        <div id="about-ctr-inner" transition:fly="{{y:100, duration: 800}}">
+            <div id="photo-sect" class="sect">
                 <div class="photo-ctr">
                     <div class="fleur"></div>
                     <div class="frame">
-                        <div class="photo"></div>
+                        <div id="photo"></div>
                     </div>
                 </div>
             </div>
-            <div class="info-box">
-                <div class="info-box-inner">
-                    <div class="primary-text">
-                        <div class="greeting"> HOWDY </div>
-                        <div class="text"> My name is Andrea. I am a student in the university of machine gun </div>
-                        <div id="u-of-m" class="logoBadge"></div>
-                        <div class="text"> More things to share </div>
-                        <div id="td" class="logoBadge"></div>
-                        <div class="text"> Send me a message on <a href="https://www.linkedin.com/in/aabellera/">LinkedIn</a> or <a href="https://www.instagram.com/ateawa/">Instagram</a>.</div>
-                    </div>
-                    <div class="action-btns">
-                        <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div>
-                        <div id="resume" class="action-btn"> or Download my Résumé </div>
-                    </div>
-                    <div class="for-fun">
-                        <div id="stamp-collection"></div>
-                        <div id="drink-tier-list"></div>
-                        <div id="stone-bridges"></div>
+            <div id="info-sect" class="sect">
+                <div class="info-box">
+                    <div class="info-box-inner">
+                        <div class="primary-text">
+                            <div class="griddy-grid">
+                                <div id="bigH" class="greeting">H</div>
+                                <div class="greeting">ello! </div>
+                                <div class="info-row griddy-text"> 
+                                    My name is Andrea. I am a student in the university of machine gun 
+                                </div>
+                            </div>
+
+                            <div class="info-row logos">
+                                <!-- <div id="u-of-m" class="logoBadge"></div> -->
+                                <img src="https://ipfs.fleek.co/ipfs/bafybeibmpke7psgzgwmdo32imsyzryj3ep6l2oykjzkquhg5sq47ovp7ya" alt="University of Manitoba">
+                            </div>
+                            
+                            <div class="info-row"> 
+                                More things to share 
+                            </div>
+                            
+                            <div class="info-row logos">
+                                <!-- <div id="td" class="logoBadge"></div> -->
+                                <img src="https://ipfs.fleek.co/ipfs/bafybeib25qktipncncjuri6nkc55ftas3w4bshi7z3ijqz4he3iljg5mey" alt="Toronto-Dominion Bank">
+                            </div>
+
+                            <div class="info-row"> 
+                                Send me a message on <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a> or <a href="https://www.instagram.com/ateawa/"> Instagram</a>.
+                            </div>
+                        </div>
+                        <div class="action-btns">
+                            <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div>
+                            <div id="resume" class="action-btn"> or <a href="https://www.linkedin.com/in/aabellera/"> Download my Résumé</a></div>
+                        </div>
+                        <div class="for-fun">
+                            <div id="stamp-collection"></div>
+                            <div id="drink-tier-list"></div>
+                            <div id="stone-bridges"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,6 +111,7 @@
         margin: -8vh 0 10vh 0;
     }
 
+    /*
     .andrea-inner {
         display: grid;
         width: 100%;
@@ -101,6 +126,193 @@
         font-size: 3em;
         margin-top: 1.5vh;
         color: var(--coffee);
+    }*/
+
+    #about-ctr-inner{
+        display: grid;
+        grid-template-columns: 50% 40%;
+        /* margin-top: 3vh; */
+        position: relative;
+    }
+
+    .sect{
+        display: grid;
+        justify-items: center;
+    }
+
+    .photo-ctr{
+        position: relative;
+        width: 70%;
+        height: 100%;
+    }
+
+    .info-box{
+        height: max-content;
+        width: 90%;
+        color: var(--ink);
+        background-color: var(--bark);
+        box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 1.1em;
+        font-family: 'Taviraj', serif;
+        margin-top: -3vh;
+    }
+
+    .info-box-inner{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        margin: 8vh 0 6vh 0;
+        align-items: center;
+    }
+
+    #photo{
+        background-image: url(https://ipfs.fleek.co/ipfs/bafybeian3spqzxy6ol2xxzx7fgai4w7p5g4rv3o4iv6mhfwaqxumpbftwm);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 93%;
+        width: 90%;
+    }
+
+    .frame{
+        position: absolute;
+        z-index: 3;
+        transform: translateX(-50%);
+        left: 50%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 22em;
+        height: 32em;
+        background-color: var(--bark);
+        box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
+    }
+
+    #bigH{
+        font-size: 6.5em;
+        margin-top: -0.2em;
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+
+    .greeting{
+        font-family: 'Lancelot', cursive;
+        font-size: 3em;
+        margin-top: 1.5vh;
+        color: var(--coffee);
+    }
+
+    .griddy-grid{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .info-row{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5vh;
+    }
+
+    .logos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logos img{
+        height: 30%;
+        width: 30%;
+    }
+
+    img:hover{
+        animation: up 0.8s ease-out;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+    }
+
+    .frame:hover{
+        animation: upFrame 0.8s ease-out;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
+    }
+
+    .action-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .action-btn{
+        padding: 3vh 2vw 3vh 2vw;
+        width: 100%;
+    }
+
+    #tour{
+        border: 4px double var(--bark);
+        background-color: var(--oyster);
+    }
+
+    #tour:hover{
+        filter:brightness(110%);
+        transition: 0.3s;
+    }
+
+    @keyframes up{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(-0.6em);
+        }
+    }
+
+    @keyframes upFrame{
+        0%{
+            transform: translate(-50%, 0);
+        }
+        100%{
+            transform: translate(-50%, -0.6em);
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        #about-ctr-inner{
+            grid-template-columns: 1fr;
+            grid-template-rows: 88vh auto;
+        }
+
+        #bigH{
+            font-size: 5.5em;
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+
+        .griddy-text{
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+
+        .info-box{
+            color: black;
+            width: 100%;
+            margin-top: -7vh;
+        }
+
+        .info-box-inner{
+            width: 90%;
+        }
+
+        .info-row{
+            margin-bottom: 8vh;
+        }
+
+        .logos img{
+            height: 60%;
+            width: 60%;
+        }
     }
 </style>
 

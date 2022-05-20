@@ -65,7 +65,7 @@
     }
 
     .boba:hover{
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
+        cursor: pointer;
     }
 
     .above, .lid, .body, .bottom{
