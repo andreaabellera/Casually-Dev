@@ -1,7 +1,8 @@
 <script>
     import { fly } from 'svelte/transition';
 	import Heading from './Heading.svelte';
-    import Octopus from './art/Octopus.svelte';
+    import Blossom from './art/Blossom.svelte';
+    import CharmingButton from './art/CharmingButton.svelte';
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -41,15 +42,12 @@
     {/if}
 
     {#if visibleC}
-        <!-- <div class="andrea-inner" transition:fly="{{y:100, duration: 800}}">
-            <Octopus />
-            <div class="coming-soon"> Coming next! </div> 
-        </div> -->
-
         <div id="about-ctr-inner" transition:fly="{{y:100, duration: 800}}">
             <div id="photo-sect" class="sect">
                 <div class="photo-ctr">
-                    <div class="fleur"></div>
+                    <div id="fleur1"><Blossom /></div>
+                    <div id="fleur2"><Blossom color={"#CDFF9B"} height={"3em"} width={"3em"}/></div>
+                    <div id="fleur3"><Blossom color={"#6CA6B8"}/></div>
                     <div class="frame">
                         <div id="photo"></div>
                     </div>
@@ -68,7 +66,6 @@
                             </div>
 
                             <div class="info-row logos">
-                                <!-- <div id="u-of-m" class="logoBadge"></div> -->
                                 <img src="https://ipfs.fleek.co/ipfs/bafybeibmpke7psgzgwmdo32imsyzryj3ep6l2oykjzkquhg5sq47ovp7ya" alt="University of Manitoba">
                             </div>
                             
@@ -77,7 +74,6 @@
                             </div>
                             
                             <div class="info-row logos">
-                                <!-- <div id="td" class="logoBadge"></div> -->
                                 <img src="https://ipfs.fleek.co/ipfs/bafybeib25qktipncncjuri6nkc55ftas3w4bshi7z3ijqz4he3iljg5mey" alt="Toronto-Dominion Bank">
                             </div>
 
@@ -86,7 +82,8 @@
                             </div>
                         </div>
                         <div class="action-btns">
-                            <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div>
+                            <!-- <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div> -->
+                            <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
                             <div id="resume" class="action-btn"> or <a href="https://www.linkedin.com/in/aabellera/"> Download my Résumé</a></div>
                         </div>
                         <div class="for-fun">
@@ -111,27 +108,9 @@
         margin: -8vh 0 10vh 0;
     }
 
-    /*
-    .andrea-inner {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-items: center;
-        margin-top: -15vh;
-        margin-bottom: 5vh;
-    }
-
-    .coming-soon {
-        font-family: 'La Belle Aurore', cursive;
-        font-size: 3em;
-        margin-top: 1.5vh;
-        color: var(--coffee);
-    }*/
-
     #about-ctr-inner{
         display: grid;
         grid-template-columns: 50% 40%;
-        /* margin-top: 3vh; */
         position: relative;
     }
 
@@ -176,6 +155,27 @@
         background-repeat: no-repeat;
         height: 93%;
         width: 90%;
+    }
+
+    #fleur1{
+        position: absolute;
+        z-index: 5;
+        top: -2em;
+        left: 20%;
+    }
+
+    #fleur2{
+        position: absolute;
+        z-index: 4;
+        top: -2.75em;
+        left: 30%;
+    }
+
+    #fleur3{
+        position: absolute;
+        z-index: 5;
+        top: 30em;
+        left: 65%;
     }
 
     .frame{
@@ -235,7 +235,7 @@
 
     .frame:hover{
         animation: upFrame 0.8s ease-out;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .action-btns{
@@ -253,11 +253,6 @@
     #tour{
         border: 4px double var(--bark);
         background-color: var(--oyster);
-    }
-
-    #tour:hover{
-        filter:brightness(110%);
-        transition: 0.3s;
     }
 
     @keyframes up{
@@ -312,6 +307,25 @@
         .logos img{
             height: 60%;
             width: 60%;
+        }
+
+        #fleur1{
+            top: -2em;
+            left: -15%;
+        }
+
+        #fleur2{
+            position: absolute;
+            z-index: 4;
+            top: -2.75em;
+            left: 15%;
+        }
+
+        #fleur3{
+            position: absolute;
+            z-index: 5;
+            top: 30em;
+            left: 87%;
         }
     }
 </style>
