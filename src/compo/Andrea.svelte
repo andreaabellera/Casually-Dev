@@ -62,8 +62,12 @@
                                 <div id="bigH" class="greeting">H</div>
                                 <div class="greeting">ello! </div>
                                 <div class="info-row griddy-text"> 
-                                    My name is Andrea. I am a student in the university of machine gun 
+                                    My name is Andrea Abellera. I discovered my love for creation as a kid who created puzzles, board games, textbooks, stories, with a huge spiel of drawings.
                                 </div>
+                            </div>
+
+                            <div class="info-row"> 
+                                Discovering HTML and Flash-based virtual worlds sparked my desire to create things inside the computer. At 15, I graduated high school in the Philippines and moved with my family to Canada, allowing me to adapt culturally and gain exposure to animation, 3D models, different art media (clay, leather, textiles), programming, networks and cybersecurity. I took a year to go Bible College to pursue my love for God, Jesus Christ, to whom I attribute all things and has become my strength and buckler for years to come. I am currently studying Computer Science at the University of Manitoba hopeful to graduate on April 2023.
                             </div>
 
                             <div class="info-row logos">
@@ -71,7 +75,7 @@
                             </div>
                             
                             <div class="info-row"> 
-                                More things to share 
+                                I document my development journey, programming studies, thoughts and adventures with <b> qtrlex </b> by night. By day, I work with TD Bank as a Business Systems Analyst Intern, which is a tremendously great experience!
                             </div>
                             
                             <div class="info-row logos">
@@ -79,7 +83,9 @@
                             </div>
 
                             <div class="info-row"> 
-                                Send me a message on <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a> or <a href="https://www.instagram.com/ateawa/"> Instagram</a>.
+                                You can reach me best by sending a message on my 
+                                <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a>.  
+                                I frequent <a href="https://www.instagram.com/ateawa/"> Instagram </a> but will only accept connections from people I know personally.
                             </div>
                         </div>
                         <div class="action-btns">
@@ -196,7 +202,7 @@
     }
 
     #bigH{
-        font-size: 6.5em;
+        font-size: 7.5em;
         margin-top: -0.2em;
         grid-row: 1/3;
         grid-column: 1/2;
