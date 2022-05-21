@@ -87,7 +87,7 @@
                             <Link to="intermission">
                                 <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
                             </Link>
-                            <div id="resume" class="action-btn"> or <a href="https://www.linkedin.com/in/aabellera/"> Download my Résumé</a></div>
+                            <div id="resume" class="action-btn"> or <a href="https://ipfs.fleek.co/ipfs/bafybeifuietsx6mhmlpmn3xarwc43vaw4iqdaqxp6srnlhaafahmoevlam"> Download my Résumé</a></div>
                         </div>
                         <div class="for-fun">
                             <div id="stamp-collection"></div>

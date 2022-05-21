@@ -119,9 +119,6 @@
     height: 100%;
     width: 100%;
     background-image: radial-gradient(ellipse, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 100%);
-    }
-
-    .surface:hover{
     animation: surface 3s ease-out infinite;
     }
 
