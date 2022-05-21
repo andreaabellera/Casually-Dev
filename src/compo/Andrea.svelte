@@ -1,5 +1,6 @@
 <script>
     import { fly } from 'svelte/transition';
+    import { Link } from "svelte-routing";
 	import Heading from './Heading.svelte';
     import Blossom from './art/Blossom.svelte';
     import CharmingButton from './art/CharmingButton.svelte';
@@ -83,7 +84,9 @@
                         </div>
                         <div class="action-btns">
                             <!-- <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div> -->
-                            <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
+                            <Link to="intermission">
+                                <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
+                            </Link>
                             <div id="resume" class="action-btn"> or <a href="https://www.linkedin.com/in/aabellera/"> Download my Résumé</a></div>
                         </div>
                         <div class="for-fun">
@@ -250,10 +253,10 @@
         width: 100%;
     }
 
-    #tour{
+    /* #tour{
         border: 4px double var(--bark);
         background-color: var(--oyster);
-    }
+    } */
 
     @keyframes up{
         0%{

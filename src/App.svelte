@@ -9,6 +9,8 @@
 	import Galerie from './compo/Galerie.svelte';
 	import Revues from './compo/Revues.svelte';
 	import Andrea from './compo/Andrea.svelte';
+	import Intermission from './compo/Intermission.svelte';
+	import LaRuelle from './compo/LaRuelle.svelte';
 	import Footer from './compo/Footer.svelte';
 
 	let currNav = "nav-chezmoi"
@@ -40,6 +42,8 @@
 			<Route path="galerie" component="{Galerie}" />
 			<Route path="revues" component="{Revues}" />
 			<Route path="andrea" component="{Andrea}" />
+			<Route path="andrea/portfolio" component="{LaRuelle}" />
+			<Route path="intermission" component="{Intermission}" />
 			<!-- {#if swap === "nav-chezmoi"}
 				<ChezMoi on:selection={selectNav}/>
 			{:else if swap === "nav-blog"}

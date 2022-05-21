@@ -21,10 +21,7 @@
     position: relative;
     height: inherit;
     height: inherit;
-}
-
-.blossom:hover{
-    animation: spin 1.5s ease-in-out;
+    animation: spin 0.8s ease-in-out;
 }
 
 .mid{
@@ -49,19 +46,15 @@
 
 .half-height:nth-of-type(2){
     transform: rotate(72deg);
-    filter:brightness(98%);
     }
 .half-height:nth-of-type(3){
     transform: rotate(144deg);
-    filter:brightness(95%);
 }
 .half-height:nth-of-type(4){
     transform: rotate(216deg);
-    filter:brightness(92%);
 }
 .half-height:nth-of-type(5){
     transform: rotate(288deg);
-    filter:brightness(95%);
 }
 
 .petal{
@@ -78,7 +71,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(144deg);
   }
 }
 
