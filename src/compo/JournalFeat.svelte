@@ -2,16 +2,7 @@
     import Heading from './Heading.svelte';
 	import JournalCover from './JournalCover.svelte';
     import { Link } from "svelte-routing";
-    import { createEventDispatcher } from 'svelte';
     import journalData from '../content/journals.yml'; 
-
-    const dispatch = createEventDispatcher();
-
-    function selectNav() {
-        dispatch("selection", {
-            id: "nav-journals"
-        });
-    }
 
     // Get blog data
     let journals = journalData.journals
@@ -44,7 +35,7 @@
         </Link>
     </div>
     <Link to="journals">
-        <div id="blog-see-more" class="laBelleAurore" on:click={selectNav}><div> see more journals </div></div>
+        <div id="blog-see-more" class="laBelleAurore"><div> see more journals </div></div>
     </Link>
 </div>
 

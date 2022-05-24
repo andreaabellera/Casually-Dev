@@ -1,15 +1,6 @@
 <script>
     import GalerieFeat from './GalerieFeat.svelte';
     import ProjectFeat from './ProjectFeat.svelte';
-    import { createEventDispatcher } from 'svelte';
-
-    const dispatch = createEventDispatcher();
-
-    function selectNav(event) {
-        dispatch("selection", {
-            id: event.detail.id
-        });
-    }
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
@@ -19,7 +10,6 @@
         <GalerieFeat 
             title={"The Queen Moves Forward"} 
             image={"https://ipfs.fleek.co/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
-            on:selection={selectNav}
         />
         <ProjectFeat />
     </div>

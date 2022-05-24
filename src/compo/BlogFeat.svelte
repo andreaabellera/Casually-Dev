@@ -3,16 +3,7 @@
     import Heading from './Heading.svelte';
     import BlogCover from './BlogCover.svelte';
     import { Link } from "svelte-routing";
-    import { createEventDispatcher } from 'svelte';
     import blogData from '../content/blogs.yml'; 
-
-    const dispatch = createEventDispatcher();
-
-    function selectNav() {
-        dispatch("selection", {
-            id: "nav-blog"
-        });
-    }
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -129,7 +120,7 @@
     {#if visible[3]}
     <div class="blog-sm" transition:fly="{{ y: 50, duration: 800 }}">
         <Link to="blog">
-            <div id="blog-see-more" class="laBelleAurore" on:click="{selectNav}"><div> see more blogs </div></div>
+            <div id="blog-see-more" class="laBelleAurore"><div> see more blogs </div></div>
         </Link>
     </div>
     {/if}

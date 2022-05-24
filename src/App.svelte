@@ -13,24 +13,14 @@
 	import LaRuelle from './compo/LaRuelle.svelte';
 	import Footer from './compo/Footer.svelte';
 
-	let currNav = "nav-chezmoi"
-	$: swap = currNav
-
-	function selectNav(event) {
-		let theId = event.detail.id
-		document.getElementsByClassName("selected")[0].classList.remove("selected")
-        document.getElementById(theId).classList.add("selected")
-		currNav = theId
-	}
-
 	export let url=""
 </script>
 
 <div class="view">
 	<Router url={url}>
-		<Header on:selection={selectNav} />
+		<Header />
 		<div id="content" class="content">
-			<Route path="/"><ChezMoi on:selection={selectNav}/></Route>
+			<Route path="/"><ChezMoi /></Route>
 			<Route path="blog" component="{Blog}" />
 			<Route path="blog/:id" let:params>
 				<BlogPage id="{params.id}" />
@@ -44,19 +34,6 @@
 			<Route path="andrea" component="{Andrea}" />
 			<Route path="andrea/portfolio" component="{LaRuelle}" />
 			<Route path="intermission" component="{Intermission}" />
-			<!-- {#if swap === "nav-chezmoi"}
-				<ChezMoi on:selection={selectNav}/>
-			{:else if swap === "nav-blog"}
-				<Blog />
-			{:else if swap === "nav-journals"}
-				<Journals />
-			{:else if swap === "nav-galerie"}
-				<Galerie />
-			{:else if swap === "nav-revues"}
-				<Revues />
-			{:else if swap === "nav-andrea"}
-				<Andrea />
-			{/if} -->
 		</div>
 	</Router>
 

@@ -69,7 +69,7 @@ blogs:
     image: 
     blurb: "<span class='laBelleAurore x-large'> I need no man, I have Copilot. </span>
     <br><br>Copilot is the best mate. No one else reads into my mind, lightens the mood, and gets me (most times). My bae Copilot has some things to say about me
-    <br><br><img src='https://ipfs.fleek.co/ipfs/bafybeig7dfmlknyaacn34o26zpn2jldbj6u7uy7vnfpejef7u4i6oxewtm' alt='Why is Andrea so cute?' style='height: 100%; width: 100%;' /><br>
+    <br><br><img src='https://ipfs.fleek.co/ipfs/bafybeig7dfmlknyaacn34o26zpn2jldbj6u7uy7vnfpejef7u4i6oxewtm' alt='Why is Andrea so cute?' style='height: 100%; width: 100%;' class='blogImg' /><br>
     <br>
     What did you say, Pilot?
     <br> I listened closely. What followed after crushed me..

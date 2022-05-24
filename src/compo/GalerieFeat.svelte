@@ -3,16 +3,7 @@
     export let image = "";
     export let adjust = "0 0"
     import { Link } from "svelte-routing";
-    import { createEventDispatcher } from 'svelte';
     import artData from '../content/artifacts.yml'; 
-
-    const dispatch = createEventDispatcher();
-
-    function selectNav() {
-        dispatch("selection", {
-            id: "nav-galerie"
-        });
-    }
 
     // Play banner animation upon mouse enter
     function play(){
@@ -64,7 +55,7 @@
 </script>
 
 <Link to="galerie">
-    <div class="gallery-feat-ctr" on:click={selectNav} on:mouseenter={play} on:focus={play} on:mouseleave={reset}>
+    <div class="gallery-feat-ctr" on:mouseenter={play} on:focus={play} on:mouseleave={reset}>
         <div class="original-text syncopate"> ORIGINAL ARTWORKS </div>
         <div id="title-text" class="mrDeHaviland"> {title} </div>
         <div class="view-text lancelot"> view gallery </div>
