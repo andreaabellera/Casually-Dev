@@ -94,6 +94,7 @@
     .blogTags{
         display: flex;
         margin: 1vh 0 5.5vh 0;
+        flex-wrap: wrap;
     }
 
     .blogTag{
@@ -101,6 +102,7 @@
         font-size: 1em;
         box-shadow: 0.05em 0.1em 0.1em rgba(0,0,0,0.2);
         margin-right: 0.2em;
+        margin-top: 0.75vh;
         border-radius: 2em;
         background-color: var(--mocha);
         color: var(--oyster);

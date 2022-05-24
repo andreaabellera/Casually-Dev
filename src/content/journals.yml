@@ -2,48 +2,11 @@ journals:
   - id: competitive-programming-handbook
     cover: "<p class='cousine' style='font-size: 75%;'> Breaking into </p><p class='cousine' style='font-size: 110%;'> Competitive Programming</p><p class='syncopate'> HANDBOOK </p>"
     title: Breaking into Competitive Programming
-    date: May 12, 2022
+    date: May 24, 2022
     blurb: "Competitive Programming Handbook coming soon."
 
-  - id: open-source-handbook
-    cover: "<p class='cousine' style='font-size: 75%;'> Breaking into </p><p class='cousine' style='font-size: 110%;'> Open Source </p><p class='syncopate'> HANDBOOK </p>"
-    title: Breaking into Open Source
-    date: May 12, 2022
-    blurb: "Open Source Handbook coming soon."
-
-  - id: alpha-beta-pruning
-    cover: "<p class='syncopate'> ALGORITHM STUDY </p><p class='cousine'> Alpha-Beta Pruning</p>"
-    title: Alpha-Beta Pruning Algorithm Study
-    date: May 12, 2022
-    blurb: "Alpha–beta pruning is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. 
-    It is an adversarial search algorithm used commonly for machine playing of two-player games (Tic-tac-toe, Chess, Connect 4, etc.). 
-    It stops evaluating a move when at least one possibility has been found that proves the move to be worse than a previously examined move. 
-    Such moves need not be evaluated further. When applied to a standard minimax tree, it returns the same move as minimax would, but prunes away branches that cannot possibly influence the final decision. <br><br>
-    - Placeholder blurb thanks to Wikipedia"
-
-  - id: merkle-dag
-    cover: "<p class='syncopate'> DATA STRUCTURE STUDY </p><p class='cousine'> Merkle DAG </p>"
-    title: Merkle DAG Data Structure Study
-    date: May 12, 2022
-    blurb: "When we represent graphs on a computer, we don’t have the luxury of drawing arrows; 
-    we have to encode our data structure by providing a concrete representation of its nodes and edges. 
-    Since CIDs can uniquely identify a node, we can use them to express an edge from one node to another. 
-    By doing so we create a special sort of DAG known as a Merkle DAG, in honor of the researcher who first described such structures. <br><br>
-    - Placeholder blurb thanks to ProtoSchool"
-
-  - id: kruskals-algorithm
-    cover: "<p class='syncopate'> ALGORITHM STUDY </p><p class='cousine'> Kruskal's Algorithm</p>"
-    title: Alpha-Beta Pruning Algorithm Study
-    date: May 12, 2022
-    blurb: "Kruskal's algorithm finds a minimum spanning forest of an undirected edge-weighted graph. 
-    If the graph is connected, it finds a minimum spanning tree. (A minimum spanning tree of a connected graph is a subset of the edges that forms a tree that includes every vertex, where the sum of the weights of all the edges in the tree is minimized. For a disconnected graph, a minimum spanning forest is composed of a minimum spanning tree for each connected component.) 
-    It is a greedy algorithm in graph theory as in each step it adds the next lowest-weight edge that will not form a cycle to the minimum spanning forest.
-    This algorithm first appeared in Proceedings of the American Mathematical Society, pp. 48–50 in 1956, and was written by Joseph Kruskal. <br><br>
-    - Placeholder blurb thanks to Wikipedia"
-
-  - id: bellman-ford-algorithm
-    cover: "<p class='syncopate'> ALGORITHM STUDY </p><p class='cousine'> Bellman-Ford-Algorithm</p>"
-    title: Bellman-Ford Algorithm Study
-    date: May 12, 2022
-    blurb: "The Bellman–Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.[1] It is slower than Dijkstra's algorithm for the same problem, but more versatile, as it is capable of handling graphs in which some of the edge weights are negative numbers. <br><br>
-    - Placeholder blurb thanks to Wikipedia"
+  - id: casually-art-manuals
+    cover: "<p class='laBelleAurore large'> Casually Art </p> <p class='lancelot large'> MANUALS </p>"
+    title: Casually Art Manuals
+    date: May 24, 2022
+    blurb: "Casually Art Manuals coming soon."

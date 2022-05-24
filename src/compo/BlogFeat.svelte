@@ -46,7 +46,8 @@
     // Assign "Fresh" to new entries (Posted within 3 days from current date)
     // Bad programming haha but I'll optimize later
     const curr = new Date()
-    for (let i=0; i<3; i++){
+    let len = blogs.length
+    for (let i=0; i<len; i++){
         if (!blogs[i].tags.includes("Fresh 🌿")){
             let date = new Date(blogs[i].date)
             let diff = Math.abs(curr - date)
@@ -65,7 +66,7 @@
     {/if}
 
     <div id="blog-array">
-        {#if visible[0]}
+        {#if visible[0] && blogs[0]}
         <Link to="/blog/{blogs[0].id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
@@ -79,7 +80,7 @@
         </Link>
         {/if}
 
-        {#if visible[1]}
+        {#if visible[1] && blogs[1]}
         <Link to="/blog/{blogs[1].id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
@@ -93,7 +94,7 @@
         </Link>
         {/if}
 
-        {#if visible[2]}
+        {#if visible[2] && blogs[2]}
         <Link to="/blog/{blogs[2].id}">
             <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover

@@ -13,26 +13,34 @@
 <div class="journal-feat-ctr">
     <Heading title={"JOURNALS"} />
     <div id="journal-array">
+        {#if journals[0]}
         <Link to="/journals/{journals[0].id}">
             <JournalCover>
                 {@html journals[0].cover}
             </JournalCover>
         </Link>
+        {/if}
+        {#if journals[1]}
         <Link to="/journals/{journals[1].id}">
             <JournalCover>
                 {@html journals[1].cover}
             </JournalCover>
         </Link>
+        {/if}
+        {#if journals[2]}
         <Link to="/journals/{journals[2].id}">
             <JournalCover>
                 {@html journals[2].cover}
             </JournalCover>
         </Link>
+        {/if}
+        {#if journals[3]}
         <Link to="/journals/{journals[3].id}">
             <JournalCover>
                 {@html journals[3].cover}
             </JournalCover>
         </Link>
+        {/if}
     </div>
     <Link to="journals">
         <div id="blog-see-more" class="laBelleAurore"><div> see more journals </div></div>

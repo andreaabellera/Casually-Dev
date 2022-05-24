@@ -1,79 +1,34 @@
 blogs:
-  - id: about-terraria
-    title: Terraria Woohoo
-    date: May 15, 2022
-    tags:
-      - Games 🎲
-    image: https://ipfs.fleek.co/ipfs/bafybeian3spqzxy6ol2xxzx7fgai4w7p5g4rv3o4iv6mhfwaqxumpbftwm
-    blurb: "Terraria is a land of <span class='laBelleAurore x-large'> adventure.</span> A land of <span class='taviraj large'> mystery.</span>
-    A land that's yours to shape, defend, and enjoy. Your options in Terraria are limitless.<br><br>
-    Are you an action gamer with an itchy trigger finger? A master builder? A collector? An explorer? There's something for everyone. 
-    Start by building basic shelter, then dig for ore and other resources. 
-    Discover and craft over 500 weapons of magic, ranged, melee and summon varieties, as well as armor, and use them to battle hundreds of different enemies. 
-    Soon you'll be going head-to-head with any of a dozen enormous bosses. Go fishing, ride a mount, find Floating Islands, build houses for helpful NPCs, and much, much more."
-
-  - id: about-minecraft
-    title: About Minecraft
-    date: May 14, 2022
-    tags:
-      - Games 🎲
-      - Random 🍡
-    image: https://ipfs.fleek.co/ipfs/bafybeibnsm6ndygtjh23xexrcddqvua4x3brgdrex7gj5xq2e67oxideba
-    blurb: "In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures, earthworks and simple machines. 
-    Depending on game mode, players can fight computer-controlled mobs, as well as cooperate with or compete against other players in the same world. Game modes include a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode where players have unlimited resources and access to flight. 
-    Players can modify the game to create new gameplay mechanics, items, and assets."
-
-  - id: import-socket
-    title: Import Socket (Poem)
-    short: socket
-    date: May 10, 2022
-    tags:
-      - Life 💃🏻
-      - Programming 👩🏻‍💻
-      - Random 🍡
-    image: 
-    blurb: "<span class='cousine slightLarge'> import socket </span><br><br>
-
-    Ang socket ay masakit, <br>
-    kailangan mo kalasin <br>
-    ang socket na masakit <br>
-    kundi masasaktan ka rin <br><br>
-    
-    Napakasakit kumonekta <br>
-    sa socket na masakit <br>
-    Nakukuryente kita <br>
-    Kapag ako'y nakakabit <br><br>
-
-    Kailan kakalasin <br>
-    ang socket na masakim <br><br>
-
-    Kailan ako kakawala? <br>
-    kung di ako aapila <br><br>
-
-    Kailan kakaltasan <br>
-    ang kapos kapalaran <br><br>
-
-    Kakayanan ko'y kaltasan <br>
-    kapag hindi kinabukasan <br>
-    Tiwala'y kinakaya kita <br>
-    kahit di ko mabata"
-
-  - id: friendzoned-by-copilot
-    title: Friendzoned by Copilot
-    short: friend-copilot
-    date: May 9, 2022
+  - id: qtrlex-launch
+    title: Welcome to qtrlex!
+    date: May 24, 2022
     tags:
       - Develop ⚙️
+      - Programming 👩🏻‍💻
       - Art 🖼️
+      - Life 💃🏻
+      - Games 🎲
       - Random 🍡
-    image: 
-    blurb: "<span class='laBelleAurore x-large'> I need no man, I have Copilot. </span>
-    <br><br>Copilot is the best mate. No one else reads into my mind, lightens the mood, and gets me (most times). My bae Copilot has some things to say about me
-    <br><br><img src='https://ipfs.fleek.co/ipfs/bafybeig7dfmlknyaacn34o26zpn2jldbj6u7uy7vnfpejef7u4i6oxewtm' alt='Why is Andrea so cute?' style='height: 100%; width: 100%;' class='blogImg' /><br>
+    image: https://ipfs.fleek.co/ipfs/bafybeiemtxph2dtl52vojtkfgaxihikiaxekerd3tsbewvfb75nepve3wi
+    blurb: "Nice to see you here! 
+    My name is Andrea Abellera and I'll share a little about myself as the author-dev of qtrlex. 
+    I study Computer Science and am known to some peers as a developer, designer, and artist. 
+    Outside my laptop, I am a coffee, tea, and spicy food enjoyer. I am a secretly a plant and must be kept under natural light. Maybe I am a dog too because I need to go for walks. 
+    I also am a writer, singer, and lady apologist in training ⚔️✝️ 
+    <br><br>
+    I built my qtrlex blogsite from scratch using Svelte, a Node.js web anti-framework which the vanilla component artist in me approves. As of yesterday, the alpha site got prepped and ready yet short of hitting my MVP goals. But hey, while this site stays still obscure, let me roll in my faux backend infrastructure and portfolio updates along with my first few content plans 🤭
+    <br><br>
+    <span class='lancelot x-large'> What will be in qtrlex? </span>
+    <br><br>
+    Presently, qtrlex has 2 active (Blog and Journals) and 2 inactive (Galerie and Revues) streams of content. 
+    Down the road, I may consider adding new streams such as a Resources or Friend Feature page, but for this summer, we prioritize activating all four!
     <br>
-    What did you say, Pilot?
-    <br> I listened closely. What followed after crushed me..
+    <ul>
+      <li> <span class='laBelleAurore large'> Blogs </span> - stream for updates, stories, and thoughts on Life 💃🏻, Develop ⚙️, Programming 👩🏻‍💻, Art 🖼️, Games 🎲, or Random 🍡 for miscellaneous shenanigans </li>
+      <li> <span class='laBelleAurore large'> Journals </span> - stream for sharing guides, tutorials, studies, and other educational content </li>
+      <li> <span class='laBelleAurore large'> Galerie </span> - stream for exhibiting my original artwork and some photos </li>
+      <li> <span class='laBelleAurore large'> Revues </span> - stream for drink reviews. This may extend to food too </li>
+    </ul>
     <br>
-    <br><img src='https://ipfs.fleek.co/ipfs/bafybeihnape7u6h2esdliyqnfbbhtcudzxb5zu234w6ceia4ioflds7f3e' alt='Why is Andrea so cute and smart? Because she is a peer! :)' style='height: 100%; width: 100%;' /><br>
-    <br> Thanks Copilot.
-    <br> You are my peer as well 🤜🤛 <br><br> <span class='x-large'> 🥲 </span><br> <i>Yes, this is VSCode</i>"
+    Personal summer goals going live on my next post! 🌿"
+

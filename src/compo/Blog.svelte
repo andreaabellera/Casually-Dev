@@ -89,7 +89,7 @@
     {/if}
 
     <div id="blog-array">
-        {#if visibles[0]}
+        {#if visibles[0] && blogs[0]}
         <Link to="/blog/{blogs[0].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
@@ -103,7 +103,7 @@
         </Link>
         {/if}
 
-        {#if visibles[1]}
+        {#if visibles[1] && blogs[1]}
         <Link to="/blog/{blogs[1].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
@@ -117,7 +117,7 @@
         </Link>
         {/if}
 
-        {#if visibles[2]}
+        {#if visibles[2] && blogs[2]}
         <Link to="/blog/{blogs[2].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover
@@ -130,7 +130,7 @@
         </Link>
         {/if}
 
-        {#if visibles[3]}
+        {#if visibles[3] && blogs[3]}
         <Link to="/blog/{blogs[3].id}">
             <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                 <BlogCover

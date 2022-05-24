@@ -52,6 +52,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
 {#if visible}
 <div class="journal-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
@@ -61,7 +63,7 @@
 
     <div id="journal-array">
 
-    {#if visibles[0]}
+    {#if visibles[0] && journals[0]}
         <Link to="/journals/{journals[0].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
@@ -71,7 +73,7 @@
         </Link>
         {/if}
 
-        {#if visibles[1]}
+        {#if visibles[1] && journals[1]}
         <Link to="/journals/{journals[1].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
@@ -81,7 +83,7 @@
         </Link>
         {/if}
 
-        {#if visibles[2]}
+        {#if visibles[2] && journals[2]}
         <Link to="/journals/{journals[2].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
@@ -91,7 +93,7 @@
         </Link>
         {/if}
 
-        {#if visibles[3]}
+        {#if visibles[3] && journals[3]}
         <Link to="/journals/{journals[3].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
@@ -101,7 +103,7 @@
         </Link>
         {/if}
 
-        {#if visibles[4]}
+        {#if visibles[4] && journals[4]}
         <Link to="/journals/{journals[4].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
@@ -110,7 +112,7 @@
             </div>
         </Link>
 
-        {#if visibles[5]}
+        {#if visibles[5] && journals[5]}
         <Link to="/journals/{journals[5].id}">
             <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                 <JournalCover>
