@@ -1,8 +1,6 @@
-## Launching 🚀 MAY 23
-
 ![qtrlex banner](./public/qtrlex_banner.png)
 
-## Hi, I'm Andrea! 🍵
+## Hi, I'm Andrea!
 Come one, come all to **qtrlex**, Andrea's personal blog, portfolio, girl cave! This will be my summer pilot project integrating content creation to my lifestyle. In **qtrlex**, I will write about my development experiences and milestones, share verses and stories, journal my programming studies, post art and photos, vent on life (moderately), and include anything that I'd be inclined to share 
 
 Appearances of other names and faces will only be done with consent. Mentions of interactions or other perspectives will be coded with common terms (e.g. friend, colleague)

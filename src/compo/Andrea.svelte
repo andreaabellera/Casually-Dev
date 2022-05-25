@@ -299,6 +299,10 @@
             grid-column: 1/3;
         }
 
+        #info-sect{
+            margin-top: 12vh;
+        }
+
         .info-box{
             color: black;
             width: 100%;
