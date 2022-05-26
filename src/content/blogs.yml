@@ -1,7 +1,7 @@
 blogs:
   - id: introducing-casually-css
     title: Introducing my Passion Project, Casually CSS
-    date: May 25, 2022
+    date: May 26, 2022
     tags:
       - Develop ⚙️
       - Art 🖼️
@@ -97,6 +97,7 @@ blogs:
     <li> Ready Casually CSS for distribution and launch a publicity campaign (details on an upcoming blog post) </li>
     <li> The lone adventurer in myself seeks to join a CSS artist's guild if one of such fabled orders exist.. </li>
     <li> Develop an app with SOL (Solana or Solidity, whichever I get first 😉) </li>
+    <li> Based on progress with Casually CSS, start scoping for viability of Casually Components </li>
     <li> Inspired to refute a Reddit claim that you cannot make a game with just HTML and CSS, I will make a logical game with just HTML and CSS... </li>
     <li> A retrospective blog post exploring current progress and accomplishments of goals on the beginning week of each month </li>
     <li> Beyond summer, I may evaluate new milestones for life's next page </li>
