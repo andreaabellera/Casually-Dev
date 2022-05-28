@@ -1,4 +1,17 @@
 blogs:
+  - id: may-27-adventure
+    title: Professing my love to Busses, also Lounges
+    date: May 28, 2022
+    tags:
+      - Life 💃🏻
+    image: https://ipfs.fleek.co/ipfs/bafybeieeynogwbmqdlkxgzh3nod7wun6g2tw5f32nprspxscwurwpw46vi
+    blurb: "Today's a little different. I had an adventure and went to campus today! 
+    I love bussing, even if it takes me two rides. I've been used to commuting far and in the Phil, I loved the jeepneys and tricycles that took me to school and back. My favorite part is choosing stopovers: whether it be the city center, a mall, a marketplace, a clubhouse and I can grab all the supplies I need and snag whichever of the 1768+ street foods I crave.
+    <br><br>
+    <img src='https://ipfs.fleek.co/ipfs/bafybeig4u74ikxl57xofmaeimb37gkyaooepukgi5i6243at3i24xifngm' alt='Winnipeg Transit Station'>
+    <br><br>
+    I usually stay in our university club lounges where I'm able to secure a working spot with an added value of meeting new people! As such, I met some racecar building engineers in one. In another, I met a friend in our Computer Science lounge who gave me an orange because I did not pack lunch 😆 I met another friend later on who let me try riding his electric scooter. I was barely able to stay on but it was fun 🐒 Finally, I attended my university's Women in Computer Science first orientation. I met lots old friends and women my junior with so much potential! Oh yeah, I've been sipping tea and noticing an influx of commentary by adults about TechLead's tweets and watching them spar on LinkedIn. I used to stumble by TechLead and watch some of his Youtube vids, got bad track record for demeaning a peer years ago, and lately has just been shooting his foot. I'm not overtly concerned to be honest. A woman's competence will speak for itself, can't stop a girl who loves to code from coding, and tech is a great career choice for its flexibility. I bussed home with a very close friend. After full day of remote work and activities, I did not realize how tired I was. Surely enough, I crash landed on bed. But hey, now I'm up again to write this blog (yay!) and do a survey. I'll take another nap before I follow with next commits, it's 6am 😜"
+
   - id: introducing-casually-css
     title: Introducing my Passion Project, Casually CSS
     date: May 26, 2022
