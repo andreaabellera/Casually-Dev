@@ -14,20 +14,20 @@
         return content.substring(0, 160) + "...";
     }
 
+    // Get blog data, limit to 6 posts
+    let blogs = blogData.blogs.slice(0, 6)
+    let visibles = [false, false, false, false, false, false]
+
     // Transition effect
-    let visible = [false, false, false, false, false, false]
     let currV = 0
     let id = setInterval(loadEntries, 200)
     function loadEntries() {
-        visible[currV] = true
+        visibles[currV] = true
         currV++
 
-        if(currV == visible.length)
+        if(currV == visibles.length)
             clearInterval(id)
     }
-
-    // Get blog data
-    let blogs = blogData.blogs
 
     // Get blog blurb content (SERVER UNDER CONSTRUCTION)
     function getBlurb(src){
@@ -66,91 +66,21 @@
     {/if}
 
     <div id="blog-array">
-        {#if visible[0] && blogs[0]}
-        <Link to="/blog/{blogs[0].id}">
-            <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[0].image}
-                    tags = {blogs[0].tags}
-                    title = {blogs[0].title}
-                    date = {blogs[0].date}
-                    blurb = {cutContent(blogs[0].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
-
-        {#if visible[1] && blogs[1]}
-        <Link to="/blog/{blogs[1].id}">
-            <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[1].image}
-                    tags = {blogs[1].tags}
-                    title = {blogs[1].title}
-                    date = {blogs[1].date}
-                    blurb = {cutContent(blogs[1].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
-
-        {#if visible[2] && blogs[2]}
-        <Link to="/blog/{blogs[2].id}">
-            <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[2].image}
-                    tags = {blogs[2].tags}
-                    title = {blogs[2].title}
-                    date = {blogs[2].date}
-                    blurb = {cutContent(blogs[2].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
-
-        {#if !isMobile}
-            {#if visible[3] && blogs[3]}
-            <Link to="/blog/{blogs[3].id}">
-                <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+    {#each blogs as blog, i}
+        {#if visibles[i] && blog}
+            <Link to="/blog/{blog.id}">
+                <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                     <BlogCover
-                        image = {blogs[3].image}
-                        tags = {blogs[3].tags}
-                        title = {blogs[3].title}
-                        date = {blogs[3].date}
-                        blurb = {cutContent(blogs[3].blurb)}
+                        image = {blog.image}
+                        tags = {blog.tags}
+                        title = {blog.title}
+                        date = {blog.date}
+                        blurb = {cutContent(blog.blurb)}
                     />
                 </div>
             </Link>
-            {/if}
-
-            {#if visible[4] && blogs[4]}
-            <Link to="/blog/{blogs[4].id}">
-                <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
-                    <BlogCover
-                        image = {blogs[4].image}
-                        tags = {blogs[4].tags}
-                        title = {blogs[4].title}
-                        date = {blogs[4].date}
-                        blurb = {cutContent(blogs[4].blurb)}
-                    />
-                </div>
-            </Link>
-            {/if}
-
-            {#if visible[5] && blogs[5]}
-            <Link to="/blog/{blogs[5].id}">
-                <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
-                    <BlogCover
-                        image = {blogs[5].image}
-                        tags = {blogs[5].tags}
-                        title = {blogs[5].title}
-                        date = {blogs[5].date}
-                        blurb = {cutContent(blogs[5].blurb)}
-                    />
-                </div>
-            </Link>
-            {/if}
         {/if}
+    {/each}
     </div>
 
     <div class="filter">
@@ -162,7 +92,7 @@
         </div>
     </div>
 
-    {#if visible[3]}
+    {#if visibles[3]}
     <div class="blog-sm" transition:fly="{{ y: 50, duration: 800 }}">
         <Link to="blog">
             <div id="blog-see-more" class="laBelleAurore"><div> see more blogs </div></div>

@@ -133,7 +133,7 @@
     }
 
     .blogBlurb{
-        color: var(--oyster);
+        color: var(--ink);
         font-size: 0.9em;
     }
 
@@ -182,10 +182,6 @@
         .blogThumb{
             width: 5em;
             box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
-        }
-
-        .blogBlurb{
-            color: var(--ink);
         }
 
         .readMore{

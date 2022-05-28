@@ -50,6 +50,12 @@
         return content.substring(0, 160) + "..."
     }
 
+    // Get blog data
+    let blogs = blogData.blogs
+    let visibles = []
+    for(let i=0; i < blogs.length; i++)
+        visibles.push(false)
+
     // Page transition
     let visible = false
     let filterVisible = false
@@ -58,8 +64,8 @@
         visible = true
         clearInterval(id1)
     }
+
     // Entries transition
-    let visibles = [false, false, false, false, false]
     let id2 = setInterval(loadEntries, 200)
     let delay = 0
     let currV = 0
@@ -76,8 +82,6 @@
             delay++
     }
 
-    // Get blog data
-    let blogs = blogData.blogs
 </script>
 
 {#if visible}
@@ -105,74 +109,21 @@
     {/if}
 
     <div id="blog-array">
-        {#if visibles[0] && blogs[0]}
-        <Link to="/blog/{blogs[0].id}">
-            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[0].image}
-                    tags = {blogs[0].tags}
-                    title = {blogs[0].title}
-                    date = {blogs[0].date}
-                    blurb = {cutContent(blogs[0].blurb)}
-                />
-            </div>
-        </Link>
+    {#each blogs as blog, i}
+        {#if visibles[i] && blog}
+            <Link to="/blog/{blog.id}">
+                <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                    <BlogCover
+                        image = {blog.image}
+                        tags = {blog.tags}
+                        title = {blog.title}
+                        date = {blog.date}
+                        blurb = {cutContent(blog.blurb)}
+                    />
+                </div>
+            </Link>
         {/if}
-
-        {#if visibles[1] && blogs[1]}
-        <Link to="/blog/{blogs[1].id}">
-            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[1].image}
-                    tags = {blogs[1].tags}
-                    title = {blogs[1].title}
-                    date = {blogs[1].date}
-                    blurb = {cutContent(blogs[1].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
-
-        {#if visibles[2] && blogs[2]}
-        <Link to="/blog/{blogs[2].id}">
-            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    tags = {blogs[2].tags}
-                    title = {blogs[2].title}
-                    date = {blogs[2].date}
-                    blurb = {cutContent(blogs[2].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
-
-        {#if visibles[3] && blogs[3]}
-        <Link to="/blog/{blogs[3].id}">
-            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[3].image}
-                    tags = {blogs[3].tags}
-                    title = {blogs[3].title}
-                    date = {blogs[3].date}
-                    blurb = {cutContent(blogs[3].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
-
-        {#if visibles[4] && blogs[4]}
-        <Link to="/blog/{blogs[4].id}">
-            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
-                <BlogCover
-                    image = {blogs[4].image}
-                    tags = {blogs[4].tags}
-                    title = {blogs[4].title}
-                    date = {blogs[4].date}
-                    blurb = {cutContent(blogs[4].blurb)}
-                />
-            </div>
-        </Link>
-        {/if}
+    {/each}
     </div>
 
 </div>
@@ -214,11 +165,11 @@
     }
 
     .filter-box-title{
-        font-size: 2.5em;
+        font-size: 2em;
         margin-bottom: 2vh;
         width: 100%;
         padding-bottom: 0.2em;
-        color: var(--mocha);
+        color: var(--ink);
         text-align: center;
         /* border-bottom: solid 1px var(--smudge); */
     }
@@ -234,7 +185,8 @@
         width: 100%;
         height: 100%;
         background-color: var(--bark);
-        color: var(--oyster);
+        color: var(--ink);
+        font-weight: 500;
         margin-bottom: 2vh;
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         display: grid;
@@ -259,6 +211,8 @@
 
     .fselect{
         background-color: rgba(141,75,38,0.45) !important;
+        color: var(--oyster) !important;
+        font-weight: 400 !important;
     }
 
     @media (max-width: 700px) {
@@ -283,6 +237,7 @@
         .filter-box-title{
             font-size: 1.7em;
             margin-bottom: 0.5vh;
+            color: var(--mocha);
         }
 
         .filter-box-content{
