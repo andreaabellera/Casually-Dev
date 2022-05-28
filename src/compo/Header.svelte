@@ -64,7 +64,6 @@
     <div class="tagline"> Bonne nouvelle journée </div>
 </div>
 <div class="fixed-ctr">
-    {#if isMobile}
         <div id="nav-btn" on:click={toggleNav}>
             <div class="nav-btn-inner">
                 <div class="round" /><div class="round" /><div class="round" />
@@ -115,7 +114,6 @@
                 </Link>
             </div>
         </div>
-    {:else}
         <div id="nav-ctr" class="nav-container">
             <div class="nav-array gentiumBasic">
                 <Link to="/">
@@ -165,7 +163,6 @@
                 <div class="string"></div>
             </div>
         </div>
-    {/if}
 </div>
 
 <style>
@@ -208,8 +205,9 @@
         border-radius: 50%;
         border: 0.3em solid var(--bark);
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
-        margin: 15px 15px 0 0;
+        margin: 15px 25px 0 0;
         overflow: hidden;
+        display: none;
     }
 
     .nav-btn-inner{
@@ -429,9 +427,13 @@
         font-size: 120%;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .qtrlex{
             font-size: 4.5em;
+        }
+
+        #nav-btn{
+            display: block;
         }
 
         .nav-container{

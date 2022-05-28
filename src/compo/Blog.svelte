@@ -88,6 +88,22 @@
     </div>
     {/if}
 
+    {#if filterVisible}
+    <div class="filter" in:fly="{{ y: 500, duration: 600 }}" out:fly="{{ x: 800, duration: 400 }}">
+        <div class="filter-box">
+            <div class="filter-box-title gentiumBasic"> filter by tags </div>
+            <div class="filter-box-content ptSans"> 
+                <div on:click={fselect}><p>Develop ⚙️</p></div>
+                <div on:click={fselect}><p>Programming 👩🏻‍💻</p></div>
+                <div on:click={fselect}><p>Art 🖼️</p></div>
+                <div on:click={fselect}><p>Life 💃🏻</p></div>
+                <div on:click={fselect}><p>Games 🎲</p></div>
+                <div on:click={fselect}><p>Random 🍡</p></div>
+            </div>
+        </div>
+    </div>
+    {/if}
+
     <div id="blog-array">
         {#if visibles[0] && blogs[0]}
         <Link to="/blog/{blogs[0].id}">
@@ -159,22 +175,6 @@
         {/if}
     </div>
 
-    {#if filterVisible}
-    <div class="filter" in:fly="{{ y: 500, duration: 600 }}" out:fly="{{ x: 800, duration: 400 }}">
-        <div class="filter-box">
-            <div class="filter-box-title lancelot"> Filters </div>
-            <div class="filter-box-content ptSans"> 
-                <div on:click={fselect}><p>Develop ⚙️</p></div>
-                <div on:click={fselect}><p>Programming 👩🏻‍💻</p></div>
-                <div on:click={fselect}><p>Art 🖼️</p></div>
-                <div on:click={fselect}><p>Life 💃🏻</p></div>
-                <div on:click={fselect}><p>Games 🎲</p></div>
-                <div on:click={fselect}><p>Random 🍡</p></div>
-            </div>
-        </div>
-    </div>
-    {/if}
-
 </div>
 {/if}
 
@@ -205,21 +205,29 @@
     .filter{
         display: grid;
         justify-items: center;
-        transform: translateY(-15vh);
+        transform: translateY(-5vh);
+        margin-left: 5vw;
+    }
+
+    .filter-box{
+        width: 25vw;
     }
 
     .filter-box-title{
-        font-size: 3em;
-        margin-bottom: 3vh;
-        width: 25vw;
+        font-size: 2.5em;
+        margin-bottom: 2vh;
+        width: 100%;
         padding-bottom: 0.2em;
-        border-bottom: solid 1px var(--smudge);
+        color: var(--mocha);
+        text-align: center;
+        /* border-bottom: solid 1px var(--smudge); */
     }
 
     .filter-box-content{
         display: grid;
         grid-template-rows: 3em 3em 3em 3em 3em 3em;
         grid-gap: 1.5vh;
+        text-align: center;
     }
 
     .filter-box-content div{
@@ -228,9 +236,6 @@
         background-color: var(--bark);
         color: var(--oyster);
         margin-bottom: 2vh;
-        text-align: center;
-        /* padding: 1.5vh 0 1.5vh 0; */
-        /* border: double 0.3em var(--smudge); */
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         display: grid;
         align-items: center;
@@ -257,13 +262,45 @@
     }
 
     @media (max-width: 700px) {
+        .blog-feat-ctr {
+            display: flex;
+            flex-direction: column;
+        }
+
         #blog-array{
-            margin-top: 12vh;
-            grid-column: 1/3;
+            margin-top: 3vh;
         }
 
         .filter{
-            display: none;
+            margin-top: 13vh;
+            margin-left: 0;
+        }
+
+        .filter-box{
+            width: 90%;
+        }
+
+        .filter-box-title{
+            font-size: 1.7em;
+            margin-bottom: 0.5vh;
+        }
+
+        .filter-box-content{
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 30% 1fr 30%;
+            grid-row-gap: 1.5vh;
+            text-align: center;
+        }
+
+        .filter-box-content p {
+            font-size: 0.8em;
+            transform: translateY(0);
+        }
+
+        .filter-box-content p:hover{
+            font-size: 0.8em;
+            transform: translateY(0);
         }
     }
 </style>

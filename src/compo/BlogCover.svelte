@@ -78,7 +78,6 @@
         display: grid;
         justify-items: center;
         align-items: center;
-        /* border: 1px solid var(--smudge); */
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         background-color: var(--bark);
     }

@@ -15,7 +15,7 @@
     }
 
     // Transition effect
-    let visible = [false, false, false, false]
+    let visible = [false, false, false, false, false, false]
     let currV = 0
     let id = setInterval(loadEntries, 200)
     function loadEntries() {
@@ -107,6 +107,50 @@
             </div>
         </Link>
         {/if}
+
+        {#if !isMobile}
+            {#if visible[3] && blogs[3]}
+            <Link to="/blog/{blogs[3].id}">
+                <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+                    <BlogCover
+                        image = {blogs[3].image}
+                        tags = {blogs[3].tags}
+                        title = {blogs[3].title}
+                        date = {blogs[3].date}
+                        blurb = {cutContent(blogs[3].blurb)}
+                    />
+                </div>
+            </Link>
+            {/if}
+
+            {#if visible[4] && blogs[4]}
+            <Link to="/blog/{blogs[4].id}">
+                <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+                    <BlogCover
+                        image = {blogs[4].image}
+                        tags = {blogs[4].tags}
+                        title = {blogs[4].title}
+                        date = {blogs[4].date}
+                        blurb = {cutContent(blogs[4].blurb)}
+                    />
+                </div>
+            </Link>
+            {/if}
+
+            {#if visible[5] && blogs[5]}
+            <Link to="/blog/{blogs[5].id}">
+                <div in:fly="{{ x: 500, duration: 800 }}" out:fly="{{ y: 500, duration: 800 }}">
+                    <BlogCover
+                        image = {blogs[5].image}
+                        tags = {blogs[5].tags}
+                        title = {blogs[5].title}
+                        date = {blogs[5].date}
+                        blurb = {cutContent(blogs[5].blurb)}
+                    />
+                </div>
+            </Link>
+            {/if}
+        {/if}
     </div>
 
     <div class="filter">
@@ -133,15 +177,19 @@
         width: 100%;
         display: grid;
         grid-column-gap: 6vh;
-        grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr auto;
         margin: -8vh 0 10vh 0;
     }
 
     #blog-array{
         margin-top: -6vh;
+        margin-left: -6vw;
         width: 100%;
         margin-bottom: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-self: center;
     }
 
     .blog-heading{
@@ -161,7 +209,9 @@
 
     @media (max-width: 600px) {
         #blog-array{
+            width: 100%;
             margin-top: 0vh;
+            margin-left: 0vw;
             grid-column: 1/3;
         }
 
