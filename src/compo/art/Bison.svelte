@@ -426,7 +426,7 @@
 
     .tail2{
     background-color: var(--fur);
-    border-width: 0.4em;
+    border-width: 0.3em;
     border-color: var(--outlineBison);
     border-left-style: solid;
     clip-path: polygon(0% 0%, 69% 0%, 29% 100%, 0% 100%);
@@ -447,7 +447,7 @@
     border-top-left-radius: 1em;
     border-bottom-left-radius: 50%;
     transform: rotate(90deg);
-    border-width: 0.4em;
+    border-width: 0.3em;
     border-color: var(--outlineBison);
     border-style: solid;
     }
@@ -464,7 +464,7 @@
 
     .leg-top{
     grid-column: 1/3;
-    border-width: 0.4em;
+    border-width: 0.3em;
     border-color: var(--outlineBison);
     border-left-style: solid;
     border-right-style: solid;
@@ -476,7 +476,7 @@
     .leg-bottom{
     grid-column: 1/2;
     grid-row: 2/3;
-    border-width: 0.4em;
+    border-width: 0.3em;
     border-color: var(--outlineBison);
     border-left-style: solid;
     border-right-style: solid;
