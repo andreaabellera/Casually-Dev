@@ -59,7 +59,7 @@
         clearInterval(id1)
     }
     // Entries transition
-    let visibles = [false, false, false, false]
+    let visibles = [false, false, false, false, false]
     let id2 = setInterval(loadEntries, 200)
     let delay = 0
     let currV = 0
@@ -139,6 +139,20 @@
                     title = {blogs[3].title}
                     date = {blogs[3].date}
                     blurb = {cutContent(blogs[3].blurb)}
+                />
+            </div>
+        </Link>
+        {/if}
+
+        {#if visibles[4] && blogs[4]}
+        <Link to="/blog/{blogs[4].id}">
+            <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                <BlogCover
+                    image = {blogs[4].image}
+                    tags = {blogs[4].tags}
+                    title = {blogs[4].title}
+                    date = {blogs[4].date}
+                    blurb = {cutContent(blogs[4].blurb)}
                 />
             </div>
         </Link>
