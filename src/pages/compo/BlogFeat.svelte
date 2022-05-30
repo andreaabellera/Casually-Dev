@@ -67,7 +67,7 @@
     <div id="blog-array">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
-            <a href="../blogpage?id={blog.id}">
+            <a href="../blog/{blog.id}">
                 <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                     <BlogCover
                         image = {blog.image}

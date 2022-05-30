@@ -1,7 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
     import { params } from '@roxi/routify';
-    import journalData from './content/journals.yml'; 
+    import journalData from '../content/journals.yml'; 
 
     // Page transition
     let visible = false
@@ -12,8 +12,8 @@
     }
 
     export let id = ""
-    if($params.id)
-        id = $params.id
+    if($params.showId)
+        id = $params.showId
     export let title = "Untitled Journal Page"
     export let date = "No date provided"
     export let blurb = "Cannot load blurb"

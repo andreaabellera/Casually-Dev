@@ -1,7 +1,6 @@
 [
   "/andrea",
-  "/blog",
-  "/blogpage",
+  "/blog/index",
   "/compo/art/Bike",
   "/compo/art/Bison",
   "/compo/art/Blossom",
@@ -23,8 +22,7 @@
   "/galerie",
   "/index",
   "/intermission",
-  "/journalpage",
-  "/journals",
+  "/journals/index",
   "/laruelle",
   "/revues"
 ]

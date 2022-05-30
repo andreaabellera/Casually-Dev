@@ -1,9 +1,10 @@
 <script>
+    import { url } from "@roxi/routify";
     import { fly } from 'svelte/transition'
     import { elasticOut } from 'svelte/easing'
-	import Heading from './compo/Heading.svelte'
-	import JournalCover from './compo/JournalCover.svelte'
-    import journalData from './content/journals.yml' 
+	import Heading from '../compo/Heading.svelte'
+	import JournalCover from '../compo/JournalCover.svelte'
+    import journalData from '../content/journals.yml' 
 
 	// Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -66,7 +67,7 @@
     <div id="journal-array">
     {#each journals as journal, i}
         {#if visibles[i] && journal}
-            <a href="../journalpage?id={journal.id}">
+            <a href={$url("./:showId", {showId: journal.id})}>
                 <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
                     <JournalCover>
                         {@html journal.cover}

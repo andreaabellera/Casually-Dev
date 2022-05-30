@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Mon May 30 2022 13:03:13 GMT-0500 (Central Daylight Time)
+ * File generated Mon May 30 2022 13:47:03 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-05-30T18:03:13.152Z"
+export const __timestamp = "2022-05-30T18:47:03.119Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -83,7 +83,58 @@ export const _tree = {
       "ext": "",
       "badExt": false,
       "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/blog",
-      "children": [],
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "[showId].svelte",
+          "filepath": "/blog/[showId].svelte",
+          "name": "[showId]",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/blog/[showId].svelte",
+          "importPath": "../src/pages/blog/[showId].svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/blog/:showId",
+          "id": "_blog__showId",
+          "component": () => import('../src/pages/blog/[showId].svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "index.svelte",
+          "filepath": "/blog/index.svelte",
+          "name": "index",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/blog/index.svelte",
+          "importPath": "../src/pages/blog/index.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": true,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/blog/index",
+          "id": "_blog_index",
+          "component": () => import('../src/pages/blog/index.svelte').then(m => m.default)
+        }
+      ],
       "isLayout": false,
       "isReset": false,
       "isIndex": false,
@@ -96,56 +147,6 @@ export const _tree = {
         "prerender": true
       },
       "path": "/blog"
-    },
-    {
-      "isFile": true,
-      "isDir": false,
-      "file": "blog.svelte",
-      "filepath": "/blog.svelte",
-      "name": "blog",
-      "ext": "svelte",
-      "badExt": false,
-      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/blog.svelte",
-      "importPath": "../src/pages/blog.svelte",
-      "isLayout": false,
-      "isReset": false,
-      "isIndex": false,
-      "isFallback": false,
-      "isPage": true,
-      "ownMeta": {},
-      "meta": {
-        "recursive": true,
-        "preload": false,
-        "prerender": true
-      },
-      "path": "/blog",
-      "id": "_blog",
-      "component": () => import('../src/pages/blog.svelte').then(m => m.default)
-    },
-    {
-      "isFile": true,
-      "isDir": false,
-      "file": "blogpage.svelte",
-      "filepath": "/blogpage.svelte",
-      "name": "blogpage",
-      "ext": "svelte",
-      "badExt": false,
-      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/blogpage.svelte",
-      "importPath": "../src/pages/blogpage.svelte",
-      "isLayout": false,
-      "isReset": false,
-      "isIndex": false,
-      "isFallback": false,
-      "isPage": true,
-      "ownMeta": {},
-      "meta": {
-        "recursive": true,
-        "preload": false,
-        "prerender": true
-      },
-      "path": "/blogpage",
-      "id": "_blogpage",
-      "component": () => import('../src/pages/blogpage.svelte').then(m => m.default)
     },
     {
       "isFile": false,
@@ -744,54 +745,78 @@ export const _tree = {
       "component": () => import('../src/pages/intermission.svelte').then(m => m.default)
     },
     {
-      "isFile": true,
-      "isDir": false,
-      "file": "journalpage.svelte",
-      "filepath": "/journalpage.svelte",
-      "name": "journalpage",
-      "ext": "svelte",
-      "badExt": false,
-      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/journalpage.svelte",
-      "importPath": "../src/pages/journalpage.svelte",
-      "isLayout": false,
-      "isReset": false,
-      "isIndex": false,
-      "isFallback": false,
-      "isPage": true,
-      "ownMeta": {},
-      "meta": {
-        "recursive": true,
-        "preload": false,
-        "prerender": true
-      },
-      "path": "/journalpage",
-      "id": "_journalpage",
-      "component": () => import('../src/pages/journalpage.svelte').then(m => m.default)
-    },
-    {
-      "isFile": true,
-      "isDir": false,
-      "file": "journals.svelte",
-      "filepath": "/journals.svelte",
+      "isFile": false,
+      "isDir": true,
+      "file": "journals",
+      "filepath": "/journals",
       "name": "journals",
-      "ext": "svelte",
+      "ext": "",
       "badExt": false,
-      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/journals.svelte",
-      "importPath": "../src/pages/journals.svelte",
+      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/journals",
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "[showId].svelte",
+          "filepath": "/journals/[showId].svelte",
+          "name": "[showId]",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/journals/[showId].svelte",
+          "importPath": "../src/pages/journals/[showId].svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/journals/:showId",
+          "id": "_journals__showId",
+          "component": () => import('../src/pages/journals/[showId].svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "index.svelte",
+          "filepath": "/journals/index.svelte",
+          "name": "index",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/journals/index.svelte",
+          "importPath": "../src/pages/journals/index.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": true,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/journals/index",
+          "id": "_journals_index",
+          "component": () => import('../src/pages/journals/index.svelte').then(m => m.default)
+        }
+      ],
       "isLayout": false,
       "isReset": false,
       "isIndex": false,
       "isFallback": false,
-      "isPage": true,
+      "isPage": false,
       "ownMeta": {},
       "meta": {
         "recursive": true,
         "preload": false,
         "prerender": true
       },
-      "path": "/journals",
-      "id": "_journals",
-      "component": () => import('../src/pages/journals.svelte').then(m => m.default)
+      "path": "/journals"
     },
     {
       "isFile": true,

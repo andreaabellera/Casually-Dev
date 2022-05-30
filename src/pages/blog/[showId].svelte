@@ -1,7 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
-    import { params } from '@roxi/routify';
-    import blogData from './content/blogs.yml'; 
+    import { params } from "@roxi/routify";
+    import blogData from '../content/blogs.yml'; 
 
     // Page transition
     let visible = false
@@ -12,8 +12,8 @@
     }
 
     export let id = ""
-    if($params.id)
-        id = $params.id
+    if($params.showId)
+        id = $params.showId
     export let tags = []
     export let title = "Untitled Blog Post"
     export let date = "No date provided"

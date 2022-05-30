@@ -14,7 +14,7 @@
     <div id="journal-array">
     {#each journals as journal}
         {#if journal}
-            <a href="../journalpage?id={journal.id}">
+            <a href="../journals/{journal.id}">
                 <JournalCover>
                     {@html journal.cover}
                 </JournalCover>
