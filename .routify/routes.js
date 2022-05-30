@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Mon May 30 2022 12:08:00 GMT-0500 (Central Daylight Time)
+ * File generated Mon May 30 2022 13:03:13 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-05-30T17:08:00.518Z"
+export const __timestamp = "2022-05-30T18:03:13.152Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -73,6 +73,29 @@ export const _tree = {
       "path": "/andrea",
       "id": "_andrea",
       "component": () => import('../src/pages/andrea.svelte').then(m => m.default)
+    },
+    {
+      "isFile": false,
+      "isDir": true,
+      "file": "blog",
+      "filepath": "/blog",
+      "name": "blog",
+      "ext": "",
+      "badExt": false,
+      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/blog",
+      "children": [],
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/blog"
     },
     {
       "isFile": true,
