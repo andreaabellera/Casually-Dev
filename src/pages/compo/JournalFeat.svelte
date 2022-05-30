@@ -1,8 +1,7 @@
 <script>
-    import Heading from './Heading.svelte';
-	import JournalCover from './JournalCover.svelte';
-    import { Link } from "svelte-routing";
-    import journalData from '../content/journals.yml'; 
+    import Heading from './Heading.svelte'
+	import JournalCover from './JournalCover.svelte'
+    import journalData from '../content/journals.yml'
 
     // Get journal data, limit to 5
     let journals = journalData.journals.slice(0, 5)
@@ -15,17 +14,17 @@
     <div id="journal-array">
     {#each journals as journal}
         {#if journal}
-            <Link to="/journal/{journal.id}">
+            <a href="../journalpage?id={journal.id}">
                 <JournalCover>
                     {@html journal.cover}
                 </JournalCover>
-            </Link>
+            </a>
         {/if}
     {/each}
     </div>
-    <Link to="journals">
+    <a href="/journals">
         <div id="blog-see-more" class="laBelleAurore"><div> see more journals </div></div>
-    </Link>
+    </a>
 </div>
 
 <style>

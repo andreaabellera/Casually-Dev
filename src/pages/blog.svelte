@@ -1,9 +1,8 @@
 <script>
-    import { fly } from 'svelte/transition';
-    import { Link } from "svelte-routing";
-	import Heading from './Heading.svelte';
-	import BlogCover from './BlogCover.svelte';
-    import blogData from '../content/blogs.yml'; 
+    import { fly } from 'svelte/transition'
+	import Heading from './compo/Heading.svelte'
+	import BlogCover from './compo/BlogCover.svelte'
+    import blogData from './content/blogs.yml'
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -111,7 +110,7 @@
     <div id="blog-array">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
-            <Link to="/blog/{blog.id}">
+            <a href="../blogpage?id={blog.id}">
                 <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                     <BlogCover
                         image = {blog.image}
@@ -121,7 +120,7 @@
                         blurb = {cutContent(blog.blurb)}
                     />
                 </div>
-            </Link>
+            </a>
         {/if}
     {/each}
     </div>

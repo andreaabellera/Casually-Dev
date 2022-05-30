@@ -1,8 +1,8 @@
 <script>
-    import { fly } from 'svelte/transition';
-	import BlogFeat from './BlogFeat.svelte';
-	import JournalFeat from './JournalFeat.svelte';
-	import GirlCave from './GirlCave.svelte';
+    import { fly } from 'svelte/transition'
+	import BlogFeat from './compo/BlogFeat.svelte'
+	import JournalFeat from './compo/JournalFeat.svelte'
+	import GirlCave from './compo/GirlCave.svelte'
 
     let visible = false
     

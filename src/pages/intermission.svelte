@@ -1,7 +1,6 @@
 <script>
-    import Bike from "./art/Bike.svelte";
-    import { fade } from 'svelte/transition';
-    import { Link } from "svelte-routing";
+    import Bike from "./compo/art/Bike.svelte"
+    import { fade } from 'svelte/transition'
 
     // Page transition
     let visible = false
@@ -31,9 +30,9 @@
         <div id="ridin"> <Bike /> </div>
         <div class="filler"></div>
         <div class="pretty-text"> Travelling... </div>
-        <Link to="andrea/portfolio">
+        <a href="/laruelle">
             <div id="teleporter"></div>
-        </Link>
+        </a>
     </div>
 {/if}
 

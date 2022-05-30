@@ -1,9 +1,8 @@
 <script>
-    export let title = "Collection of Artworks";
-    export let image = "";
+    export let title = "Collection of Artworks"
+    export let image = ""
     export let adjust = "0 0"
-    import { Link } from "svelte-routing";
-    import artData from '../content/artifacts.yml'; 
+    import artData from '../content/artifacts.yml' 
 
     // Play banner animation upon mouse enter
     function play(){
@@ -54,7 +53,7 @@
 
 </script>
 
-<Link to="galerie">
+<a href="/galerie">
     <div class="gallery-feat-ctr" on:mouseenter={play} on:focus={play} on:mouseleave={reset}>
         <div class="original-text syncopate"> ORIGINAL ARTWORKS </div>
         <div id="title-text" class="mrDeHaviland"> {title} </div>
@@ -62,7 +61,7 @@
         <div id="grad"></div>
         <div id="img-ctr" style="background-image:url({image}); background-position: {adjust};"></div>
     </div>
-</Link>
+</a>
 <span class="imageAnimation titleTextAnimation gradAnimation">
     <script>
         // Detect mobile

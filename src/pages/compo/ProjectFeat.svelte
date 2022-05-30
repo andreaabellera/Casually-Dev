@@ -1,6 +1,6 @@
 <script>
-    import Hippo from './art/Hippo.svelte';
-    import Bison from './art/Bison.svelte';
+    import Hippo from './art/Hippo.svelte'
+    import Bison from './art/Bison.svelte'
 
     /* Attributions
     <a href='https://www.freepik.com/vectors/flat-nature'>Flat nature vector created by freepik - www.freepik.com</a>

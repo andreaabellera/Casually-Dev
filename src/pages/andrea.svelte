@@ -1,9 +1,8 @@
 <script>
-    import { fly } from 'svelte/transition';
-    import { Link } from "svelte-routing";
-	import Heading from './Heading.svelte';
-    import Blossom from './art/Blossom.svelte';
-    import CharmingButton from './art/CharmingButton.svelte';
+    import { fly } from 'svelte/transition'
+	import Heading from './compo/Heading.svelte'
+    import Blossom from './compo/art/Blossom.svelte'
+    import CharmingButton from './compo/art/CharmingButton.svelte'
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -89,10 +88,8 @@
                             </div>
                         </div>
                         <div class="action-btns">
-                            <!-- <div id="tour" class="action-btn"> Take an Online Portfolio Tour </div> -->
-                            <Link to="intermission">
+                            <a href="/intermission">
                                 <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
-                            </Link>
                             <div id="resume" class="action-btn"> or <a href="https://ipfs.fleek.co/ipfs/bafybeifuietsx6mhmlpmn3xarwc43vaw4iqdaqxp6srnlhaafahmoevlam"> Download my Résumé</a></div>
                         </div>
                         <div class="for-fun">
