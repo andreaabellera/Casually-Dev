@@ -32,7 +32,7 @@
     <BlogFeat />
     
     {#if visibleC}
-    <div transition:fly="{{ y: 200, duration: 800 }}">
+    <div in:fly="{{ y: 200, duration: 800 }}">
         <JournalFeat />
         <GirlCave />
     </div>

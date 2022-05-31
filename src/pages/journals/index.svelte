@@ -68,7 +68,7 @@
     {#each journals as journal, i}
         {#if visibles[i] && journal}
             <a href={$url("./:showId", {showId: journal.id})}>
-                <div in:zoom="{{duration: 1000}}" out:fly="{{ y: 500, duration: 800 }}">
+                <div in:zoom="{{duration: 1000}}">
                     <JournalCover>
                         {@html journal.cover}
                     </JournalCover>

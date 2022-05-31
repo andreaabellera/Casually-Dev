@@ -122,7 +122,7 @@
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
             <a href={$url("./:showId", {showId: blog.id})}>
-                <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
+                <div in:fly="{{ x: 500, duration: 600 }}">
                     <BlogCover
                         ipfsNode={ipfsNode}
                         image = {blog.image}
