@@ -1,4 +1,12 @@
 blogs:
+  - id: mvp-one-done
+    title: Site MVP one, Done
+    date: May 31, 2022
+    tags:
+      - Develop ⚙️
+    image: bafybeibpfy3o6wxzju3276tmwbdpipy3pqsk7esqbzgo6kaot7sj6kurwe
+    blurb: bafybeiddqlhdghe2xzfhuasacvxc2b27vwk5fgv25voqdclvp5q6xtx7nm
+  
   - id: survey-comp-resources
     title: Surveying Competitive Resources
     date: May 28, 2022
