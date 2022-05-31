@@ -1,7 +1,41 @@
 <script>
     import { fade } from 'svelte/transition';
     import { params } from "@roxi/routify";
-    import blogData from '../content/blogs.yml'; 
+    import blogData from '../content/blogs.yml';
+    import { onMount } from 'svelte';
+    import toBuffer from 'it-to-buffer';
+    import CID from 'cids';
+
+    let ipfsNode;
+
+    // Setup IPFS
+    onMount(async () => {
+		if (!globalThis.ipfsNode) {
+			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
+			const IPFS = IPFSmodule.default;
+			ipfsNode = await IPFS.create();
+			globalThis.ipfsNode = ipfsNode;
+		} else {
+			ipfsNode = globalThis.ipfsNode;
+		}
+
+        ;(async () => {
+            const cid = new CID(link)
+            const content = await toBuffer(ipfsNode.cat(cid))
+            let intString = content.toString()
+            let decoded = ""
+            intString.split(',').forEach(function(i) {
+                decoded += String.fromCharCode(i)
+            })
+            blurb = decoded
+        })();
+
+		/*return () => {
+			console.log('the ipfs node is being stopped');
+			ipfsNode.stop();
+			globalThis.ipfsNode = null;
+		};*/
+	});
 
     // Page transition
     let visible = false
@@ -17,7 +51,8 @@
     export let tags = []
     export let title = "Untitled Blog Post"
     export let date = "No date provided"
-    export let blurb = "Cannot load blurb"
+    export let blurb = "Loading blurb..."
+    let link
 
     // Load blog data
     let blogs = blogData.blogs
@@ -25,7 +60,7 @@
         if (blogData.id == id){
             title = blogData.title
             date = blogData.date
-            blurb = blogData.blurb
+            link = blogData.blurb
             tags = blogData.tags
         }
     }

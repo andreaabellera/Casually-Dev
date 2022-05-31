@@ -40,7 +40,6 @@
             else
                 clearInterval(id1)
             delay += 1
-            console.log(delay)
         }
     }
 

@@ -1,10 +1,40 @@
 <script>
+    import { onMount } from 'svelte';
+    import toBuffer from 'it-to-buffer';
+    import CID from 'cids';
+
     // Props
 	export let image = null;
     export let tags = [];
     export let title = "Untitled Blog Post";
     export let date = "No date provided";
-    export let blurb = "Cannot load blurb";
+    export let link;
+    let blurb = "Loading blurb...";
+
+    // Cut blurb content
+    function cutContent(content){
+        return content.substring(0, 160) + "..."
+    }
+
+    export let ipfsNode;
+
+    // Setup IPFS
+    onMount(async () => {
+        if(link){
+            ;(async () => {
+                const cid = new CID(link)
+                if(ipfsNode){
+                    const content = await toBuffer(ipfsNode.cat(cid))
+                    let intString = content.toString()
+                    let decoded = ""
+                    intString.split(',').forEach(function(i) {
+                        decoded += String.fromCharCode(i)
+                    })
+                    blurb = cutContent(decoded)
+                }
+            })();
+        }
+	});
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
@@ -15,7 +45,7 @@
     <div class="cover">
         <div class="cover-inner">
             {#if image}
-            <div class="blogThumb" style="background-image:url({image});"></div>
+            <div class="blogThumb" style="background-image:url(https://ipfs.fleek.co/ipfs/{image});"></div>
             {/if}
             <div class="blogContent">
                 <div class="blogTags">

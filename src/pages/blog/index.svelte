@@ -4,6 +4,38 @@
 	import Heading from '../compo/Heading.svelte'
 	import BlogCover from '../compo/BlogCover.svelte'
     import blogData from '../content/blogs.yml'
+    import { onMount } from 'svelte';
+
+    let ipfsNode;
+
+    // Setup IPFS
+    onMount(async () => {
+		if (!globalThis.ipfsNode) {
+			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
+			const IPFS = IPFSmodule.default;
+			ipfsNode = await IPFS.create();
+			globalThis.ipfsNode = ipfsNode;
+		} else {
+			ipfsNode = globalThis.ipfsNode;
+		}
+
+        // Entries transition
+        let id2 = setInterval(loadEntries, 200)
+        let delay = 0
+        let currV = 0
+        function loadEntries() {
+            if(delay==4){
+                visibles[currV] = true
+                filterVisible = true
+                currV++
+
+                if(currV == visibles.length)
+                    clearInterval(id2)
+            }
+            else
+                delay++
+        }
+	});
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -45,41 +77,19 @@
         }
     }
 
-    // Cut blurb content
-    function cutContent(content){
-        return content.substring(0, 160) + "..."
-    }
-
     // Get blog data
     let blogs = blogData.blogs
     let visibles = []
     for(let i=0; i < blogs.length; i++)
         visibles.push(false)
-
-    // Page transition
     let visible = false
     let filterVisible = false
+
+    // Page transition
     let id1 = setInterval(loadPage, 200)
     function loadPage() {
         visible = true
         clearInterval(id1)
-    }
-
-    // Entries transition
-    let id2 = setInterval(loadEntries, 200)
-    let delay = 0
-    let currV = 0
-    function loadEntries() {
-        if(delay==4){
-            visibles[currV] = true
-            filterVisible = true
-            currV++
-
-            if(currV == visibles.length)
-                clearInterval(id2)
-        }
-        else
-            delay++
     }
 
 </script>
@@ -114,14 +124,23 @@
             <a href={$url("./:showId", {showId: blog.id})}>
                 <div in:fly="{{ x: 500, duration: 600 }}" out:fly="{{ y: 500, duration: 800 }}">
                     <BlogCover
+                        ipfsNode={ipfsNode}
                         image = {blog.image}
                         tags = {blog.tags}
                         title = {blog.title}
                         date = {blog.date}
-                        blurb = {cutContent(blog.blurb)}
+                        link = {blog.blurb}
                     />
                 </div>
             </a>
+        {:else}
+        <div in:fly="{{ x: 500, duration: 1600 }}">
+            <BlogCover
+                title = {"Loading Content..."}
+                date = {""}
+                link = {blog.blurb}
+            />
+        </div>
         {/if}
     {/each}
     </div>
