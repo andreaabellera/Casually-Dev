@@ -163,7 +163,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    transform: scale(45%);
+    transform: scale(35%);
     }
 
     .octopus{

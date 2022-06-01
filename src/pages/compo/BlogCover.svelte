@@ -13,7 +13,7 @@
 
     // Cut blurb content
     function cutContent(content){
-        return content.substring(0, 160) + "..."
+        return content.substring(0, 100) + "..."
     }
 
     export let ipfsNode;
@@ -113,6 +113,7 @@
     }
 
     .cover-inner{
+        position: relative;
         height: 85%;
         width: 92%;
         display: grid;
@@ -169,6 +170,9 @@
 
     .readMore{
         display: none;
+        position: absolute;
+        bottom: 0;
+        z-index: 5;
         grid-column: 1/3;
         grid-row: 2/3;
         color: var(--ink);
