@@ -1,4 +1,13 @@
 blogs:
+  - id: retro-may-22
+    title: May 2022 Retrospective
+    date: June 1, 2022
+    tags:
+      - Life 💃🏻
+      - Develop ⚙️
+    image: bafybeidqzh3apw5q7mm54xfzy2spmzx54yxhhpgnluyi33l6zdi7yprsny
+    blurb: bafybeiaglepfmac37sbc6za7lx25ouzhaje2hl4fypfb6dmu6ql4kyjhgu
+    
   - id: mvp-one-done
     title: Site MVP one, Done
     date: May 31, 2022

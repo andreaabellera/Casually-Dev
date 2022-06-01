@@ -133,7 +133,7 @@
                     />
                 </div>
             </a>
-        {:else}
+        {:else if !filterVisible}
         <div in:fly="{{ x: 500, duration: 1600 }}">
             <BlogCover
                 title = {"Loading Content..."}
