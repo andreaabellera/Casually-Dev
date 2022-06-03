@@ -1,6 +1,12 @@
 <script>
     let toggled = false;
 
+    function changeSelect(){
+        let currSelected = document.getElementsByClassName("selected")[0]
+        currSelected.classList.remove("selected")
+        this.classList.add("selected")
+    }
+
     function toggleNav(){
         let fixedCtr = document.getElementsByClassName("fixed-ctr")[0]
         let navCtr = document.getElementById("nav-ctr-mbl")
@@ -66,21 +72,21 @@
         <div id="nav-ctr-mbl" class="nav-container">
             <div id="nav-array-mbl" class="gentiumBasic">
                 <a href="/">
-                    <div id="nav-chezmoi" class="nav selected"> 
+                    <div id="nav-chezmoi" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> chez moi </span> 
                     </div>
                 </a>
 
                 <a href="/blog">
-                    <div id="nav-blog" class="nav"> 
+                    <div id="nav-blog" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> blog </span> 
                     </div>
                 </a>
                 
                 <a href="/galerie">
-                    <div id="nav-galerie" class="nav"> 
+                    <div id="nav-galerie" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> galerie </span> 
                     </div>
@@ -88,7 +94,7 @@
                 
 
                 <a href="/journals">
-                    <div id="nav-journals" class="nav"> 
+                    <div id="nav-journals" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> journals </span> 
                     </div>
@@ -96,14 +102,14 @@
                 
 
                 <a href="/revues">
-                    <div id="nav-revues" class="nav"> 
+                    <div id="nav-revues" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> revues </span> 
                     </div>
                 </a>
 
                 <a href="/andrea">
-                    <div id="nav-andrea" class="nav"> 
+                    <div id="nav-andrea" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> andrea </span>  
                     </div>
@@ -114,14 +120,14 @@
         <div id="nav-ctr" class="nav-container">
             <div class="nav-array gentiumBasic">
                 <a href="/">
-                    <div id="nav-chezmoi" class="nav selected"> 
+                    <div id="nav-chezmoi" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> chez moi </span> 
                     </div>
                 </a>
 
                 <a href="/blog">
-                    <div id="nav-blog" class="nav"> 
+                    <div id="nav-blog" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> blog </span> 
                     </div>
@@ -129,7 +135,7 @@
                 
 
                 <a href="/galerie">
-                    <div id="nav-galerie" class="nav"> 
+                    <div id="nav-galerie" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> galerie </span> 
                     </div>
@@ -137,21 +143,21 @@
                 
 
                 <a href="/journals">
-                    <div id="nav-journals" class="nav"> 
+                    <div id="nav-journals" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> journals </span> 
                     </div>
                 </a>
 
                 <a href="/revues">
-                    <div id="nav-revues" class="nav"> 
+                    <div id="nav-revues" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> revues </span> 
                     </div>
                 </a>
 
                 <a href="/andrea">
-                    <div id="nav-andrea" class="nav"> 
+                    <div id="nav-andrea" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> andrea </span>  
                     </div>
@@ -163,6 +169,26 @@
                 <div class="string"></div>
             </div>
         </div>
+
+    <!-- Mandatory Fix -->
+    <span class="selected"></span>
+    <script>
+        let url = window.location.href
+        let toks = url.split("/")
+        if(toks.includes("blog"))
+            document.getElementById("nav-blog").classList.add("selected")
+        else if(toks.includes("journals"))
+            document.getElementById("nav-journals").classList.add("selected")
+        else if(toks.includes("galerie"))
+            document.getElementById("nav-galerie").classList.add("selected")
+        else{
+            let navId = toks[toks.length - 1]
+            if(navId.length > 0)
+                document.getElementById("nav-" + navId).classList.add("selected")
+            else
+                document.getElementById("nav-chezmoi").classList.add("selected")
+        }
+    </script>
 </div>
 
 <style>
@@ -278,11 +304,6 @@
 
     #nav-array-mbl .nav{
         opacity: 50%;
-    }
-
-    #nav-array-mbl .selected{
-        transform: scale(0.5);
-        opacity: 100%;
     }
 
     .nav{
@@ -442,6 +463,11 @@
 
         .tagline{
             margin-left: 13vw;
+        }
+
+        .selected{
+            transform: scale(0.5);
+            opacity: 100%;
         }
     }
 

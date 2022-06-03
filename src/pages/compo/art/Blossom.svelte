@@ -21,7 +21,7 @@
     position: relative;
     height: inherit;
     height: inherit;
-    animation: spin 0.8s ease-in-out;
+    animation: spin 1.2s ease-in-out;
 }
 
 .mid{
@@ -70,8 +70,11 @@
   0% {
     transform: rotate(0deg);
   }
-  100% {
+  50% {
     transform: rotate(144deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 

@@ -240,7 +240,7 @@
     }
 
     .frame:hover{
-        animation: upFrame 0.8s ease-out;
+        animation: upFrame 0.9s ease-out;
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
@@ -274,8 +274,11 @@
         0%{
             transform: translate(-50%, 0);
         }
-        100%{
+        40%{
             transform: translate(-50%, -0.6em);
+        }
+        100%{
+            transform: translate(-50%, 0);
         }
     }
 
