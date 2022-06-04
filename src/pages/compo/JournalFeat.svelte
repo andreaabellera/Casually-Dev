@@ -2,6 +2,20 @@
     import Heading from './Heading.svelte'
 	import JournalCover from './JournalCover.svelte'
     import journalData from '../content/journals.yml'
+    import { onMount } from 'svelte';
+
+    let ipfsNode;
+
+    // Setup IPFS
+    onMount(async () => {
+		if (!globalThis.ipfsNode) {
+			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
+			const IPFS = IPFSmodule.default;
+			ipfsNode = await IPFS.create();
+			globalThis.ipfsNode = ipfsNode;
+		} else 
+			ipfsNode = globalThis.ipfsNode;
+	});
 
     // Get journal data, limit to 5
     let journals = journalData.journals.slice(0, 5)

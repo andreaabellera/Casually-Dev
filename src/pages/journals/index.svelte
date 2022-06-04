@@ -5,6 +5,37 @@
 	import Heading from '../compo/Heading.svelte'
 	import JournalCover from '../compo/JournalCover.svelte'
     import journalData from '../content/journals.yml' 
+    import { onMount } from 'svelte';
+
+    let ipfsNode;
+
+    // Setup IPFS
+    onMount(async () => {
+		if (!globalThis.ipfsNode) {
+			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
+			const IPFS = IPFSmodule.default;
+			ipfsNode = await IPFS.create();
+			globalThis.ipfsNode = ipfsNode;
+		} else {
+			ipfsNode = globalThis.ipfsNode;
+		}
+
+        // Entries transition
+        let id2 = setInterval(loadEntries, 150)
+        let delay = 0
+        let currV = 0
+        function loadEntries() {
+            if(delay==5){
+                visibles[currV] = true
+                currV++
+
+                if(currV == visibles.length)
+                    clearInterval(id2)
+            }
+            else
+                delay++
+        }
+	});
 
 	// Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -22,22 +53,6 @@
     function loadPage() {
         visible = true
         clearInterval(id1)
-    }
-
-    // Entries transition
-    let id2 = setInterval(loadEntries, 150)
-    let delay = 0
-    let currV = 0
-    function loadEntries() {
-        if(delay==5){
-            visibles[currV] = true
-            currV++
-
-            if(currV == visibles.length)
-                clearInterval(id2)
-        }
-        else
-            delay++
     }
 
     // Zoom out

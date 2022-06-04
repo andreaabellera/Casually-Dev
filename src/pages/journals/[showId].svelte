@@ -2,6 +2,34 @@
     import { fade } from 'svelte/transition';
     import { params } from '@roxi/routify';
     import journalData from '../content/journals.yml'; 
+    import { onMount } from 'svelte';
+    import toBuffer from 'it-to-buffer';
+    import CID from 'cids';
+
+    let ipfsNode;
+
+    // Setup IPFS
+    onMount(async () => {
+		if (!globalThis.ipfsNode) {
+			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
+			const IPFS = IPFSmodule.default;
+			ipfsNode = await IPFS.create();
+			globalThis.ipfsNode = ipfsNode;
+		} else {
+			ipfsNode = globalThis.ipfsNode;
+		}
+
+        ;(async () => {
+            const cid = new CID(link)
+            const content = await toBuffer(ipfsNode.cat(cid))
+            let intString = content.toString()
+            let decoded = ""
+            intString.split(',').forEach(function(i) {
+                decoded += String.fromCharCode(i)
+            })
+            blurb = decoded
+        })();
+	});
 
     // Page transition
     let visible = false
@@ -16,7 +44,8 @@
         id = $params.showId
     export let title = "Untitled Journal Page"
     export let date = "No date provided"
-    export let blurb = "Cannot load blurb"
+    export let blurb = "Loading blurb..."
+    let link
     
     // Load journal data
     let journals = journalData.journals
@@ -24,7 +53,7 @@
         if (journalData.id == id){
             title = journalData.title
             date = journalData.date
-            blurb = journalData.blurb
+            link = journalData.blurb
         }
     }
 </script>

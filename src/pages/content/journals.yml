@@ -3,10 +3,16 @@ journals:
     cover: "<p class='cousine' style='font-size: 75%;'> Breaking into </p><p class='cousine' style='font-size: 110%;'> Competitive Programming</p><p class='syncopate'> HANDBOOK </p>"
     title: Breaking into Competitive Programming
     date: May 24, 2022
-    blurb: "Competitive Programming Handbook coming soon."
+    blurb: bafybeidsoutz3aadfpbbip6remtfebzawh4gux4bcdji6j23kqntsvpjn4
 
-  - id: casually-art-manuals
-    cover: "<p class='laBelleAurore large'> Casually Art </p> <p class='lancelot large'> MANUALS </p>"
-    title: Casually Art Manuals
+  - id: casually-art-tutorials
+    cover: "<p class='laBelleAurore large'> Casually Art </p> <p class='lancelot large'> TUTORIALS </p>"
+    title: Casually Art Tutorials
     date: May 24, 2022
-    blurb: "Casually Art Manuals coming soon."
+    blurb: bafybeigusvzbept55g3vqtvlnixhehkgfsokcc437u3ssjpk6fx4tckv3y
+
+  - id: depth-breadth-first-search
+    cover: "<p class='syncopate small'>Depth-First</p><p class='cousine small'>and</p><p class='syncopate small'>Breadth-First</p><p class='cousine'> Search </p>"
+    title: Depth-First and Breadth-First Search
+    date: June 3, 2022
+    blurb: bafybeifk26ddqico76ts4jqt6rfohl2ghqb5dzleyzfdrgshaph7j4mhne

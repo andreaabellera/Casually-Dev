@@ -29,12 +29,6 @@
             })
             blurb = decoded
         })();
-
-		/*return () => {
-			console.log('the ipfs node is being stopped');
-			ipfsNode.stop();
-			globalThis.ipfsNode = null;
-		};*/
 	});
 
     // Page transition

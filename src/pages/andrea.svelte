@@ -155,7 +155,7 @@
     }
 
     #photo{
-        background-image: url(https://ipfs.fleek.co/ipfs/bafybeian3spqzxy6ol2xxzx7fgai4w7p5g4rv3o4iv6mhfwaqxumpbftwm);
+        background-image: url(https://ipfs.fleek.co/ipfs/bafybeifj2pisu4kore77t6krkqrd5yqqh2rrkbznfnksdnsmhd7eyqjvyu);
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
