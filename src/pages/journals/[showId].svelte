@@ -67,6 +67,9 @@
     <div id="journal-page-inner" class="journal-page-inner">
         <div class="journalTitle"> {title} </div>
         <div class="journalDate"> Last Updated: {date} </div>
+        <div class="pageArray">
+            <div class="pageBtn"> Page 1 </div> 
+        </div>
         <p class="journalBlurb"> {@html blurb} </p>
     </div>
 
@@ -106,6 +109,27 @@
     .journalDate{
         font-size: 1em;
         margin: 2vh 0 3vh 0;
+    }
+
+    .pageArray{
+        display: flex;
+        margin: 1vh 0 5.5vh 0;
+        flex-wrap: wrap;
+    }
+
+    .pageBtn{
+        padding: 0.3em 0.9em 0.3em 0.9em;
+        font-size: 1em;
+        margin-right: 0.2em;
+        margin-top: 0.75vh;
+        border-radius: 2em;
+        background-color: #CAC0B0;
+        color: var(--ink);
+        border: 1px solid var(--smudge);
+    }
+
+    .pageBtn:hover{
+        cursor: pointer;
     }
 
     .journalBlurb{
