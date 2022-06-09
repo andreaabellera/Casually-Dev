@@ -214,7 +214,7 @@
         }
 
         .blogThumb{
-            width: 5em;
+            width: 5.25em;
             box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         }
 

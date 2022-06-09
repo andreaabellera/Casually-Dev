@@ -1,4 +1,14 @@
 blogs:
+  - id: breakthrough
+    title: It's a Breakthrough
+    date: June 9, 2022
+    tags:
+      - Develop ⚙️
+      - Life 💃🏻
+      - Random 🍡
+    image: bafybeibcclmcsfcpofkpljqk4wb7tvxkqjfrvs4utblkou3pvi6nfdyqjq
+    blurb: bafybeidxctw3kttlxxi24uzregx4h547vjv7bd5g3lt6knlgrzapw6bsf4
+
   - id: retro-may-22
     title: May 2022 Retrospective
     date: June 1, 2022
