@@ -1,4 +1,13 @@
 blogs:
+  - id: i-became-a-dog
+    title: And I became a Dog
+    date: June 17, 2022
+    tags:
+      - Life 💃🏻
+      - Games 🎲
+    image: bafybeiah4e3ih2mqgwt4ztbgkkxd4zyinymlnusaz3ync2ack4rflolzyi
+    blurb: bafybeihdewaxomtsmm6etzbuyydhh4m5yndcpst34u2ita4lbakybvxwve
+
   - id: breakthrough
     title: It's a Breakthrough
     date: June 9, 2022
