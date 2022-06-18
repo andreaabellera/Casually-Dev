@@ -1,4 +1,12 @@
 blogs:
+  - id: all-propped-up
+    title: All Propped up
+    date: June 18, 2022
+    tags:
+      - Develop ⚙️
+    image: bafybeid5fhf6r3jrxwpesf7in3l75q7dew6ubjrvth3c6twb4qfsr4mm5q
+    blurb: bafybeiebz6izxu32cauahk3bfhy4nxyxeslo6i6mwwrro2arkvufkndfse
+
   - id: i-became-a-dog
     title: And I became a Dog
     date: June 17, 2022
