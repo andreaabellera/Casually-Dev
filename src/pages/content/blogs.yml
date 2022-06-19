@@ -1,4 +1,12 @@
 blogs:
+  - id: shadow-of-the-award
+    title: Shadow of the Award
+    date: June 19, 2022
+    tags:
+      - Life 💃🏻
+    image: bafybeicat6kn6hd6nnxefdlsng55hqgja23ebg2qdcdoozgn4ioqmxnjbi
+    blurb: bafybeicqrv4ceec3wutl65hxl5tkm64p4ondgl7dfr2h2nzsz4s4b5jdz4
+
   - id: all-propped-up
     title: All Propped up
     date: June 18, 2022
