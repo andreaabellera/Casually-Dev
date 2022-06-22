@@ -1,4 +1,12 @@
 blogs:
+  - id: chronicles-of-minecraft
+    title: Chronicles of Minecraft
+    date: June 22, 2022
+    tags:
+      - Games 🎲
+    image: bafybeid6u5pi7y4ravnihby7mtze2jdopsiqkmqq2t4kdjjmch7gbjo6u4
+    blurb: bafybeigqd7hgjt2yu53aslmxuffj2dcfl3wz6me2724ck32fmpi4iln474
+
   - id: shadow-of-the-award
     title: Shadow of the Award
     date: June 19, 2022
