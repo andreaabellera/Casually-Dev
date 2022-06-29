@@ -1,4 +1,12 @@
 blogs:
+  - id: a-small-detour
+    title: A Small Detour
+    date: June 29, 2022
+    tags:
+      - Life 💃🏻
+    image: bafybeihkhvsnjwrejl3n3trw5brpv3jc3nm7kldbccm6lknep3j7mq6qva
+    blurb: bafybeicymwb6to3a4vmc5kb2bfm34yk6b5qvmfzzy4gf635oxpp5a3j6ce
+
   - id: chronicles-of-minecraft
     title: Chronicles of Minecraft
     date: June 22, 2022
