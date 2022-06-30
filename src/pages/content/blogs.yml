@@ -1,4 +1,12 @@
 blogs:
+  - id: homecooked-memes
+    title: Fancy some Homecooked Memes?
+    date: June 30, 2022
+    tags:
+      - Random 🍡
+    image: bafybeiffvyo4suf7bjrpaofqiul5k7qol43vzx5snze5kpxtdjmszfkyoy
+    blurb: bafybeig4xfzhqfj5amqlvgokflo4mofg7obzl4yf6bgogbv4mdnugyfcim
+
   - id: a-small-detour
     title: A Small Detour
     date: June 29, 2022
