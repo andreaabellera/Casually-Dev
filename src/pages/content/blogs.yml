@@ -1,6 +1,15 @@
 blogs:
+  - id: retro-june-22
+    title: June 2022 Retrospective
+    date: July 1, 2022
+    tags:
+      - Life 💃🏻
+      - Develop ⚙️
+    image: bafybeid5we7gqmcdxuvzscw523vwkrcyxoku5wp75dqlshz7dpum7f3gfi
+    blurb: bafybeigv2uydkattc6p6uk4pskpelfa7crv5pp45oyk7ctihub2gvhachm
+
   - id: homecooked-memes
-    title: Fancy some Homecooked Memes?
+    title: Fresh Homecooked Memes
     date: June 30, 2022
     tags:
       - Random 🍡
