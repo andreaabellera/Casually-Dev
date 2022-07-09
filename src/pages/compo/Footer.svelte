@@ -27,7 +27,7 @@
                 <div class="site-info">
                     <p>
                         This website is <br>
-                        <a href="https://github.com/andreaabellera/qtrlex"><b> OPEN SOURCE </b></a>
+                        <a href="https://github.com/andreaabellera/casuallydev"><b> OPEN SOURCE </b></a>
                     </p>
                     made in <a href="https://svelte.dev/"><b>SvelteJS</b></a>                 <br>
                     served from <a href="https://ipfs.io/"><b>IPFS</b></a>                    <br>

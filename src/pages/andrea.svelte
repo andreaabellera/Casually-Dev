@@ -74,7 +74,7 @@
                             </div>
                             
                             <div class="info-row"> 
-                                I document my development journey, programming studies, thoughts and adventures with <b> qtrlex </b> by night. By day, I work with TD Bank as a Business Systems Analyst Intern, which is a tremendously great experience!
+                                I document my development journey, programming studies, thoughts and adventures with <b> CasuallyDev </b> by night. By day, I work with TD Bank as a Business Systems Analyst Intern, which is a tremendously great experience!
                             </div>
                             
                             <div class="info-row logos">

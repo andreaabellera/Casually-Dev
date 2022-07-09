@@ -1,5 +1,5 @@
 {
-    "name": "qtrlex",
+    "name": "casuallydev",
     "private": true,
     "scripts": {
         "dev": "run-p dev:*",

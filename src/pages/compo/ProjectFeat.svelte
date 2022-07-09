@@ -54,7 +54,7 @@
         position: relative;
         height: 80vh;
         width: 100%;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;

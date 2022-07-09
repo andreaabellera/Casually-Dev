@@ -5,7 +5,7 @@ blogs:
     tags:
       - Life 💃🏻
       - Develop ⚙️
-    image: bafybeid5we7gqmcdxuvzscw523vwkrcyxoku5wp75dqlshz7dpum7f3gfi
+    image: bafybeibuwe7ab4w6pei2jvchpw5v2kdj3jkgr2uqqa34rndo4ebrgzttf4
     blurb: bafybeigv2uydkattc6p6uk4pskpelfa7crv5pp45oyk7ctihub2gvhachm
 
   - id: homecooked-memes
@@ -123,7 +123,7 @@ blogs:
     blurb: bafybeib6b33ogpi2uicw25e3wzozyxslu43yjsvlhax3fpmglixmss7ixq
 
   - id: qtrlex-launch
-    title: Welcome to qtrlex!
+    title: Welcome to CasuallyDev! (previously qtrlex)
     date: May 24, 2022
     tags:
       - Develop ⚙️

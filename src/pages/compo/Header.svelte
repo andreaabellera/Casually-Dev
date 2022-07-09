@@ -60,7 +60,7 @@
 
 <span class="spinner"></span>
 <div id="title-ctr" class="title-container">
-    <div class="qtrlex"> Quaintrellex </div>
+    <div class="casuallydev"> CasuallyDev </div>
     <div class="tagline"> Bonne nouvelle journée </div>
 </div>
 <div class="fixed-ctr">
@@ -208,7 +208,7 @@
         width: 60%;
     }
 
-    .qtrlex{
+    .casuallydev{
         font-family: 'Mr De Haviland', cursive;
         font-size: 5.5em;
         color: var(--coffee);
@@ -219,9 +219,9 @@
         color: var(--mocha);
         font-family: 'Gentium Basic', serif;
         font-size: 0.9em;
-        margin-left: 4.5vw;
         width: 100%;
         transform: translateY(-2.2em);
+        margin-left: 2.5vw;
     }
 
     #nav-btn{
@@ -449,7 +449,7 @@
     }
 
     @media (max-width: 800px) {
-        .qtrlex{
+        .casuallydev{
             font-size: 4.5em;
         }
 
@@ -459,10 +459,6 @@
 
         .nav-container{
             display: none;
-        }
-
-        .tagline{
-            margin-left: 13vw;
         }
 
         .selected{

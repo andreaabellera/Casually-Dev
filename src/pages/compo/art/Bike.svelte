@@ -30,7 +30,7 @@
               <div class="bar"></div>
               <div class="seat"></div>
             </span>
-            <span class="lower-support"> <p> QTRLEX </p> </span>
+            <span class="lower-support"> <p> CASUALLYDEV </p> </span>
             <span class="pedal-box">
               <div class="bar"></div>
               <div class="pedal-axle"></div>
