@@ -1,4 +1,13 @@
 blogs:
+  - id: cool-girls-summer
+    title: Cool Girls' Summer
+    date: July 10, 2022
+    tags:
+      - Life 💃🏻
+      - Random 🍡
+    image: bafybeieqn6johrx57v5ctyllw6pklbw2s5cgdqjcjw32uwnb5wva3vxbe4
+    blurb: bafybeielpulnj65pvt2czphnkydfk2vazti6thur736dep7p7hioofdvim
+
   - id: retro-june-22
     title: June 2022 Retrospective
     date: July 1, 2022

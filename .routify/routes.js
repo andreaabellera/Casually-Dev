@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Sat Jul 09 2022 03:36:21 GMT-0500 (Central Daylight Time)
+ * File generated Sun Jul 10 2022 00:51:23 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-07-09T08:36:21.152Z"
+export const __timestamp = "2022-07-10T05:51:23.973Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -610,6 +610,31 @@ export const _tree = {
         {
           "isFile": true,
           "isDir": false,
+          "file": "Leaderboard.svelte",
+          "filepath": "/compo/Leaderboard.svelte",
+          "name": "Leaderboard",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/Leaderboard.svelte",
+          "importPath": "../src/pages/compo/Leaderboard.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/Leaderboard",
+          "id": "_compo_Leaderboard",
+          "component": () => import('../src/pages/compo/Leaderboard.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
           "file": "ProjectFeat.svelte",
           "filepath": "/compo/ProjectFeat.svelte",
           "name": "ProjectFeat",
@@ -631,6 +656,31 @@ export const _tree = {
           "path": "/compo/ProjectFeat",
           "id": "_compo_ProjectFeat",
           "component": () => import('../src/pages/compo/ProjectFeat.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "RevueCover.svelte",
+          "filepath": "/compo/RevueCover.svelte",
+          "name": "RevueCover",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/RevueCover.svelte",
+          "importPath": "../src/pages/compo/RevueCover.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/RevueCover",
+          "id": "_compo_RevueCover",
+          "component": () => import('../src/pages/compo/RevueCover.svelte').then(m => m.default)
         }
       ],
       "isLayout": false,
