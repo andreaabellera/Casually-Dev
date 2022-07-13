@@ -9,8 +9,10 @@
   "/compo/art/Hippo",
   "/compo/art/Matcha",
   "/compo/art/Octopus",
+  "/compo/BentoBox",
   "/compo/BlogCover",
   "/compo/BlogFeat",
+  "/compo/Collection",
   "/compo/Footer",
   "/compo/GalerieFeat",
   "/compo/GirlCave",
@@ -26,5 +28,6 @@
   "/intermission",
   "/journals/index",
   "/laruelle",
+  "/resources",
   "/revues"
 ]

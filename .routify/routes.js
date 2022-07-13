@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Sun Jul 10 2022 00:51:23 GMT-0500 (Central Daylight Time)
+ * File generated Wed Jul 13 2022 18:24:17 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-07-10T05:51:23.973Z"
+export const __timestamp = "2022-07-13T23:24:17.068Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -385,6 +385,31 @@ export const _tree = {
         {
           "isFile": true,
           "isDir": false,
+          "file": "BentoBox.svelte",
+          "filepath": "/compo/BentoBox.svelte",
+          "name": "BentoBox",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/BentoBox.svelte",
+          "importPath": "../src/pages/compo/BentoBox.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/BentoBox",
+          "id": "_compo_BentoBox",
+          "component": () => import('../src/pages/compo/BentoBox.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
           "file": "BlogCover.svelte",
           "filepath": "/compo/BlogCover.svelte",
           "name": "BlogCover",
@@ -431,6 +456,31 @@ export const _tree = {
           "path": "/compo/BlogFeat",
           "id": "_compo_BlogFeat",
           "component": () => import('../src/pages/compo/BlogFeat.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "Collection.svelte",
+          "filepath": "/compo/Collection.svelte",
+          "name": "Collection",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/Collection.svelte",
+          "importPath": "../src/pages/compo/Collection.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/Collection",
+          "id": "_compo_Collection",
+          "component": () => import('../src/pages/compo/Collection.svelte').then(m => m.default)
         },
         {
           "isFile": true,
@@ -892,6 +942,31 @@ export const _tree = {
       "path": "/laruelle",
       "id": "_laruelle",
       "component": () => import('../src/pages/laruelle.svelte').then(m => m.default)
+    },
+    {
+      "isFile": true,
+      "isDir": false,
+      "file": "resources.svelte",
+      "filepath": "/resources.svelte",
+      "name": "resources",
+      "ext": "svelte",
+      "badExt": false,
+      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/resources.svelte",
+      "importPath": "../src/pages/resources.svelte",
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": true,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/resources",
+      "id": "_resources",
+      "component": () => import('../src/pages/resources.svelte').then(m => m.default)
     },
     {
       "isFile": true,
