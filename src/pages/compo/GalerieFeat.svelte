@@ -44,18 +44,34 @@
     }
 
     // Get art data
-    let feats = artData.collections.general
-    let rng = Math.floor(Math.random() * feats.length)
-    title = feats[rng].title
-    image = feats[rng].image
-    adjust = feats[rng].adjust
+    let collections = artData.collections
+    let rng = Math.floor(Math.random() * collections.length)
+    let collectionTitle = collections[rng].title
+    let currI = 0
+    let feats = collections[rng].images
+    let feat = feats[currI]
+    
+    // Change image every 5 seconds
+    setInterval(changeFeat, 5000)
+    function changeFeat(){
+        if(currI < feats.length){
+            feat = feats[currI]
+            currI++
+        }
+        else
+            currI = 0
+    }
+
+    $: title = feat.title
+    $: image = feat.image
+    $: adjust = feat.adjust
 
 </script>
 
 <a href="/galerie">
     <div class="gallery-feat-ctr" on:mouseenter={play} on:focus={play} on:mouseleave={reset}>
-        <div class="original-text syncopate"> ORIGINAL ARTWORKS </div>
-        <div id="title-text" class="mrDeHaviland"> {title} </div>
+        <div class="original-text syncopate"> Featuring original artworks from <b>{collectionTitle}</b> </div>
+        <div id="title-text" class="laBelleAurore"> {title} </div>
         <div class="view-text lancelot"> view gallery </div>
         <div id="grad"></div>
         <div id="img-ctr" style="background-image:url({image}); background-position: {adjust};"></div>
@@ -103,10 +119,11 @@
         z-index: 5;
         top: 1em;
         left: 1em;
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: var(--oyster);
         font-weight: 400;
-        opacity: 60%;
+        background-color: var(--ink);
+        padding: 6px;
     }
 
     #title-text{
@@ -116,7 +133,7 @@
         top: 70;
         left: 70%;
         transform: translate(-50%, -30%);
-        font-size: 8em;
+        font-size: 6.5em;
         color: var(--oyster);
         opacity: 0%;
     }
@@ -140,7 +157,7 @@
         position: absolute;
         z-index: 4;
         bottom: 0;
-        height: 70%;
+        height: 90%;
         width: 100%;
         background-image: linear-gradient(to top, black, rgba(0,0,0,0));
     }
@@ -191,11 +208,12 @@
     @media (max-width: 600px) {
         .original-text{
             font-size: 0.8em;
+            background-color: rgba(0,0,0,0);
         }
 
         #title-text{
             width: auto;
-            font-size: 3em;
+            font-size: 2.7em;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);

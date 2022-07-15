@@ -7,7 +7,7 @@
 
 <div id="collectionCtr">
     <div id="collectionInner">
-        <div id="heading" class="laBelleAurore">
+        <div id="heading" class="taviraj">
             {title}
         </div>
     
@@ -39,19 +39,18 @@
 
     #heading {
         color: var(--coffee);
-        width: max-content;
-        height: max-content;
-        font-size: 3em;
+        font-size: 2.7em;
     }
 
     #images-array {
         display: flex;
         flex-wrap: wrap;
         margin-top: 5vh;
+        justify-content: center;
     }
 
     .image-ctr{
-        height: 50vh;
+        height: 45vh;
         width: max-content;
         margin: 3px;
     }
@@ -84,6 +83,10 @@
             height: max-content;
             width: 100%;
             margin: 2px;
+        }
+
+        #heading{
+            font-size: 1.8em; 
         }
     }
 </style>
