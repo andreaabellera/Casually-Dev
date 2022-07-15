@@ -59,7 +59,7 @@
                 </div>
             {/if}
         {/each}
-        </div>
+    </div>
 </div>
 {/if}
 

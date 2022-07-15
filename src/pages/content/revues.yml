@@ -1,0 +1,23 @@
+reviews:
+  - id: coffee-tim-hortons
+    title: Coffee
+    detail: Tim Hortons Double-double
+    blurb: Very yummy~
+    rating: 5
+    thumb: bafybeicqnhyhzvhcj4ch27jlh4rn6bz6ndctx4kftosmbeokyzgr5ngsue
+
+  - id: pink-lemonade
+    title: Pink Lemonade
+    detail: The Icing Castle
+    blurb: Very yummy~
+    rating: 5
+    thumb: bafybeigy4m6vrvyuq43kegensqooixz4ihlqvsdnowb3fj632npxgkdwue
+
+  - id: paradise-drink
+    title: Paradise Drink
+    detail: Starbucks
+    blurb: Very yummy~
+    rating: 5
+    thumb: bafybeih7mghohsj6k5brpthzzx2dzxbl5a6hungop53j5epv6mtq5wz67u
+
+  

@@ -8,7 +8,7 @@
 <div class="cover-ctr">
     <div class="cover-inner">
         <div class="cover-inner">
-
+            Leaderboard
         </div>
     </div>
 </div>

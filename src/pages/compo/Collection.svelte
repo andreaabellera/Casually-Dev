@@ -91,6 +91,7 @@
 
     .title{
         font-size: 1.5em;
+        margin: 0 1.2em 0 1.2em;
         font-weight: bold;
     }
 
@@ -103,6 +104,7 @@
     .info{
         font-size: 0.8em;
         margin: 0 1.2em 0 1.2em;
+        color: var(--oyster);
     }
 
     @keyframes up{
