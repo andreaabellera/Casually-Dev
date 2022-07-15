@@ -15,6 +15,11 @@
             {#each images as image}
                 <div class="image-ctr">
                     <img src={image.image} alt={image.info} />
+                    <div class="overlay">
+                        <div class="title ptSans">{image.title}</div>
+                        <div class="year gentiumBasic">{image.year}</div>
+                        <div class="info ptSans">{image.info}</div>
+                    </div>
                 </div>
             {/each}
         </div>
@@ -50,20 +55,54 @@
     }
 
     .image-ctr{
+        position: relative;
         height: 45vh;
         width: max-content;
         margin: 3px;
     }
 
-    .image-ctr:hover{
-        animation: up 0.8s ease-in-out;
-        z-index: 4;
-        box-shadow: 0 0 0.5em 0.1em var(--chartreuse);
-    }
-
     .image-ctr img{
         width: 100%;
+        height: inherit;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
         height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.75);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .overlay:hover{
+        transition: 0.4s;
+        opacity: 1;
+        box-shadow: 0 0 0.8em 0.3em var(--chartreuse);
+    }
+
+    .title{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .year{
+        font-size: 0.9em;
+        font-style: italic;
+        margin-bottom: 1em;
+    }
+
+    .info{
+        font-size: 0.8em;
+        margin: 0 1.2em 0 1.2em;
     }
 
     @keyframes up{
