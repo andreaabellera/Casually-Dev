@@ -10,14 +10,20 @@ reviews:
     title: Pink Lemonade
     detail: The Icing Castle
     blurb: Very yummy~
-    rating: 5
+    rating: 4.5
     thumb: bafybeigy4m6vrvyuq43kegensqooixz4ihlqvsdnowb3fj632npxgkdwue
 
   - id: paradise-drink
     title: Paradise Drink
     detail: Starbucks
     blurb: Very yummy~
-    rating: 5
+    rating: 4
     thumb: bafybeih7mghohsj6k5brpthzzx2dzxbl5a6hungop53j5epv6mtq5wz67u
+
+  - id: chai-latte
+    title: Chai Latte
+    detail: Starbucks
+    blurb: Very yummy~ I don't have pic
+    rating: 3.5
 
   

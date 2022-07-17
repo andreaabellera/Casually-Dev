@@ -50,26 +50,28 @@
         <Heading title={"REVIEWS"} />
     {/if}
 
-    {#if leadVisible}
-        <div id="leaderboard">
-            <Leaderboard />
-        </div>
-    {/if}
-
-    <div id="revueArray">
-    {#each reviews as rev, i}
-        {#if visibles[i] && rev}
-            <div in:fly="{{ x: 500, duration: 600 }}">
-                    <RevueCover
-                        image = {rev.thumb}
-                        title = {rev.title}
-                        detail = {rev.detail}
-                        rating = {rev.rating}
-                        blurb = {rev.blurb}
-                    />
+    <div class="revueContent">
+        {#if leadVisible}
+            <div id="leaderboard">
+                <Leaderboard />
             </div>
         {/if}
-    {/each}
+
+        <div id="revueArray">
+        {#each reviews as rev, i}
+            {#if visibles[i] && rev}
+                <div in:fly="{{ x: 500, duration: 600 }}">
+                        <RevueCover
+                            image = {rev.thumb}
+                            title = {rev.title}
+                            detail = {rev.detail}
+                            rating = {rev.rating}
+                            blurb = {rev.blurb}
+                        />
+                </div>
+            {/if}
+        {/each}
+        </div>
     </div>
 
 </div>
@@ -84,4 +86,23 @@
         margin: -8vh 0 10vh 0;
     }
 
+    .revueContent{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -5vh;
+    }
+
+    @media (max-width: 700px) {
+        .revueContent{
+            flex-direction: column;
+        }
+
+        #leaderboard{
+            width: max-content;
+        }
+
+        #revueArray{
+            width: 100%;
+        }
+    }
 </style>

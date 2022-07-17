@@ -74,7 +74,7 @@
         color: white;
         height: 100%;
         width: 100%;
-        background-color: rgba(0,0,0,0.75);
+        background-color: rgba(62, 62, 62, 0.85);
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -99,12 +99,12 @@
         font-size: 0.9em;
         font-style: italic;
         margin-bottom: 1em;
+        color: var(--oysterDark);
     }
 
     .info{
         font-size: 0.8em;
         margin: 0 1.2em 0 1.2em;
-        color: var(--oyster);
     }
 
     @keyframes up{
