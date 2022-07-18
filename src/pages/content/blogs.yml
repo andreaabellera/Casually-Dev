@@ -1,4 +1,12 @@
 blogs:
+  - id: casually-roadshow
+    title: Casually Roadshows are in Town
+    date: July 17, 2022
+    tags:
+      - Games 🎲
+    image: bafybeiai7gudxycl4kqoacctwc3r4s36pabtfwxopgrw6s4s6bygq2ayou
+    blurb: bafybeiamqnldtzk2qtz3h2sk4evn55icifdiudms5tfwcfovi5dzzm3vxm
+
   - id: cool-girls-summer
     title: Cool Girls' Summer
     date: July 10, 2022
