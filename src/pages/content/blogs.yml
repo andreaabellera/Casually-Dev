@@ -1,4 +1,13 @@
 blogs:
+  - id: girl-cave-upgrades
+    title: Girl Cave Upgrades
+    date: July 20, 2022
+    tags:
+      - Develop ⚙️
+      - Art 🖼️
+    image: bafybeiex7ls55vvoo3uyhv6ytfekfjqw4dfpromu4cg7lcwg5oyx6gfmea
+    blurb: bafybeicgusvtqsdhqmgreg52z7ou4fccn4cbzthslfl3cckg2gengohz24
+  
   - id: casually-roadshow
     title: Casually Roadshows are in Town
     date: July 17, 2022
