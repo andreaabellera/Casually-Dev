@@ -32,8 +32,8 @@
 <style>
 	.cover-ctr {
         position: relative;
-        height: 15em;
-		width: 42em;
+        height: 20em;
+		width: 45em;
         margin: 0 0 4vh 3vw;
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
@@ -44,8 +44,8 @@
     .cover{
         position: relative;
         z-index: 3;
-        height: 12em;
-        width: 41em;
+        height: 17em;
+        width: 45em;
         display: grid;
         justify-items: center;
         align-items: center;
@@ -59,21 +59,25 @@
         width: 92%;
         display: grid;
         grid-template-columns: auto 1fr 20%;
-        grid-column-gap: 4vw;
         font-family: 'PT Sans', sans-serif;
         color: var(--ink);
         overflow: hidden;
     }
 
+    .revueContent{
+        overflow-y: scroll;
+    }
+
     .revueThumb{
         height: 100%;
         width: 8em;
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         grid-column: 1/2;
         grid-row: 1/3;
+        margin-right: 3vw;
     }
 
     .revueTitle{
@@ -81,9 +85,16 @@
         font-size: 2.5em;
     }
 
+    .revueDetail{
+        margin: 1vh 0 1vh 0;
+        font-weight: bold;
+    }
+
     .revueBlurb{
         color: var(--ink);
         font-size: 0.9em;
+        padding-right: 1em;
+        line-height: 2em;
     }
 
     #rating{
@@ -101,9 +112,13 @@
 
     @media (max-width: 600px) {
         .cover-ctr{
-            height: 22em;
+            height: max-content;
 		    width: 100%;
             margin: 0 0 3vh 0;
+        }
+
+        .cover{
+            height: max-content;
         }
 
         .cover-inner{

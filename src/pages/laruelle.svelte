@@ -37,7 +37,7 @@
     {#if visibleC}
         <div class="andrea-inner" transition:fly="{{y:100, duration: 800}}">
             <Octopus />
-            <div class="coming-soon"> Coming next!<br>See <a href="https://ipfs.fleek.co/ipfs/bafybeifuietsx6mhmlpmn3xarwc43vaw4iqdaqxp6srnlhaafahmoevlam">résumé </a>for now</div> 
+            <div class="coming-soon"> Coming next!<br>See <a href="https://ipfs.fleek.co/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu">résumé </a>for now</div> 
         </div>
     {/if}
 </div>

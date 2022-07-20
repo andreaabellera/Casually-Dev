@@ -25,11 +25,11 @@
     }
 
     // Reviews transition
-    let id2 = setInterval(loadEntries, 150)
+    let id2 = setInterval(loadEntries, 50)
     let delay = 0
     let currV = 0
     function loadEntries() {
-        if(delay==5){
+        if(delay==15){
             visibles[currV] = true
             leadVisible = true
             currV++

@@ -15,10 +15,10 @@
     <div class="cover-ctr">
         <div class="cover-inner">
             <div id="leaderboard"> LEADERBOARD </div>
-            <div id="lbImage" style="background-image:url(https://ipfs.fleek.co/ipfs/bafybeicqnhyhzvhcj4ch27jlh4rn6bz6ndctx4kftosmbeokyzgr5ngsue);"> Image </div>
-            <div id="lbTitle"> Title </div>
-            <div id="lbDetail"> Detail </div>
-            <div id="lbBlurb"> Blurb </div>
+            <div id="lbImage" style="background-image:url(https://ipfs.fleek.co/ipfs/bafybeicqnhyhzvhcj4ch27jlh4rn6bz6ndctx4kftosmbeokyzgr5ngsue);"> </div>
+            <div id="lbTitle"> Drink Title </div>
+            <div id="lbDetail"> Drink Detail </div>
+            <div id="lbBlurb"> Leaderboard will be coded soon! </div>
         </div>
     </div>
 </div>
@@ -28,7 +28,7 @@
         position: relative;
         height: 80vh;
 		width: 25em;
-        margin: 0 0 3vh 6vw;
+        margin: 0 0 8vh 6vw;
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: flex-end;
@@ -87,7 +87,7 @@
     #rank{
         height: 90%;
         width: 90%;
-        color: var(--ink);
+        color: var(--mocha);
         overflow: hidden;
         display: grid;
         justify-items: center;
@@ -114,11 +114,13 @@
     }
 
     #lbDetail{
+        font-family: 'PT Sans', sans-serif;
         font-size: 1em;
         margin: 1vh 0 4vh 0.2em;
     }
 
     #lbBlurb{
+        font-family: 'PT Sans', sans-serif;
         font-size: 1.2em;
         margin-bottom: 3em;
     }
@@ -126,6 +128,10 @@
     @media (max-width: 700px) {
         .content-ctr{
             width: 85vw;
+        }
+
+        #lbBlurb{
+            font-size: 0.8em;
         }
     }
 
