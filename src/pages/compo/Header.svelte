@@ -453,6 +453,13 @@
             font-size: 4.5em;
         }
 
+        .tagline{
+            font-size: 0.7em;
+            width: 100%;
+            transform: translateY(-2em);
+            margin-left: 4vw;
+        }
+
         #nav-btn{
             display: block;
         }

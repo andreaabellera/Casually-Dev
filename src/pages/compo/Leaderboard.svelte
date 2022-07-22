@@ -1,54 +1,49 @@
 <script>
-    
+    export let set = []
+
+    if(set.length > 0) {
+        console.log("Rearrange set based on ratings from greatest to least")
+    }
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<div class="content-ctr">
-    <div id="rankBadgeCtr">
-        <div class="rankBadgeInner">
-            <div id="rank"> 1 </div>
-        </div>
-    </div>
-    <div class="cover-ctr">
-        <div class="cover-inner">
-            <div id="leaderboard"> LEADERBOARD </div>
+<div class="cover-ctr">
+    <div class="cover-inner">
+        <div id="leaderboard"> LEADERBOARD </div>
+        <div id="img-ctr">
+            <div id="rankBadgeCtr">
+                <div class="rankBadgeInner">
+                    <div id="rank"> 1 </div>
+                </div>
+            </div>
             <div id="lbImage" style="background-image:url(https://ipfs.fleek.co/ipfs/bafybeicqnhyhzvhcj4ch27jlh4rn6bz6ndctx4kftosmbeokyzgr5ngsue);"> </div>
-            <div id="lbTitle"> Drink Title </div>
-            <div id="lbDetail"> Drink Detail </div>
-            <div id="lbBlurb"> Leaderboard will be coded soon! </div>
         </div>
+        <div id="lbTitle"> Drink Title </div>
+        <div id="lbDetail"> Drink Detail </div>
+        <div id="lbBlurb"> Leaderboard will be coded soon! </div>
     </div>
 </div>
 
 <style>
-	.content-ctr {
-        position: relative;
-        height: 80vh;
-		width: 25em;
-        margin: 0 0 8vh 6vw;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
-        display: grid;
-        justify-items: flex-end;
-        align-items: flex-end;
-	}
-
     .cover-ctr{
         background-color: var(--bark);
         color: var(--ink);
-        height: 97%;
-        width: 95%;
+        height: 80vh;
+        width: 25em;
         display: grid;
         justify-items: center;
         align-items: center;
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
+        margin: 0 0 8vh 6vw;
         overflow-y: hidden;
+        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .cover-inner{
-        height: 75%;
+        height: 88%;
         width: 80%;
     }
 
@@ -65,7 +60,7 @@
     #rankBadgeCtr{
         position: absolute;
         top: 0;
-        left: 0;
+        left: -1.5em;
         height: 4em;
         width: 4em;
         border: 0.3em solid var(--chartreuse);
@@ -106,12 +101,21 @@
     #lbImage{
         height: 30vh;
         width: 100%;
-        margin: 3vh 0 3vh 0;
         box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    #img-ctr {
+        position: relative;
+        height: 33vh;
+		width: 100%;
+        margin: 3vh 0 3vh 0;
+        display: grid;
+        justify-items: flex-end;
+        align-items: flex-end;
+	}
 
     #lbDetail{
         font-family: 'PT Sans', sans-serif;
@@ -126,7 +130,7 @@
     }
 
     @media (max-width: 700px) {
-        .content-ctr{
+        .cover-ctr{
             width: 85vw;
         }
 

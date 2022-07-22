@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Wed Jul 20 2022 18:40:48 GMT-0500 (Central Daylight Time)
+ * File generated Fri Jul 22 2022 18:35:08 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-07-20T23:40:48.785Z"
+export const __timestamp = "2022-07-22T23:35:08.396Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -992,6 +992,31 @@ export const _tree = {
       "path": "/revues",
       "id": "_revues",
       "component": () => import('../src/pages/revues.svelte').then(m => m.default)
+    },
+    {
+      "isFile": true,
+      "isDir": false,
+      "file": "testlab.svelte",
+      "filepath": "/testlab.svelte",
+      "name": "testlab",
+      "ext": "svelte",
+      "badExt": false,
+      "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/testlab.svelte",
+      "importPath": "../src/pages/testlab.svelte",
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": true,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/testlab",
+      "id": "_testlab",
+      "component": () => import('../src/pages/testlab.svelte').then(m => m.default)
     }
   ],
   "isLayout": true,

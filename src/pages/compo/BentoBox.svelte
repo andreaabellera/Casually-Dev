@@ -1,6 +1,6 @@
 <script>
     // Express artworks import
-    /*import Beluga from "casually-css/@svelte/beluga.svelte"
+    import Beluga from "casually-css/@svelte/beluga.svelte"
     import Bike from "casually-css/@svelte/bike.svelte"
     import Bison from "casually-css/@svelte/bison.svelte"
     import Blossom from "casually-css/@svelte/blossom.svelte"
@@ -14,7 +14,7 @@
     import Matcha from "casually-css/@svelte/matcha.svelte"
     import Octopus from "casually-css/@svelte/octopus.svelte"
     import Orange from "casually-css/@svelte/orange.svelte"
-    import Swiss from "casually-css/@svelte/swiss.svelte"*/
+    import Swiss from "casually-css/@svelte/swiss.svelte"
 
     // Props
     export let height = "30vh"
@@ -39,6 +39,7 @@
     <!-- SINGLE ARTWORK -->
     {#if artName}
         <!-- import defined artwork -->
+        <Orange />
 
     <!-- SINGLE CODEBOX -->
     {:else if codeContent}
