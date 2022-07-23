@@ -100,6 +100,7 @@
         {:else}
         <div in:fly="{{ x: 500, duration: 1600 }}">
             <BlogCover
+                loading = {true}
                 title = {"Loading Content..."}
                 date = {""}
                 link = {blog.blurb}

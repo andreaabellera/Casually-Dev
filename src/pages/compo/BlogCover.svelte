@@ -1,15 +1,17 @@
 <script>
-    import { onMount } from 'svelte';
-    import toBuffer from 'it-to-buffer';
-    import CID from 'cids';
+    import { onMount } from 'svelte'
+    import toBuffer from 'it-to-buffer'
+    import CID from 'cids'
+    import Boba from "casually-css/@svelte/boba.svelte"
 
     // Props
-	export let image = null;
-    export let tags = [];
-    export let title = "Untitled Blog Post";
-    export let date = "No date provided";
+	export let image = null
+    export let tags = []
+    export let title = "Untitled Blog Post"
+    export let date = "No date provided"
     export let link;
-    let blurb = "Loading blurb...";
+    export let loading = false
+    let blurb = "Loading blurb..."
 
     // Cut blurb content
     function cutContent(content){
@@ -35,6 +37,15 @@
             })();
         }
 	});
+
+    function randTime() {
+        return (Math.random()*5 + 2) + "s";
+    }
+
+    function randRGB() {
+        return `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
+    }
+
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
@@ -45,7 +56,15 @@
     <div class="cover">
         <div class="cover-inner">
             {#if image}
-            <div class="blogThumb" style="background-image:url(https://ipfs.fleek.co/ipfs/{image});"></div>
+                <div class="blogThumb" style="background-image:url(https://ipfs.fleek.co/ipfs/{image});"></div>
+            {:else if loading}
+                <div class="blogThumb" style="opacity:0.3; box-shadow:none;" > 
+                    <Boba
+                        lidColor={randRGB()}
+                        drinkColor={randRGB()} 
+                        slurp={{duration:randTime()}}
+                    /> 
+                </div>
             {/if}
             <div class="blogContent">
                 <div class="blogTags">
