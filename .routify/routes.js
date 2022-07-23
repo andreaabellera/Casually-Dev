@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Sat Jul 23 2022 16:41:46 GMT-0500 (Central Daylight Time)
+ * File generated Sat Jul 23 2022 17:22:05 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-07-23T21:41:46.226Z"
+export const __timestamp = "2022-07-23T22:22:05.458Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -731,6 +731,31 @@ export const _tree = {
           "path": "/compo/RevueCover",
           "id": "_compo_RevueCover",
           "component": () => import('../src/pages/compo/RevueCover.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "SearchBar.svelte",
+          "filepath": "/compo/SearchBar.svelte",
+          "name": "SearchBar",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/SearchBar.svelte",
+          "importPath": "../src/pages/compo/SearchBar.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/SearchBar",
+          "id": "_compo_SearchBar",
+          "component": () => import('../src/pages/compo/SearchBar.svelte').then(m => m.default)
         }
       ],
       "isLayout": false,

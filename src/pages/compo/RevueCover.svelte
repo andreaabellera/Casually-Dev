@@ -68,6 +68,10 @@
         overflow-y: scroll;
     }
 
+    .revueContent::-webkit-scrollbar-track {
+		box-shadow: none; 
+	}
+
     .revueThumb{
         height: 100%;
         width: 8em;
@@ -131,9 +135,14 @@
             grid-row: 1/3;
         }
 
+        .revueContent{
+            height: max-content;
+        }
+
         #rating{
             grid-column: 2/3;
             grid-row: 2/3;
+            margin: 2em 0 6em 0;
         }
 
         .cover{

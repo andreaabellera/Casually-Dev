@@ -4,6 +4,7 @@
     import revData from './content/revues.yml'
     import Leaderboard from './compo/Leaderboard.svelte'
     import RevueCover from './compo/RevueCover.svelte'
+    import SearchBar from './compo/SearchBar.svelte'
 
 	// Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(window.navigator.userAgent) ||
@@ -52,9 +53,12 @@
 
     <div class="revueContent">
         {#if leadVisible}
-            <div id="leaderboard">
-                <Leaderboard />
-            </div>
+            <section id="flexy">
+                <SearchBar placeholder="🧋 Search for a Drink.. " />
+                <div id="leaderboard">
+                    <Leaderboard />
+                </div>
+            </section>
         {/if}
 
         <div id="revueArray">
@@ -92,6 +96,13 @@
         margin-top: -5vh;
     }
 
+    #flexy{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
     @media (max-width: 700px) {
         .revueContent{
             flex-direction: column;
@@ -103,6 +114,11 @@
 
         #revueArray{
             width: 100%;
+        }
+
+        #flexy{
+            flex-direction: column-reverse;
+            margin-top: 7vh;
         }
     }
 </style>

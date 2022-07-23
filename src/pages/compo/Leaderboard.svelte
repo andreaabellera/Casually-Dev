@@ -37,7 +37,7 @@
         justify-items: center;
         align-items: center;
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
-        margin: 0 0 8vh 6vw;
+        margin: 3vh 0 3vh 6vw;
         overflow-y: hidden;
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
