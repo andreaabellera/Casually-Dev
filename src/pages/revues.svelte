@@ -41,6 +41,19 @@
         else
             delay++
     }
+
+    // Search Logic
+    let ids = Object.values(reviews).map(x => x.id.replaceAll('-', ' '))
+    function handleInput(event) {
+        let text = event.detail.text.toLowerCase();
+        for(let i=0; i < ids.length; i++) {
+            if(ids[i].includes(text))
+                visibles[i] = true
+            else
+                visibles[i] = false
+        }
+	}
+
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
@@ -54,7 +67,10 @@
     <div class="revueContent">
         {#if leadVisible}
             <section id="flexy">
-                <SearchBar placeholder="🧋 Search for a Drink.. " />
+                <SearchBar 
+                    placeholder="🧋 Search for a Drink.. "
+                    on:drinkInput={handleInput} 
+                />
                 <div id="leaderboard">
                     <Leaderboard />
                 </div>
@@ -94,6 +110,11 @@
         display: flex;
         justify-content: space-evenly;
         margin-top: -5vh;
+    }
+
+    #revueArray{
+        width: max-content;
+        min-width: 45em;
     }
 
     #flexy{

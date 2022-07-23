@@ -1,10 +1,26 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
     export let placeholder = "Search.."
+    let theDrink = ''
+
+    const dispatch = createEventDispatcher();
+	function drinkInput() {
+		dispatch('drinkInput', {
+			text: theDrink
+		})
+	}
 </script>
 
 <link href='https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css'>
 <div id="search-ctr">
-    <input type="text" id="input" placeholder={placeholder}>
+    <input 
+        type="text" 
+        id="input" 
+        placeholder={placeholder}
+        bind:value={theDrink} 
+        on:keyup={drinkInput}
+    >
 </div>
 
 <style>

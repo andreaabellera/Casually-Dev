@@ -34,7 +34,7 @@
         position: relative;
         height: 20em;
 		width: 45em;
-        margin: 0 0 4vh 3vw;
+        margin-bottom: 4vh;
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
