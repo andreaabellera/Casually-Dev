@@ -9,7 +9,7 @@
     export let tags = []
     export let title = "Untitled Blog Post"
     export let date = "No date provided"
-    export let link;
+    export let link = null;
     export let loading = false
     let blurb = "Loading blurb..."
 
@@ -18,7 +18,7 @@
         return content.substring(0, 100) + "..."
     }
 
-    export let ipfsNode;
+    export let ipfsNode = null;
 
     // Setup IPFS
     onMount(async () => {

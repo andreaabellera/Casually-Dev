@@ -1,4 +1,11 @@
 <script>
+    /* Defining BentoBox layouts. Layout will be determined by props passed
+    1. Single artwork (art)
+    2. Single codebox (title, code)
+    3. HTML and CSS codebox (htmlCode, cssCode)
+    4. Artwork, HTML and CSS codebox (htmlCode, cssCode, render=true)
+    */
+
     // Express artworks import
     import Beluga from "casually-css/@svelte/beluga.svelte"
     import Bike from "casually-css/@svelte/bike.svelte"
@@ -17,51 +24,186 @@
     import Swiss from "casually-css/@svelte/swiss.svelte"
 
     // Props
-    export let height = "30vh"
-    export let width = "40vw"
-    export let artName
-    export let codeTitle = "Code Box"
-    export let codeContent
-    export let htmlCode
-    export let cssCode
+    export let art = null
+    export let title = "Code Box"
+    export let code = null
+    export let htmlCode = null
+    export let cssCode = null
     export let render = false
 
-    /* Defining BentoBox layouts. Layout will be determined by props passed
-    1. Single artwork (artName)
-    2. Single codebox (codeTitle, codeContent)
-    3. HTML and CSS codebox (htmlcontent, csscontent)
-    4. Artwork, HTML and CSS codebox (htmlcontent, csscontent, render=true)
-    */
+    let renderCode = () => {
+        return htmlCode + "<style>" + cssCode + "</style>"
+    }
 
 </script>
 
-<div class="bentobox" style="height:{height}; width:{width};">
-    <!-- SINGLE ARTWORK -->
-    {#if artName}
-        <!-- import defined artwork -->
-        <Orange />
+<div class="bentoBox">
+    <div class="bentoContent">
+        <div class="bentoArt">
+            {#if art}
+                <!-- Fow now we have uglie list while I research strings to tags -->
+                {#if art == "beluga"}
+                    <Beluga />
+                {:else if art == "bike"}
+                    <Bike />
+                {:else if art == "bison"}
+                    <Bison />
+                {:else if art == "blossom"}
+                    <Blossom />
+                {:else if art == "boba"}
+                    <Boba />
+                {:else if art == "button"}
+                    <Button />
+                {:else if art == "calendar"}
+                    <Calendar />
+                {:else if art == "cookie"}
+                    <Cookie />
+                {:else if art == "dugong"}
+                    <Dugong />
+                {:else if art == "hippo"}
+                    <Hippo snap = {{iterationCount:0}} />
+                {:else if art == "lollipop"}
+                    <Lollipop />
+                {:else if art == "matcha"}
+                    <Matcha />
+                {:else if art == "octopus"}
+                    <Octopus />
+                {:else if art == "orange"}
+                    <Orange />
+                {:else if art == "swiss"}
+                    <Swiss />
+                {/if}
+            {:else if render}
+                {@html renderCode()}
+            {/if}
+        </div>
 
-    <!-- SINGLE CODEBOX -->
-    {:else if codeContent}
-        {codeTitle}
-        <!-- populate single codebox -->
-    
-    <!-- HTML AND CSS CODEBOX -->
-    {:else if htmlCode && cssCode}
-        <!-- populate HTML and CSS codebox -->
-
-    <!-- ARTWORK, HTML AND CSS CODEBOX -->
-    {:else if htmlCode && cssCode && render}
-        <!-- render artwork from given html and css code wish me the best -->
-
-    <!-- ERROR CODEBOX -->
-    {:else}
-        Invalid props passed to the BentoBox component
-    {/if}
+        {#if htmlCode && cssCode}
+            <div class="bentoCode">
+                <h3> HTML </h3>
+                <textarea class="codeInner">
+                    {htmlCode}
+                </textarea>
+            </div>
+            <div class="bentoCode">
+                <h3> CSS </h3>
+                <textarea class="codeInner">
+                    {cssCode}
+                </textarea>
+            </div>
+        {:else if code}
+            <div class="bentoCode">
+                <h3> {title} </h3>
+                <textarea class="codeInner">
+                    {code}
+                </textarea>
+            </div>
+        {/if}
+    </div>
 </div>
 
+
 <style>
-    .bentobox {
-        background-color: var(--ink);
+    .bentoBox {
+        height: max-content;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
     }
+
+    .bentoContent{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-rows: max-content max-content;
+        grid-column-gap: 5vw;
+        grid-row-gap: 2em;
+    }
+
+    .bentoArt{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .bentoCode{
+        background-color: #3e3e3e;
+        border-radius: 0.5em;
+        border: 0.4em groove #4e4e4e;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: max-content;
+        min-width: 35em;
+    }
+
+    .bentoCode h3{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--oyster);
+        margin: 2vh 0 2vh 0;
+        font-family: 'Syncopate', sans-serif;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    .codeInner{
+        background-color: #2a2a2a;
+        text-align: left;
+        height: auto;
+        min-height: 80%;
+        width: 95%;
+        color: var(--chartreuse);
+        padding: 1em;
+        margin: 4em 0 4em 0;
+        font-family: 'Cousine', monospace;
+        border-color: #4e4e4e;
+    }
+
+    .codeInner::selection{
+        background-color: #3e3e3e;
+    }
+
+    @media (max-width: 700px) {
+        .bentoContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .bentoArt{
+            max-width: 90vw;
+            margin-bottom: 3vw;
+        }
+
+        .bentoCode{
+            min-width: 90vw;
+        }
+
+        .codeInner{
+            width: 90%;
+        }
+
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        textarea::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.3); 
+            border-radius: 10px;
+        }
+        
+        textarea::-webkit-scrollbar-thumb {
+            background: var(--chartreuse); 
+            box-shadow: inset -1px -2px 8px rgba(0,0,0,0.3); 
+            border-radius: 10px;
+        }
+    }
+
+
 </style>

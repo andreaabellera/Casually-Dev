@@ -27,8 +27,44 @@
         else
             delay++
     }
-</script>
 
+    let sampalCode = `
+<div style="background-color: beige;"> \n
+    Look at me I'm a text \n
+</div>`
+
+    let htmlCode = `
+<div class="blossom">
+  <div class="mid"></div>
+</div>`
+
+    let cssCode = `
+.blossom{
+  height: 20ex;
+  width: 20ex;
+  position: relative;
+
+  /* Visual guide */
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.mid{
+  /* Defines the square */
+  background-color: lightsteelblue;
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  z-index: 2;
+  
+  /* Centers the square */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}`
+
+</script>
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
 {#if visible}
@@ -40,7 +76,9 @@
     {#if visibleC}
         <div class="testlab-inner" transition:fly="{{y:100, duration: 800}}">
             <BentoBox 
-                artName = "orange"
+                art = "swiss" 
+                htmlCode = {htmlCode}
+                cssCode = {cssCode}
             />
         </div>
     {/if}
