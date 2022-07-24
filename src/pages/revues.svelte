@@ -68,11 +68,13 @@
         {#if leadVisible}
             <section id="flexy">
                 <SearchBar 
-                    placeholder="🧋 Search for a Drink.. "
-                    on:drinkInput={handleInput} 
+                    placeholder = "🧋 Search for a Drink.. "
+                    on:drinkInput = {handleInput} 
                 />
                 <div id="leaderboard">
-                    <Leaderboard />
+                    <Leaderboard 
+                        set = {reviews}
+                    />
                 </div>
             </section>
         {/if}
@@ -135,6 +137,7 @@
 
         #revueArray{
             width: 100%;
+            min-width: 100%;
         }
 
         #flexy{

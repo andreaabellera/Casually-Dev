@@ -1,8 +1,41 @@
 <script>
+    import { fly } from 'svelte/transition'
+
     export let set = []
+    export let ranks = 10
+    let top = []
+    let visibles = []
 
     if(set.length > 0) {
-        console.log("Rearrange set based on ratings from greatest to least")
+        let ratings = Object.values(set).map(x => [x.rating, x])
+        
+        // Sort objects by rating in descending order
+        ratings.sort((a, b) => b[0] - a[0])
+        for(let i=0; i < ranks; i++) {
+            let item = ratings[i][1]
+            item.rank = i + 1
+            top.push(ratings[i][1])
+            if(i!=0)
+                visibles.push(false)
+            else
+                visibles.push(true)
+        }
+
+        // Periodically swap ranking cards
+        let currVisible = 0
+        setInterval(() => {
+            if(currVisible < ranks-1) {
+                visibles[currVisible] = false
+                currVisible++
+            }
+            else{
+                visibles[currVisible] = false
+                currVisible = 0
+            }
+
+            visibles[currVisible] = true
+        }, 8000)
+
     }
 </script>
 
@@ -10,28 +43,39 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<div class="cover-ctr">
-    <div class="cover-inner">
-        <div id="leaderboard"> LEADERBOARD </div>
-        <div id="img-ctr">
-            <div id="rankBadgeCtr">
-                <div class="rankBadgeInner">
-                    <div id="rank"> 1 </div>
+{#each top as item, i}
+    {#if visibles[i] && item}
+        <div class="cover-ctr" in:fly="{{ x: -200, duration: 100, delay: 300 }}" out:fly="{{ x:-200, duration: 300 }}">
+            <div class="cover-inner">
+                <div id="leaderboard"> LEADERBOARD </div>
+                <div id="img-ctr">
+                    <div id="rankBadgeCtr">
+                        <div class="rankBadgeInner">
+                            <div id="rank"> {item.rank} </div>
+                        </div>
+                    </div>
+                    {#if item.thumb}
+                        <div id="lbImage" style="background-image:url(https://ipfs.fleek.co/ipfs/{item.thumb});"></div>
+                    {:else}
+                        <div id="lbImage" style="background-image:url(https://ipfs.fleek.co/ipfs/bafybeietxv3j7ap373tsqtcl5p4mcbo6vyamyrwajlw4ib3n25zxjqp3xi);">
+                            <div> No Picture </div>
+                        </div>
+                    {/if}
                 </div>
+                <div id="lbTitle"> {item.title} </div>
+                <div id="lbDetail"> {item.detail} </div>
+                <div id="lbBlurb"> {item.blurb} </div>
             </div>
-            <div id="lbImage" style="background-image:url(https://ipfs.fleek.co/ipfs/bafybeicqnhyhzvhcj4ch27jlh4rn6bz6ndctx4kftosmbeokyzgr5ngsue);"> </div>
         </div>
-        <div id="lbTitle"> Drink Title </div>
-        <div id="lbDetail"> Drink Detail </div>
-        <div id="lbBlurb"> Leaderboard will be coded soon! </div>
-    </div>
-</div>
+    {/if}
+{/each}
 
 <style>
     .cover-ctr{
         background-color: var(--bark);
         color: var(--ink);
-        height: 80vh;
+        height: max-content;
+        min-height: 65vh;
         width: 25em;
         display: grid;
         justify-items: center;
@@ -45,6 +89,7 @@
     .cover-inner{
         height: 88%;
         width: 80%;
+        margin: 1em 0 1em 0;
     }
 
     #leaderboard{
@@ -99,17 +144,23 @@
     }
 
     #lbImage{
-        height: 30vh;
+        height: 20vh;
         width: 100%;
         box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 1em;
+        color: var(--coffee);
+        font-family: 'Lancelot', cursive;
     }
 
     #img-ctr {
         position: relative;
-        height: 33vh;
+        height: 23vh;
 		width: 100%;
         margin: 3vh 0 3vh 0;
         display: grid;
@@ -135,7 +186,8 @@
         }
 
         #lbBlurb{
-            font-size: 0.8em;
+            display: none;
+            /* font-size: 0.8em; */
         }
     }
 

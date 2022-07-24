@@ -1,23 +1,16 @@
 reviews:
-  - id: star-drink
-    title: Star Drink (Discontinued)
-    detail: Tim Hortons Double-double
-    blurb: (I won't include discontinued drinks except for the best and worst drink) It lasted only two summers but this is hands-down THE BEST DRINK HUMANS EVER INVENTED TM. Kiwi starfruit of itself is sour. Kiwi with lemonade and is throat suicide. But kiwi with coconut milk, THIS, is perfectly balanced. The tea soup is divine, like green apple. The infusions are sour but I grew to like it with the tea soup. Like sour candies. Not long, all other refreshers became subpar. Nothing beat the character of the Star drink. I would finish a Trente and I'd want another Trente. I won't know Heaven in my lifetime but if I can attribute one thing on earth to heaven I pick this.
-    rating: 9.5
-    thumb: bafybeig3koq5pggcif7ofrybfp3i2o3zjggnrxmqe5b2jlmff45wljzw6q
+  - id: coffee
+    title: Coffee
+    detail: Blonde Cafe Misto(8/10), most home blends or self-serves(7/10), Tims(6.5/10), McCafe (5/10)
+    blurb: I used to find all coffee taste the same. Wherever I get them, whatever they are called. Then I started drink adventuring, alas. Needless, double double is my go-to. Ratings are trivial because I will not resist any coffee plopped in front of me and as much as I try different drinks, in my core, I love basic coffee.
+    rating: 8
+    thumb: bafybeigdr7ffgsleoqq5vqbpzromxa3et72myjvrk3m3gykfggah3ehqzy
 
-  - id: london-fog
-    title: London Fog
-    detail: Most Cafes and Tims(9/10), Starbucks(8/10)
-    blurb: I used to not like milk teas. I was in the process of slowly liking it, thanks to bubble tea trend. Though, when I first tried a London Fog from a counter at Tim's.. BOY, it changed my mind completely. Now I love my hot milk teas especially if it is called London Fog (which is Earl Grey with cream and foam)
-    rating: 9
-
-  - id: mango-dragonfruit-refresher
-    title: Mango Dragonfruit Refresher
+  - id: caramel-macchiato
+    title: Caramel Macchiato
     detail: Starbucks
-    blurb: A refresher I instantly loved on first try. I would alternate this with Starberry Acai Refresher but eventually I ended up preferring this a bit. Okay, I am from the Philippines, I am a sop for mango juice. Our mango juice is either puree-like (very concentrated) or artificially flavored in kids' Zest-Os. There's no inbetween. But the MDR base is a type of un-mango (it's translucent white lol) that's groundbreaking. I sometimes ask for extra of this juice. The dragonfruit inclusions are sweet, and small, and cronchy (unless they are soggy), I call them "bonbons". 100% snackable with ice. I love this drink to bits.
-    rating: 9
-    thumb: bafybeifuiogy6oz46nlk23k7xcugqyfyym7kh66cgynb4dyp5xzy3ruvwq
+    blurb: Sweet, sumptuous, creamy, yummy, and heartwarming. It's a drink I'd recommend often, because this coffee feels like home. It's not too bitter to jolt people not used to coffee. Not too sweet to the degree of a blonde vanilla latte. Generally the likeable friend in the world of cafes.
+    rating: 7
 
   - id: matcha-green-tea-latte
     title: Matcha Green Tea Latte
@@ -25,16 +18,16 @@ reviews:
     blurb: This drink hug your soul. It will soothe you, and comfort you, affectionately stroke your back, tell you everything is alright. You are loved and cherished. There is no more sadness. Only hot-to-warm milk and delectable matcha. And then you start tasting the matcha sediments at the bottom and wonder where did all the drink go.
     rating: 8.5
 
+  - id: matcha-creme-frappuccino
+    title: Matcha Creme Frappuccino
+    detail: Starbucks
+    blurb: I enjoy it way less than its hot counterpart. Why would I chug a few mLs of a matcha drink and work through a ton of non-complementing whipped cream? Hey, to each their own.
+    rating: 5.5
+
   - id: strawberry-acai-refresher
     title: Strawberry Açai Refresher 
     detail: Starbucks
     blurb: THE OG. Other refreshers took its place as my favorite but this DRINK for starting everything. My poor self couldn't imagine affording Starbucks and used to ignore the chains. But at the first sip of SAR, my standards are forever altered. In my second year in uni, I would hardcore farm for Starbucks cards to buy the smallest Strawberry Acai Refreshers. While half a dollar cheaper from the next size up, smalls (ironically called Tall) are barely anything but it was enough for me. After I finish the lightly caffeinated exquisite strawberry tea soup, there'd still be a ton of ice and strawberry slices left in the cup. I would snack on them in lectures, I'd snack on them while coding. I'd snack on them and live my best life. Crispy strawberries are godly, soggy strawberries are yucky. The drink soup is sweet and yummy with a slight bitter tang but it is divine.
-    rating: 8.5
-
-  - id: cappuccino
-    title: Cappuccino
-    detail: Starbucks
-    blurb: I love my classic foamy coffee. With a pump of any syrup (esp. white mocha) and it will be soooo good. Perfect rainy day drink. Even if the skies are grey, Cap will be there to warm the heart. 
     rating: 8.5
 
   - id: chocolate-creme-cold-brew
@@ -43,13 +36,6 @@ reviews:
     blurb: Second time I got the drink, I decided this is so good for what it's worth and bumped the number up. At first, I thought it would benefit from a little more chocolate. Too much coffee, to little chocolate. Then I realized this is cold brew, not iced mocha. Chocolate's an accent, and this may be, in fact, better than mocha! It has chocolate foam on top- which is ABSOLUTELY bussing. The rest will melt into the iced drink and the subtle cocoa tones will make the brew a treat.
     rating: 8.5
     thumb: bafybeido7elrny7v3qwqxyztvs5qgc5qazvkzcj5n4iv64dh42ptjmg5de
-
-  - id: coffee
-    title: Coffee
-    detail: Blonde Cafe Misto(8/10), most home blends or self-serves(7/10), Tims(6.5/10), McCafe (5/10)
-    blurb: I used to find all coffee taste the same. Wherever I get them, whatever they are called. Then I started drink adventuring, alas. Needless, double double is my go-to. Ratings are trivial because I will not resist any coffee plopped in front of me and as much as I try different drinks, in my core, I love basic coffee.
-    rating: 8
-    thumb: bafybeigdr7ffgsleoqq5vqbpzromxa3et72myjvrk3m3gykfggah3ehqzy
 
   - id: chai-latte
     title: Chai Latte
@@ -62,13 +48,7 @@ reviews:
     detail: Starbucks
     blurb: My fave Fall pick. Subtle apple flavor with milk, with some coffee, everything iced. The most unexpected godsend that's so delectable. Layered or mixed together this drink makes me love my day and love my enemies. I hope they return it this year.
     rating: 8
-    thumb: bafybeido7elrny7v3qwqxyztvs5qgc5qazvkzcj5n4iv64dh42ptjmg5de
-
-  - id: apple-mogu-mogu
-    title: Apple Mogu Mogu
-    detail: Tegaru
-    blurb: HEAR ME OUT, BEST MOGU MOGU. Is it an apple bias? Or is it just that good? I know I'd stock a ref with it.
-    rating: 8
+    thumb: bafybeie3qmiy466yefnozdy36azufa7h23rrlkhm5lubvcwartpfefyxte
 
   - id: dragon-drink
     title: Dragon Drink
@@ -117,11 +97,24 @@ reviews:
     rating: 7.5
     thumb: bafybeifxus377z6b3kgpaaaaqw3d33ea72kfy3b7rzqpu66ktu4bmd6dj4
 
-  - id: caramel-macchiato
-    title: Caramel Macchiato
+  - id: cappuccino
+    title: Cappuccino
     detail: Starbucks
-    blurb: Sweet, sumptuous, creamy, yummy, and heartwarming. It's a drink I'd recommend often, because this coffee feels like home. It's not too bitter to jolt people not used to coffee. Not too sweet to the degree of a blonde vanilla latte. Generally the likeable friend in the world of cafes.
-    rating: 7
+    blurb: I love my classic foamy coffee. With a pump of any syrup (esp. white mocha) and it will be soooo good. Perfect rainy day drink. Even if the skies are grey, Cap will be there to warm the heart. 
+    rating: 8.5
+
+  - id: london-fog
+    title: London Fog
+    detail: Most Cafes and Tims(9/10), Starbucks(8/10)
+    blurb: I used to not like milk teas. I was in the process of slowly liking it, thanks to bubble tea trend. Though, when I first tried a London Fog from a counter at Tim's.. BOY, it changed my mind completely. Now I love my hot milk teas especially if it is called London Fog (which is Earl Grey with cream and foam)
+    rating: 9
+
+  - id: white-chocolate-mocha
+    title: White-Chocolate-Mocha
+    detail: Starbucks
+    blurb: Honestly, just get a triple triple from McDo or Tims. While Starbuck's White Mocha Sauce is fantastic, I thought it would be better as a pump than the highlight. This drink is just too rahrahrah sweet that masked Starbuck's signature kick, drink got demoted to fastfood counter coffee.
+    rating: 6
+    thumb: bafybeifavcku74ujjv3iahteaszoxhzqdwnfbjefc2ucoolmncr4e67soq
 
   - id: paradise-drink
     title: Paradise Drink
@@ -129,6 +122,33 @@ reviews:
     blurb: A new drink after my fave color! But I'm not gonna be biased. Okay, drinking this refresher is like eating a pineapple without chewing it. The infusions are just redundant versions of the drink, they taste the same if not a little bitter. Super sweet and good after a run, but otherwise I find it too pretentious.
     rating: 7
     thumb: bafybeidlszgitts6t7euhqd42os3tg57ckiofcodh22vbq2ij4c7kf67yu
+
+  - id: pineapple-passionfruit-refresher
+    title: Pineapple Passionfruit Refresher
+    detail: Starbucks
+    blurb: It has a strong bitter aftertaste. Paradise Drink has coconut milk which masks it efectively, this doesn't. By the time all ice melted and I finished the infusions, I found the tea base nearly undrinkable.
+    rating: 3
+    thumb: bafybeigqiwyfpwbupzhtucuoyvqgokhp2dmt2pnpz7ealq2pnsn4kxo3zy
+
+  - id: mango-dragonfruit-refresher
+    title: Mango Dragonfruit Refresher
+    detail: Starbucks
+    blurb: A refresher I instantly loved on first try. I would alternate this with Starberry Acai Refresher but eventually I ended up preferring this a bit. Okay, I am from the Philippines, I am a sop for mango juice. Our mango juice is either puree-like (very concentrated) or artificially flavored in kids' Zest-Os. There's no inbetween. But the MDR base is a type of un-mango (it's translucent white lol) that's groundbreaking. I sometimes ask for extra of this juice. The dragonfruit inclusions are sweet, and small, and cronchy (unless they are soggy), I call them "bonbons". 100% snackable with ice. I love this drink to bits.
+    rating: 9
+    thumb: bafybeifuiogy6oz46nlk23k7xcugqyfyym7kh66cgynb4dyp5xzy3ruvwq
+
+  - id: apple-mogu-mogu
+    title: Apple Mogu Mogu
+    detail: Tegaru
+    blurb: HEAR ME OUT, BEST MOGU MOGU. Is it an apple bias? Or is it just that good? I know I'd stock a ref with it.
+    rating: 8
+
+  - id: grape-mogu-mogu
+    title: Grape Mogu Mogu
+    detail: Tegaru
+    blurb: A kid's grape juice but with the nata de coco bits. Yummy for what it's worth though, I can see myself swap out the classic Lychees at times for these Grape ones.
+    rating: 6.5
+    thumb: bafybeifnooha5zsstcpmkflop56rye4aojjvyx5hkr4sdt7h2otji3duom
 
   - id: soursop-mogu-mogu
     title: Soursop Mogu Mogu
@@ -150,13 +170,6 @@ reviews:
     blurb: McDo's queen of summer drinks wins hearts to the taste of chai. For me, it's good, not as much as hot spicy chai latte. Starbucks has mediocre chai frap for its price. Shame, shame.
     rating: 6.5
 
-  - id: blueberry-pop
-    title: Blueberry Pop
-    detail: Tegaru
-    blurb: Refreshing blueberry soda commonly found in Japanese specialty stores. I went for the blueberry, I wasn't disappointed but it's okay. I'd try pouring it on a cup with ice next time. Make sure to open these bottles in a spot where spills are permissible. 
-    rating: 6.5
-    thumb: bafybeicz2wxxyaxdmpipyopyw7b76jq7aq3qm3botxmu7yhlarcsqy4fx4
-
   - id: mocha-cookie-crumble-frappuccino
     title: Mocha Cookie Crumble Frappuccino
     detail: Starbucks
@@ -164,12 +177,12 @@ reviews:
     rating: 6.5
     thumb: bafybeicgoyza5yk7rtum3nz3nl5rhvk7vjw5hoaxcyxemg3mda74cqmpoi
 
-  - id: grape-mogu-mogu
-    title: Grape Mogu Mogu
+  - id: blueberry-pop
+    title: Blueberry Pop
     detail: Tegaru
-    blurb: A kid's grape juice but with the nata de coco bits. Yummy for what it's worth though, I can see myself swap out the classic Lychees at times for these Grape ones.
+    blurb: Refreshing blueberry soda commonly found in Japanese specialty stores. I went for the blueberry, I wasn't disappointed but it's okay. I'd try pouring it on a cup with ice next time. Make sure to open these bottles in a spot where spills are permissible. 
     rating: 6.5
-    thumb: bafybeifnooha5zsstcpmkflop56rye4aojjvyx5hkr4sdt7h2otji3duom
+    thumb: bafybeicz2wxxyaxdmpipyopyw7b76jq7aq3qm3botxmu7yhlarcsqy4fx4
 
   - id: purple-aura-mango
     title: Purple Aura Mango
@@ -192,13 +205,6 @@ reviews:
     rating: 6
     thumb: bafybeicmwqj6owjibi27pie22lmt4l3yu3e4wmwc7l2yjlq3rxxpjjtsre
 
-  - id: white-chocolate-mocha
-    title: White-Chocolate-Mocha
-    detail: Starbucks
-    blurb: Honestly, just get a triple triple from McDo or Tims. While Starbuck's White Mocha Sauce is fantastic, I thought it would be better as a pump than the highlight. This drink is just too rahrahrah sweet that masked Starbuck's signature kick, drink got demoted to fastfood counter coffee.
-    rating: 6
-    thumb: bafybeifavcku74ujjv3iahteaszoxhzqdwnfbjefc2ucoolmncr4e67soq
-
   - id: passion-tango-tea
     title: Passion Tango Tea
     detail: Starbucks
@@ -206,25 +212,19 @@ reviews:
     rating: 6
     thumb: bafybeidn5vr2aznjbuwtvmnbvs6a6rqfry4xh6rkkcf5tnvb3tffrkoq5m
 
-  - id: matcha-creme-frappuccino
-    title: Matcha Creme Frappuccino
-    detail: Starbucks
-    blurb: I enjoy it way less than its hot counterpart. Why would I chug a few mLs of a matcha drink and work through a ton of non-complementing whipped cream? Hey, to each their own.
-    rating: 5.5
-
-  - id: pineapple-passionfruit-refresher
-    title: Pineapple Passionfruit Refresher
-    detail: Starbucks
-    blurb: It has a strong bitter aftertaste. Paradise Drink has coconut milk which masks it efectively, this doesn't. By the time all ice melted and I finished the infusions, I found the tea base nearly undrinkable.
-    rating: 3
-    thumb: bafybeigqiwyfpwbupzhtucuoyvqgokhp2dmt2pnpz7ealq2pnsn4kxo3zy
-
   - id: passion-tango-tea-coconut
     title: Passion Tango Tea with Coconut Milk
     detail: Starbucks
     blurb: What in the world did I just drink?
     rating: 2
     thumb: bafybeihafurxcq23jv5ymp4zk7awk3edz3tzjhajntkorgmwziuofndeka
+
+  - id: star-drink
+    title: Star Drink (Discontinued)
+    detail: Tim Hortons Double-double
+    blurb: (I won't include discontinued drinks except for the best and worst drink) It lasted only two summers but this is hands-down THE BEST DRINK HUMANS EVER INVENTED TM. Kiwi starfruit of itself is sour. Kiwi with lemonade and is throat suicide. But kiwi with coconut milk, THIS, is perfectly balanced. The tea soup is divine, like green apple. The infusions are sour but I grew to like it with the tea soup. Like sour candies. Not long, all other refreshers became subpar. Nothing beat the character of the Star drink. I would finish a Trente and I'd want another Trente. I won't know Heaven in my lifetime but if I can attribute one thing on earth to heaven I pick this.
+    rating: 9.5
+    thumb: bafybeig3koq5pggcif7ofrybfp3i2o3zjggnrxmqe5b2jlmff45wljzw6q
 
   - id: golden-ginger-drink
     title: Golden Ginger Drink
