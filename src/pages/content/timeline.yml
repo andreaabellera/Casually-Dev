@@ -3,70 +3,82 @@ timeline:
         image: yes
         title: Fall 2019
         milestones: 
-            - one
-            - two
-            - three
+            - 🏫 Welcome (back) to Uni!
+            - ⚙️ Developed Verbatim Typer, my first non-curricular project inspired from the <a href="https://biblememory.com/">Bible Memory App</a> memory-by-first-letter method to help me study definitions for MATH1240. 
+            - 📖 Learned Python
+            - 📖 Learned Git
+            - 📖 Had my first exposure to barebones Machine Learning via Numpy
 
     winter2020:
         image: yes
         title: Winter 2020
         milestones: 
-            - one
-            - two
-            - three
+            - 📖 Learned French
+            - 🏠 Pandemic shut down the country
+            - 😿 Failed MATH1240 
+            - ⚙️ Developed Sheet Music OCR to read musical notes from an image inspired from a class last term - I hit walls and stopped
+            - 💀 Winter at home SAD
 
     summer2020:
         image: yes
         title: Summer 2020
         milestones: 
-            - one
-            - two
-            - three
+            - ❤️ Discovered a love for Business (via Management Informations Systems stream in Asper)
+            - 📖 Learned Web Dev by studying a student group website made from Jekyll
+            - 📖 Learned Figma and used it for Graphic design and animations
+            - ❤️ Passed MATH1240!
+            - 😿 Rejected from CS co-op
+            - 💼 Worked at the Gov of Manitoba as an assistant in a Project Office
 
     fall2020:
         image: yes
         title: Fall 2020
         milestones: 
-            - one
-            - two
-            - three
+            - ⚙️ Developed ImHungry
+            - ❤️ First club exec involvement as a VP Art!
+            - 🏆 Joined my first Game Jam and developed Recollection Day, a top-down narrative-based game made in Adobe Animate then Processing (trigger warning - Ukraine war)
+            - 🏆 Joined my first Hackathon and developed Ecoyou, a green living incentive app with a React frontend and Django backend thanks to Mohsen who's a genius
 
     winter2021:
         image: yes
         title: Winter 2021
         milestones: 
-            - one
-            - two
-            - three
+            - ⚙️ Developed TermSetter
+            - 😿 VWed 2 classes
+            - 💀 Winter at home SAD
 
     summer2021:
         image: yes
         title: Summer 2021
         milestones: 
-            - one
-            - two
-            - three
+            - 💼 Worked at Delphi Tech Corp as a Frontend turned Full-Stack Dev
+            - 📖 Learned Adobe Illustrator
+            - ❤️ Went to too much camping trips but thankfully my work is remote
+            - ❤️ Started creating CSS art; First 12 artworks now in Casually CSS
 
     fall2021:
         image: yes
         title: Fall 2021
         milestones: 
-            - one
-            - two
-            - three
+            - 📖 Learned different libraries and tools for Data Analytics
+            - ❤️ Learned technical writing and documentation, loved it
+            - 👩🏻‍💼 Appointed Co-President with MISA
+            - 🏆 Joined my first programming competition at IEEExtreme
 
     winter2022:
         image: yes
         title: Winter 2022
         milestones: 
-            - one
-            - two
-            - three
+            - 📖 Learned Web3 (IPFS & LibP2P)
+            - ⚙️ Developed Prosimm
+            - 🏫 International Collegiate Programming Competition happened in uni
+            - 💀 Winter at home SAD
 
     summer2022:
         image: yes
         title: Summer 2022
         milestones: 
-            - one
-            - two
-            - three
+            - 💼 Worked at TD (Toronto-Dominion) Bank
+            - ❤️ 2000 verses
+            - 🏆 Emerging Leader Award
+            - ⚙️ Developed CasuallyDev

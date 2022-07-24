@@ -13,6 +13,9 @@
         />
         <ProjectFeat />
     </div>
+    <div class="generic-ctr">
+        <iframe id="casually-css-roadshow0" style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/1j2O3Zs3YCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </div>
 
 <style>
@@ -38,6 +41,19 @@
         height: auto;
         display: flex;
         flex-direction: column;
+    }
+
+    .generic-ctr{
+        width: 100%;
+        height: max-content;
+        display: grid;
+        justify-items: center;
+    }
+
+    #casually-css-roadshow0{
+        width: 90%;
+        max-width: 900px;
+        margin: 4vh 0 4vh 0;
     }
 
 </style>
