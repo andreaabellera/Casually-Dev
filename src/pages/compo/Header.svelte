@@ -181,6 +181,8 @@
             document.getElementById("nav-journals").classList.add("selected")
         else if(toks.includes("galerie"))
             document.getElementById("nav-galerie").classList.add("selected")
+        else if(toks.includes("laruelle") || toks.includes("intermission"))
+            document.getElementById("nav-andrea").classList.add("selected")
         else{
             let navId = toks[toks.length - 1]
             if(navId.length > 0)

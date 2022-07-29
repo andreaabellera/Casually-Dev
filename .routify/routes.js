@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Sun Jul 24 2022 14:37:07 GMT-0500 (Central Daylight Time)
+ * File generated Fri Jul 29 2022 03:23:12 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-07-24T19:37:07.889Z"
+export const __timestamp = "2022-07-29T08:23:12.431Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -456,6 +456,31 @@ export const _tree = {
           "path": "/compo/BlogFeat",
           "id": "_compo_BlogFeat",
           "component": () => import('../src/pages/compo/BlogFeat.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "Bulletin.svelte",
+          "filepath": "/compo/Bulletin.svelte",
+          "name": "Bulletin",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/Bulletin.svelte",
+          "importPath": "../src/pages/compo/Bulletin.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/Bulletin",
+          "id": "_compo_Bulletin",
+          "component": () => import('../src/pages/compo/Bulletin.svelte').then(m => m.default)
         },
         {
           "isFile": true,
