@@ -163,6 +163,31 @@
                 <div class="string"></div>
             </div>
         </div>
+<<<<<<< Updated upstream:src/compo/Header.svelte
+=======
+
+    <!-- Mandatory Fix -->
+    <span class="selected"></span>
+    <script>
+        let url = window.location.href
+        let toks = url.split("/")
+        if(toks.includes("blog"))
+            document.getElementById("nav-blog").classList.add("selected")
+        else if(toks.includes("journals"))
+            document.getElementById("nav-journals").classList.add("selected")
+        else if(toks.includes("galerie"))
+            document.getElementById("nav-galerie").classList.add("selected")
+        else if(toks.includes("laruelle") || toks.includes("intermission"))
+            document.getElementById("nav-andrea").classList.add("selected")
+        else{
+            let navId = toks[toks.length - 1]
+            if(navId.length > 0)
+                document.getElementById("nav-" + navId).classList.add("selected")
+            else
+                document.getElementById("nav-chezmoi").classList.add("selected")
+        }
+    </script>
+>>>>>>> Stashed changes:src/pages/compo/Header.svelte
 </div>
 
 <style>
