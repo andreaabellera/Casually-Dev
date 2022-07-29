@@ -163,8 +163,6 @@
                 <div class="string"></div>
             </div>
         </div>
-<<<<<<< Updated upstream:src/compo/Header.svelte
-=======
 
     <!-- Mandatory Fix -->
     <span class="selected"></span>
@@ -187,7 +185,6 @@
                 document.getElementById("nav-chezmoi").classList.add("selected")
         }
     </script>
->>>>>>> Stashed changes:src/pages/compo/Header.svelte
 </div>
 
 <style>
