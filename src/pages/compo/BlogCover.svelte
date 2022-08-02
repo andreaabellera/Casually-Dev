@@ -43,7 +43,19 @@
     }
 
     function randRGB() {
-        return `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
+        let blue = Math.floor(Math.random() * (255 - 100) + 100)
+        let red = Math.floor(Math.random() * (255 - 100) + 100)
+        let green = Math.floor(Math.random() * (255 - 100) + 100)
+        
+        // Tweak color if it looks disgusting to drink
+        let snotty = Math.abs(red-green)<120 && red>blue && green>blue
+        let linty = blue>red && blue>green && Math.abs(blue-red)<70 && Math.abs(blue-green)<70
+        if(snotty)
+            red = 255
+        if(linty)
+            blue = 255
+        
+        return `rgb(${red}, ${green}, ${blue})`;
     }
 
 </script>
@@ -58,9 +70,9 @@
             {#if image}
                 <div class="blogThumb" style="background-image:url(https://ipfs.fleek.co/ipfs/{image});"></div>
             {:else if loading}
-                <div class="blogThumb" style="opacity:0.3; box-shadow:none;" > 
+                <div class="blogThumb" style="opacity:0.4; box-shadow:none;" > 
                     <Boba
-                        lidColor={randRGB()}
+                        lidColor={"mediumorchid"}
                         drinkColor={randRGB()} 
                         slurp={{duration:randTime()}}
                     /> 

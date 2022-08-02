@@ -1,4 +1,13 @@
 blogs:
+  - id: retro-july-2022
+    title: July 2022 Retrospective
+    date: August 2, 2022
+    tags:
+      - Life 💃🏻
+      - Develop ⚙️
+    image: bafybeig73ncpg3pfjieuzi7kuix3f63ok2oofufqtuwnqprsjhb4j6qsw4
+    blurb: bafybeidwqls5oiaag5q34kbhs4fbmrpuv5xpbri72ytmwhj5bxoonetfhm
+
   - id: girl-cave-upgrades
     title: Girl Cave Upgrades
     date: July 20, 2022
