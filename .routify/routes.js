@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.7
- * File generated Tue Aug 02 2022 18:25:41 GMT-0500 (Central Daylight Time)
+ * File generated Tue Aug 02 2022 23:50:58 GMT-0500 (Central Daylight Time)
  */
 
 export const __version = "2.18.7"
-export const __timestamp = "2022-08-02T23:25:41.778Z"
+export const __timestamp = "2022-08-03T04:50:58.563Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -760,6 +760,31 @@ export const _tree = {
         {
           "isFile": true,
           "isDir": false,
+          "file": "SaisonHeading.svelte",
+          "filepath": "/compo/SaisonHeading.svelte",
+          "name": "SaisonHeading",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/SaisonHeading.svelte",
+          "importPath": "../src/pages/compo/SaisonHeading.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/SaisonHeading",
+          "id": "_compo_SaisonHeading",
+          "component": () => import('../src/pages/compo/SaisonHeading.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
           "file": "SearchBar.svelte",
           "filepath": "/compo/SearchBar.svelte",
           "name": "SearchBar",
@@ -781,6 +806,31 @@ export const _tree = {
           "path": "/compo/SearchBar",
           "id": "_compo_SearchBar",
           "component": () => import('../src/pages/compo/SearchBar.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "Timeline.svelte",
+          "filepath": "/compo/Timeline.svelte",
+          "name": "Timeline",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/mnt/c/Users/andre/Documents/GitHub/qtrlex/src/pages/compo/Timeline.svelte",
+          "importPath": "../src/pages/compo/Timeline.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/compo/Timeline",
+          "id": "_compo_Timeline",
+          "component": () => import('../src/pages/compo/Timeline.svelte').then(m => m.default)
         }
       ],
       "isLayout": false,
