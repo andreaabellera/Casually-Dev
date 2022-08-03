@@ -10,9 +10,7 @@
     <div class="bulletinInner">
         <div id = "imgCtr">
             {#if image}
-                <div id="imgCtr">
-                    <img src="https://ipfs.fleek.co/ipfs/{image}" alt="{title}" style="height:100%; width:max-content;">
-                </div>
+                <img src="https://ipfs.fleek.co/ipfs/{image}" alt="{title}" style="height:100%; width:max-content;">
             {/if}
         </div>
         <div id = "msArray">
@@ -57,7 +55,8 @@
 #imgCtr{
     height: 40vh;
     width: max-content;
-    margin-top: -6vh;
+    margin-top: -12vh;
+    box-shadow: 0.1em 0.15em 0.5em rgba(0,0,0,0.3);
 }
 
 
@@ -67,7 +66,7 @@
     }
 
     #imgCtr{
-        margin-top: -8vh;
+        margin-top: -15vh;
     }
 
     .bulletinInner{
@@ -77,7 +76,7 @@
     #msArray{
         text-align: right;
         font-size: 0.7em;
-        margin-top: -2vh;
+        margin-top: 2vh;
         line-height: 2.1em;
         margin-left: 0;
     }

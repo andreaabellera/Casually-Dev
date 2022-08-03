@@ -71,6 +71,7 @@
     .year{
         font-size: 2.5em;
         margin-left: 13vw;
+        color: var(--oyster) !important;
     }
 
     .hr{

@@ -16,6 +16,13 @@
         clearInterval(id1)
     }
 
+    // Get time interval for date to scroll binding
+    let today = new Date();
+    let earliest = new Date("09/01/2019");
+    let diffTime = today.getTime() - earliest.getTime();
+    let diffDay = diffTime / (1000 * 3600 * 24);
+    let equivDate
+
     // Seasons
     let seasons = {
         fall: {r:158, g:66, b:0, bulletin: "rgba(255, 219, 219, 0.4)"},
@@ -27,11 +34,17 @@
     $: currScroll = 0
     let currBG = {r:221, g:192, b:148}
     let bulletinColor = "rgba(184,144,108,0.4)"
+
     function scrollY(){
         let scroll = document.body.scrollTop
         currScroll = Math.floor(scroll/500)
         if(currScroll > timeline.length-1)
             currScroll = timeline.length-1
+
+        // Get the date bound to the current scroll position
+        let scrollRate = (scroll/6000)
+        equivDate = new Date(earliest.getTime() + (diffTime * scrollRate))
+        //console.log(equivDate.toLocaleDateString())
     }
 
     let idS
@@ -104,7 +117,7 @@
                 <Bulletin title="{tl.title}" image="{tl.image}" milestones="{tl.milestones}" bgColor="{bulletinColor}"></Bulletin>
             </div>
             <div class="timelineCtr" in:fly="{{ y: 1000, duration: 600 }}" out:fly="{{ y: 1000, duration: 600 }}">
-                <Timeline />
+                <Timeline date={equivDate} />
             </div>
         {/if}
     {/each}
