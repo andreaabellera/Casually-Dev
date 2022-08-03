@@ -1,5 +1,5 @@
 <script>
-    import { fly } from 'svelte/transition'
+    import { fly, fade } from 'svelte/transition'
     import tlData from './content/timeline.yml'
     import Bulletin from './compo/Bulletin.svelte'
     import SaisonHeading from './compo/SaisonHeading.svelte'
@@ -87,32 +87,66 @@
 
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 {#if visible}
-<div class="laruelle-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" style="background:rgb({currBG.r},{currBG.g},{currBG.b});">
+<div class="laruelle-ctr" transition:fade style="background:rgb({currBG.r},{currBG.g},{currBG.b});">
     {#each timeline as tl, i}
-        {#if tl && currScroll == i}
+        {#if i == 0}
+            <div class="entranceCtr" in:fly="{{ y: -1000, duration: 400 }}" out:fly="{{ y: -800, duration: 1200 }}">
+                <div id="intro">scroll down to explore!</div>
+                <div id="arrowee">
+                    <img src="https://ipfs.fleek.co/ipfs/bafybeihegepawf6wdpxfxlarq5gmiiqsysztywgsot3jigsewvlpyg3z3q" alt="Casino pattern vector created by macrovector - www.freepik.com" style="height:100%; width:max-content;">
+                </div>
+            </div>
+        {:else if tl && currScroll == i}
             <div class="headCtr" in:fly="{{ x: -1000, duration: 600 }}" out:fly="{{ x: -1000, duration: 600 }}">
                 <SaisonHeading seasonId={tl.id} />
             </div>
             <div class="bulletinCtr" in:fly="{{ x: 1000, duration: 600 }}" out:fly="{{ x: 1000, duration: 600 }}">
                 <Bulletin title="{tl.title}" image="{tl.image}" milestones="{tl.milestones}" bgColor="{bulletinColor}"></Bulletin>
             </div>
-            <div class="timelineCtr">
+            <div class="timelineCtr" in:fly="{{ y: 1000, duration: 600 }}" out:fly="{{ y: 1000, duration: 600 }}">
                 <Timeline />
             </div>
         {/if}
     {/each}
+    <div id="texture"></div>
 </div>
 {/if}
 
 <style>
     .laruelle-ctr {
         /* height: max-content; */
-        height: 6100px;
+        height: 6200px;
         width: 100%;
         display: grid;
         grid-template-rows: auto 1fr;
-        margin: -8vh 0 10vh 0;
+        margin: -15vh 0 10vh 0;
         position: relative;
+    }
+
+    #texture{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        background: url(https://ipfs.fleek.co/ipfs/bafybeic4n4jj6y7abasp7dv2zq63bjddocrhclpc23cy3aqnuojdzwcusq);
+        background-size: auto;
+        background-repeat: repeat;
+        opacity: 0.1;
+    }
+
+    .entranceCtr{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: max-content;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .bulletinCtr{
@@ -147,7 +181,27 @@
         box-shadow: inset 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
     }
 
+    #intro{
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 3em;
+        margin-top: 25vh;
+        color: var(--coffee);
+        text-align: center;
+    }
+
+    #arrowee{
+        margin-top: 5vh;
+        height: 20vh;
+        width: max-content;
+        animation: arrowing 4s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
     @media (max-width: 600px) {
+        .laruelle-ctr{
+            margin-top: -30vh;
+        }
+
         .bulletinCtr{
             top: 18vh;
             right: 0;
@@ -161,6 +215,18 @@
             left: 8vw;
             padding: 1em 0.5em 1em 0.5em;
             margin: 1em 0 1em 0;
+        }
+    }
+
+    @keyframes arrowing {
+        0% {
+            transform: translateY(0vh);
+        }
+        50%{
+            transform: translateY(5vh);
+        }
+        100% {
+            transform: translateY(0vh);
         }
     }
 </style>
