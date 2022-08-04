@@ -90,7 +90,10 @@
                         <div class="action-btns">
                             <a href="/intermission">
                                 <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
-                            <div id="resume" class="action-btn"> or <a href="https://ipfs.fleek.co/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu"> Download my Résumé</a></div>
+                            </a>
+                            <div id="resume" class="action-btn"> 
+                                or <a href="https://ipfs.fleek.co/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu"> Download my Résumé</a>
+                            </div>
                         </div>
                         <div class="for-fun">
                             <div id="stamp-collection"></div>

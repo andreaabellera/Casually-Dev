@@ -1,4 +1,13 @@
 blogs:
+  - id: sketches-to-a-decade
+    title: Sketches to a Decade Ago
+    date: August 4, 2022
+    tags:
+      - Art 🖼️
+      - Life 💃🏻
+    image: bafybeicy3zelerqgtxrwe3eqlyvqd2mrxvaee72lafsalzny7zpy2egdzm
+    blurb: bafybeihcxr56hd7ue65rvtdmmqym5dkcpaqb4pyy3ujqjywmsavxi675mu
+
   - id: retro-july-2022
     title: July 2022 Retrospective
     date: August 2, 2022

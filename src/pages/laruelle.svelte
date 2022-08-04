@@ -1,5 +1,5 @@
 <script>
-    import { fly, fade } from 'svelte/transition'
+    import { fly } from 'svelte/transition'
     import tlData from './content/timeline.yml'
     import Bulletin from './compo/Bulletin.svelte'
     import SaisonHeading from './compo/SaisonHeading.svelte'
@@ -94,13 +94,44 @@
         }
     }
 
+    function loadThis(){
+        let laRuelle = document.getElementsByClassName("laruelle-ctr")[0]
+        if (laRuelle)
+            laRuelle.style.display = "grid"
+
+        const duration = 1200;
+
+		return {
+			duration,
+			tick: t => {
+                laRuelle.style.opacity = t
+            },
+            done: t => void 0,
+		};
+    }
+
+    function removeThis(){
+        let laRuelle = document.getElementsByClassName("laruelle-ctr")[0]
+        if (laRuelle)
+            laRuelle.style.display = "none"
+        const duration = 400;
+
+		return {
+			duration,
+			tick: t => {
+                laRuelle.style.opacity = 1 - t
+            },
+            done: t => void 0,
+		};
+    }
+
 </script>
 
 <svelte:body on:scroll={scrollY}></svelte:body>
 
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 {#if visible}
-<div class="laruelle-ctr" transition:fade style="background:rgb({currBG.r},{currBG.g},{currBG.b});">
+<div class="laruelle-ctr" in:loadThis style="background:rgb({currBG.r},{currBG.g},{currBG.b});" out:removeThis>
     {#each timeline as tl, i}
         {#if i == 0}
             <div class="entranceCtr" in:fly="{{ y: -1000, duration: 400 }}" out:fly="{{ y: -800, duration: 1200 }}">
