@@ -1,0 +1,105 @@
+entries:
+  - id: comp-2140
+    title: Data Structures and Algorithms
+    start: September 1, 2019
+    end: December 31, 2019
+
+  - id: comp-2160
+    title: Programming Practices
+    start: September 1, 2019
+    end: December 31, 2019
+
+  - id: sci-2000-1
+    title: Image Processing - Theory and Applications
+    start: September 1, 2019
+    end: December 31, 2019
+
+  - id: geog-1280
+    title: Introduction to Human Geography
+    start: September 1, 2019
+    end: December 31, 2019
+
+  - id: comp-2150
+    title: Object Orientation
+    start: January 1, 2020
+    end: April 31, 2020
+
+  - id: fren-1154
+    title: Introductory French 2
+    start: January 1, 2020
+    end: April 31, 2020
+
+  - id: math-1240
+    title: Elementary Discrete Mathematics
+    start: June 1, 2020
+    end: July 31, 2020
+
+  - id: mis-2000
+    title: Information Systems for Management
+    start: June 1, 2020
+    end: July 31, 2020
+
+  - id: comp-3020
+    title: Human-Computer Interaction 1
+    start: September 1, 2020
+    end: December 31, 2020
+
+  - id: comp-3490
+    title: Computer Graphics 1
+    start: September 1, 2020
+    end: December 31, 2020
+
+  - id: comp-3380
+    title: Database Concepts and Usage
+    start: September 1, 2020
+    end: December 31, 2020
+
+  - id: comp-3190
+    title: Introduction to Artificial Intelligence
+    start: September 1, 2020
+    end: December 31, 2020
+
+  - id: comp-2280
+    title: Introduction to Computer Systems
+    start: January 1, 2021
+    end: April 31, 2021
+
+  - id: comp-3350
+    title: Software Engineering 1
+    start: January 1, 2021
+    end: April 31, 2021
+
+  - id: comp-3040
+    title: Technical Communication in Computer Science
+    start: September 1, 2021
+    end: December 31, 2021
+
+  - id: comp-3370
+    title: Computer Organization
+    start: September 1, 2021
+    end: December 31, 2021
+
+  - id: mis-3010
+    title: Business Data Analytics
+    start: September 1, 2021
+    end: December 31, 2021
+
+  - id: mis-3510
+    title: Systems Analysis and Design
+    start: September 1, 2021
+    end: December 31, 2021
+
+  - id: mkt-2210
+    title: Fundamentals of Marketing
+    start: September 1, 2021
+    end: December 31, 2021
+
+  - id: comp-3010
+    title: Distributed Computing
+    start: January 1, 2022
+    end: April 31, 2022
+
+  - id: comp-4020
+    title: Human-Computer Interaction 2
+    start: January 1, 2022
+    end: April 31, 2022

@@ -1,0 +1,43 @@
+entries:
+  - id: misa-vp-art
+    title: MISA VP Art
+    start: May 1, 2020
+    end: May 31, 2021
+
+  - id: misa-webdev
+    title: MISA Web Developer
+    start: May 1, 2020
+    end: May 31, 2021
+
+  - id: wics-outreach
+    title: WICS Outreach
+    start: Aug 1, 2020
+    end: April 30, 2021
+
+  - id: wics-webdev
+    title: WICS Webdev
+    start: Aug 1, 2020
+    end: April 30, 2021
+
+  - id: cusec-promotions
+    title: Promotions, Graphic Designer
+    start: May 1, 2021
+    end: January 31, 2022
+
+  - id: devclub-promotions
+    title: .devClub Promotions Executive
+    start: May 1, 2021
+    end: April 31, 2022
+
+  - id: misa-president
+    title: MISA President
+    start: September 1, 2021
+    end: April 31, 2022
+
+  - id: umcp-vp
+    title: UMCP Vice President
+    start: May 1, 2022
+
+  - id: bpt-chair
+    title: Bisons' Programming Team Chair
+    start: September 1, 2021

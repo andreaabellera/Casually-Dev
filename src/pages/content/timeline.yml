@@ -18,45 +18,48 @@ timeline:
         - 📖 Learned French
         - 🏠 Pandemic shut down the country
         - 😿 Failed MATH1240 
-        - ⚙️ Developed Sheet Music OCR to read musical notes from an image inspired from a class last term - I hit walls and stopped
-        - 💀 SAD
+        - ⚙️ Developed <a href="https://github.com/andreaabellera/Music-Sheet-OCR">Sheet Music OCR</a> to read musical notes from an image inspired from a class last term
+        - 💀 Tis' the season people are SAD
 
   - id: summer-2020
     image: bafybeidwthe7awoy5ixvv6kv5vlsplrfhzljtck2m2xuansa6xclvqhojm
     title: Summer 2020
     milestones: 
         - ❤️ Discovered a love for Business (via Management Informations Systems stream in Asper)
+        - ⚙️ Developed a database-run recommendation system for COVID protocols in post-secondary schools
         - 📖 Learned Web Dev by studying a student group website made from Jekyll
         - 📖 Learned Figma and used it for Graphic design and animations
         - ❤️ Passed MATH1240!
         - 😿 Rejected from CS co-op
-        - 💼 Worked at the Gov of Manitoba as an assistant in a Project Office
+        - 💼 Employed at the Gov of Manitoba as an assistant in a Project Office
 
   - id: fall-2020
     image: bafybeiekfhyyrknsp5us2t34phx2rfcspgpeqgpafjing46cg63adqmusu
     title: Fall 2020
     milestones: 
-        - ⚙️ Developed ImHungry
+        - ⚙️ Led a team to develop <a href="https://github.com/andreaabellera/Imhungry">ImHungry</a> as a UI/UX class project
         - ❤️ First club exec involvement as a VP Art!
-        - 🏆 Joined my first Game Jam and developed Recollection Day, a top-down narrative-based game made in Adobe Animate then Processing (trigger warning - Ukraine war)
-        - 🏆 Joined my first Hackathon and developed Ecoyou, a green living incentive app with a React frontend and Django backend thanks to Mohsen who's a genius
+        - 🏆 Joined my first Game Jam and developed <a href="https://github.com/andreaabellera/Recollection-Day-Take2">Recollection Day</a>, a top-down narrative-based game made in Adobe Animate then Processing (trigger warning - Ukraine war)
+        - 🏆 Joined my first Hackathon and developed <a href="https://github.com/andreaabellera/Ecoyou">Ecoyou</a>, a green living incentive app with a React frontend and Django backend thanks to Mohsen who's a genius
 
   - id: winter-2021
     image: bafybeiget7zmj4hfr2xmw5wvp2ui7cd56v2c5sycyw4awqcdrwsahptsra
     title: Winter 2021
     milestones: 
-        - ⚙️ Developed TermSetter
+        - ⚙️ Led testing and integration in our class project app, <a href="https://github.com/andreaabellera/TermSetter">TermSetter</a>
+        - ⚙️ A very haphazard attempt to make a <a href="https://github.com/andreaabellera/threejs-sandbox">ThreeJS and React</a> site
         - 😿 VWed 2 classes
-        - 💀 SAD
+        - 💀 Tis' the season people are SAD
 
   - id: summer-2021
     image: bafybeic7t47xkodqiycxtrscrft37uf2tlhsuow5s4y5wdpngb2qyffb5m
     title: Summer 2021
     milestones: 
-        - 💼 Worked at Delphi Tech Corp as a Frontend turned Full-Stack Dev
+        - 💼 Employed at Delphi Tech Corp as a Frontend turned Full-Stack Dev
         - 📖 Learned Adobe Illustrator
         - ❤️ Went to too much camping trips but thankfully work is remote
-        - ❤️ Started creating CSS art; First 12 artworks now in Casually CSS
+        - ❤️ Started creating CSS art; First 12 artworks now in <a href="https://github.com/andreaabellera/Casually-CSS">Casually CSS</a>
+        - ⚙️ Other projects - <a href="https://github.com/andreaabellera/Alistair">3D Game Alistair</a> for a VR Game Jam, <a href="https://github.com/turja-c/SHacks">Accessibility Chatbot</a> entry for SHacks
 
   - id: fall-2021
     image: bafybeie3ghvu4otrclwdna3dog7ddfekorbmc5j4beg7j2vfn6wxdteqvi
@@ -66,21 +69,24 @@ timeline:
         - ❤️ Learned technical writing and documentation, loved it
         - 👩🏻‍💼 Appointed Co-President with MISA
         - 🏆 Joined my first programming competition at IEEExtreme
+        - 👩🏻‍💼 Business research and pitching of a Sprint to Innovate prototype of a <a href="https://github.com/andreaabellera/sprint-to-innovate-app">financial literacy solution for the Access Credit Union app</a>
+        - 👩🏻‍💼 Hosted workshops for web development and competitive programming
 
   - id: winter-2022
     image: bafybeici7ifbcpcq5pwptfvtrfafduq2cqoi6un4m7bcvps4327f2nv6ha
     title: Winter 2022
     milestones: 
         - 📖 Learned Web3 (IPFS & LibP2P)
-        - ⚙️ Developed Prosimm
-        - 🏫 International Collegiate Programming Competition happened in uni
-        - 💀 SAD
+        - ⚙️ Developed <a href="https://github.com/andreaabellera/Prosimm">Prosimm</a> and <a href="https://github.com/andreaabellera/LibP2P-Playground">LibP2P Playground</a> for class research projects
+        - 🏆 Joined the International Collegiate Programming Competition in uni!
+        - 👩🏻‍💼 Hosted workshops for Figma prototyping and DApp development
+        - 💀 Tis' the season people are SAD
 
   - id: summer-2022
     image: bafybeig6tpfvyppujqq6pkyeififuatc6z4kgj7mzqv233hzwv5i6sqrcy
     title: Summer 2022
     milestones: 
-        - 💼 Worked at TD (Toronto-Dominion) Bank
-        - ❤️ 2000 verses
-        - 🏆 Emerging Leader Award
-        - ⚙️ Developed CasuallyDev
+        - 💼 Employed at TD (Toronto-Dominion) Bank
+        - ❤️ Reached 2000 verses after years of stagnancy
+        - 🏆 Received the University of Manitoba Emerging Leader Award for 2021-22
+        - ⚙️ Started my CasuallyDev girlcave, along with projects to grow CasuallyCSS and have a rad summer!
