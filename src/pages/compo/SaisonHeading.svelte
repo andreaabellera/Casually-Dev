@@ -1,5 +1,6 @@
 <script>
 	export let seasonId = "spring-1999"
+    export let barTitle = ""
 
     let toks = seasonId.split("-")
     let season = toks[0]
@@ -31,6 +32,7 @@
     <div class="text" style="color:{seasonColor};">{season}</div>
     <div class="hr" style="background-color:{stripColor}"></div>
     <div class="text year" style="color:{yearColor};">{year}</div>
+    <div class="text barTitle" style="color:{seasonColor};">{@html barTitle}</div>
 </div>
 
 <style>
@@ -56,6 +58,12 @@
     margin-left: 16vw;
 }
 
+.barTitle{
+    font-size: 2.5em;
+    max-width: 25vw;
+    margin-top: 5vh;
+}
+
 .hr{
     height: 0.6em;
     width: 30vw;
@@ -72,6 +80,12 @@
         font-size: 2.5em;
         margin-left: 13vw;
         color: var(--oyster) !important;
+    }
+
+    .barTitle{
+        font-size: 1.2em;
+        max-width: 20vw;
+        margin-left: 3vw;
     }
 
     .hr{

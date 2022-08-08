@@ -21,7 +21,7 @@
     let earliest = new Date("09/01/2019");
     let diffTime = today.getTime() - earliest.getTime();
     let diffDay = diffTime / (1000 * 3600 * 24);
-    let equivDate
+    let currDate
 
     // Seasons
     let seasons = {
@@ -42,9 +42,9 @@
             currScroll = timeline.length-1
 
         // Get the date bound to the current scroll position
-        let scrollRate = (scroll/6000)
-        equivDate = new Date(earliest.getTime() + (diffTime * scrollRate))
-        //console.log(equivDate.toLocaleDateString())
+        let scrollRate = (scroll/6500)
+        currDate = new Date(earliest.getTime() + (diffTime * scrollRate))
+        //console.log(currDate.toLocaleDateString())
     }
 
     let idS
@@ -125,6 +125,11 @@
 		};
     }
 
+    let barTitle = ""
+    function handleInput(event){
+        barTitle = event.detail.text;
+    }
+
 </script>
 
 <svelte:body on:scroll={scrollY}></svelte:body>
@@ -142,16 +147,24 @@
             </div>
         {:else if tl && currScroll == i}
             <div class="headCtr" in:fly="{{ x: -1000, duration: 600 }}" out:fly="{{ x: -1000, duration: 600 }}">
-                <SaisonHeading seasonId={tl.id} />
+                <SaisonHeading 
+                    seasonId={tl.id}
+                    barTitle={barTitle}
+                />
             </div>
             <div class="bulletinCtr" in:fly="{{ x: 1000, duration: 600 }}" out:fly="{{ x: 1000, duration: 600 }}">
                 <Bulletin title="{tl.title}" image="{tl.image}" milestones="{tl.milestones}" bgColor="{bulletinColor}"></Bulletin>
             </div>
-            <div class="timelineCtr" in:fly="{{ y: 1000, duration: 600 }}" out:fly="{{ y: 1000, duration: 600 }}">
-                <Timeline date={equivDate} />
-            </div>
         {/if}
     {/each}
+    {#if currScroll > 0}
+    <div class="timelineCtr" in:fly="{{ y: 1000, duration: 600 }}" out:fly="{{ y: 1000, duration: 600 }}">
+        <Timeline 
+            currDate={currDate}
+            on:hoverItem = {handleInput} 
+        />
+    </div>
+    {/if}
     <div id="texture"></div>
 </div>
 {/if}
