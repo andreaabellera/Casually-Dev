@@ -318,3 +318,47 @@ collections:
       adjust: 0 20%
       year: 2015
       info: A tall knight lad(Klein) wielding a lance protectively embraces his lady(Varugia). Oh boy, pointed chins were so on-trend in anime then
+
+  - title: Sprite Fun!
+    images: 
+    - id: ashu-hamster
+      title: Ashu the Hamster
+      image: https://ipfs.fleek.co/ipfs/bafybeianely6apikeee4ybcqwdag4cgv2rq4vcky4swp75mz37mjoff6bq
+      adjust: 0% 20%
+      year: 2021
+      info: This dancing hamster is .devClub's 2021-22 mascot! 
+
+    - id: dafam-christmas-2020
+      title: DaFam Christmas 2020
+      image: https://ipfs.fleek.co/ipfs/bafybeihojvlmm42r5mp4z4wox52vme4n3oluqkgtvvbgvcagfvs6r5qw2y
+      adjust: 0 17%
+      year: 2020
+      info: A Christmas scene and my gift to my community of artists! Everyone gets featured through small symbolisms and knickknacks
+
+    - id: sprite-arlette-louise
+      title: Arlette and Louise
+      image: https://ipfs.fleek.co/ipfs/bafybeicoiddhf6nqdyf3gggbdusiuglk23yrwye5k4rm3epz67i54kqkem
+      adjust: 0 17%
+      year: 2022
+      info: A gift for a friend
+
+    - id: sprite-hudson
+      title: Hudson
+      image: https://ipfs.fleek.co/ipfs/bafybeihxgmpcefc47yfet4rftapjkoiwtojlszh37jrtwt4jbopo5p6kmi
+      adjust: 0 17%
+      year: 2022
+      info: A gift for a friend
+
+    - id: sprite-ryuuko
+      title: Ryuuko
+      image: https://ipfs.fleek.co/ipfs/bafybeiblbwbqi454qsvkgpuejoa6fym76qcdeqtm4ug7ggxoij42hhxpai
+      adjust: 0 17%
+      year: 2022
+      info: A gift for a friend
+
+    - id: chubby-whale
+      title: Chubby Whale
+      image: https://ipfs.fleek.co/ipfs/bafybeibolkc7cveghrb73u4z3nr2oi556xxlmpcwdw54yaxnaeyeearpoy
+      adjust: 0 0
+      year: 2020
+      info: A pink lil' whale who surfs the pastel seas
