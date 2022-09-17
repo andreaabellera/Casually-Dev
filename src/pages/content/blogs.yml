@@ -1,4 +1,13 @@
 blogs:
+  - id: reddit-artists-painted-me
+    title: Reddit Artists painted me
+    date: September 17, 2022
+    tags:
+      - Art 🖼️
+      - Random 🍡
+    image: bafybeifckaos6ozxg4gj5zb4ovlihm5xicprzqkoxmltaifdiif5h3xrde
+    blurb: bafybeiao2baljed6suuiiwlpndylokelh4dl6bwlpjaqrd5kajxpdkojie
+  
   - id: sketches-to-a-decade
     title: Sketches to a Decade Ago
     date: August 4, 2022
