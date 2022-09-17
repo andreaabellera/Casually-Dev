@@ -5,12 +5,6 @@ journals:
     date: June 4, 2022
     blurb: bafybeichbvb7od7ryh6kvwhfjgv7hjyiy2kuciwjf7sevpgqaomavzkztm
 
-  - id: competitive-programming-handbook
-    cover: "<p class='cousine' style='font-size: 75%;'> Breaking into </p><p class='cousine' style='font-size: 110%;'> Competitive Programming</p><p class='syncopate'> HANDBOOK </p>"
-    title: Breaking into Competitive Programming
-    date: May 24, 2022
-    blurb: bafybeidsoutz3aadfpbbip6remtfebzawh4gux4bcdji6j23kqntsvpjn4
-
   - id: depth-breadth-first-search
     cover: "<p class='syncopate small'>Depth-First</p><p class='cousine small'>and</p><p class='syncopate small'>Breadth-First</p><p class='cousine slightLarge'> Search </p>"
     title: Depth-First and Breadth-First Search

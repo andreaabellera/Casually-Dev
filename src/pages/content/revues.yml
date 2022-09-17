@@ -12,6 +12,13 @@ reviews:
     blurb: Sweet, sumptuous, creamy, yummy, and heartwarming. It's a drink I'd recommend often, because this coffee feels like home. It's not too bitter to jolt people not used to coffee. Not too sweet to the degree of a blonde vanilla latte. Generally the likeable friend in the world of cafes.
     rating: 7
 
+  - id: milo-cheese-slush
+    title: Milo Cheese Slush
+    detail: Jeepney
+    blurb: Dude, first sip and all my insides rejoiced in harmony - it is that good! Savored it to its last. Milo is not your classic chocolate flavoring, it has a creamy malt essence to it. And boy, give it some cheese and I call it a winner. Just a chef's kiss perfect sweet and lightly salty treat, I'm giving kudos to Jeepney for coming up with this groundshaker.
+    rating: 9
+    thumb: bafybeicnz72xqcy6m6ewzp4425jq6vyvqdoocdxoih23w2xaxvpj623pdm
+
   - id: matcha-green-tea-latte
     title: Matcha Green Tea Latte
     detail: Starbucks(steamed milk base), Panda Tea(green tea base) - same rating
@@ -55,7 +62,7 @@ reviews:
     title: Dragon Drink
     detail: Starbucks
     blurb: Mango Dragonfruit Refresher with Coconut Milk. Same logic as Strawberry Coconut Drink below.
-    rating: 8
+    rating: 7.5
 
   - id: strawberry-coconut-drink
     title: Strawberry Coconut Drink
@@ -100,7 +107,7 @@ reviews:
 
   - id: cappuccino
     title: Cappuccino
-    detail: Starbucks
+    detail: Starbucks(8.5/10), Tims(6/10)
     blurb: I love my classic foamy coffee. With a pump of any syrup (esp. white mocha) and it will be soooo good. Perfect rainy day drink. Even if the skies are grey, Cap will be there to warm the heart. 
     rating: 8.5
 
@@ -135,7 +142,7 @@ reviews:
     title: Mango Dragonfruit Refresher
     detail: Starbucks
     blurb: A refresher I instantly loved on first try. I would alternate this with Starberry Acai Refresher but eventually I ended up preferring this a bit. Okay, I am from the Philippines, I am a sop for mango juice. Our mango juice is either puree-like (very concentrated) or artificially flavored in kids' Zest-Os. There's no inbetween. But the MDR base is a type of un-mango (it's translucent white lol) that's groundbreaking. I sometimes ask for extra of this juice. The dragonfruit inclusions are sweet, and small, and cronchy (unless they are soggy), I call them "bonbons". 100% snackable with ice. I love this drink to bits.
-    rating: 9
+    rating: 8.5
     thumb: bafybeifuiogy6oz46nlk23k7xcugqyfyym7kh66cgynb4dyp5xzy3ruvwq
 
   - id: apple-mogu-mogu
@@ -219,6 +226,54 @@ reviews:
     blurb: What in the world did I just drink?
     rating: 2
     thumb: bafybeihafurxcq23jv5ymp4zk7awk3edz3tzjhajntkorgmwziuofndeka
+
+  - id: apple-crisp-oat-macchiato
+    title: Apple Crisp Oat Macchiato
+    detail: Starbucks
+    blurb: The cinnamon and apple taste is too overbearing for my liking. The cold version is better
+    rating: 5
+    thumb: bafybeidnpxqonku6v25cyronptq357oct5d5wfylwaq57ulzpsig7eczn4
+
+  - id: iced-chai-latte
+    title: Iced Chai Latte
+    detail: Starbucks
+    blurb: Such a refreshing drink! I approve of it and would love a second cup as a chai lover. It's not spicy like its hot version though
+    rating: 8
+    thumb: bafybeiaw2ptm3x46ppbvgtr2mikpltseps444fevhvspz3sdmiyww4v54u
+
+  - id: salted-caramel-cold-brew
+    title: Salted Caramel Cold Brew
+    detail: Starbucks
+    blurb: A lovely blend of flavourful sumptuous caramel and coffee. Sweet and salty as it is, it retains the coffee kick. Definitely one of the drinks I'd recommend trying Starbucks as this sure tops their other caramel menu items
+    rating: 8
+    thumb: bafybeidpor4sgnlacpluolzxblhyra7oshhyyhraobmpd36eaj445ck5bi
+
+  - id: blueberry-lemonade
+    title: Blueberry Lemonade
+    detail: The Icing Castle
+    blurb: It's too sugary, with blueberry reinforcing the sweet tones but not exactly taking the spotlight. Lemonade weak in contrast and while Icing Castle makes their lemonades signaturely sweet, blueberry in particular doesn't work with it (Otherwise, blueberry is my favorite boba/milk tea side flavor as it gets spotlight with the dairy).
+    rating: 5.5
+    thumb: bafybeidx6jpijnaejl2fqiszmkiv32ayatrs2t4jv22xiyfmujlysrs3tu
+
+  - id: honeydew-lemonade
+    title: Honeydew Lemonade
+    detail: The Icing Castle
+    blurb: The green drink in the picture. I do love that honeydew stands out and makes the lemonade taste very interesting! It works nicely with the Icing Castle's signature sweet lemonade base. Rating may be higher if you do love honeydew
+    rating: 7
+    thumb: bafybeifte74brgxhykz5s7k545jtj7plsufjbmcnlguw3ame4ghe3ilkpa
+
+  - id: halo-halo-bingsu
+    title: Halo Halo Bingsu
+    detail: The Icing Castle
+    blurb: The white shake with an ice cream scoop in the picture. As a Filipino, I grew up with Halo Halo. I love how the Icing Castle specifically makes it. A little dry compared to classic halo halo, but as the volume of evaporated milk and toppings/additions is minimal, it makes me enjoy the texture of the shaved ice more
+    rating: 7
+    thumb: bafybeifte74brgxhykz5s7k545jtj7plsufjbmcnlguw3ame4ghe3ilkpa
+
+  - id: cappuccino-toffee-bingsu
+    title: Cappuccino Toffee Bingsu
+    detail: The Icing Castle
+    blurb: It came quite underwhelming. The ingredients are minimal for sure but unless you're into casually snacking on ice and toffee, this combination is neither refreshing, delectable, or invigorating. Any kick I may expect from its espresso is non-existent.
+    rating: 5
 
   - id: star-drink
     title: Star Drink (Discontinued)
