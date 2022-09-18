@@ -1,4 +1,12 @@
 blogs:
+  - id: retro-august-2022
+    title: August 2022 Retrospective
+    date: September 18, 2022
+    tags:
+      - Life 💃🏻
+    image: bafybeiaddwsqgxqkkfjr74wjtcn7avxhuuprivvnkqwtdzyu6ylr4d2oaq
+    blurb: bafybeih3xy454qykez5q5c4lgjoqo36wp7yaccima42il5d7sq47b4bkde
+
   - id: reddit-artists-painted-me
     title: Reddit Artists painted me
     date: September 17, 2022
