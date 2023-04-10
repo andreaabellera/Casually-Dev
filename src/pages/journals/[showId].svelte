@@ -2,24 +2,16 @@
     import { fade } from 'svelte/transition';
     import { params } from '@roxi/routify';
     import journalData from '../content/journals.yml'; 
-    import { onMount } from 'svelte';
     import toBuffer from 'it-to-buffer';
     import CID from 'cids';
 
-    let ipfsNode;
+    let ipfsNode = globalThis.ipfsNode
 
-    // Setup IPFS
-    onMount(async () => {
-		if (!globalThis.ipfsNode) {
-			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
-			const IPFS = IPFSmodule.default;
-			ipfsNode = await IPFS.create();
-			globalThis.ipfsNode = ipfsNode;
-		} else {
-			ipfsNode = globalThis.ipfsNode;
-		}
-
-        ;(async () => {
+    let poll = setInterval(loadIPFS, 300)
+    async function loadIPFS() {
+        if(globalThis.ipfsNode){
+            clearInterval(poll)
+            ipfsNode = globalThis.ipfsNode
             const cid = new CID(link)
             const content = await toBuffer(ipfsNode.cat(cid))
             let intString = content.toString()
@@ -28,8 +20,8 @@
                 decoded += String.fromCharCode(i)
             })
             blurb = decoded
-        })();
-	});
+        }
+    }
 
     // Page transition
     let visible = false

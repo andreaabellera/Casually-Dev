@@ -2,6 +2,19 @@
 	import Header from './compo/Header.svelte';
 	import Footer from './compo/Footer.svelte';
 	import '../global.css';
+
+	// Setup site-wide IPFS node
+	;(async () => {
+        console.log("Creating IPFS node...")
+        const IPFSmodule = await import('../modules/ipfs-core/ipfs-core.js')
+        const IPFS = IPFSmodule.default
+        let ipfsNode = await IPFS.create()
+        globalThis.ipfsNode = ipfsNode
+
+        // Show IPFS ID to console
+        const id = await ipfsNode.id()
+        console.log("Global IPFS node created: " + id.id)
+    })();
 </script>
 
 <div class="view">

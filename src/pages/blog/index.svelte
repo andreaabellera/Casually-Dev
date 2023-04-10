@@ -6,19 +6,9 @@
     import blogData from '../content/blogs.yml'
     import { onMount } from 'svelte';
 
-    let ipfsNode;
+    let ipfsNode = globalThis.ipfsNode
 
-    // Setup IPFS
-    onMount(async () => {
-		if (!globalThis.ipfsNode) {
-			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
-			const IPFS = IPFSmodule.default;
-			ipfsNode = await IPFS.create();
-			globalThis.ipfsNode = ipfsNode;
-		} else {
-			ipfsNode = globalThis.ipfsNode;
-		}
-
+    onMount(() => {
         // Entries transition
         let id2 = setInterval(loadEntries, 200)
         let delay = 0

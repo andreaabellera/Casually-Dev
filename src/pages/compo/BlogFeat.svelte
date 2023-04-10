@@ -5,18 +5,7 @@
     import blogData from '../content/blogs.yml' 
     import { onMount } from 'svelte';
 
-    let ipfsNode;
-
-    // Setup IPFS
-    onMount(async () => {
-		if (!globalThis.ipfsNode) {
-			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
-			const IPFS = IPFSmodule.default;
-			ipfsNode = await IPFS.create();
-			globalThis.ipfsNode = ipfsNode;
-		} else 
-			ipfsNode = globalThis.ipfsNode;
-
+    onMount(() => {
         // Blog covers transition effect
         let currV = 0
         let id = setInterval(loadEntries, 200)
@@ -27,7 +16,7 @@
             if(currV == visibles.length)
                 clearInterval(id)
         }
-	});
+	})
 
     // Detect mobile
     let isMobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -52,26 +41,16 @@
     }
 
     if(!visibles[0]){
-        ;(async () => {
-            if (!globalThis.ipfsNode) {
-			const IPFSmodule = await import('../../modules/ipfs-core/ipfs-core.js');
-			const IPFS = IPFSmodule.default;
-			ipfsNode = await IPFS.create();
-			globalThis.ipfsNode = ipfsNode;
-            } else 
-                ipfsNode = globalThis.ipfsNode;
+        // Blog covers transition effect
+        let currV = 0
+        let id = setInterval(loadEntries, 200)
+        function loadEntries() {
+            visibles[currV] = true
+            currV++
 
-            // Blog covers transition effect
-            let currV = 0
-            let id = setInterval(loadEntries, 200)
-            function loadEntries() {
-                visibles[currV] = true
-                currV++
-
-                if(currV == visibles.length)
-                    clearInterval(id)
-            }
-        })()
+            if(currV == visibles.length)
+                clearInterval(id)
+        }
     }
 </script>
 
@@ -88,7 +67,6 @@
             <a href="../blog/{blog.id}">
                 <div in:fly="{{ x: 500, duration: 600 }}">
                     <BlogCover
-                        ipfsNode = {ipfsNode}
                         image = {blog.image}
                         tags = {blog.tags}
                         title = {blog.title}
