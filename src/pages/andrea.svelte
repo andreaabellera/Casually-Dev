@@ -61,40 +61,54 @@
                                 <div id="bigH" class="greeting">H</div>
                                 <div class="greeting">ello! </div>
                                 <div class="info-row griddy-text"> 
-                                    My name is Andrea Abellera. I discovered my love for creation as a kid who created puzzles, board games, textbooks, stories, with a huge spiel of drawings.
+                                    My name is Andrea 🫶🏼 Welcome to my humble space!
                                 </div>
                             </div>
 
                             <div class="info-row"> 
-                                Discovering HTML and Flash-based virtual worlds sparked my desire to create things inside the computer. At 15, I graduated high school in the Philippines and moved with my family to Canada, allowing me to adapt culturally and gain exposure to animation, 3D models, different art media (clay, leather, textiles), programming, networks and cybersecurity. I took a year to go Bible College to pursue my love for God, Jesus Christ, to whom I attribute all things and has become my strength and buckler for years to come. I am currently studying Computer Science at the University of Manitoba hopeful to graduate on April 2023.
+                                Once upon a time, there was a girl who loved to create so many things! 
+                                Art, stories, poems, puzzles, ideas brought to life with her mighty pen and paper. 
+                                But neither pen or paper can bring to life an insurmountable dream - to create the things she sees inside a computer. 
+                                <br><br>
+                                Touching code for the first time, it was <b>not</b> love at first byte. Unable to grasp basic loops and conditionals, she quit a workshop on Python, disheartened.
+                                "Can girls' brains understand programming?", she asked her instructor on a jeepney ride. "Some understand it faster than others", he thoughtfully replied. She took that moment to believe. Until.. 
+                                <br><br>
+                                she learned that code is just like art. It is constructive and creative, fun and fulfilling. It feels like home.
+                            </div>
+
+                            <div class="info-row"> 
+                                Now, the sky is the limit for this young lady's passion and flame. One such dragon exists that begot this cave, but let's just call her, the <b>CasuallyDev</b> 🤫
                             </div>
 
                             <div class="info-row logos">
                                 <img src="https://ipfs.fleek.co/ipfs/bafybeibmpke7psgzgwmdo32imsyzryj3ep6l2oykjzkquhg5sq47ovp7ya" alt="University of Manitoba">
                             </div>
-                            
+
                             <div class="info-row"> 
-                                I document my development journey, programming studies, thoughts and adventures with <b> CasuallyDev </b> by night. By day, I work with TD Bank as a Business Systems Analyst Intern, which is a tremendously great experience!
-                            </div>
-                            
-                            <div class="info-row logos">
-                                <img src="https://ipfs.fleek.co/ipfs/bafybeib25qktipncncjuri6nkc55ftas3w4bshi7z3ijqz4he3iljg5mey" alt="Toronto-Dominion Bank">
+                                <ul>
+                                    <li>CasuallyDev is a graduate of this school called University of Manitoba</li>
+                                    <li>CasuallyDev loves to sing. She loves to read the Bible. She is a Christian and her life verse is Psalms 37:4. She has about 4000 KJV verses memorized by heart</li>
+                                    <li>CasuallyDev is a Starbucks regular and has tasted all the drinks on the menu, including poisonous ones. She will warn you away from cursed concoctions</li>
+                                    <li>Once upon a time, CasuallyDev is immature and lived off other's validation for her performance and persistence in the tech field. She is sorry for all the friends she hurt. If you have been hurt, she wants you to recover and wishes you the best 🌹</li>
+                                </ul>
                             </div>
 
                             <div class="info-row"> 
-                                You can reach me best by sending a message on my 
-                                <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a>.  
-                                I frequent <a href="https://www.instagram.com/ateawa/"> Instagram </a> but will only accept connections from people I know personally.
+                                <b><i>Relay a message to CasuallyDev</i></b>
+                                <br>
+                                Or Andrea, whichever you find comfy 😊 Shoot me a chat through
+                                <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a> 
+                                or email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
                             </div>
                         </div>
-                        <div class="action-btns">
+                        <!-- <div class="action-btns">
                             <a href="/intermission">
                                 <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
                             </a>
                             <div id="resume" class="action-btn"> 
                                 or <a href="https://ipfs.fleek.co/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu"> Download my Résumé</a>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="for-fun">
                             <div id="stamp-collection"></div>
                             <div id="drink-tier-list"></div>
@@ -247,7 +261,7 @@
         cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
-    .action-btns{
+    /*.action-btns{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -257,7 +271,7 @@
     .action-btn{
         padding: 3vh 2vw 3vh 2vw;
         width: 100%;
-    }
+    }*/
 
     /* #tour{
         border: 4px double var(--bark);

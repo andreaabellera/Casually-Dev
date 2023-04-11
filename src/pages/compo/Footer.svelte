@@ -20,7 +20,7 @@
     <div class="footer-inner">
         <div class="footer-left">
             <div class="cp">
-                <b>Andrea Abellera</b> © 2022 <br>
+                <b>Andrea Abellera</b> © 2023 <br>
             </div>
             <div class="site-about">
                 <img src = "https://ipfs.fleek.co/ipfs/bafybeigio35caamtq4f26zhxuckrweggufjiodyzzr3gslxhkddcxznyum" alt="Footer Thumbnail" />
@@ -29,9 +29,9 @@
                         This website is <br>
                         <a href="https://github.com/andreaabellera/casuallydev"><b> OPEN SOURCE </b></a>
                     </p>
-                    made in <a href="https://svelte.dev/"><b>SvelteJS</b></a>                 <br>
-                    served from <a href="https://ipfs.io/"><b>IPFS</b></a>                    <br>
-                    powered by <a href="https://fleek.co/"><b>Fleek.co</b></a>                <br>
+                    made in <a href="https://svelte.dev/"><b>SvelteJS</b></a><br>
+                    served from <a href="https://ipfs.tech/"><b>IPFS</b></a><br>
+                    powered by <a href="https://www.netlify.com/"><b>Netlify</b></a><br>
                 </div>
             </div>
         </div>
