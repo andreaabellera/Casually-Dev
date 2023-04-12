@@ -15,6 +15,10 @@
         const id = await ipfsNode.id()
         console.log("Global IPFS node created: " + id.id)
     })();
+
+	// Set blog epic
+	globalThis.epic = "summer-2022"
+
 </script>
 
 <div class="view">

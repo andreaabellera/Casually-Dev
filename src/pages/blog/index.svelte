@@ -69,6 +69,12 @@
 
     // Get blog data
     let blogs = blogData.blogs
+    // Filter blogs by current epic
+    blogs = blogs.filter(blog => {
+        if(blog.epic == globalThis.epic)
+            return blog
+    })
+    // Fly-in visibility animations
     let visibles = []
     for(let i=0; i < blogs.length; i++)
         visibles.push(false)

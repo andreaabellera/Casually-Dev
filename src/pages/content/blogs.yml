@@ -1,6 +1,16 @@
 blogs:
+  - id: casually-dev-reboot
+    title: "CasuallyDev: Reboot"
+    epic: summer-2023
+    date: April 11, 2023
+    tags:
+      - Life 💃🏻
+    image: bafybei
+    blurb: bafybei
+  
   - id: retro-august-2022
     title: August 2022 Retrospective
+    epic: summer-2022
     date: September 18, 2022
     tags:
       - Life 💃🏻
@@ -9,6 +19,7 @@ blogs:
 
   - id: reddit-artists-painted-me
     title: Reddit Artists painted me
+    epic: summer-2022
     date: September 17, 2022
     tags:
       - Art 🖼️
@@ -18,6 +29,7 @@ blogs:
   
   - id: sketches-to-a-decade
     title: Sketches to a Decade Ago
+    epic: summer-2022
     date: August 4, 2022
     tags:
       - Art 🖼️
@@ -27,6 +39,7 @@ blogs:
 
   - id: retro-july-2022
     title: July 2022 Retrospective
+    epic: summer-2022
     date: August 2, 2022
     tags:
       - Life 💃🏻
@@ -36,6 +49,7 @@ blogs:
 
   - id: girl-cave-upgrades
     title: Girl Cave Upgrades
+    epic: summer-2022
     date: July 20, 2022
     tags:
       - Develop ⚙️
@@ -45,6 +59,7 @@ blogs:
   
   - id: casually-roadshow
     title: Casually Roadshows are in Town
+    epic: summer-2022
     date: July 17, 2022
     tags:
       - Games 🎲
@@ -53,6 +68,7 @@ blogs:
 
   - id: cool-girls-summer
     title: Cool Girls' Summer
+    epic: summer-2022
     date: July 10, 2022
     tags:
       - Life 💃🏻
@@ -62,6 +78,7 @@ blogs:
 
   - id: retro-june-22
     title: June 2022 Retrospective
+    epic: summer-2022
     date: July 1, 2022
     tags:
       - Life 💃🏻
@@ -71,6 +88,7 @@ blogs:
 
   - id: homecooked-memes
     title: Fresh Homecooked Memes
+    epic: summer-2022
     date: June 30, 2022
     tags:
       - Random 🍡
@@ -79,6 +97,7 @@ blogs:
 
   - id: a-small-detour
     title: A Small Detour
+    epic: summer-2022
     date: June 29, 2022
     tags:
       - Life 💃🏻
@@ -87,6 +106,7 @@ blogs:
 
   - id: chronicles-of-minecraft
     title: Chronicles of Minecraft
+    epic: summer-2022
     date: June 22, 2022
     tags:
       - Games 🎲
@@ -95,6 +115,7 @@ blogs:
 
   - id: shadow-of-the-award
     title: Shadow of the Award
+    epic: summer-2022
     date: June 19, 2022
     tags:
       - Life 💃🏻
@@ -103,6 +124,7 @@ blogs:
 
   - id: all-propped-up
     title: All Propped up
+    epic: summer-2022
     date: June 18, 2022
     tags:
       - Develop ⚙️
@@ -111,6 +133,7 @@ blogs:
 
   - id: i-became-a-dog
     title: And I became a Dog
+    epic: summer-2022
     date: June 17, 2022
     tags:
       - Life 💃🏻
@@ -120,6 +143,7 @@ blogs:
 
   - id: breakthrough
     title: It's a Breakthrough
+    epic: summer-2022
     date: June 9, 2022
     tags:
       - Develop ⚙️
@@ -130,6 +154,7 @@ blogs:
 
   - id: retro-may-22
     title: May 2022 Retrospective
+    epic: summer-2022
     date: June 1, 2022
     tags:
       - Life 💃🏻
@@ -139,6 +164,7 @@ blogs:
     
   - id: mvp-one-done
     title: Site MVP one, Done
+    epic: summer-2022
     date: May 31, 2022
     tags:
       - Develop ⚙️
@@ -147,6 +173,7 @@ blogs:
   
   - id: survey-comp-resources
     title: Surveying Competitive Resources
+    epic: summer-2022
     date: May 28, 2022
     tags:
       - Programming 👩🏻‍💻
@@ -155,6 +182,7 @@ blogs:
   
   - id: may-27-adventure
     title: Professing my love to Busses, also Lounges
+    epic: summer-2022
     date: May 28, 2022
     tags:
       - Life 💃🏻
@@ -163,6 +191,7 @@ blogs:
 
   - id: introducing-casually-css
     title: Introducing my Passion Project, Casually CSS
+    epic: summer-2022
     date: May 26, 2022
     tags:
       - Develop ⚙️
@@ -172,6 +201,7 @@ blogs:
 
   - id: summer-goals
     title: My Summer Goals
+    epic: summer-2022
     date: May 25, 2022
     tags:
       - Develop ⚙️
@@ -185,6 +215,7 @@ blogs:
 
   - id: qtrlex-launch
     title: Welcome to CasuallyDev! (previously qtrlex)
+    epic: summer-2022
     date: May 24, 2022
     tags:
       - Develop ⚙️
