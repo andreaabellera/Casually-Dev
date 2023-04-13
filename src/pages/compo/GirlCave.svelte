@@ -4,9 +4,9 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
-<div class="girlcave-ctr">
-    <div class="girlCaveTitle"> Girl Cave </div>
-    <div class="girlCavePromos">
+<div class="ladycave-ctr">
+    <div class="ladyCaveTitle"> The Cave </div>
+    <div class="ladyCavePromos">
         <GalerieFeat 
             title={"The Queen Moves Forward"} 
             image={"https://ipfs.fleek.co/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
@@ -19,7 +19,7 @@
 </div>
 
 <style>
-    .girlcave-ctr {
+    .ladycave-ctr {
         height: max-content;
         width: 100%;
         display: grid;
@@ -27,16 +27,16 @@
         grid-template-rows: auto 1fr;
     }
 
-    .girlCaveTitle{
+    .ladyCaveTitle{
         font-family: 'Mr De Haviland', cursive;
-        font-size: 8.5em;
+        font-size: 10em;
         color: var(--passione);
         text-shadow: -4px 4px var(--blossom);
-        margin-left: 2vw;
-        margin: 6vh 0 12vh 2vw;
+        width: 100%;
+        margin: 6vh 0 12vh 12vw;
     }
 
-    .girlCavePromos{
+    .ladyCavePromos{
         width: 100%;
         height: auto;
         display: flex;
@@ -54,6 +54,14 @@
         width: 90%;
         max-width: 900px;
         margin: 4vh 0 4vh 0;
+    }
+
+    @media (max-width: 600px) {
+        .ladyCaveTitle{
+            text-align: center;
+            font-size: 7em;
+            margin: 6vh 0 12vh 0vw;
+        }
     }
 
 </style>

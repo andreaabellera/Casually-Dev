@@ -173,8 +173,8 @@
     <!-- Mandatory Fix -->
     <span class="selected"></span>
     <script>
-        let url = window.location.href
-        let toks = url.split("/")
+        let theUrl = window.location.href
+        let toks = theUrl.split("/")
         if(toks.includes("blog"))
             document.getElementById("nav-blog").classList.add("selected")
         else if(toks.includes("archive"))
