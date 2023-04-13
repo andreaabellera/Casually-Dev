@@ -2,26 +2,6 @@
     import { fade } from 'svelte/transition';
     import { params } from '@roxi/routify';
     import journalData from '../content/journals.yml'; 
-    import toBuffer from 'it-to-buffer';
-    import CID from 'cids';
-
-    let ipfsNode = globalThis.ipfsNode
-
-    let poll = setInterval(loadIPFS, 300)
-    async function loadIPFS() {
-        if(globalThis.ipfsNode){
-            clearInterval(poll)
-            ipfsNode = globalThis.ipfsNode
-            const cid = new CID(link)
-            const content = await toBuffer(ipfsNode.cat(cid))
-            let intString = content.toString()
-            let decoded = ""
-            intString.split(',').forEach(function(i) {
-                decoded += String.fromCharCode(i)
-            })
-            blurb = decoded
-        }
-    }
 
     // Page transition
     let visible = false
@@ -48,6 +28,13 @@
             link = journalData.blurb
         }
     }
+
+    // Load blurb from IPFS
+    setTimeout(async() => {
+        let response = await fetch(`https://fleek.ipfs.io/ipfs/${link}`)
+        blurb = await response.text()
+    }, 1000)
+
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">

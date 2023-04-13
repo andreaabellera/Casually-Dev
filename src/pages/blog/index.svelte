@@ -6,8 +6,6 @@
     import blogData from '../content/blogs.yml'
     import { onMount } from 'svelte';
 
-    let ipfsNode = globalThis.ipfsNode
-
     onMount(() => {
         // Entries transition
         let id2 = setInterval(loadEntries, 200)
@@ -120,7 +118,6 @@
             <a href={$url("./:showId", {showId: blog.id})}>
                 <div in:fly="{{ x: 500, duration: 600 }}">
                     <BlogCover
-                        ipfsNode={ipfsNode}
                         image = {blog.image}
                         tags = {blog.tags}
                         title = {blog.title}

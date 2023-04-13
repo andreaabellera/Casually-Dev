@@ -1,6 +1,4 @@
 <script>
-    import toBuffer from 'it-to-buffer'
-    import CID from 'cids'
     import Boba from "casually-css/@svelte/boba.svelte"
 
     // Props
@@ -12,30 +10,12 @@
     export let loading = false
     let blurb = "Loading blurb..."
 
-    // Cut blurb content
-    function cutContent(content){
-        return content.substring(0, 100) + "..."
-    }
-
-    // Load IPFS
-    let ipfsNode = globalThis.ipfsNode
-    let poll = setInterval(loadIPFS, 300)
-    async function loadIPFS() {
-        if(globalThis.ipfsNode){
-            clearInterval(poll)
-            ipfsNode = globalThis.ipfsNode
-            if(link){
-                const cid = new CID(link)
-                const content = await toBuffer(ipfsNode.cat(cid))
-                let intString = content.toString()
-                let decoded = ""
-                intString.split(',').forEach(function(i) {
-                    decoded += String.fromCharCode(i)
-                })
-                blurb = cutContent(decoded)
-            }
-        }
-    }
+    // Load blurb from IPFS
+    setTimeout(async() => {
+        let response = await fetch(`https://fleek.ipfs.io/ipfs/${link}`)
+        let text = await response.text()
+        blurb = text.substring(0, 100) + "..."
+    }, 100)
 
     function randTime() {
         return (Math.random()*5 + 2) + "s";
