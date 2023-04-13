@@ -1,12 +1,13 @@
 blogs:
-  - id: casually-dev-reboot
-    title: "CasuallyDev: Reboot"
+  - id: casually-dev-reboots
+    title: "Into a New Epic!"
     epic: summer-2023
-    date: April 11, 2023
+    date: April 12, 2023
     tags:
-      - Life 💃🏻
-    image: bafybei
-    blurb: bafybei
+      - Develop ⚙️
+      - Programming 👩🏻‍💻
+    image: bafybeigdb5zp4zvy7iv4f26hdg5ppzv46b7iacor4ym4brwqmy7no7jhh4
+    blurb: bafybeihnsuidmci7wlkboskpc7dxibtqzv7bft6avzwewpptrkj4augqgy
   
   - id: retro-august-2022
     title: August 2022 Retrospective
@@ -214,7 +215,7 @@ blogs:
     blurb: bafybeib6b33ogpi2uicw25e3wzozyxslu43yjsvlhax3fpmglixmss7ixq
 
   - id: qtrlex-launch
-    title: Welcome to CasuallyDev! (previously qtrlex)
+    title: Welcome to CasuallyDev!
     epic: summer-2022
     date: May 24, 2022
     tags:

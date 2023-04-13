@@ -93,10 +93,10 @@
                 </a>
                 
 
-                <a href="/journals">
-                    <div id="nav-journals" class="nav" on:click={changeSelect}> 
+                <a href="/archive">
+                    <div id="nav-archive" class="nav" on:click={changeSelect}> 
                         <section></section>
-                        <span> journals </span> 
+                        <span> archive </span> 
                     </div>
                 </a>
                 
@@ -142,10 +142,10 @@
                 </a>
                 
 
-                <a href="/journals">
-                    <div id="nav-journals" class="nav" on:click={changeSelect}> 
+                <a href="/archive">
+                    <div id="nav-archive" class="nav" on:click={changeSelect}> 
                         <section></section>
-                        <span> journals </span> 
+                        <span> archive </span> 
                     </div>
                 </a>
 
@@ -177,8 +177,8 @@
         let toks = url.split("/")
         if(toks.includes("blog"))
             document.getElementById("nav-blog").classList.add("selected")
-        else if(toks.includes("journals"))
-            document.getElementById("nav-journals").classList.add("selected")
+        else if(toks.includes("archive"))
+            document.getElementById("nav-archive").classList.add("selected")
         else if(toks.includes("galerie"))
             document.getElementById("nav-galerie").classList.add("selected")
         else if(toks.includes("laruelle") || toks.includes("intermission"))
@@ -337,7 +337,7 @@
         background-image: url(https://ipfs.fleek.co/ipfs/bafybeicbzg74h32pofcjhlldhfzr5eyuizxmvnizlfffoxnhkybatwu5bq);
     }
 
-    #nav-journals section{
+    #nav-archive section{
         background-image: url(https://ipfs.fleek.co/ipfs/bafybeiemaommpsincjhizl2ppv26rnbcgxavmrhvhjxr5wr5o6xetqhifm);
     }
 
@@ -410,7 +410,7 @@
         transform: rotateZ(-3deg);
     }
 
-    .nav-array #nav-journals:hover{
+    .nav-array #nav-archive:hover{
         transform: rotateZ(6deg);
     }
     .nav-array #nav-revues:hover{

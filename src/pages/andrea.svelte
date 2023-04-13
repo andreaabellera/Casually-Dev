@@ -61,7 +61,7 @@
                                 <div id="bigH" class="greeting">H</div>
                                 <div class="greeting">ello! </div>
                                 <div class="info-row griddy-text"> 
-                                    My name is Andrea 🫶🏼 Welcome to my humble space!
+                                    My name is Andrea. Welcome to my humble space!
                                 </div>
                             </div>
 
@@ -96,7 +96,7 @@
                             <div class="info-row"> 
                                 <b><i>Relay a message to CasuallyDev</i></b>
                                 <br>
-                                Or Andrea, whichever you find comfy 😊 Shoot me a chat through
+                                Or Andrea, whichever you find comfy 🤎 Shoot me a chat through
                                 <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a> 
                                 or email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
                             </div>
