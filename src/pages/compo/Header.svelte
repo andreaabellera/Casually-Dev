@@ -171,7 +171,7 @@
     <script>
         let theUrl = window.location.href
         let toks = theUrl.split("/")
-        if(toks.includes("blog"))
+        if(toks.includes("blog") || toks.includes("epics"))
             document.getElementById("nav-blog").classList.add("selected")
         else if(toks.includes("archive"))
             document.getElementById("nav-archive").classList.add("selected")
