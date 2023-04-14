@@ -119,7 +119,7 @@
         width: 100%;
         display: grid;
         grid-template-rows: auto 1fr;
-        margin: -8vh 0 10vh 0;
+        margin: -7vh 0 10vh 0;
     }
 
     #about-ctr-inner{

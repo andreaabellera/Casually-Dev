@@ -153,6 +153,28 @@ blogs:
     image: bafybeibcclmcsfcpofkpljqk4wb7tvxkqjfrvs4utblkou3pvi6nfdyqjq
     blurb: bafybeidxctw3kttlxxi24uzregx4h547vjv7bd5g3lt6knlgrzapw6bsf4
 
+  - id: casually-art-tutorials
+    title: Casually Art Tutorials
+    epic: summer-2022
+    date: June 4, 2022
+    tags:
+      - Art 🖼️
+      - Programming 👩🏻‍💻
+    image: bafybeihq4jmrw5hwxneudurxlbriewlq5zs3alrvrd2bbz7tgjpp2jl2ma
+    blurb: bafybeichbvb7od7ryh6kvwhfjgv7hjyiy2kuciwjf7sevpgqaomavzkztm
+    cover: "<p class='lancelot large'> BLOSSOM </p> <p class='laBelleAurore slightLarge'> Casually Art Tutorial</p>"
+
+  - id: depth-breadth-first-search
+    title: Depth-First and Breadth-First Search
+    epic: summer-2022
+    date: June 3, 2022
+    tags:
+      - Programming 👩🏻‍💻
+    image: bafybeiafnggz4qdr3zr5d27s32wn53zr5g2uh5fm7bog7ansnnsam2m77u
+    blurb: bafybeifk26ddqico76ts4jqt6rfohl2ghqb5dzleyzfdrgshaph7j4mhne
+    cover: "<p class='syncopate small'>Depth-First</p><p class='cousine small'>and</p><p class='syncopate small'>Breadth-First</p><p class='cousine slightLarge'> Search </p>"
+
+
   - id: retro-may-22
     title: May 2022 Retrospective
     epic: summer-2022
@@ -199,6 +221,7 @@ blogs:
       - Art 🖼️
     image: bafybeiheb6a7nwh7inr2k3jrmiobutg7owtp3mqawe6p6tqzlqzi6w6xya
     blurb: bafybeibckkjshup2z2q7qhomazdjpyw7qw5nvezernvsxavkhxapjmat7m
+    cover: "<p class='laBelleAurore slightSmall'> Introducing my passion project </p> <p class='taviraj slightLarge'> CASUALLY CSS </p>"
 
   - id: summer-goals
     title: My Summer Goals

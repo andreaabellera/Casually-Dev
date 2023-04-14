@@ -1,7 +1,7 @@
 <script>
     import { fly } from 'svelte/transition'
 	import BlogFeat from './compo/BlogFeat.svelte'
-	import JournalFeat from './compo/JournalFeat.svelte'
+	import BlogPins from './compo/BlogPins.svelte'
 	import GirlCave from './compo/GirlCave.svelte'
 
     let visible = false
@@ -33,7 +33,7 @@
     
     {#if visibleC}
     <div in:fly="{{ y: 200, duration: 800 }}">
-        <JournalFeat />
+        <BlogPins />
         <GirlCave />
     </div>
     {/if}

@@ -101,11 +101,11 @@
     </div>
 
     {#if visibles[3]}
-    <div class="blog-sm" transition:fly="{{ y: 50, duration: 800 }}">
+    <!-- <div class="blog-sm" transition:fly="{{ y: 50, duration: 800 }}">
         <a href="/blog">
             <div id="blog-see-more" class="laBelleAurore"><div> see more blogs </div></div>
         </a>
-    </div>
+    </div> -->
     {/if}
 </div>
 
@@ -116,7 +116,7 @@
         display: grid;
         grid-column-gap: 6vh;
         grid-template-rows: auto 1fr auto;
-        margin: -8vh 0 10vh 0;
+        margin-top: -8vh;
     }
 
     #blog-array{
@@ -135,10 +135,10 @@
         grid-column: 1/3;
     }
 
-    .blog-sm{
+    /* .blog-sm{
         grid-row: 3/4;
         grid-column: 1/3;
-    }
+    } */
 
     .filter{
         display: none;
