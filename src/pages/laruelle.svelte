@@ -141,7 +141,7 @@
             <div class="entranceCtr" in:fly="{{ y: -1000, duration: 400 }}" out:fly="{{ y: -800, duration: 1200 }}">
                 <div id="intro">scroll down to explore!</div>
                 <div id="arrowee">
-                    <img src="https://ipfs.fleek.co/ipfs/bafybeihegepawf6wdpxfxlarq5gmiiqsysztywgsot3jigsewvlpyg3z3q" alt="Casino pattern vector created by macrovector - www.freepik.com" style="height:100%; width:max-content;">
+                    <img src="https://ipfs.io/ipfs/bafybeihegepawf6wdpxfxlarq5gmiiqsysztywgsot3jigsewvlpyg3z3q" alt="Casino pattern vector created by macrovector - www.freepik.com" style="height:100%; width:max-content;">
                 </div>
             </div>
         {:else if tl && currScroll == i}
@@ -186,7 +186,7 @@
         left: 0;
         width: inherit;
         height: inherit;
-        background: url(https://ipfs.fleek.co/ipfs/bafybeic4n4jj6y7abasp7dv2zq63bjddocrhclpc23cy3aqnuojdzwcusq);
+        background: url(https://ipfs.io/ipfs/bafybeic4n4jj6y7abasp7dv2zq63bjddocrhclpc23cy3aqnuojdzwcusq);
         background-size: auto;
         background-repeat: repeat;
         opacity: 0.1;

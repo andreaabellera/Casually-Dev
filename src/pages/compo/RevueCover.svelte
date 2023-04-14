@@ -11,7 +11,7 @@
     <div class="cover">
         <div class="cover-inner">
             {#if image}
-            <div class="revueThumb" style="background-image:url(https://ipfs.fleek.co/ipfs/{image});"></div>
+            <div class="revueThumb" style="background-image:url(https://ipfs.io/ipfs/{image});"></div>
             {:else}
             <div></div>
             {/if}
@@ -31,7 +31,7 @@
         height: 20em;
 		width: 45em;
         margin-bottom: 4vh;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
         align-items: center;

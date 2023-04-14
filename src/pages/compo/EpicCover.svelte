@@ -12,7 +12,7 @@
     <div class="cover">
         <div class="cover-inner">
             {#if image}
-                <div class="epicThumb" style="background-image:url(https://ipfs.fleek.co/ipfs/{image});"></div>
+                <div class="epicThumb" style="background-image:url(https://ipfs.io/ipfs/{image});"></div>
             {/if}
             <div class="epicContent">
                 <div class="epicTitle"> {title} </div>
@@ -31,7 +31,7 @@
         height: 13em;
 		width: 42em;
         margin: 0 0 3vh 6vw;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
         align-items: center;

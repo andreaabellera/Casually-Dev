@@ -72,7 +72,7 @@
                             </div>
 
                             <div class="info-row logos">
-                                <img src="https://ipfs.fleek.co/ipfs/bafybeibmpke7psgzgwmdo32imsyzryj3ep6l2oykjzkquhg5sq47ovp7ya" alt="University of Manitoba">
+                                <img src="https://ipfs.io/ipfs/bafybeibmpke7psgzgwmdo32imsyzryj3ep6l2oykjzkquhg5sq47ovp7ya" alt="University of Manitoba">
                             </div>
 
                             <div class="info-row"> 
@@ -97,7 +97,7 @@
                                 <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
                             </a>
                             <div id="resume" class="action-btn"> 
-                                or <a href="https://ipfs.fleek.co/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu"> Download my Résumé</a>
+                                or <a href="https://ipfs.io/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu"> Download my Résumé</a>
                             </div>
                         </div> -->
                         <div class="for-fun">
@@ -163,7 +163,7 @@
     }
 
     #photo{
-        background-image: url(https://ipfs.fleek.co/ipfs/bafybeifj2pisu4kore77t6krkqrd5yqqh2rrkbznfnksdnsmhd7eyqjvyu);
+        background-image: url(https://ipfs.io/ipfs/bafybeifj2pisu4kore77t6krkqrd5yqqh2rrkbznfnksdnsmhd7eyqjvyu);
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -244,12 +244,12 @@
 
     img:hover{
         animation: up 0.8s ease-out;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .frame:hover{
         animation: upFrame 0.9s ease-out;
-        cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     /*.action-btns{

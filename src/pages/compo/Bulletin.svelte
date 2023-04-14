@@ -9,7 +9,7 @@
     <div class="bulletinInner">
         <div id = "imgCtr">
             {#if image}
-                <img src="https://ipfs.fleek.co/ipfs/{image}" alt="{title}" style="height:100%; width:max-content;">
+                <img src="https://ipfs.io/ipfs/{image}" alt="{title}" style="height:100%; width:max-content;">
             {/if}
         </div>
         <div id = "msArray">

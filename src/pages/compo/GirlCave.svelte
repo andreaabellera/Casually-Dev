@@ -8,7 +8,7 @@
     <div class="ladyCavePromos">
         <GalerieFeat 
             title={"The Queen Moves Forward"} 
-            image={"https://ipfs.fleek.co/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
+            image={"https://ipfs.io/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
         />
         <ProjectFeat />
     </div>

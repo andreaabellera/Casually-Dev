@@ -22,7 +22,7 @@
                 <b>Andrea Abellera</b> © 2023 <br>
             </div>
             <div class="site-about">
-                <img src = "https://ipfs.fleek.co/ipfs/bafybeigio35caamtq4f26zhxuckrweggufjiodyzzr3gslxhkddcxznyum" alt="Footer Thumbnail" />
+                <img src = "https://ipfs.io/ipfs/bafybeigio35caamtq4f26zhxuckrweggufjiodyzzr3gslxhkddcxznyum" alt="Footer Thumbnail" />
                 <div class="site-info">
                     <p>
                         This website is <br>
@@ -36,10 +36,10 @@
         </div>
         <div class="footer-right">
             <div class="footer-social">
-                <a href="https://www.instagram.com/ateawa/"><img src="https://ipfs.fleek.co/ipfs/bafybeig22agaavqyvfjbfzudd6md64qfox32bun2vrgmwcfi3cluqd4qya" alt="Instagram" /></a>
-                <a href="https://github.com/andreaabellera"><img src="https://ipfs.fleek.co/ipfs/bafybeiarmhb7kqwivorqeokim5py4kubdu7ouwn47w6yop45llogegs55e" alt="Github" /></a>
-                <a href="https://www.linkedin.com/in/aabellera"><img src="https://ipfs.fleek.co/ipfs/bafybeid5jlfpfybb7z6ck2wko5rkirhfmdh2lmgv3oayqu74xvaxaupxku" alt="Linkedin" /></a>
-                <a href="https://www.reddit.com/user/CosySushi/"><img src="https://ipfs.fleek.co/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" /></a>
+                <a href="https://www.instagram.com/ateawa/"><img src="https://ipfs.io/ipfs/bafybeig22agaavqyvfjbfzudd6md64qfox32bun2vrgmwcfi3cluqd4qya" alt="Instagram" /></a>
+                <a href="https://github.com/andreaabellera"><img src="https://ipfs.io/ipfs/bafybeiarmhb7kqwivorqeokim5py4kubdu7ouwn47w6yop45llogegs55e" alt="Github" /></a>
+                <a href="https://www.linkedin.com/in/aabellera"><img src="https://ipfs.io/ipfs/bafybeid5jlfpfybb7z6ck2wko5rkirhfmdh2lmgv3oayqu74xvaxaupxku" alt="Linkedin" /></a>
+                <a href="https://www.reddit.com/user/CosySushi/"><img src="https://ipfs.io/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" /></a>
             </div>
             <div class="ptSans thanks"> Special thanks to <a href="https://icons8.com/icon/set/social-media/dotty"> ICONS8 </a> </div>
         </div>

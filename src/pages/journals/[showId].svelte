@@ -31,7 +31,7 @@
 
     // Load blurb from IPFS
     setTimeout(async() => {
-        let response = await fetch(`https://fleek.ipfs.io/ipfs/${link}`)
+        let response = await fetch(`https://ipfs.io/ipfs/${link}`)
         blurb = await response.text()
     }, 1000)
 

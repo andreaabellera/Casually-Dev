@@ -55,7 +55,7 @@
 .bleu:hover{
   transition: 0.3s ease-out;
   filter: brightness(105%);
-  cursor: url(https://ipfs.fleek.co/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+  cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
 }
 
 .bleu:active{
