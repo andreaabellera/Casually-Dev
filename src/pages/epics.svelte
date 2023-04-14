@@ -1,5 +1,5 @@
 <script>
-    import { fade } from 'svelte/transition'
+    import { fly, fade } from 'svelte/transition'
 	import Heading from './compo/Heading.svelte'
     import EpicCover from './compo/EpicCover.svelte'
     import epicData from './content/epics.yml'
@@ -12,29 +12,43 @@
     let visible = false
 
     // Page transition
-    let id1 = setInterval(loadPage, 200)
+    let id1 = setInterval(loadPage, 600)
     function loadPage() {
         visible = true
         clearInterval(id1)
     }
 
+    let visibles = new Array(epics.length)
+    // Epic covers transition effect
+    let currV = 0
+    let id = setInterval(loadEntries, 1200)
+    function loadEntries() {
+        visibles[currV] = true
+        currV++
+
+        if(currV == visibles.length)
+            clearInterval(id)
+    }
+
 </script>
 
 {#if visible}
-<div class="epic-feat-ctr" style="margin-top:{adjust};" transition:fade>
+<div class="epic-feat-ctr" style="margin-top:{adjust};" in:fly="{{ x: -300, duration: 600 }}" out:fade>
 
     <div class="epic-heading">
         <Heading title={"CHOOSE EPIC"} />
     </div>
 
     <div id="epic-array">
-    {#each epics as epic, i}
-        <EpicCover
-            id={epic.id}
-            image={epic.image}
-            title={epic.title}
-            blurb={epic.blurb}
-        />
+    {#each epics as epic}
+        <div in:fly="{{ x: -1000, duration: 600 }}" out:fade>
+            <EpicCover
+                id={epic.id}
+                image={epic.image}
+                title={epic.title}
+                blurb={epic.blurb}
+            />
+        </div>
     {/each}
     </div>
 </div>

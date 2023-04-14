@@ -14,7 +14,8 @@
         function loadEntries() {
             if(delay==4){
                 visibles[currV] = true
-                filterVisible = true
+                if(!globalThis.isMobile)
+                    filterVisible = true
                 currV++
 
                 if(currV == visibles.length)
@@ -23,14 +24,11 @@
             else
                 delay++
         }
-	});
-
-    export let adjust = "-8vh"
-    if (globalThis.isMobile)
-        adjust = "-20vh"
+	})
 
     // Show and hide blogs based on filters
-    let filters = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
+    let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
+    let filters = categories
     function fselect(){
         let classes = this.classList;
         if(classes.contains("fselect")){
@@ -82,27 +80,47 @@
         clearInterval(id1)
     }
 
+    function activate(){ this.classList.add("epic-activated") }
+    function deactivate(){ this.classList.remove("epic-activated") }
+    function showFilters(){ filterVisible = !filterVisible }
+
 </script>
 
 {#if visible}
-<div class="blog-feat-ctr" style="margin-top:{adjust};" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="blog-feat-ctr" style="margin-top:-8vh;" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !globalThis.isMobile}
     <div class="blog-heading">
         <Heading title={"BLOG"} />
     </div>
     {/if}
 
+    <div id="mobile-btn-array">
+        <a href="/epics">
+            <button id="epic-btn" class="laBelleAurore large" 
+                on:mouseenter={activate} 
+                on:focus={activate}
+                on:mouseleave={deactivate}
+                on:blur={deactivate}
+            > 
+                switch timeline <div> ↺ </div> 
+            </button>
+        </a>
+    
+        {#if globalThis.isMobile}
+        <button id="filter-btn" class="laBelleAurore large" on:click={showFilters}> 
+            show filters <div> ◉ </div> 
+        </button>
+        {/if}
+    </div>
+
     {#if filterVisible}
     <div class="filter" in:fly="{{ y: 500, duration: 600 }}" out:fly="{{ x: 800, duration: 400 }}">
         <div class="filter-box">
             <div class="filter-box-title gentiumBasic"> filter by tags </div>
-            <div class="filter-box-content ptSans"> 
-                <div on:click={fselect}><p>Develop ⚙️</p></div>
-                <div on:click={fselect}><p>Programming 👩🏻‍💻</p></div>
-                <div on:click={fselect}><p>Art 🖼️</p></div>
-                <div on:click={fselect}><p>Life 💃🏻</p></div>
-                <div on:click={fselect}><p>Games 🎲</p></div>
-                <div on:click={fselect}><p>Random 🍡</p></div>
+            <div class="filter-box-content ptSans">
+                {#each categories as filter}
+                    <div on:click={fselect}><p>{filter}</p></div>
+                {/each}
             </div>
         </div>
     </div>
@@ -139,6 +157,7 @@
 {/if}
 
 <span class="fselect"></span>
+<span class="epic-activated"><div></div></span>
 
 <style>
     .blog-feat-ctr {
@@ -151,15 +170,38 @@
         margin-bottom: 10vh;
     }
 
-    .blog-heading{
-        grid-row: 1/2;
-        grid-column: 1/3;
-    }
-
     #blog-array{
         margin-top: -6vh;
         width: 100%;
         margin-bottom: 5vh;
+    }
+
+    #epic-btn, #filter-btn{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 0.4em;
+        margin: 10vh 0 0 -17vw;
+        border: none;
+        background: none;
+        color: var(--mocha);
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), auto;
+    }
+
+    .epic-activated{
+        color: var(--chartreuse) !important;
+    }
+
+    .epic-activated div{
+        animation: 1.3s spin linear infinite;
+    }
+
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
     }
 
     .filter{
@@ -198,23 +240,16 @@
         font-weight: 500;
         margin-bottom: 2vh;
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0);
         display: grid;
         align-items: center;
         justify-items: center;
     }
 
-    .filter-box-content p{
-        width: 100%;
-    }
-
     .filter-box-content div:hover{
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
-    }
-
-    .filter-box-content p:hover{
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
-        font-size: 1.5em;
-        transform: translateY(-0.6em);
+        /* background: rgba(177, 120, 87, 0.45); */
+        border: 2px groove var(--oyster);
         transition: 0.1s ease-in-out;
     }
 
@@ -224,7 +259,7 @@
         font-weight: 400 !important;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 880px) {
         .blog-feat-ctr {
             display: flex;
             flex-direction: column;
@@ -234,8 +269,19 @@
             margin-top: 3vh;
         }
 
+        #mobile-btn-array{
+            display: flex;
+        }
+
+        #epic-btn, #filter-btn{
+            border: 1px solid var(--mocha);
+            border-radius: 0.2em;
+            font-size: 18px;
+            margin: -1vh 0 0 6vw;
+        }
+
         .filter{
-            margin-top: 13vh;
+            margin-top: 9vh;
             margin-left: 0;
         }
 
