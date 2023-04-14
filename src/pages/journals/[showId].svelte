@@ -37,10 +37,6 @@
 
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
 {#if visible}
 <div class="journal-page-ctr" transition:fade>
     <div id="journal-page-inner" class="journal-page-inner">

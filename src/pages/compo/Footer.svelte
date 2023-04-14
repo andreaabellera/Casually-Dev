@@ -15,7 +15,6 @@
     */
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <div class="footer-ctr">
     <div class="footer-inner">
         <div class="footer-left">

@@ -27,9 +27,6 @@
 
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 <div class="project-feat-ctr" style="background-image:url({image});">
     <div class="title-ctr">
         <div class="title-text"> Casually CSS </div>

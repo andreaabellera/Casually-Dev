@@ -23,8 +23,6 @@
     }
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
 {#if visible}
     <div class="intermission" transition:fade>
         <div id="ridin"> <Bike /> </div>

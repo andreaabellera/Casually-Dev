@@ -54,10 +54,6 @@
     }
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-
 <span class="spinner"></span>
 <div id="title-ctr" class="title-container">
     <div class="casuallydev"> CasuallyDev </div>

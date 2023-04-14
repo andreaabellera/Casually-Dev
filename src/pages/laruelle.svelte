@@ -134,7 +134,6 @@
 
 <svelte:body on:scroll={scrollY}></svelte:body>
 
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 {#if visible}
 <div class="laruelle-ctr" in:loadThis style="background:rgb({currBG.r},{currBG.g},{currBG.b});" out:removeThis>
     {#each timeline as tl, i}

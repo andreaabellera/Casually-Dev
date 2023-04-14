@@ -56,8 +56,6 @@
 
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
 {#if visible}
 <div class="revues-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
     {#if !isMobile}

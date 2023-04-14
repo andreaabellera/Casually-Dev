@@ -3,7 +3,6 @@
     import ProjectFeat from './ProjectFeat.svelte';
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
 <div class="ladycave-ctr">
     <div class="ladyCaveTitle"> The Cave </div>
     <div class="ladyCavePromos">

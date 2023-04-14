@@ -1,6 +1,5 @@
 <div class="meta-container">
     <div class="artboard">
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <div class="bike">
             <span class="wheel-box">
               <div class="wheel">

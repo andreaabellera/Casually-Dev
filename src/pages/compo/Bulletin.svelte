@@ -5,7 +5,6 @@
     export let bgColor = "rgba(184,144,108,0.36)"
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <div id="bulletinCtr" style="background-color:{bgColor}">
     <div class="bulletinInner">
         <div id = "imgCtr">
