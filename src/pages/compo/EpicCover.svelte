@@ -7,7 +7,7 @@
     function selectEpic(){ globalThis.epic = id }
 </script>
 
-<div class="cover-ctr">
+<a href="/blog" class="cover-ctr" on:click={selectEpic}>
     <a href="/blog" class="cover-border" on:click={selectEpic}> <p style="margin-right: 2vw;"> time travel here </p> </a>
     <div class="cover">
         <div class="cover-inner">
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-</div>
+</a>
 
 <style>
 	.cover-ctr {
