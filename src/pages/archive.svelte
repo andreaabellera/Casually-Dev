@@ -68,8 +68,9 @@
     @media (max-width: 800px) {
         #blog-array{
             margin-top: -12vh;
+            margin-left: 0;
             column-count: 1;
-            margin-left: 5%;
+            width: 70%;
             font-size: 140%;
         }
     }

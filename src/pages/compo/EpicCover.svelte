@@ -51,6 +51,7 @@
         color: rgba(0,0,0,0);
         font-family: 'La Belle Aurore', cursive;
         font-size: 1.75em;
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .cover-border:hover{
