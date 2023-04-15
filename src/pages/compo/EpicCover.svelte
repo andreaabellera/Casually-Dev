@@ -8,7 +8,7 @@
 </script>
 
 <a href="/blog" class="cover-ctr" on:click={selectEpic}>
-    <a href="/blog" class="cover-border" on:click={selectEpic}> <p style="margin-right: 2vw;"> time travel here </p> </a>
+    <a href="/blog" class="cover-border" on:click={selectEpic}> <p style="margin-right: 2vw;"> time travel </p> </a>
     <div class="cover">
         <div class="cover-inner">
             {#if image}
@@ -129,14 +129,8 @@
 
     @media (max-width: 600px) {
         .cover-ctr{
-            height: 12em;
 		    width: 100%;
             margin: 0 0 3vh 0;
-        }
-
-        .cover{
-            height: 10em;
-            width: 85%;
         }
 
         .cover-border{
