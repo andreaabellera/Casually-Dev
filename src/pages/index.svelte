@@ -16,7 +16,7 @@
     // Content transition
     let visibleC = false
     let delay = 0
-    let id2 = setInterval(loadContent, 900)
+    let id2 = setInterval(loadContent, 400)
     function loadContent() {
         if(delay==1){
             visibleC = true

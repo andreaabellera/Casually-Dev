@@ -1,4 +1,13 @@
 blogs:
+  - id: why-dont-you-marry-an-ai
+    title: "'Why Don't You Marry An AI' - a short story"
+    epic: uncharted
+    date: April 17, 2023
+    tags:
+      - Random 🍡
+    blurb: bafybeidlmxbu6vzcvzlf76v5zuvelftwdtyn43wbbj2vx57fae6yy4e5x4
+    cover: "<p class='cousine slightLarge'> Why Don't You Marry an AI</p><p class='gentiumBasic slightSmall'> a short story </p>"
+
   - id: casually-dev-reboots
     title: "Into a New Epic!"
     epic: summer-2023
