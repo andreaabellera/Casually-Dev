@@ -5,10 +5,20 @@
     export let detail = "You'll never know where to get this";
     export let rating = -1;
     export let blurb = "Hahahahaha empty blurb";
+
+    function expand(){
+        if(!globalThis.isMobile)
+            this.style.height = "inherit"
+    }
+    function shrink(){
+        if(!globalThis.isMobile)
+            this.style.height = "17em"
+    }
+
 </script>
 
 <div class="cover-ctr">
-    <div class="cover">
+    <div class="cover" on:mouseenter={expand} on:mouseleave={shrink} on:focus={expand} on:blur={shrink}>
         <div class="cover-inner">
             {#if image}
             <div class="revueThumb" style="background-image:url(https://ipfs.io/ipfs/{image});"></div>
@@ -59,14 +69,6 @@
         color: var(--ink);
         overflow: hidden;
     }
-
-    .revueContent{
-        overflow-y: scroll;
-    }
-
-    .revueContent::-webkit-scrollbar-track {
-		box-shadow: none; 
-	}
 
     .revueThumb{
         height: 100%;
