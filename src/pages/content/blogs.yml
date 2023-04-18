@@ -1,4 +1,13 @@
 blogs:
+  - id: five-year-retro
+    title: "A Restrospective of Five Years"
+    epic: summer-2023
+    date: April 17, 2023
+    tags:
+      - Life 💃🏻
+    image: bafybeibda4p374aamzwpgxpocde2p6fxpgp62dqgfk3jbjdd72qbvm5sx4
+    blurb: bafybeicjeduwf56hb3lqg63dimrzda7csuplecvda76ibxhc2shnaumvve
+  
   - id: why-dont-you-marry-an-ai
     title: "'Why Don't You Marry An AI' - a short story"
     epic: uncharted

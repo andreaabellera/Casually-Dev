@@ -9,6 +9,10 @@
         adjust = "-20vh"
 
     let blogs = blogData.blogs
+    blogs = blogs.filter(blog => {
+        if(blog.epic != globalThis.epic)
+            return blog
+    })
     let visible = false
 
     // Page transition

@@ -5,7 +5,7 @@
 	import '../global.css';
 
 	// Set blog epic
-	globalThis.epic = "summer-2022"
+	globalThis.epic = "summer-2023"
 
 	// Detect mobile
 	onMount(()=>{
