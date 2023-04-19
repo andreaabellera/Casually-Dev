@@ -39,39 +39,39 @@
             <a href="https://casuallyroadshow.on.fleek.co/">You can watch it live here!</a> <span class="small"><i>(desktop-viewing recommended)</i></span>
             <br><br>
             
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/zKJXCX3J_-k" title="Casually CSS Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/zKJXCX3J_-k" title="Casually CSS Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
             <br><br>
             
             <!-- IPFS -->
             Wondering why I have a slight obsession with IPFS? I worked with it for a freeform project in university. Here's <a href="https://github.com/andreaabellera/DesCentral-Apps">DesCentral Apps, the project prototypes</a> in my summary vid below!
             <br><br>
             
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/5lfjivcDNBQ" title="LibP2P and IPFS Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/5lfjivcDNBQ" title="LibP2P and IPFS Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>    
             <br><br>
             
             <!-- The Great AI Debate -->
             Running the risk of being unpopular, I denounce generative AI malpractices and stand by the protection of the moral rights of artists. While aware of sides of the debate and potential compromises, I assert that many artists cannot bring themselves yet to use a tool that is inherently cannibalistic.
             <br><br>
             
-            <iframe style="width:100%;" height="500" src="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" title="The Great AI Debate" frameborder="0" allowfullscreen></iframe>    
+            <!-- <iframe style="width:100%;" height="500" src="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" title="The Great AI Debate" frameborder="0" allowfullscreen/>     -->
             <br><br>
             
             <!-- Game Jam Teasers -->
             I took part in several Hackathons and Game Jams - but the <a href="https://www.youtube.com/channel/UCIoKCiOQl9L8xNExupEPpxQ">Game Music Jam</a> is special to me as 1.) it is a two-stage jam where <b>developers produce the game</b> on a first week and <b>musicians produce music inspired from the game</b> the following week, 2.) it is founded by two of my great friends, and 3.) I've been part of the admin team but simulateneously fully dived-in to the experience! Here are three of my team's entries from our three consecutive seasons. <span class="small"><i>Farms are a recurring theme for some reason. I am a game artist in all the occasions.</i></span> 
             <br><br>
             
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/JKZDh6bA_3Y" title="Recollection Day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/JKZDh6bA_3Y" title="Recollection Day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
             <br><br>
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/dXBGJ2Iq1uQ" title="Farmer's Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/dXBGJ2Iq1uQ" title="Farmer's Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
             <br><br>
-            <iframe style="width:100%;" height="500" src="https://ipfs.fleek.co/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" title="Farmony" frameborder="0" allowfullscreen></iframe>
+            <!-- <iframe style="width:100%;" height="500" src="https://ipfs.fleek.co/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" title="Farmony" frameborder="0" allowfullscreen/> -->
             <br><br>
             
             <!-- CasuallyDev Shorts -->
             In the future, I'd like to have a channel which will be mostly <b>CasuallyDev shorts</b>. It will feature small snippets of my development adventures and coding shenanigans!
             <br><br>
             
-            <iframe class="shorts" style="width:100%;" height="500" src="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" title="The Conception of Baldy" frameborder="0" allowfullscreen></iframe>    
+            <!-- <iframe class="shorts" style="width:100%;" height="500" src="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" title="The Conception of Baldy" frameborder="0" allowfullscreen/>     -->
             <br><br>
             
             <!-- Delphi -->
@@ -79,7 +79,7 @@
             I worked with <a href="https://vrcity.ca/">VRCity</a>, a VR platform and curriculum gearing teens and young adults for a career in aviation - whether as a pilot, aircraft maintenance engineer, or anything in-between. Here's a vid of life as a dev intern! Also featuring my fellow dev homies.
             <br><br>
             
-            <iframe style="width:100%;" height="500" src="https://ipfs.fleek.co/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi" frameborder="0" allowfullscreen title="Delphi Tech Corp Intern Afterparty"></iframe>    
+            <!-- <iframe style="width:100%;" height="500" src="https://ipfs.fleek.co/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi" frameborder="0" allowfullscreen title="Delphi Tech Corp Intern Afterparty"/>     -->
             <br><br>
         </div>
     </div>
