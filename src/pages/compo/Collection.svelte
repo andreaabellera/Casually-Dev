@@ -7,20 +7,20 @@
 
 <div id="collectionCtr">
     <div id="collectionInner">
-        <div id="heading" class="taviraj">
+        <h2 id="heading" class="taviraj">
             {title}
-        </div>
+        </h2>
     
         <div id="images-array">
             {#each images as image}
-                <div class="image-ctr">
+                <a class="image-ctr" href={image.image}>
                     <img src={image.image} alt={image.info} />
                     <div class="overlay">
                         <div class="title ptSans">{image.title}</div>
                         <div class="year gentiumBasic">{image.year}</div>
                         <div class="info ptSans">{image.info}</div>
                     </div>
-                </div>
+                </a>
             {/each}
         </div>
     </div>
@@ -45,6 +45,7 @@
     #heading {
         color: var(--coffee);
         font-size: 2.7em;
+        font-weight: 400;
     }
 
     #images-array {
