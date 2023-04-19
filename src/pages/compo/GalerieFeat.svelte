@@ -68,7 +68,7 @@
 
 </script>
 
-<a href="/galerie">
+<a id="frame" href="/galerie">
     <div class="gallery-feat-ctr" on:mouseenter={play} on:focus={play} on:mouseleave={reset}>
         <div class="original-text syncopate"> Featuring original artworks from <b>{collectionTitle}</b> </div>
         <div id="title-text" class="laBelleAurore"> {title} </div>
@@ -89,6 +89,11 @@
 </span>
 
 <style>
+    #frame{
+        border: 40px groove black;
+        box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.2);
+    }
+
     .gallery-feat-ctr {
         position: relative;
         background-color: var(--bark);
