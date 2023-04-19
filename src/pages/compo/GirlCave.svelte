@@ -53,7 +53,7 @@
             Running the risk of being unpopular, I denounce generative AI malpractices and stand by the protection of the moral rights of artists. While aware of sides of the debate and potential compromises, I assert that many artists cannot bring themselves yet to use a tool that is inherently cannibalistic.
             <br><br>
             
-            <video controls style="width:100%;" height="500" aria-label="The Great AI Debate">
+            <video controls style="width:100%;" height="500" aria-label="The Great AI Debate" poster="https://ipfs.io/ipfs/bafybeifoqf2fgunqolk4axvjj27wl4tfy2j363j5g5dr3pwspm7oju7uri">
                 <source src="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" type="video/mp4">
                 <track kind="captions"/>
                 <p>
@@ -70,7 +70,7 @@
             <br><br>
             <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/dXBGJ2Iq1uQ" title="Farmer's Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
             <br><br>
-            <video controls style="width:100%;" height="500" aria-label="Farmony Teaser Video">
+            <video controls style="width:100%;" height="500" aria-label="Farmony Teaser Video" poster="https://ipfs.io/ipfs/bafybeihtfbvfmbowrmxyay6wy5xzdune2s44nqtvlzdnkh4fs3fkodhwly">
                 <source src="https://ipfs.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" type="video/mp4">
                 <track kind="captions"/>
                 <p>
@@ -83,7 +83,7 @@
             In the future, I'd like to have a channel which will be mostly <b>CasuallyDev shorts</b>. It will feature small snippets of my development adventures and coding shenanigans!
             <br><br>
             
-            <video controls style="width:100%;" height="500" aria-label="CSS Art Speedcoding">
+            <video controls style="width:100%;" height="500" aria-label="CSS Art Speedcoding" poster="https://ipfs.io/ipfs/bafybeideh5j74oywqgaa3dinyavu7tu53nscu57epscho7diooknkbyvpe">
                 <source src="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" type="video/mp4">
                 <track kind="captions"/>
                 <p>
@@ -97,7 +97,7 @@
             I worked with <a href="https://vrcity.ca/">VRCity</a>, a VR platform and curriculum gearing teens and young adults for a career in aviation - whether as a pilot, aircraft maintenance engineer, or anything in-between. Here's a vid of life as a dev intern! Also featuring my fellow dev homies.
             <br><br>
             
-            <video controls style="width:100%;" height="500" aria-label="Life as a Delphi Tech Dev">
+            <video controls style="width:100%;" height="500" aria-label="Life as a Delphi Tech Dev" poster="https://ipfs.io/ipfs/bafybeicqp5pku4c2qifv7sc5jseapvq2orr5d2ykne7subapic47ne3b7u">
                 <source src="https://ipfs.fleek.co/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi" type="video/mp4">
                 <track kind="captions"/>
                 <p>
@@ -219,6 +219,10 @@
 
         iframe{
             height: 250px;
+        }
+
+        video{
+            height: 200px;
         }
     }
 
