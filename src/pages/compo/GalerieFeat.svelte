@@ -94,7 +94,6 @@
         background-color: var(--bark);
         height: 70vh;
         width: 100%;
-        margin-bottom: 5vh;
         cursor: url(https://ipfs.io/ipfs/bafybeiaamj5yfttqkvs5mx5jre4t43d5syiclw6b4bhjuykpw3d7c4gch4), pointer;
     }
 
