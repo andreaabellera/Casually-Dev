@@ -94,6 +94,15 @@
                 </p>
             </video>
             <br><br>
+
+            <video controls style="width:100%;" height="500" aria-label="Using Your Own Font for a Website" poster="https://ipfs.io/ipfs/bafybeih2vzqgtvkdqxb75aza76r4gbdamdztcuvuloctywevrr7angil6i">
+                <source src="https://ipfs.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm" type="video/mp4">
+                <track kind="captions"/>
+                <p>
+                    Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm">link to the video</a> instead.
+                </p>
+            </video>
+            <br><br>
             
             <!-- Delphi -->
             My dream of working as a programmer came true in the summer of 2021. This is a tribute to <a href="https://delphitechcorp.com/">Delphi Technology Corp</a>. This feature is on my own accord, not sponsored, because I'm certainly grateful for my time with them! <br><br>
@@ -199,13 +208,7 @@
         text-align: right;
     }
 
-    @media (max-width: 600px) {
-        .ladyCaveTitle{
-            text-align: center;
-            font-size: 7em;
-            margin: 6vh 0 12vh 0vw;
-        }
-
+    @media (max-width: 900px) {
         .ladyCavePromos{
             transform: none;
         }
@@ -226,6 +229,14 @@
 
         video{
             height: 200px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ladyCaveTitle{
+            text-align: center;
+            font-size: 7em;
+            margin: 6vh 0 12vh 0vw;
         }
     }
 

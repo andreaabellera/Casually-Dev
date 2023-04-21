@@ -41,6 +41,7 @@
 
     #pinned-array {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         align-items: center;
         margin-bottom: 5vh;
