@@ -4,27 +4,6 @@
 	import Heading from '../compo/Heading.svelte'
 	import BlogCover from '../compo/BlogCover.svelte'
     import blogData from '../content/blogs.yml'
-    import { onMount } from 'svelte';
-
-    onMount(() => {
-        // Entries transition
-        let id2 = setInterval(loadEntries, 200)
-        let delay = 0
-        let currV = 0
-        function loadEntries() {
-            if(delay==4){
-                visibles[currV] = true
-                if(!globalThis.isMobile)
-                    filterVisible = true
-                currV++
-
-                if(currV == visibles.length)
-                    clearInterval(id2)
-            }
-            else
-                delay++
-        }
-	})
 
     // Show and hide blogs based on filters
     let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
@@ -61,23 +40,29 @@
 
     // Get blog data
     let blogs = blogData.blogs
-    // Filter blogs by current epic
-    blogs = blogs.filter(blog => {
+    blogs = blogs.filter(blog => {  // Filter blogs by current epic
         if(blog.epic == globalThis.epic)
             return blog
     })
-    // Fly-in visibility animations
-    let visibles = []
-    for(let i=0; i < blogs.length; i++)
-        visibles.push(false)
-    let visible = false
-    let filterVisible = false
 
     // Page transition
-    let id1 = setInterval(loadPage, 200)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
+    let visible, filterVisible = false
+    setTimeout(()=>{ visible = true }, 300)
+    let visibles = new Array(blogs.length)
+
+    let id = setInterval(loadEntries, 200)
+    let currV = 0 
+    let delay = 0
+    function loadEntries() {
+        if(delay==4){
+            visibles[currV] = true
+            if(!globalThis.isMobile)
+                filterVisible = true
+            currV++
+            if(currV == visibles.length) { clearInterval(id) }
+        }
+        else
+            delay++
     }
 
     function activate(){ this.classList.add("epic-activated") }

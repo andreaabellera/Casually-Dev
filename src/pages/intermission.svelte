@@ -3,12 +3,8 @@
     import { fade } from 'svelte/transition'
 
     // Page transition
-    let visible = false
-    let id1 = setInterval(loadPage, 1000)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
+    let visible
+    setTimeout(()=>{ visible = true }, 1000)
 
     let id2 = setInterval(ridin, 40)
     let perc = 0

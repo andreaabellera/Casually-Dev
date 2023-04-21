@@ -13,7 +13,7 @@
         if(blog.epic == globalThis.epic)
             return blog
     })
-    blogs = blogs.slice(0, cap)  // Limit blogs to 6 posts
+    blogs = blogs.slice(0, cap)  // Limit blogs to n posts
 
     // Assign "Fresh" to new entries (Posted within 3 days from current date)
     const curr = new Date()

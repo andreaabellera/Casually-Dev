@@ -1,6 +1,6 @@
 <script>
     import { url } from "@roxi/routify"
-    import { fly } from 'svelte/transition'
+    import { fly, fade } from 'svelte/transition'
 	import Heading from './compo/Heading.svelte'
     import blogData from './content/blogs.yml'
 
@@ -8,19 +8,17 @@
     if (globalThis.isMobile)
         adjust = "-20vh"
 
+    // Get blog data
     let blogs = blogData.blogs
-    blogs = blogs.filter(blog => {
+    blogs = blogs.filter(blog => {  // Filter blogs by not current epic
         if(blog.epic != globalThis.epic)
             return blog
     })
-    let visible = false
 
     // Page transition
-    let id1 = setInterval(loadPage, 200)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
+    let visible, visibleC = false
+    setTimeout(()=>{ visible = true }, 300)
+    setTimeout(()=>{ visibleC = true }, 1000)
 
 </script>
 
@@ -31,14 +29,17 @@
         <Heading title={"ARCHIVE"} />
     </div>
 
-    <ul id="blog-array">
-    {#each blogs as blog, i}
-    <li>
-        <a href={$url("./blog/:showId", {showId: blog.id})} class="lancelot slightLarge">
-            {blog.title}
-        </a>
-    </li>
-    {/each}
+    {#if visibleC}
+        <ul id="blog-array" transition:fade>
+            {#each blogs as blog, i}
+            <li>
+                <a href={$url("./blog/:showId", {showId: blog.id})} class="lancelot slightLarge">
+                    {blog.title}
+                </a>
+            </li>
+            {/each}
+        </ul>
+    {/if}
 </div>
 {/if}
 

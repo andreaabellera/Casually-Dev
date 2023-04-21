@@ -5,11 +5,7 @@
 
     // Page transition
     let visible = false
-    let id1 = setInterval(loadPage, 1000)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
+    setTimeout(()=>{ visible = true }, 300)
 
     export let id = ""
     if($params.showId)

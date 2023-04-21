@@ -1,5 +1,5 @@
 <script>
-    import { fly } from 'svelte/transition'
+    import { fly, fade } from 'svelte/transition'
 	import Heading from './compo/Heading.svelte'
     import revData from './content/revues.yml'
     import Leaderboard from './compo/Leaderboard.svelte'
@@ -8,34 +8,20 @@
 
     // Get review data
     let reviews = revData.reviews
-    let visibles = []
-    for(let i=0; i < reviews.length; i++)
-        visibles.push(false)
-    let visible = false
-    let leadVisible = false
 
     // Page transition
-    let id1 = setInterval(loadPage, 300)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
-
-    // Reviews transition
-    let id2 = setInterval(loadEntries, 50)
-    let delay = 0
+    let visible, leadVisible = false
+    let visibles = new Array(reviews.length)
     let currV = 0
+    setTimeout(()=>{ visible = true }, 300)
+    setTimeout(()=>{ leadVisible = true }, 800)
+    let id = setInterval(loadEntries, 100)
     function loadEntries() {
-        if(delay==15){
+        if(leadVisible){
             visibles[currV] = true
-            leadVisible = true
             currV++
-
-            if(currV == visibles.length)
-                clearInterval(id2)
+            if(currV == visibles.length) { clearInterval(id) }
         }
-        else
-            delay++
     }
 
     // Search Logic
@@ -60,7 +46,7 @@
 
     <div class="revueContent">
         {#if leadVisible}
-            <section id="flexy">
+            <section id="flexy" transition:fade>
                 <SearchBar 
                     placeholder = "🧋 Search for a Drink.. "
                     on:drinkInput = {handleInput} 

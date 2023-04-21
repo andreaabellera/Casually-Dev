@@ -10,17 +10,12 @@
     
     // Page transition
     let visible = false
-    let id1 = setInterval(loadPage, 300)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
+    setTimeout(()=>{ visible = true }, 300)
 
     // Get time interval for date to scroll binding
-    let today = new Date();
-    let earliest = new Date("09/01/2019");
-    let diffTime = today.getTime() - earliest.getTime();
-    let diffDay = diffTime / (1000 * 3600 * 24);
+    let today = new Date()
+    let earliest = new Date("09/01/2019")
+    let diffTime = today.getTime() - earliest.getTime()
     let currDate
 
     // Seasons

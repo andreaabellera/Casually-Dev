@@ -11,9 +11,9 @@
     let visible = false
     let visibles = new Array(collections.length)
     let currV = 0
-    
+
     setTimeout(()=>{ visible = true }, 300)
-    let id = setInterval(loadEntries, 1200)
+    let id = setInterval(loadEntries, 600)
     function loadEntries() {
         visibles[currV] = true
         currV++

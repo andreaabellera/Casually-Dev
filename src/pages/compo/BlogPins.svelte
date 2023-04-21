@@ -2,33 +2,64 @@
     import Heading from './Heading.svelte'
 	import BlogPage from './BlogPage.svelte'
     import blogData from '../content/blogs.yml'
+    import { fly } from 'svelte/transition'
+    import { elasticOut } from 'svelte/easing'
+
+    // Maximum number of blogs to show
+    let cap = 5
 
     // Get blog data
     let blogs = blogData.blogs
-    // Filter to pinned blogs
-    blogs = blogs.filter(blog => {
+    blogs = blogs.filter(blog => {  // Filter to pinned blogs
         if(blog.cover)
             return blog
     })
-    // Only show latest 5
-    blogs = blogs.slice(0, 5)
+    blogs = blogs.slice(0, cap)  // Limit blogs to n posts
+
+    // Page transition
+    let visible = false
+    let visibles = new Array(cap)
+    let currV = 0
+
+    setTimeout(()=>{ visible = true }, 200)
+    let id = setInterval(loadEntries, 400)
+    function loadEntries() {
+        visibles[currV] = true
+        currV++
+        if(currV == visibles.length) { clearInterval(id) }
+    }
+
+    function zoom({ duration }) {
+        return {
+            duration,
+            css: t => {
+                const eased = elasticOut(t)
+                return `transform: scale(${eased});`
+            }
+        }
+    }
+    
 </script>
 
-<div class="pinned-feat-ctr">
+{#if visible}
+<div class="pinned-feat-ctr" transition:fly="{{ y: 600, duration: 800 }}">
     <Heading title={"PINNED"} />
     <div id="pinned-array">
-    {#each blogs as blog}
-        <a href="../blog/{blog.id}">
-            <BlogPage>
-                {@html blog.cover}
-            </BlogPage>
-        </a>
+    {#each blogs as blog, i}
+        {#if visibles[i] && blog}
+            <a href="../blog/{blog.id}" in:zoom="{{duration: 1000}}">
+                <BlogPage>
+                    {@html blog.cover}
+                </BlogPage>
+            </a>
+        {/if}
     {/each}
     </div>
     <a href="/blog">
         <div id="blog-see-more" class="laBelleAurore"><div> see more blogs </div></div>
     </a>
 </div>
+{/if}
 
 <style>
     .pinned-feat-ctr {
