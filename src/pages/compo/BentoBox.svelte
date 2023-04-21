@@ -6,22 +6,8 @@
     4. Artwork, HTML and CSS codebox (htmlCode, cssCode, render=true)
     */
 
-    // Express artworks import
-    import Beluga from "casually-css/@svelte/beluga.svelte"
-    import Bike from "casually-css/@svelte/bike.svelte"
-    import Bison from "casually-css/@svelte/bison.svelte"
-    import Blossom from "casually-css/@svelte/blossom.svelte"
-    import Boba from "casually-css/@svelte/boba.svelte"
-    import Button from "casually-css/@svelte/button.svelte"
-    import Calendar from "casually-css/@svelte/calendar.svelte"
-    import Cookie from "casually-css/@svelte/cookie.svelte"
-    import Dugong from "casually-css/@svelte/dugong.svelte"
-    import Hippo from "casually-css/@svelte/hippo.svelte"
-    import Lollipop from "casually-css/@svelte/lollipop.svelte"
-    import Matcha from "casually-css/@svelte/matcha.svelte"
-    import Octopus from "casually-css/@svelte/octopus.svelte"
-    import Orange from "casually-css/@svelte/orange.svelte"
-    import Swiss from "casually-css/@svelte/swiss.svelte"
+    import { onMount } from "svelte";
+    import create from "casually-css";
 
     // Props
     export let art = null
@@ -30,6 +16,11 @@
     export let htmlCode = null
     export let cssCode = null
     export let render = false
+
+    onMount(() => {
+        if(art)
+            create(document.getElementsByClassName("bentoArt")[0], art)
+    })
 
     let renderCode = () => {
         return htmlCode + "<style>" + cssCode + "</style>"
@@ -40,40 +31,7 @@
 <div class="bentoBox">
     <div class="bentoContent">
         <div class="bentoArt">
-            {#if art}
-                <!-- Fow now we have uglie list while I research strings to tags -->
-                {#if art == "beluga"}
-                    <Beluga />
-                {:else if art == "bike"}
-                    <Bike />
-                {:else if art == "bison"}
-                    <Bison />
-                {:else if art == "blossom"}
-                    <Blossom />
-                {:else if art == "boba"}
-                    <Boba />
-                {:else if art == "button"}
-                    <Button />
-                {:else if art == "calendar"}
-                    <Calendar />
-                {:else if art == "cookie"}
-                    <Cookie />
-                {:else if art == "dugong"}
-                    <Dugong />
-                {:else if art == "hippo"}
-                    <Hippo snap = {{iterationCount:0}} />
-                {:else if art == "lollipop"}
-                    <Lollipop />
-                {:else if art == "matcha"}
-                    <Matcha />
-                {:else if art == "octopus"}
-                    <Octopus />
-                {:else if art == "orange"}
-                    <Orange />
-                {:else if art == "swiss"}
-                    <Swiss />
-                {/if}
-            {:else if render}
+            {#if !art && render}
                 {@html renderCode()}
             {/if}
         </div>
@@ -204,6 +162,5 @@
             border-radius: 10px;
         }
     }
-
 
 </style>

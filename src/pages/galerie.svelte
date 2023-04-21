@@ -6,32 +6,18 @@
 
     // Get blog data
     let collections = artData.collections
-    let visibles = []
-    for(let i=0; i < collections.length; i++)
-        visibles.push(false)
-    let visible = false
-
+    
     // Page transition
-    let id1 = setInterval(loadPage, 300)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
-
-    // Collections transition
-    let id2 = setInterval(loadEntries, 150)
-    let delay = 0
+    let visible = false
+    let visibles = new Array(collections.length)
     let currV = 0
+    
+    setTimeout(()=>{ visible = true }, 300)
+    let id = setInterval(loadEntries, 1200)
     function loadEntries() {
-        if(delay==5){
-            visibles[currV] = true
-            currV++
-
-            if(currV == visibles.length)
-                clearInterval(id2)
-        }
-        else
-            delay++
+        visibles[currV] = true
+        currV++
+        if(currV == visibles.length) { clearInterval(id) }
     }
 
 </script>

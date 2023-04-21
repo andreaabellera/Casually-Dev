@@ -172,8 +172,8 @@ blogs:
     image: bafybeibcclmcsfcpofkpljqk4wb7tvxkqjfrvs4utblkou3pvi6nfdyqjq
     blurb: bafybeidxctw3kttlxxi24uzregx4h547vjv7bd5g3lt6knlgrzapw6bsf4
 
-  - id: casually-art-tutorials
-    title: Casually Art Tutorials
+  - id: casually-art-tutorials-blossom
+    title: Blossom CSS Art Tutorial
     epic: summer-2022
     date: June 4, 2022
     tags:

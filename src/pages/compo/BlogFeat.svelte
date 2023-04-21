@@ -3,58 +3,39 @@
     import Heading from './Heading.svelte'
     import BlogCover from './BlogCover.svelte'
     import blogData from '../content/blogs.yml' 
-    import { onMount } from 'svelte';
 
-    onMount(() => {
-        // Blog covers transition effect
-        let currV = 0
-        let id = setInterval(loadEntries, 200)
-        function loadEntries() {
-            visibles[currV] = true
-            currV++
-
-            if(currV == visibles.length)
-                clearInterval(id)
-        }
-	})
+    // Maximum number of blogs to show
+    let cap = 6
 
     // Get blog data
     let blogs = blogData.blogs
-    // Filter blogs by current epic
-    blogs = blogs.filter(blog => {
+    blogs = blogs.filter(blog => {  // Filter blogs by current epic
         if(blog.epic == globalThis.epic)
             return blog
     })
-    // Limit blogs to 6 posts
-    blogs = blogs.slice(0, 6)
-    let visibles = [false, false, false, false, false, false]
+    blogs = blogs.slice(0, cap)  // Limit blogs to 6 posts
 
     // Assign "Fresh" to new entries (Posted within 3 days from current date)
-    // Bad programming haha but I'll optimize later
     const curr = new Date()
-    let len = blogs.length
-    for (let i=0; i<len; i++){
-        if (!blogs[i].tags.includes("Fresh 🌿")){
-            let date = new Date(blogs[i].date)
-            let diff = Math.abs(curr - date)
-            let days = Math.floor(diff / (1000 * 60 * 60 * 24))
-            if (days <= 3)
-                blogs[i].tags.unshift("Fresh 🌿")
+    for (let blog of blogs){
+        if (blog.tags.includes("Fresh 🌿")){
+            let date = new Date(blogs.date)
+            if (Math.floor(Math.abs(curr - date) / 86400000) <= 3)
+                blogs.tags.unshift("Fresh 🌿")
         }
     }
 
-    if(!visibles[0]){
-        // Blog covers transition effect
-        let currV = 0
-        let id = setInterval(loadEntries, 200)
-        function loadEntries() {
-            visibles[currV] = true
-            currV++
+    // Page transition
+    let visibles = new Array(cap)
+    let currV = 0
 
-            if(currV == visibles.length)
-                clearInterval(id)
-        }
+    let id = setInterval(loadEntries, 200)
+    function loadEntries() {
+        visibles[currV] = true
+        currV++
+        if(currV == visibles.length) { clearInterval(id) }
     }
+
 </script>
 
 <div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">

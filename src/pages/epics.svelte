@@ -8,26 +8,20 @@
     if (globalThis.isMobile)
         adjust = "-20vh"
 
+    // Get epics data
     let epics = epicData.epics
-    let visible = false
 
     // Page transition
-    let id1 = setInterval(loadPage, 600)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
-
+    let visible = false
     let visibles = new Array(epics.length)
-    // Epic covers transition effect
     let currV = 0
-    let id = setInterval(loadEntries, 1200)
+
+    setTimeout(()=>{ visible = true }, 300)
+    let id = setInterval(loadEntries, 800)
     function loadEntries() {
         visibles[currV] = true
         currV++
-
-        if(currV == visibles.length)
-            clearInterval(id)
+        if(currV == visibles.length) { clearInterval(id) }
     }
 
 </script>

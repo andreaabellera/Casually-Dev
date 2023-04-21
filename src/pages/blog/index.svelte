@@ -37,7 +37,7 @@
             filters.splice(ind, 1)
 
             if(filters.length == 0)
-                filters = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
+                filters = categories
         }
         else{
             if(filters.length == 6)
@@ -187,7 +187,7 @@
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), auto;
     }
 
-    .epic-activated{
+    .epic-activated, #filter-btn:focus{
         color: var(--chartreuse) !important;
     }
 

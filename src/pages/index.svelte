@@ -4,27 +4,11 @@
 	import BlogPins from './compo/BlogPins.svelte'
 	import GirlCave from './compo/GirlCave.svelte'
 
-    let visible = false
-    
-    // Page Transition
-    let id = setInterval(loadPage, 200)
-    function loadPage() {
-        visible = true
-        clearInterval(id)
-    }
+    // Page transition
+    let visible, visibleC = false
+    setTimeout(()=>{ visible = true }, 300)
+    setTimeout(()=>{ visibleC = true }, 1000)
 
-    // Content transition
-    let visibleC = false
-    let delay = 0
-    let id2 = setInterval(loadContent, 400)
-    function loadContent() {
-        if(delay==1){
-            visibleC = true
-            clearInterval(id2)
-        }
-        else
-            delay++
-    }
 </script>
 
 {#if visible}

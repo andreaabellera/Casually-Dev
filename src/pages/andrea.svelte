@@ -2,28 +2,12 @@
     import { fly } from 'svelte/transition'
 	import Heading from './compo/Heading.svelte'
     import Blossom from './compo/art/Blossom.svelte'
-    import CharmingButton from './compo/art/CharmingButton.svelte'
 
     // Page transition
-    let visible = false
-    let id1 = setInterval(loadPage, 300)
-    function loadPage() {
-        visible = true
-        clearInterval(id1)
-    }
+    let visible, visibleC = false
+    setTimeout(()=>{ visible = true }, 300)
+    setTimeout(()=>{ visibleC = true }, 1000)
 
-    // Content transition
-    let visibleC = false
-    let delay = 0
-    let id2 = setInterval(loadContent, 500)
-    function loadContent() {
-        if(delay==1){
-            visibleC = true
-            clearInterval(id2)
-        }
-        else
-            delay++
-    }
 </script>
 
 {#if visible}
@@ -92,19 +76,7 @@
                                 or email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
                             </div>
                         </div>
-                        <!-- <div class="action-btns">
-                            <a href="/intermission">
-                                <CharmingButton text={"VIEW MY 🚲 PORTFOLIO"} />
-                            </a>
-                            <div id="resume" class="action-btn"> 
-                                or <a href="https://ipfs.io/ipfs/bafybeih7ptrsrmnnceicfgdw73rq6shukib7owrsuz52wlrfrscqc57fzu"> Download my Résumé</a>
-                            </div>
-                        </div> -->
-                        <div class="for-fun">
-                            <div id="stamp-collection"></div>
-                            <div id="drink-tier-list"></div>
-                            <div id="stone-bridges"></div>
-                        </div>
+
                     </div>
                 </div>
             </div>
