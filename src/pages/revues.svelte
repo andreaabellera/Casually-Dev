@@ -14,15 +14,17 @@
     let visibles = new Array(reviews.length)
     let currV = 0
     setTimeout(()=>{ visible = true }, 300)
-    setTimeout(()=>{ leadVisible = true }, 800)
-    let id = setInterval(loadEntries, 100)
-    function loadEntries() {
-        if(leadVisible){
+    setTimeout(()=>{
+        if(!globalThis.isMobile) 
+            leadVisible = true
+            
+        let id = setInterval(loadEntries, 100)
+        function loadEntries() {
             visibles[currV] = true
             currV++
             if(currV == visibles.length) { clearInterval(id) }
         }
-    }
+    }, 800)
 
     // Search Logic
     let ids = Object.values(reviews).map(x => x.id.replaceAll('-', ' '))
@@ -36,6 +38,9 @@
         }
 	}
 
+    // Show/Hide Leaderboard on mobile
+    function showLead(){ leadVisible = !leadVisible }
+
 </script>
 
 {#if visible}
@@ -44,20 +49,28 @@
         <Heading title={"REVIEWS"} />
     {/if}
 
+    {#if globalThis.isMobile}
+    <div id="mobile-btn-array">
+        <button id="lead-btn" class="laBelleAurore large" on:click={showLead}> 
+            show top drinks ◉
+        </button>
+    </div>
+    {/if}
+
     <div class="revueContent">
-        {#if leadVisible}
-            <section id="flexy" transition:fade>
-                <SearchBar 
-                    placeholder = "🧋 Search for a Drink.. "
-                    on:drinkInput = {handleInput} 
-                />
+        <section id="flexy" transition:fade>
+            <SearchBar 
+                placeholder = "🧋 Search for a Drink.. "
+                on:drinkInput = {handleInput} 
+            />
+            {#if leadVisible}
                 <div id="leaderboard">
                     <Leaderboard 
                         set = {reviews}
                     />
                 </div>
-            </section>
-        {/if}
+            {/if}
+        </section>
 
         <div id="revueArray">
         {#each reviews as rev, i}
@@ -91,7 +104,21 @@
     .revueContent{
         display: flex;
         justify-content: space-evenly;
-        margin-top: -5vh;
+        /* margin-top: -5vh; */
+    }
+
+    #mobile-btn-array{
+        display: flex;
+    }
+
+    #lead-btn{
+        width: max-width;
+        border: 1px solid var(--mocha);
+        border-radius: 0.2em;
+        font-size: 18px;
+        margin: -1vh 0 0 6vw;
+        background: rgba(0,0,0,0);
+        color: var(--mocha);
     }
 
     #revueArray{
@@ -102,7 +129,6 @@
     #flexy{
         display: flex;
         flex-direction: column;
-        margin-top: 3vh;
         margin-bottom: 3vh;
     }
 

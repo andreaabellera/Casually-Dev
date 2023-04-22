@@ -207,7 +207,6 @@
         padding-bottom: 0.2em;
         color: var(--ink);
         text-align: center;
-        /* border-bottom: solid 1px var(--smudge); */
     }
 
     .filter-box-content{
@@ -233,7 +232,6 @@
 
     .filter-box-content div:hover{
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
-        /* background: rgba(177, 120, 87, 0.45); */
         border: 2px groove var(--oyster);
         transition: 0.1s ease-in-out;
     }

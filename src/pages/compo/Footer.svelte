@@ -29,8 +29,8 @@
                         <a href="https://github.com/andreaabellera/casuallydev"><b> OPEN SOURCE </b></a>
                     </p>
                     made in <a href="https://svelte.dev/"><b>SvelteJS</b></a><br>
-                    served from <a href="https://ipfs.tech/"><b>IPFS</b></a><br>
-                    powered by <a href="https://www.netlify.com/"><b>Netlify</b></a><br>
+                    served from <a href="https://www.netlify.com/"><b>Netlify</b></a><br>
+                    powered by <a href="https://ipfs.tech/"><b>IPFS</b></a><br>
                 </div>
             </div>
         </div>

@@ -6,42 +6,44 @@
     let top = []
     let visibles = []
 
-    if(set.length > 0) {
-        let ratings = Object.values(set).map(x => [x.rating, x])
-        
-        // Sort objects by rating in descending order
-        ratings.sort((a, b) => b[0] - a[0])
-        for(let i=0; i < ranks; i++) {
-            let item = ratings[i][1]
-            item.rank = i + 1
-            top.push(ratings[i][1])
-            if(i!=0)
-                visibles.push(false)
-            else
-                visibles.push(true)
-        }
-
-        // Periodically swap ranking cards
-        let currVisible = 0
-        setInterval(() => {
-            if(currVisible < ranks-1) {
-                visibles[currVisible] = false
-                currVisible++
-            }
-            else{
-                visibles[currVisible] = false
-                currVisible = 0
-            }
-
-            visibles[currVisible] = true
-        }, 8000)
-
+    // Get items and their ratings
+    let ratings = Object.values(set).map(x => [x.rating, x])
+    
+    // Sort items by rating in descending order
+    ratings.sort((a, b) => b[0] - a[0])
+    for(let i=0; i < ranks; i++) {
+        let item = ratings[i][1]
+        item.rank = i + 1
+        top.push(ratings[i][1])
+        if(i!=0)
+            visibles.push(false)
+        else
+            visibles.push(true)
     }
+
+    // Change displayed card
+    let currVisible = 0
+    function nextCard(){
+        visibles[currVisible] = false
+        if(currVisible < ranks-1)
+            currVisible++
+        else
+            currVisible = 0
+        visibles[currVisible] = true
+    }
+
+    function nextRank(){ // Manually trigger next ranking card by click
+        nextCard()
+        clearInterval(id)
+        id = setInterval(nextCard, 8000)
+    }
+    let id = setInterval(nextCard, 8000)  // Automatically swap ranking cards every 8 seconds
+
 </script>
 
 {#each top as item, i}
     {#if visibles[i] && item}
-        <div class="cover-ctr" in:fly="{{ x: -200, duration: 100, delay: 300 }}" out:fly="{{ x:-200, duration: 300 }}">
+        <div class="cover-ctr" in:fly="{{ x: -200, duration: 100, delay: 300 }}" out:fly="{{ x:-200, duration: 300 }}" on:click={nextRank}>
             <div class="cover-inner">
                 <div id="leaderboard"> LEADERBOARD </div>
                 <div id="img-ctr">

@@ -4,15 +4,12 @@
     export let placeholder = "Search.."
     let theDrink = ''
 
-    const dispatch = createEventDispatcher();
+    const dispatch = createEventDispatcher()
 	function drinkInput() {
-		dispatch('drinkInput', {
-			text: theDrink
-		})
+		dispatch('drinkInput', { text: theDrink })
 	}
 </script>
 
-<link href='https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css'>
 <div id="search-ctr">
     <input 
         type="text" 
@@ -31,7 +28,7 @@
         box-shadow: inset 0.05em 0.1em 0.3em rgba(0,0,0,0.3);
         display: grid;
         justify-items: center;
-        margin: 3vh 0 3vh 6vw;
+        margin: 0 0 3vh 6vw;
     }
 
     input{
