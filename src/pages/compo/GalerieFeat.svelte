@@ -210,6 +210,10 @@
     }
 
     @media (max-width: 600px) {
+        #frame{
+            border: 20px groove black;
+        }
+
         .original-text{
             font-size: 0.8em;
             background-color: rgba(0,0,0,0);

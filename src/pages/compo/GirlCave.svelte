@@ -12,9 +12,9 @@
         />
 
         <div id="midnote">
-            <div class="gentiumBasic x-large">
-                I drew a lot.<br><a href="https://www.instagram.com/aviagulcas/">Back in my day.</a>
-            </div>
+            <a class="gentiumBasic x-large" href="https://www.instagram.com/aviagulcas/">
+                Stumble by my<br>art Instagram
+            </a>
         </div>
 
         <ProjectFeat />
@@ -172,7 +172,7 @@
         line-height: 300%;
     }
 
-    #midnote div{
+    #midnote a{
         width: max-content;
         border: 2px solid var(--chartreuse);
         border-top-left-radius: 70%;
