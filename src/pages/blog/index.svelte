@@ -31,8 +31,9 @@
         for(let i=0; i < blogs.length; i++){
             let blogTags = blogs[i].tags
             for(let f of filters){
-                if(blogTags.includes(f))
-                    visibles[i] = true
+                for(let bt of blogTags){
+                    if(bt == f){ visibles[i] = true }
+                }
             }
         }
     }
