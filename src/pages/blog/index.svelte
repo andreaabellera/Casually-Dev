@@ -8,6 +8,7 @@
     // Show and hide blogs based on filters
     let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
     $: filters = categories
+    $: debug = []
     function fselect(){
         let classes = this.classList
         if(classes.contains("fselect")){
@@ -27,12 +28,16 @@
 
         for(let v in visibles)
             visibles[v] = false
-            
+        
+        debug = []
         for(let i=0; i < blogs.length; i++){
             let blogTags = blogs[i].tags
             for(let f of filters){
                 for(let bt of blogTags){
-                    if(bt == f){ visibles[i] = true }
+                    let bt2 = bt.split(' ')[0]
+                    let f2 = f.split(' ')[0]
+                    debug.push(bt2 + " vs " + f2 + " - " + (bt2 == f2))
+                    if(bt2 == f2){ visibles[i] = true }
                 }
             }
         }
@@ -103,6 +108,7 @@
         <div class="filter-box">
             <div class="filter-box-title gentiumBasic"> filter by tags </div>
             <span>{filters}</span><span> - </span><span>{visibles}</span>
+            <div>Debug: {debug}</div>
             <div class="filter-box-content ptSans">
                 {#each categories as filter}
                     <div on:click={fselect}><p>{filter}</p></div>
