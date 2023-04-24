@@ -101,6 +101,7 @@
     <div class="filter" in:fly="{{ y: 500, duration: 600 }}" out:fly="{{ x: 800, duration: 400 }}">
         <div class="filter-box">
             <div class="filter-box-title gentiumBasic"> filter by tags </div>
+            <span>{filters}</span><span> - </span><span>{visibles}</span>
             <div class="filter-box-content ptSans">
                 {#each categories as filter}
                     <div on:click={fselect}><p>{filter}</p></div>
