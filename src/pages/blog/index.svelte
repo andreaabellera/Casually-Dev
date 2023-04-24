@@ -8,45 +8,32 @@
     // Show and hide blogs based on filters
     let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
     let filters = categories
-    function fselect(){
-        try{
-            let classes = this.classList
-            if(classes.contains("fselect")){
-                this.classList.remove("fselect")
-                let ind = filters.indexOf(this.innerText)
-                filters.splice(ind, 1)
+    function fselect(event){
+        let classes = this.classList
+        if(classes.contains("fselect")){
+            this.classList.remove("fselect")
+            filters = filters.filter(f => f != this.innerText)
 
-                if(filters.length == 0)
-                    filters = categories
-            }
-            else{
-                if(filters.length == 6)
-                    filters = []
-
-                this.classList.add("fselect")
-                filters.push(this.innerText)
-            }
-            this.style.textDecoration = "underline"
+            if(filters.length == 0)
+                filters = categories
         }
-        catch{
-            this.style.textDecoration = "strikethrough"
+        else{
+            if(filters.length == 6)
+                filters = []
+
+            this.classList.add("fselect")
+            filters.push(this.innerText)
         }
 
-        try{
-            for(let v in visibles)
-                visibles[v] = false
+        for(let v in visibles)
+            visibles[v] = false
             
-            for(let i=0; i < blogs.length; i++){
-                let blogTags = blogs[i].tags
-                for(let f of filters){
-                    if(blogTags.includes(f))
-                        visibles[i] = true
-                }
+        for(let i=0; i < blogs.length; i++){
+            let blogTags = blogs[i].tags
+            for(let f of filters){
+                if(blogTags.includes(f))
+                    visibles[i] = true
             }
-            this.style.textDecoration = "underline"
-        }
-        catch{
-            this.style.textDecoration = "strikethrough"
         }
     }
 
@@ -62,7 +49,7 @@
     setTimeout(()=>{ visible = true }, 300)
     let visibles = new Array(blogs.length)
 
-    let id = setInterval(loadEntries, 200)
+    let id = setInterval(loadEntries, 100)
     let currV = 0 
     let delay = 0
     function loadEntries() {
