@@ -27,21 +27,21 @@
 
 </script>
 
-<div class="project-feat-ctr" style="background-image:url({image});">
+<div class="project-feat-ctr" style="background-image:url({image});" aria-label="Promotional banner for Casually CSS">
     <div class="title-ctr">
         <div class="title-text"> Casually CSS </div>
         <div class="title-text"> Casually CSS </div>
-        <a href="https://andreaabellera.github.io/Casually-CSS">
+        <a href="https://andreaabellera.github.io/Casually-CSS" aria-label="Visit Casually CSS art gallery">
             <div class="gallery-btn"><span> See the art gallery </span></div>
         </a>
-        <a href="https://github.com/andreaabellera/Casually-CSS">
+        <a href="https://github.com/andreaabellera/Casually-CSS" aria-label="Visit Casually CSS Github">
             <div class="repo-btn"><span> Visit the Github repo </span></div>
         </a>
     </div>
-    <div class="hippo-ctr">
+    <div class="hippo-ctr" role="group" aria-label="Hippo HTML">
         <Hippo />
     </div>
-    <div class="bison-ctr">
+    <div class="bison-ctr" role="group" aria-label="Bison HTML">
         <Bison />
     </div>
 </div>

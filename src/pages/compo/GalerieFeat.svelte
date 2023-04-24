@@ -68,7 +68,7 @@
 
 </script>
 
-<a id="frame" href="/galerie">
+<a id="frame" href="/galerie" aria-label="Visit Gallery">
     <div class="gallery-feat-ctr" on:mouseenter={play} on:focus={play} on:mouseleave={reset}>
         <div class="original-text syncopate"> Featuring original artworks from <b>{collectionTitle}</b> </div>
         <div id="title-text" class="laBelleAurore"> {title} </div>

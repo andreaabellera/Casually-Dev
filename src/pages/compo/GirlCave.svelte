@@ -3,9 +3,9 @@
     import ProjectFeat from './ProjectFeat.svelte';
 </script>
 
-<div class="ladycave-ctr">
+<div class="ladycave-ctr" role="article" aria-label="Homepage promotions and readings">
     <div class="ladyCaveTitle"> The Cave </div>
-    <div class="ladyCavePromos">
+    <div class="ladyCavePromos" aria-label="Promotional links">
         <GalerieFeat 
             title={"The Queen Moves Forward"} 
             image={"https://ipfs.io/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
@@ -20,7 +20,7 @@
         <ProjectFeat />
     </div>
     <div class="contentible">
-        <div class="contentible-inner">
+        <div class="contentible-inner" role="document" aria-label="Featured readings and content">
             <!-- Casually CSS -->
             <div id="quotes">
                 <div class="quote slightLarge">

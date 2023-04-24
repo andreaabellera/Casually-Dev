@@ -12,7 +12,7 @@
 </script>
 
 {#if visible}
-<div in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" aria-label="Home route page content">
     <BlogFeat />
     
     {#if visibleC}

@@ -7,9 +7,9 @@
     function selectEpic(){ globalThis.epic = id }
 </script>
 
-<a href="/blog" class="cover-ctr" on:click={selectEpic}>
+<a href="/blog" class="cover-ctr" on:click={selectEpic} aria-label="Select {title} epic">
     <a href="/blog" class="cover-border" on:click={selectEpic}> <p style="margin-right: 2vw;"> time travel </p> </a>
-    <div class="cover">
+    <div class="cover" role="group" aria-label="Epic display for {title}">
         <div class="cover-inner">
             {#if image}
                 <div class="epicThumb" style="background-image:url(https://ipfs.io/ipfs/{image});"></div>

@@ -11,14 +11,14 @@
 </script>
 
 {#if visible}
-<div class="about-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="about-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" aria-label="Andrea (CasuallyDev) route page content">
     {#if !globalThis.isMobile}
         <Heading title={"ABOUT"} />
     {/if}
 
     {#if visibleC}
         <div id="about-ctr-inner" transition:fly="{{y:100, duration: 800}}">
-            <div id="photo-sect" class="sect">
+            <div id="photo-sect" class="sect" role="group" aria-label="CasuallyDev picture">
                 <div class="photo-ctr">
                     <div id="fleur1"><Blossom /></div>
                     <div id="fleur2"><Blossom color={"#CDFF9B"} height={"3em"} width={"3em"}/></div>
@@ -31,7 +31,7 @@
             <div id="info-sect" class="sect">
                 <div class="info-box">
                     <div class="info-box-inner">
-                        <div class="primary-text">
+                        <div class="primary-text" role="document" aria-label="CasuallyDev bio">
                             <div class="griddy-grid">
                                 <div id="bigH" class="greeting">H</div>
                                 <div class="greeting">ello! </div>

@@ -17,7 +17,7 @@
 
 </script>
 
-<div class="cover-ctr">
+<div class="cover-ctr" role="group" aria-label="Drink review display for {title}">
     <div class="cover" on:mouseenter={expand} on:mouseleave={shrink} on:focus={expand} on:blur={shrink}>
         <div class="cover-inner">
             {#if image}

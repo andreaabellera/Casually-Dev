@@ -42,12 +42,12 @@
 </script>
 
 {#if visible}
-<div class="pinned-feat-ctr" transition:fly="{{ y: 600, duration: 800 }}">
+<div class="pinned-feat-ctr" transition:fly="{{ y: 600, duration: 800 }}" role="article" aria-label="Feature of author-pinned blog posts">
     <Heading title={"PINNED"} />
-    <div id="pinned-array">
+    <div id="pinned-array" role="list" aria-label="Pinned Blogs">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
-            <a href="../blog/{blog.id}" in:zoom="{{duration: 1000}}">
+            <a href="../blog/{blog.id}" in:zoom="{{duration: 1000}}" role="listitem" aria-label="Read blog post for {blog.title}">
                 <BlogPage>
                     {@html blog.cover}
                 </BlogPage>

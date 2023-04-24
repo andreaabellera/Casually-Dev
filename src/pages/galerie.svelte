@@ -23,15 +23,15 @@
 </script>
 
 {#if visible}
-<div class="galerie-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="galerie-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" aria-label="Gallery route page content">
     {#if !globalThis.isMobile}
         <Heading title={"GALLERY"} />
     {/if}
 
-    <div id="collections-array">
+    <div id="collections-array" role="list" aria-label="Collections">
         {#each collections as collection, i}
             {#if visibles[i] && collections}
-                <div in:fly="{{ x: 500, duration: 600 }}">
+                <div in:fly="{{ x: 500, duration: 600 }}" role="listitem">
                     <Collection 
                         title = {collection.title}
                         images = {collection.images}

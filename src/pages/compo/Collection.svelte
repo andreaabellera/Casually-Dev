@@ -5,15 +5,15 @@
     
 </script>
 
-<div id="collectionCtr">
+<div id="collectionCtr" role="complementary" aria-label="Artworks under the {title} collection">
     <div id="collectionInner">
         <h2 id="heading" class="taviraj">
             {title}
         </h2>
     
-        <div id="images-array">
+        <div id="images-array" role="list" aria-label="Collection items">
             {#each images as image}
-                <a class="image-ctr" href={image.image}>
+                <a class="image-ctr" href={image.image} role="listitem" aria-label="View image source with IPFS external link">
                     <img src={image.image} alt={image.info} />
                     <div class="overlay">
                         <div class="title ptSans">{image.title}</div>

@@ -32,7 +32,7 @@
             let blogTags = blogs[i].tags
             for(let f of filters){
                 for(let bt of blogTags){
-                    // Pop off emoji. Makes blog filtering work across devices
+                    // Pop off emoji for blog filtering across devices
                     let bt2 = bt.split(' ')[0]
                     let f2 = f.split(' ')[0]
                     if(bt2 == f2){ visibles[i] = true }
@@ -82,8 +82,8 @@
     </div>
     {/if}
 
-    <div id="mobile-btn-array">
-        <a href="/epics">
+    <div id="mobile-btn-array" role="menu" aria-label="Toggle complementary page widgets and navigation hidden from narrowed screens">
+        <a href="/epics" aria-label="Change epic to show a different set of blogs" role="menuitem">
             <button id="epic-btn" class="laBelleAurore large" 
                 on:mouseenter={activate} 
                 on:focus={activate}
@@ -95,7 +95,13 @@
         </a>
     
         {#if globalThis.isMobile}
-        <button id="filter-btn" class="laBelleAurore large" on:click={showFilters}> 
+        <button 
+            id="filter-btn" 
+            class="laBelleAurore large" 
+            on:click={showFilters}
+            role="menuitem"
+            aria-label="Toggle on/off blog filtering buttons"
+        > 
             show filters <div> ◉ </div> 
         </button>
         {/if}
@@ -103,21 +109,23 @@
 
     {#if filterVisible}
     <div class="filter" in:fly="{{ y: 500, duration: 600 }}" out:fly="{{ x: 800, duration: 400 }}">
-        <div class="filter-box">
+        <div class="filter-box" role="region" aria-label="Blog filtering buttons">
             <div class="filter-box-title gentiumBasic"> filter by tags </div>
             <div class="filter-box-content ptSans">
                 {#each categories as filter}
-                    <div on:click={fselect}><p>{filter}</p></div>
+                    <button on:click={fselect}>
+                        <p>{filter}</p>
+                    </button>
                 {/each}
             </div>
         </div>
     </div>
     {/if}
 
-    <div id="blog-array">
+    <div id="blog-array" role="list" aria-label="Blogs">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
-            <a href={$url("./:showId", {showId: blog.id})}>
+            <a href={$url("./:showId", {showId: blog.id})} role="listitem" aria-label="Read blog post for {blog.title}">
                 <div in:fly="{{ x: 500, duration: 600 }}">
                     <BlogCover
                         image = {blog.image}
@@ -129,7 +137,7 @@
                 </div>
             </a>
         {:else if !filterVisible}
-        <div in:fly="{{ x: 500, duration: 1600 }}">
+        <div in:fly="{{ x: 500, duration: 1600 }}" role="listitem" aria-label="Blog posts loading">
             <BlogCover
                 loading={true}
                 title = {"Loading Content..."}
@@ -219,7 +227,7 @@
         text-align: center;
     }
 
-    .filter-box-content div{
+    .filter-box-content button{
         width: 100%;
         height: 100%;
         background-color: var(--bark);
@@ -233,7 +241,7 @@
         justify-items: center;
     }
 
-    .filter-box-content div:hover{
+    .filter-box-content button:hover{
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         border: 2px groove var(--oyster);
         transition: 0.1s ease-in-out;

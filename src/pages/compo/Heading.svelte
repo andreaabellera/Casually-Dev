@@ -3,7 +3,7 @@
 </script>
 
 <div class="heading-ctr">
-    <div class="title"> {title} </div>
+    <h1 class="title"> {title} </h1>
     <div class="hr"></div>
 </div>
 

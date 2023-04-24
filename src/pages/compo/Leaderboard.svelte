@@ -43,9 +43,17 @@
 
 {#each top as item, i}
     {#if visibles[i] && item}
-        <div class="cover-ctr" in:fly="{{ x: -200, duration: 100, delay: 300 }}" out:fly="{{ x:-200, duration: 300 }}" on:click={nextRank}>
+        <div class="cover-ctr" 
+            in:fly="{{ x: -200, duration: 100, delay: 300 }}" 
+            out:fly="{{ x:-200, duration: 300 }}" 
+            on:click={nextRank}
+            on:keypress={nextRank}
+            role="complementary"
+            aria-label="Leaderboard drink cover changes every 8 seconds to feature next-in-rank drink. Click to change now"
+            tabindex="0"
+        >
             <div class="cover-inner">
-                <div id="leaderboard"> LEADERBOARD </div>
+                <h2 id="leaderboard"> LEADERBOARD </h2>
                 <div id="img-ctr">
                     <div id="rankBadgeCtr">
                         <div class="rankBadgeInner">

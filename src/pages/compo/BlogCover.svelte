@@ -44,7 +44,7 @@
 
 </script>
 
-<div class="cover-ctr">
+<div class="cover-ctr" role="group" aria-label="Blog display for {title}">
     <div class="cover-border"> <p style="margin-right: 2vw;"> read more </p> </div>
     <div class="cover">
         <div class="cover-inner">

@@ -44,14 +44,14 @@
 </script>
 
 {#if visible}
-<div class="revues-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="revues-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" aria-label="Reviews route page content">
     {#if !globalThis.isMobile}
         <Heading title={"REVIEWS"} />
     {/if}
 
     {#if globalThis.isMobile}
-    <div id="mobile-btn-array">
-        <button id="lead-btn" class="laBelleAurore large" on:click={showLead}> 
+    <div id="mobile-btn-array" role="menu" aria-label="Toggle complementary page widgets and navigation hidden from narrowed screens">
+        <button id="lead-btn" class="laBelleAurore large" on:click={showLead} role="menuitem" aria-label="Toggle on/off leaderboard component"> 
             show top drinks ◉
         </button>
     </div>
@@ -64,7 +64,7 @@
                 on:drinkInput = {handleInput} 
             />
             {#if leadVisible}
-                <div id="leaderboard">
+                <div id="leaderboard" role="region" aria-label="Leaderboard that cycles featuring one of top 10 drinks in sequence">
                     <Leaderboard 
                         set = {reviews}
                     />
@@ -72,10 +72,10 @@
             {/if}
         </section>
 
-        <div id="revueArray">
+        <div id="revueArray" role="list" aria-label="Reviews">
         {#each reviews as rev, i}
             {#if visibles[i] && rev}
-                <div in:fly="{{ x: 500, duration: 600 }}">
+                <div in:fly="{{ x: 500, duration: 600 }}" role="listitem">
                         <RevueCover
                             image = {rev.thumb}
                             title = {rev.title}

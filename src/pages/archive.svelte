@@ -23,15 +23,15 @@
 </script>
 
 {#if visible}
-<div class="archive-feat-ctr" style="margin-top:{adjust};" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="archive-feat-ctr" style="margin-top:{adjust};" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" aria-label="Archive route page content">
 
     <div class="blog-heading">
         <Heading title={"ARCHIVE"} />
     </div>
 
     {#if visibleC}
-        <ul id="blog-array" transition:fade>
-            {#each blogs as blog, i}
+        <ul id="blog-array" transition:fade aria-label="Archived blogs list">
+            {#each blogs as blog}
             <li>
                 <a href={$url("./blog/:showId", {showId: blog.id})} class="lancelot slightLarge">
                     {blog.title}

@@ -33,9 +33,9 @@
         <Heading title={"CHOOSE EPIC"} />
     </div>
 
-    <div id="epic-array">
+    <div id="epic-array" role="list" aria-label="Epics">
     {#each epics as epic}
-        <div in:fly="{{ x: -1000, duration: 600 }}" out:fade>
+        <div in:fly="{{ x: -1000, duration: 600 }}" out:fade role="listitem">
             <EpicCover
                 id={epic.id}
                 image={epic.image}

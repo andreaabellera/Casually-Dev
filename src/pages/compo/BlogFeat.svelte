@@ -28,18 +28,18 @@
 
 </script>
 
-<div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}">
+<div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" role="article" aria-label="Feature of latest {cap} blog posts">
     {#if !globalThis.isMobile}
     <div class="blog-heading">
         <Heading title={"BLOG"} />
     </div>
     {/if}
 
-    <div id="blog-array">
+    <div id="blog-array" role="list" aria-label="Blogs">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
             <a href="../blog/{blog.id}">
-                <div in:fly="{{ x: 500, duration: 600 }}">
+                <div in:fly="{{ x: 500, duration: 600 }}" role="listitem" aria-label="Read blog post for {blog.title}">
                     <BlogCover
                         image = {blog.image}
                         tags = {blog.tags}
@@ -50,7 +50,7 @@
                 </div>
             </a>
         {:else}
-        <div in:fly="{{ x: 500, duration: 1600 }}">
+        <div in:fly="{{ x: 500, duration: 1600 }}" role="listitem" aria-label="Blog posts loading">
             <BlogCover
                 loading = {true}
                 title = {"Loading Content..."}

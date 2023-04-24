@@ -41,7 +41,7 @@
 </script>
 
 {#if visible}
-<div class="blog-page-ctr" transition:fade>
+<div class="blog-page-ctr" transition:fade role="document">
     <div id="blog-page-inner" class="blog-page-inner">
         <div class="blogTitle"> {title} </div>
         <div class="blogDate"> {date} </div>
@@ -58,7 +58,7 @@
 
     <script>
 		// Detect mobile
-		if (globalThis.isMobile){
+		if (!globalThis.isMobile){
 			document.getElementById("blog-page-inner").style.marginTop = "15vh"
             let blogImgs = document.getElementsByClassName("blogImg")
             for(let img of blogImgs){

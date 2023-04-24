@@ -10,13 +10,14 @@
 	}
 </script>
 
-<div id="search-ctr">
+<div id="search-ctr" role="region" aria-label="Search drinks">
     <input 
         type="text" 
         id="input" 
         placeholder={placeholder}
         bind:value={theDrink} 
         on:keyup={drinkInput}
+        aria-label="Type keywords to dynamically filter drink review displays"
     >
 </div>
 

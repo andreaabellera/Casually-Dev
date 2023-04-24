@@ -15,13 +15,13 @@
     */
 </script>
 
-<div class="footer-ctr">
-    <div class="footer-inner">
+<div class="footer-ctr" role="group" aria-label="Footer">
+    <div class="footer-inner" role="contentinfo">
         <div class="footer-left">
-            <div class="cp">
+            <div class="cp" role="note" aria-label="Copyright">
                 <b>Andrea Abellera</b> © 2023 <br>
             </div>
-            <div class="site-about">
+            <div class="site-about" role="note" aria-label="Site build information">
                 <img src = "https://ipfs.io/ipfs/bafybeigio35caamtq4f26zhxuckrweggufjiodyzzr3gslxhkddcxznyum" alt="Footer Thumbnail" />
                 <div class="site-info">
                     <p>
@@ -34,14 +34,22 @@
                 </div>
             </div>
         </div>
-        <div class="footer-right">
+        <div class="footer-right" role="list" aria-label="CasuallyDev's external social media links">
             <div class="footer-social">
-                <a href="https://www.instagram.com/ateawa/"><img src="https://ipfs.io/ipfs/bafybeig22agaavqyvfjbfzudd6md64qfox32bun2vrgmwcfi3cluqd4qya" alt="Instagram" /></a>
-                <a href="https://github.com/andreaabellera"><img src="https://ipfs.io/ipfs/bafybeiarmhb7kqwivorqeokim5py4kubdu7ouwn47w6yop45llogegs55e" alt="Github" /></a>
-                <a href="https://www.linkedin.com/in/aabellera"><img src="https://ipfs.io/ipfs/bafybeid5jlfpfybb7z6ck2wko5rkirhfmdh2lmgv3oayqu74xvaxaupxku" alt="Linkedin" /></a>
-                <a href="https://www.reddit.com/user/CosySushi/"><img src="https://ipfs.io/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" /></a>
+                <a href="https://www.instagram.com/ateawa/" role="listitem" aria-label="Instagram">
+                    <img src="https://ipfs.io/ipfs/bafybeig22agaavqyvfjbfzudd6md64qfox32bun2vrgmwcfi3cluqd4qya" alt="Instagram" />
+                </a>
+                <a href="https://github.com/andreaabellera" role="listitem" aria-label="Github">
+                    <img src="https://ipfs.io/ipfs/bafybeiarmhb7kqwivorqeokim5py4kubdu7ouwn47w6yop45llogegs55e" alt="Github" />
+                </a>
+                <a href="https://www.linkedin.com/in/aabellera" role="listitem" aria-label="LinkedIn">
+                    <img src="https://ipfs.io/ipfs/bafybeid5jlfpfybb7z6ck2wko5rkirhfmdh2lmgv3oayqu74xvaxaupxku" alt="Linkedin" />
+                </a>
+                <a href="https://www.reddit.com/user/CosySushi/" role="listitem" aria-label="Reddit">
+                    <img src="https://ipfs.io/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" />
+                </a>
             </div>
-            <div class="ptSans thanks"> Special thanks to <a href="https://icons8.com/icon/set/social-media/dotty"> ICONS8 </a> </div>
+            <div class="ptSans thanks" role="note"> Special thanks to <a href="https://icons8.com/icon/set/social-media/dotty"> ICONS8 </a> </div>
         </div>
     </div>
 </div>

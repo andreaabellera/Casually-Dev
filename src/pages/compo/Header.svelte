@@ -55,33 +55,33 @@
 </script>
 
 <span class="spinner"></span>
-<div id="title-ctr" class="title-container">
+<div id="title-ctr" class="title-container" role="banner" aria-label="CasuallyDev decorative banner">
     <div class="casuallydev"> CasuallyDev </div>
     <div class="tagline"> Bonne nouvelle journée </div>
 </div>
 <div class="fixed-ctr">
-        <div id="nav-btn" on:click={toggleNav}>
+        <div id="nav-btn" on:click={toggleNav} aria-label="Toggle on/off site navigation links for mobile">
             <div class="nav-btn-inner">
                 <div class="round" /><div class="round" /><div class="round" />
             </div>
         </div>
-        <div id="nav-ctr-mbl" class="nav-container">
+        <div id="nav-ctr-mbl" class="nav-container" role="navigation" aria-label="Site navigation links for mobile">
             <div id="nav-array-mbl" class="gentiumBasic">
-                <a href="/">
+                <a href="/" aria-label="Home">
                     <div id="nav-chezmoi" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> chez moi </span> 
                     </div>
                 </a>
 
-                <a href="/blog">
+                <a href="/blog" aria-label="Blogs">
                     <div id="nav-blog" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> blog </span> 
                     </div>
                 </a>
                 
-                <a href="/galerie">
+                <a href="/galerie" aria-label="Art Gallery">
                     <div id="nav-galerie" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> galerie </span> 
@@ -89,7 +89,7 @@
                 </a>
                 
 
-                <a href="/archive">
+                <a href="/archive" aria-label="Blog Archive">
                     <div id="nav-archive" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> archive </span> 
@@ -97,14 +97,14 @@
                 </a>
                 
 
-                <a href="/revues">
+                <a href="/revues" aria-label="Drink Reviews">
                     <div id="nav-revues" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> revues </span> 
                     </div>
                 </a>
 
-                <a href="/andrea">
+                <a href="/andrea" aria-label="About CasuallyDev">
                     <div id="nav-andrea" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> andrea </span>  
@@ -113,16 +113,16 @@
                 
             </div>
         </div>
-        <div id="nav-ctr" class="nav-container">
+        <div id="nav-ctr" class="nav-container" role="navigation" aria-label="Site navigation links for desktop">
             <div class="nav-array gentiumBasic">
-                <a href="/">
+                <a href="/" aria-label="Home">
                     <div id="nav-chezmoi" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> chez moi </span> 
                     </div>
                 </a>
 
-                <a href="/blog">
+                <a href="/blog" aria-label="Blogs">
                     <div id="nav-blog" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> blog </span> 
@@ -130,7 +130,7 @@
                 </a>
                 
 
-                <a href="/galerie">
+                <a href="/galerie" aria-label="Art Gallery">
                     <div id="nav-galerie" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> galerie </span> 
@@ -138,21 +138,21 @@
                 </a>
                 
 
-                <a href="/archive">
+                <a href="/archive" aria-label="Blog Archives">
                     <div id="nav-archive" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> archive </span> 
                     </div>
                 </a>
 
-                <a href="/revues">
+                <a href="/revues" aria-label="Drink Reviews">
                     <div id="nav-revues" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> revues </span> 
                     </div>
                 </a>
 
-                <a href="/andrea">
+                <a href="/andrea" aria-label="About CasuallyDev">
                     <div id="nav-andrea" class="nav" on:click={changeSelect}> 
                         <section></section>
                         <span> andrea </span>  
@@ -161,12 +161,11 @@
                 
             </div>
             <div class="ribbon">
-                <!-- <div class="bow"></div> -->
                 <div class="string"></div>
             </div>
         </div>
 
-    <!-- Mandatory Fix -->
+    <!-- Apply menubar selection class by URL -->
     <span class="selected"></span>
     <script>
         let theUrl = window.location.href
