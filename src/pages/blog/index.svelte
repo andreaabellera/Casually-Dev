@@ -6,9 +6,9 @@
     import blogData from '../content/blogs.yml'
 
     // Show and hide blogs based on filters
-    let categories = ["Develop", "Programming", "Art", "Life", "Games", "Random"]
+    let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
     let filters = categories
-    function fselect(){
+    function fselect(event){
         let classes = this.classList
         if(classes.contains("fselect")){
             this.classList.remove("fselect")
