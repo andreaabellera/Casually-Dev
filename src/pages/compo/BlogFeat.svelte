@@ -15,16 +15,6 @@
     })
     blogs = blogs.slice(0, cap)  // Limit blogs to n posts
 
-    // Assign "Fresh" to new entries (Posted within 3 days from current date)
-    const curr = new Date()
-    for (let blog of blogs){
-        if (blog.tags.includes("Fresh 🌿")){
-            let date = new Date(blogs.date)
-            if (Math.floor(Math.abs(curr - date) / 86400000) <= 3)
-                blogs.tags.unshift("Fresh 🌿")
-        }
-    }
-
     // Page transition
     let visibles = new Array(cap)
     let currV = 0

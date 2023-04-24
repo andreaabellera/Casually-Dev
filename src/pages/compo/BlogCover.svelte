@@ -37,6 +37,11 @@
         return `rgb(${red}, ${green}, ${blue})`;
     }
 
+    // Assign "Fresh" to new entries (Posted within 3 days from current date)
+    let today = new Date()
+    let blogDate = new Date(date)
+    let fresh = (Math.floor(Math.abs(today - blogDate) / 86400000) <= 3)
+
 </script>
 
 <div class="cover-ctr">
@@ -56,6 +61,9 @@
             {/if}
             <div class="blogContent">
                 <div class="blogTags">
+                    {#if fresh}
+                        <div class="blogTag"> Fresh 🌿 </div> 
+                    {/if}
                     {#each tags as tag}
                         <div class="blogTag"> {tag} </div> 
                     {/each}
