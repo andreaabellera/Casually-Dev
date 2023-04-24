@@ -122,7 +122,7 @@
 
     @media (max-width: 700px) {
         .image-ctr{
-            height: max-content;
+            height: auto;
             width: 100%;
             margin: 2px;
         }

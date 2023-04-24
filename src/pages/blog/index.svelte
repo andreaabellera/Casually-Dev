@@ -9,32 +9,44 @@
     let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
     let filters = categories
     function fselect(){
-        let classes = this.classList;
-        if(classes.contains("fselect")){
-            this.classList.remove("fselect")
-            let ind = filters.indexOf(this.innerText)
-            filters.splice(ind, 1)
+        try{
+            let classes = this.classList
+            if(classes.contains("fselect")){
+                this.classList.remove("fselect")
+                let ind = filters.indexOf(this.innerText)
+                filters.splice(ind, 1)
 
-            if(filters.length == 0)
-                filters = categories
-        }
-        else{
-            if(filters.length == 6)
-                filters = []
-
-            this.classList.add("fselect")
-            filters.push(this.innerText)
-        }
-
-        for(let v in visibles)
-            visibles[v] = false
-            
-        for(let i=0; i < blogs.length; i++){
-            let blogTags = blogs[i].tags
-            for(let f of filters){
-                if(blogTags.includes(f))
-                    visibles[i] = true
+                if(filters.length == 0)
+                    filters = categories
             }
+            else{
+                if(filters.length == 6)
+                    filters = []
+
+                this.classList.add("fselect")
+                filters.push(this.innerText)
+            }
+            this.style.textDecoration = "underline"
+        }
+        catch{
+            this.style.textDecoration = "strikethrough"
+        }
+
+        try{
+            for(let v in visibles)
+                visibles[v] = false
+            
+            for(let i=0; i < blogs.length; i++){
+                let blogTags = blogs[i].tags
+                for(let f of filters){
+                    if(blogTags.includes(f))
+                        visibles[i] = true
+                }
+            }
+            this.style.textDecoration = "underline"
+        }
+        catch{
+            this.style.textDecoration = "strikethrough"
         }
     }
 
