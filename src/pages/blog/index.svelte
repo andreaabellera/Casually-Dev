@@ -8,7 +8,7 @@
     // Show and hide blogs based on filters
     let categories = ["Develop ⚙️", "Programming 👩🏻‍💻", "Art 🖼️", "Life 💃🏻", "Games 🎲", "Random 🍡"]
     let filters = categories
-    function fselect(event){
+    function fselect(){
         let classes = this.classList
         if(classes.contains("fselect")){
             this.classList.remove("fselect")
@@ -25,6 +25,8 @@
             filters.push(this.innerText)
         }
 
+        filters = filters
+        
         for(let v in visibles)
             visibles[v] = false
             
