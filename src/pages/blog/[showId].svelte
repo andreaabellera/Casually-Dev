@@ -64,8 +64,8 @@
             for(let img of blogImgs){
                 img.style.height = "60%"
                 img.style.width = "60%"
+            }
         }
-    }
 	</script>
 </div>
 {/if}

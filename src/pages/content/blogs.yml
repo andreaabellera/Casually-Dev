@@ -1,4 +1,13 @@
 blogs:
+  - id: life-taught-me
+    title: "'Life Taught Me' - Lessons from an Ontario Tito"
+    epic: summer-2023
+    date: May 1, 2023
+    tags:
+      - Life 💃🏻
+    image: bafybeianmshs7xvrwdm2myqhcmre3kz3h5onbxcdkt5khfo56yfpe5n7bq
+    blurb: bafybeica44dien5di63sn6ln26cpffl7egtvmk6thmqhfb4rn2ycipqpme
+
   - id: five-year-retro
     title: "A Restrospective of Five Years"
     epic: summer-2023

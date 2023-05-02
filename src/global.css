@@ -146,6 +146,10 @@ a:visited {
 	font-size: 200%;
 }
 
+.blogBlurb h2{
+	font-weight: 400;
+}
+
 /*====================
     COMPONENTS
   ====================*/
