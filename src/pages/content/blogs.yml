@@ -1,4 +1,13 @@
 blogs:
+  - id: ambitious-ui-library
+    title: I am Building an Ambitious UI Library
+    epic: summer-2023
+    date: May 4, 2023
+    tags:
+      - Develop ⚙️
+    image: bafybeietodr34ye23o4wx23agvrx3evg2au2i7v2uputypexq32d6ci6ki
+    blurb: bafybeihd57pj5jht3q6rihutk5d2vh2nvqsyvpauhcjbzdlo3u6e6lci3a
+
   - id: life-taught-me
     title: "'Life Taught Me' - Lessons from an Ontario Tito"
     epic: summer-2023
