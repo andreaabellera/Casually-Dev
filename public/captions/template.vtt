@@ -1,0 +1,14 @@
+WEBVTT - This file has cues.
+
+1 - Hi, I am a WebVTT sample template file
+00:00.000 --> 00:05.000
+- [ Opening encore ]
+- This caption will be displayed from 0 to 5 seconds.
+
+2 - Text here are headers and only for reference
+00:03.000 --> 00:06.000
+- An overlapping caption.
+
+3 - Formatting below defines captions over time using format hh?:mm:ss.ttt(0-999 millis)
+00:05.000 --> 00:10.000
+- This caption will be displayed from 5 to 10 seconds.
