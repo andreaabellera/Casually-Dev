@@ -1,0 +1,48 @@
+WEBVTT - This file has cues.
+
+00:00.000 --> 00:03.000
+Using your own FONT for a website
+
+00:03.500 --> 00:07.000
+First, we'd need an .otf or .ttf font file
+
+00:05.000 --> 00:07.000
+You can download a free font or make your own!
+
+00:07.200 --> 00:10.500
+I recommend calligraphr.com as a free font builder
+
+00:11.000 --> 00:13.500
+It gives a template you can draw on then turns it into a font file
+
+00:14.500 --> 00:15.500
+Here's some of my custom fonts 🙂
+
+00:19.000 --> 00:24.000
+Let's start adding them to our website's CSS
+
+00:25.400 --> 00:28.000
+Add @font-face to the top of your styles
+
+00:28.500 --> 00:31.500
+`src` is the location of font relative to styles file 
+
+00:32.000 --> 00:34.500
+`font-family` is a string that will be our font's unique name
+
+00:36.500 --> 00:38.500
+Let's import all 3 fonts!
+
+00:42.500 --> 00:43.500
+Here's a standard HTML layout
+
+00:45.500 --> 00:47.700
+Add `font-family` property towards your chosen font name
+
+00:48.200 --> 00:49.000
+Let's see it in action!
+
+00:57.500 --> 01:00.000
+All set! 😊
+
+

@@ -55,7 +55,7 @@
             
             <video controls style="width:100%;" height="500" aria-label="The Great AI Debate" poster="https://ipfs.io/ipfs/bafybeifoqf2fgunqolk4axvjj27wl4tfy2j363j5g5dr3pwspm7oju7uri">
                 <source src="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" type="video/mp4">
-                <track kind="captions"/>
+                <track src="/captions/aiDebate.vtt" label="English" kind="captions" srclang="en-us" default>
                 <p>
                     Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe">link to the video</a> instead.
                 </p>
@@ -72,7 +72,7 @@
             <br><br>
             <video controls style="width:100%;" height="500" aria-label="Farmony Teaser Video" poster="https://ipfs.io/ipfs/bafybeihtfbvfmbowrmxyay6wy5xzdune2s44nqtvlzdnkh4fs3fkodhwly">
                 <source src="https://ipfs.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" type="video/mp4">
-                <track kind="captions"/>
+                <track src="/captions/farmony.vtt" label="English" kind="captions" srclang="en-us">
                 <p>
                     Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse">link to the video</a> instead.
                 </p>
@@ -88,7 +88,7 @@
             
             <video controls style="width:100%;" height="500" aria-label="CSS Art Speedcoding" poster="https://ipfs.io/ipfs/bafybeideh5j74oywqgaa3dinyavu7tu53nscu57epscho7diooknkbyvpe">
                 <source src="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" type="video/mp4">
-                <track kind="captions"/>
+                <track src="/captions/baldy.vtt" label="English" kind="captions" srclang="en-us">
                 <p>
                     Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq">link to the video</a> instead.
                 </p>
@@ -97,7 +97,7 @@
 
             <video controls style="width:100%;" height="500" aria-label="Using Your Own Font for a Website" poster="https://ipfs.io/ipfs/bafybeih2vzqgtvkdqxb75aza76r4gbdamdztcuvuloctywevrr7angil6i">
                 <source src="https://ipfs.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm" type="video/mp4">
-                <track kind="captions"/>
+                <track src="/captions/useFonts.vtt" label="English" kind="captions" srclang="en-us">
                 <p>
                     Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm">link to the video</a> instead.
                 </p>
