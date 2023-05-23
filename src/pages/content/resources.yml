@@ -1,0 +1,169 @@
+resources:
+  - title: UI Design
+    description: n/a
+    subcategories: 
+      - title: Figma
+        description: Recommend! Figma is my personal best software for graphic design, digital prototyping, and collaboration. With community plugins, you also get free graphics, image manipulation and raster-to-vector tools, and keyframe animation tools! Figma has a free plan for students
+        link: https://www.figma.com/education/
+      
+      - title: Fonts
+        resources:
+          - title: Google Fonts
+            link: https://fonts.google.com/
+          - title: FontRepo
+            link: https://www.fontrepo.com/
+
+      - title: Web Colors
+        resources:
+          - title: Web Safe Colors
+            link: https://www.color-hex.com/color-names.html
+          - title: Color Tools
+            description: Includes color identifier, picker, converter, and generators
+            link: https://colordesigner.io/tools
+
+      - title: Stock Images
+        resources:
+          - title: Freepik
+            description: Recommend! Wide vector and asset selection and formats
+            link: https://www.freepik.com/
+          - title: Humaaans
+            link: https://www.humaaans.com/
+          - title: Unsplash
+            link: https://unsplash.com/
+          - title: Pixabay
+            link: https://pixabay.com/
+          - title: Pexels
+            link: https://www.pexels.com/
+
+      - title: Icons
+        resources:
+          - title: SVGRepo
+            description: Recommend! Pre-download vector coloring and completely free download formats
+            link: https://www.svgrepo.com/
+          - title: Icons8
+            description: Recommend! Vector coloring and freemium downloads
+            link: https://icons8.com/
+          - title: Material
+            description: Recommend! Completely free native web integration 
+            link: https://material.io/resources/icons/?style=baseline
+          - title: Iconify
+            link: https://icon-sets.iconify.design/oi/
+          - title: Simple Icons
+            link: https://simpleicons.org/
+          - title: Octicons
+            link: https://primer.style/design/foundations/icons
+          - title: Iconscout
+            link: https://iconscout.com/
+          - title: FlatIcon
+            link: https://www.flaticon.com/
+          - title: Fontawesome
+            link: https://fontawesome.com/icons
+
+      - title: Miscellaneous
+        resources:
+          - title: Turn Raster images to Vector
+            link: https://vectormaker.co/
+
+  - title: Frontend Development
+    description: n/a
+    subcategories:
+      - title: Diagramming
+        resources:
+          - title: FigJam in Figma
+          - title: Online Diagramming Software
+            link: https://app.diagrams.net/ 
+      
+      - title: NodeJS Web Frameworks
+        resources:
+          - title: Best Cheatsheet Ever
+            link: https://component-party.dev/
+
+      - title: Components
+        description: Focusing on stack-agnostic native components rather than npm modules or framework-specific UI libraries
+        resources:
+          - title: Native Web Components
+            link: https://www.webcomponents.org/
+          - title: Hamburgers
+            link: https://jonsuh.com/hamburgers/
+          - title: Tooltips
+            link: https://kushagra.dev/lab/hint/
+          - title: Glass/Skeumorphic styles creator
+            link: https://xmorphic.dev/
+
+      - title: Spinners
+        resources:
+          - title: CSS Loaders
+            link: https://cssloaders.github.io/
+          - title: Epic Spinners
+            link: https://epic-spinners.epicmax.co/
+          - title: Load Awesome
+            link: https://labs.danielcardoso.net/load-awesome/animations.html
+
+      - title: Miscellaneous
+        resources:
+          - title: Sample Dev Portfolios
+            link: https://webofdevs.com/
+
+      - title: CSS Extra!
+        resources:
+          - title: Explore Aesthetics
+            link: https://stylestage.dev/styles/
+          - title: Best PureCSS Mascots
+            link: https://codepen.io/davidkpiano
+          - title: CSS Patterns
+            link: https://bansal.io/pattern-css
+          - title: Modify any color with filter property
+            link: https://codepen.io/sosuke/pen/Pjoqqp
+          - title: CSS Transitions between views
+            link: https://www.transition.style/
+          - title: Strip CSS native styles
+            link: https://meyerweb.com/eric/tools/css/reset/reset.css
+          - title: Normalize CSS native styles
+            link: https://github.com/necolas/normalize.css/blob/master/normalize.css
+
+      - title: Miscellaneous
+        resources:
+          - title: Turn Raster images to Vector
+            link: https://vectormaker.co/
+
+  - title: Documentation
+    description: n/a
+    subcategories:
+      - title: Markdown Tutorial
+        link: https://www.markdowntutorial.com/
+
+      - title: Online Markdown Editor
+        link: https://stackedit.io/
+
+      - title: Recognizing Contributors
+        link: https://github.com/all-contributors/all-contributors
+
+  - title: Educational
+    description: n/a
+    subcategories:
+      - title: General Web Development
+        resources:
+          - title: Beginner? Try FreeCodeCamp
+            description: Interactive tutorials to get started with WebDev fundamentals
+            link: https://www.freecodecamp.org/learn/
+          - title: Intermediate? Get acquainted with web engineering patterns
+            link: https://www.patterns.dev/
+          - title: UI Nerd? Complement your skillset with UX
+            link: https://uxtoolbelt.com/
+          - title: A little everywhere? Check out Dev Roadmaps
+            description: You don't need to follow a roadmap order to learn, but the breadth of concepts and dependencies can be helpful
+            link: https://roadmap.sh/
+      
+      - title: Web Accessibility
+        description: Accessibility is a professional standard. Beyond personal tooling and demo prototypes, guidelines should be adhered to for real-world applications
+        resources:
+          - title: Accessibility Principles
+            link: https://www.w3.org/WAI/fundamentals/accessibility-principles/
+          - title: Frontend Dev? Check the WAI-ARIA Documentation
+            link: https://www.w3.org/TR/wai-aria/
+          - title: ARIA Roles List
+            link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+          - title: UI/UX Designer? Check the WCAG Documentation
+            link: https://www.w3.org/TR/WCAG20/
+          - title: Tools for Developing Accessible Design
+            link: https://bootcamp.uxdesign.cc/top-5-tools-for-inclusive-design-7594f922793c
