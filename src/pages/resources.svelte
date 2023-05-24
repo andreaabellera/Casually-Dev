@@ -15,7 +15,20 @@
             indexVisible = true
     }, 800)
 
+    // Adjust index card position on page
+    function checkScroll(){
+        let scroll = document.body.scrollTop
+        let indexCard = document.getElementById("res-index");
+        if(scroll > 20){
+            let scrollOffset = (scroll-20)*0.05
+            indexCard.style.top = Math.max(30, 45-scrollOffset) + "vh"
+        }
+        else
+            indexCard.style.top = "45vh"
+    }
 </script>
+
+<svelte:body on:scroll={checkScroll}></svelte:body>
 
 {#if visible}
 <div class="resources-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" aria-label="Resources route page content">
@@ -23,101 +36,101 @@
         <Heading title={"RESOURCES"} />
     {/if}
 
-    <div class="res-content">
-        {#if indexVisible}
-        <div id="res-index" role="region" aria-label="Index of dev resources" in:fly="{{ x: 500, duration: 600 }}">
-            <div id="res-index-inner" class="gentiumBasic">
-                <!-- <h2> Index </h2> -->
-                {#each resourceList as res, _}
-                <div class="index-list">
-                    <a href="#educational"> {res.title} </a>
-                    {#if res.subcategories}
-                        <ul>
-                        {#each res.subcategories as sub, _}
-                            <li>
-                                <span class="bullet"></span>
-                                <a href="#{sub.title}"> {sub.title} </a>
-                            </li>
-                        {/each}
-                        </ul>
-                    {/if}
-                </div>
-                {/each}
+    {#if indexVisible}
+    <div id="res-index" role="region" aria-label="Index of dev resources" in:fly="{{ x: 500, duration: 600 }}">
+        <div id="res-index-inner" class="gentiumBasic">
+            {#each resourceList as res, _}
+            <div class="index-list">
+                <a href={'#' + res.title.toLowerCase().replaceAll(' ','-')}> {res.title} </a>
+                {#if res.subcategories}
+                    <ul>
+                    {#each res.subcategories as sub, _}
+                        <li>
+                            <span class="bullet"></span>
+                            <a href={'#' + sub.title.toLowerCase().replaceAll(' ','-')}> {sub.title} </a>
+                        </li>
+                    {/each}
+                    </ul>
+                {/if}
             </div>
-        </div>
-        {/if}
-
-        <div id="res-list" role="list" aria-label="Dev Resources">
-            {#if listVisible}
-                <!-- <p in:fly="{{ y: 500, duration: 600 }}">
-                    <i> Kickstart your frontend web development journey or enhance your design workflow or toolbox with free online resources! </i>
-                </p> -->
-                
-                <!-- Categories     -->
-                {#each resourceList as res, _}
-                    <div class="res-card" role="listitem" in:fly="{{ y: 500, duration: 600 }}">
-                        <h2 class="laBelleAurore xx-large"> {res.title} </h2>
-
-                        <!-- Subcategories -->
-                        {#if res.subcategories}
-                            <div class="subcat">
-                            {#each res.subcategories as sub, _}
-                                <h3 class="taviraj subcatTitle"> {sub.title} </h3>
-                                {#if sub.description}
-                                    <p class="subcatPar ptSans"> {sub.description} </p>
-                                {/if}
-
-                                <!-- Resources -->
-                                {#if sub.resources}
-                                    <div class="resource">
-                                    {#each sub.resources as resChild, _}
-                                        <a href={resChild.link} class="ptSans {resChild.highlight ? 'highlight' : ''}">
-                                            {#if !resChild.fallback}
-                                                <iframe 
-                                                    title="{resChild.title} preview" 
-                                                    src={resChild.link}
-                                                    scrolling="no"
-                                                    sandbox="" 
-                                                    height="650px" 
-                                                    width="1500px" 
-                                                    loading="eager"
-                                                />
-                                            {:else}
-                                                <iframe 
-                                                    title="Go to website" 
-                                                    src="/fallback.html" 
-                                                    scrolling="no"
-                                                    sandbox="" 
-                                                    height="650px" 
-                                                    width="1500px" 
-                                                    loading="eager"
-                                                />
-                                            {/if}
-                                            <h4 class="ptSans"> {resChild.title} </h4>
-                                            {#if resChild.description}
-                                                <p> {resChild.description} </p>
-                                            {/if}
-                                        </a>
-                                    {/each}
-                                    </div>
-                                {/if}
-
-                            {/each}
-                            </div>
-                        {/if}
-
-                    </div>
-                {/each}
-            {/if}
+            {/each}
         </div>
     </div>
+    {/if}
 
-    <script>
-		// Detect mobile
-		if (!globalThis.isMobile)
-			document.getElementById("res-list").style.marginTop = "-30vh"
-	</script>
+    <div id="res-list" role="list" aria-label="Dev Resources">
+        {#if listVisible}
+            <!-- <p in:fly="{{ y: 500, duration: 600 }}">
+                <i> Kickstart your frontend web development journey or enhance your design workflow or toolbox with free online resources! </i>
+            </p> -->
+            
+            <!-- Categories     -->
+            {#each resourceList as res, _}
+                <div class="res-card" role="listitem" in:fly="{{ y: 500, duration: 600 }}">
+                    <h2 
+                        id={res.title.toLowerCase().replaceAll(' ','-')} 
+                        class="laBelleAurore xx-large"
+                    > 
+                        {res.title} 
+                    </h2>
 
+                    <!-- Subcategories -->
+                    {#if res.subcategories}
+                        <div class="subcat">
+                        {#each res.subcategories as sub, _}
+                            <h3
+                                id={sub.title.toLowerCase().replaceAll(' ','-')}  
+                                class="taviraj subcatTitle"
+                            > 
+                                {sub.title}
+                            </h3>
+                            {#if sub.description}
+                                <p class="subcatPar ptSans"> {sub.description} </p>
+                            {/if}
+
+                            <!-- Resources -->
+                            {#if sub.resources}
+                                <div class="resource">
+                                {#each sub.resources as resChild, _}
+                                    <a href={resChild.link} class="ptSans {resChild.highlight ? 'highlight' : ''}">
+                                        {#if !resChild.fallback}
+                                            <iframe 
+                                                title="{resChild.title} preview" 
+                                                src={resChild.link}
+                                                scrolling="no"
+                                                sandbox="" 
+                                                height="650px" 
+                                                width="1500px" 
+                                                loading="eager"
+                                            />
+                                        {:else}
+                                            <iframe 
+                                                title="Go to website" 
+                                                src="/fallback.html" 
+                                                scrolling="no"
+                                                sandbox="" 
+                                                height="650px" 
+                                                width="1500px" 
+                                                loading="eager"
+                                            />
+                                        {/if}
+                                        <h4 class="ptSans"> {resChild.title} </h4>
+                                        {#if resChild.description}
+                                            <p> {resChild.description} </p>
+                                        {/if}
+                                    </a>
+                                {/each}
+                                </div>
+                            {/if}
+
+                        {/each}
+                        </div>
+                    {/if}
+
+                </div>
+            {/each}
+        {/if}
+    </div>
 </div>
 {/if}
 
@@ -125,18 +138,15 @@
     .resources-feat-ctr {
         height: max-content;
         width: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr;
+        display: flex;
+        justify-content: space-between;
         margin: -8vh 0 10vh 0;
     }
 
-    .res-content{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
     #res-index{
+        position: fixed;
+        z-index: 2;
+        top: 45vh;
         background-color: var(--oyster);
         height: max-content;
         min-height: 45vh;
@@ -194,9 +204,8 @@
     }
 
     #res-list{
-        width: 45vw;
+        width: 55vw;
         min-width: 45em;
-        margin-top: -10vh;
     }
 
     #res-list a{
@@ -214,11 +223,7 @@
     }
 
     .subcatTitle{
-        margin-top: 6vh;
-    }
-
-    a .subcatTitle:hover{
-        text-decoration: underline;
+        margin-top: 8vh;
     }
 
     .subcatPar{
@@ -233,7 +238,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 100%;
+        width: 80%;
     }
 
     .resource a{
@@ -283,12 +288,12 @@
     }
 
     @media (max-width: 700px) {
-        #res-index{
-            display: none;
+        .resources-feat-ctr{
+            flex-direction: column;
         }
 
-        .res-content{
-            flex-direction: column;
+        #res-index{
+            display: none;
         }
 
         #res-list{
@@ -311,6 +316,10 @@
         .subcatTitle, .subcatPar{
             margin-left: 10%;
             width: 80%;
+        }
+
+        .resource{
+            width: 100%;
         }
 
         .resource a{
