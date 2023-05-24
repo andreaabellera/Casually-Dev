@@ -1,6 +1,5 @@
 <script>
     import { fly } from 'svelte/transition'
-    import { onMount } from 'svelte'
 	import Heading from './compo/Heading.svelte'
     import resData from './content/resources.yml'
 
@@ -15,21 +14,6 @@
         if(!globalThis.isMobile) 
             indexVisible = true
     }, 800)
-
-    // Generate resource list
-    onMount(()=>{
-        setTimeout(()=>{
-            let list = document.getElementById("res-list")
-            for(let res of resourceList){
-                console.log(list)
-                let category = document.createElement("div")
-                category.classList.add("res-card")
-
-
-                list.appendChild(category)
-            }
-        }, 800)
-    })
 
 </script>
 
@@ -78,13 +62,7 @@
                         {#if res.subcategories}
                             <div class="subcat">
                             {#each res.subcategories as sub, _}
-                                {#if sub.link}
-                                    <a href={sub.link}>
-                                        <h3 class="taviraj subcatTitle"> {sub.title} </h3>
-                                    </a>
-                                {:else}
-                                    <h3 class="taviraj subcatTitle"> {sub.title} </h3>
-                                {/if}
+                                <h3 class="taviraj subcatTitle"> {sub.title} </h3>
                                 {#if sub.description}
                                     <p class="subcatPar ptSans"> {sub.description} </p>
                                 {/if}
@@ -93,8 +71,28 @@
                                 {#if sub.resources}
                                     <div class="resource">
                                     {#each sub.resources as resChild, _}
-                                        <a href={resChild.link} class="ptSans">
-                                            <iframe title="{resChild.title} preview" src={resChild.link} scrolling="no" sandbox="" height="650px" width="1500px" loading="eager" />
+                                        <a href={resChild.link} class="ptSans {resChild.highlight ? 'highlight' : ''}">
+                                            {#if !resChild.fallback}
+                                                <iframe 
+                                                    title="{resChild.title} preview" 
+                                                    src={resChild.link}
+                                                    scrolling="no"
+                                                    sandbox="" 
+                                                    height="650px" 
+                                                    width="1500px" 
+                                                    loading="eager"
+                                                />
+                                            {:else}
+                                                <iframe 
+                                                    title="Go to website" 
+                                                    src="/fallback.html" 
+                                                    scrolling="no"
+                                                    sandbox="" 
+                                                    height="650px" 
+                                                    width="1500px" 
+                                                    loading="eager"
+                                                />
+                                            {/if}
                                             <h4 class="ptSans"> {resChild.title} </h4>
                                             {#if resChild.description}
                                                 <p> {resChild.description} </p>
@@ -206,6 +204,7 @@
     }
 
     #res-list h2{
+        color: var(--coffee);
         font-weight: 400;
         margin: 9vh 0 0 0;
     }
@@ -238,7 +237,7 @@
     }
 
     .resource a{
-        height: 40vh;
+        height: 33vh;
         width: 300px;
         margin: 1em;
         display: grid;
@@ -250,19 +249,24 @@
         border: 3px solid rgba(0,0,0,0);
     }
 
+    .highlight{
+        background: var(--gold) !important;
+    }
+
     .resource a:hover{
         border: 3px groove var(--chartreuse);
         transition: 0.1s ease-in-out;
     }
 
     .resource a iframe{
+        grid-row: 1/2;
         border: none;
         pointer-events: none;
         transform: scale(20%) translate(-200%,-200%);
     }
 
     .resource a h4, .resource a p{
-        width: 16%;
+        width: 17%;
         margin-left: 2%;
     }
 
@@ -275,6 +279,7 @@
     .resource a p{
         color: var(--ink);
         font-size: 80%;
+        line-height: 20px;
     }
 
     @media (max-width: 700px) {
@@ -293,6 +298,12 @@
             line-height: 2em;
         }
 
+        #res-list h2{
+            font-size: 240%;
+            margin-left: 3vw;
+            transform: scaleY(120%);
+        }
+
         .subcat, .resource{
             width: 100vw;
         }
@@ -301,5 +312,14 @@
             margin-left: 10%;
             width: 80%;
         }
+
+        .resource a{
+            height: 38vh;
+        }
+
+        .resource a h4{
+            margin-top: 1%;
+        }
+
     }
 </style>

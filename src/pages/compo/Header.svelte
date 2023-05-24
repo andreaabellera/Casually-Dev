@@ -26,6 +26,7 @@
                 }
                 else{
                     navCtr.style.width = "8.3em"
+                    navCtr.style.boxShadow = "-0.2em 0 0.5em 0.5em rgba(0,0,0,0.2)"
                     toggled = true
                     navBtn.classList.remove("spinner")
                     clearInterval(id)
@@ -37,6 +38,7 @@
 
             let width = 8.3
             let id = setInterval(frame, 10);
+            navCtr.style.boxShadow = "none"
             function frame() {
                 if(width > 0){
                     width -= 0.3
@@ -208,6 +210,7 @@
     .fixed-ctr{
         position: fixed;
         z-index: 20;
+        height: auto;
         display: flex;
         right: 0;
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
@@ -265,7 +268,6 @@
         height: 0.5em;
         width: 0.5em;
         border-radius: 50%;
-        /* background-color: rgba(141,75,38,0.45); */
         opacity: 0.5;
     }
 
@@ -296,7 +298,8 @@
         flex-direction: column;
         align-items: center;
         transform: translateX(3vw);
-        background-image: linear-gradient(270deg, var(--linen) 10%, rgba(255,255,255,0));
+        /* background-image: linear-gradient(270deg, var(--linen) 10%, rgba(255,255,255,0)); */
+        background: var(--oyster);
     }
 
     .nav-array{
@@ -442,16 +445,6 @@
         height: 100%;
         width: 100%;
     }
-
-    /* .bow{
-        position: absolute;
-        height: 5em;
-        width: 5em;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: var(--denim);
-    } */
 
     .string{
         position: absolute;

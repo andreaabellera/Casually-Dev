@@ -2,13 +2,18 @@ resources:
   - title: UI Design
     subcategories: 
       - title: Figma
-        description: Recommend! Figma is my personal best software for graphic design, digital prototyping, and collaboration. With community plugins, you also get free graphics, image manipulation and raster-to-vector tools, and keyframe animation tools! Figma has a free plan for students
-        link: https://www.figma.com/education/
+        resources:
+          - title: Figma Education Plan
+            description: Best for graphic design, digital prototyping, and collaboration
+            link: https://www.figma.com/education/
+            highlight: true
+            fallback: true
       
       - title: Fonts
         resources:
           - title: Google Fonts
             link: https://fonts.google.com/
+            fallback: true
           - title: FontRepo
             link: https://www.fontrepo.com/
 
@@ -16,6 +21,7 @@ resources:
         resources:
           - title: Web Safe Colors
             link: https://www.color-hex.com/color-names.html
+            fallback: true
           - title: Color Tools
             description: Includes color identifier, picker, converter, and generators
             link: https://colordesigner.io/tools
@@ -23,28 +29,37 @@ resources:
       - title: Stock Images
         resources:
           - title: Freepik
-            description: Recommend! Wide vector and asset selection and formats
+            description: Wide vector and asset selection and formats
             link: https://www.freepik.com/
+            highlight: true
+            fallback: true
           - title: Humaaans
             link: https://www.humaaans.com/
           - title: Unsplash
             link: https://unsplash.com/
+            fallback: true
           - title: Pixabay
             link: https://pixabay.com/
+            fallback: true
           - title: Pexels
             link: https://www.pexels.com/
 
       - title: Icons
         resources:
           - title: SVGRepo
-            description: Recommend! Pre-download vector coloring and completely free download formats
+            description: Pre-download vector coloring and completely free download formats
             link: https://www.svgrepo.com/
+            highlight: true
           - title: Icons8
-            description: Recommend! Vector coloring and freemium downloads
+            description: Vector coloring and freemium downloads
             link: https://icons8.com/
+            fallback: true
+            highlight: true
           - title: Material
-            description: Recommend! Completely free native web integration 
+            description: Completely free native web integration 
             link: https://material.io/resources/icons/?style=baseline
+            fallback: true
+            highlight: true
           - title: Iconify
             link: https://icon-sets.iconify.design/oi/
           - title: Simple Icons
@@ -53,10 +68,13 @@ resources:
             link: https://primer.style/design/foundations/icons
           - title: Iconscout
             link: https://iconscout.com/
+            fallback: true
           - title: FlatIcon
             link: https://www.flaticon.com/
+            fallback: true
           - title: Fontawesome
             link: https://fontawesome.com/icons
+            fallback: true
 
       - title: Miscellaneous
         resources:
@@ -68,8 +86,11 @@ resources:
       - title: Diagramming
         resources:
           - title: FigJam in Figma
+            link: https://www.figma.com/figjam/
+            fallback: true
           - title: Online Diagramming Software
-            link: https://app.diagrams.net/ 
+            link: https://app.diagrams.net/
+            fallback: true 
       
       - title: NodeJS Web Frameworks
         resources:
@@ -81,6 +102,7 @@ resources:
         resources:
           - title: Native Web Components
             link: https://www.webcomponents.org/
+            fallback: true
           - title: Hamburgers
             link: https://jonsuh.com/hamburgers/
           - title: Tooltips
@@ -96,6 +118,7 @@ resources:
             link: https://epic-spinners.epicmax.co/
           - title: Load Awesome
             link: https://labs.danielcardoso.net/load-awesome/animations.html
+            fallback: true
 
       - title: CSS Select Shares
         resources:
@@ -103,16 +126,19 @@ resources:
             link: https://stylestage.dev/styles/
           - title: Best PureCSS Mascots
             link: https://codepen.io/davidkpiano
+            fallback: true
           - title: CSS Patterns
             link: https://bansal.io/pattern-css
           - title: Modify any color with filter property
             link: https://codepen.io/sosuke/pen/Pjoqqp
+            fallback: true
           - title: CSS Transitions between views
             link: https://www.transition.style/
           - title: Strip CSS native styles
             link: https://meyerweb.com/eric/tools/css/reset/reset.css
           - title: Normalize CSS native styles
             link: https://github.com/necolas/normalize.css/blob/master/normalize.css
+            fallback: true
 
       - title: Documentation
         resources:
@@ -124,6 +150,7 @@ resources:
 
           - title: Recognizing Contributors
             link: https://github.com/all-contributors/all-contributors
+            fallback: true
 
       - title: Miscellaneous
         resources:
@@ -134,15 +161,16 @@ resources:
     subcategories:
       - title: General Web Development
         resources:
-          - title: Beginner? Try FreeCodeCamp
+          - title: For Beginners - Try FreeCodeCamp
             description: Interactive tutorials to get started with WebDev fundamentals
             link: https://www.freecodecamp.org/learn/
-          - title: Intermediate? Get acquainted with web engineering patterns
+            fallback: true
+          - title: For Intermediates - Get acquainted with web engineering patterns
             link: https://www.patterns.dev/
-          - title: UI Nerd? Complement your skillset with UX
+          - title: For Designers - Complement your skillset with UX
             link: https://uxtoolbelt.com/
           - title: A little everywhere? Check out Dev Roadmaps
-            description: You don't need to follow a roadmap order to learn, but the breadth of concepts and dependencies can be helpful
+            description: Helpful concepts; Don't need to follow
             link: https://roadmap.sh/
       
       - title: Web Accessibility
@@ -154,7 +182,9 @@ resources:
             link: https://www.w3.org/TR/wai-aria/
           - title: ARIA Roles List
             link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+            fallback: true
           - title: UI/UX Designer? Check the WCAG Documentation
             link: https://www.w3.org/TR/WCAG20/
           - title: Tools for Developing Accessible Design
             link: https://bootcamp.uxdesign.cc/top-5-tools-for-inclusive-design-7594f922793c
+            fallback: true

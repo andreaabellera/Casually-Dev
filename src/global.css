@@ -24,6 +24,7 @@
 	--mocha: #8D4B26;
 	--coffee: #3C0404;
 	--oysterDark: #D8D9D5;
+	--gold: linear-gradient(120deg, #DDCB2B, #FFF500, #ECB831, #DDCB2B, #FFF500);
 }
 
 html, body {

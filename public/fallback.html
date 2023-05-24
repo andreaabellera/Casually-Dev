@@ -1,0 +1,145 @@
+<html>
+    <body>
+        <article> visit website → </article>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </body>
+
+    <style>
+        html,body{
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body{
+            background: repeating-linear-gradient(204deg, darkolivegreen 0.2em, khaki 0.3em, darkolivegreen 0.2em, gold 0.3em);
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 70% 30%;
+        }
+
+        article{
+            height: max-content;
+            width: 100%;
+            background: lightgoldenrodyellow;
+            padding: 60px 120px 60px 120px;
+            border-radius: 30px;
+            border: 20px solid darkolivegreen;
+            color: darkolivegreen;
+            font-family: Georgia, serif;
+            font-size: 100px;
+            font-weight: 800;
+            text-align: right;
+            font-style: italic;
+            z-index: 2;
+        }
+
+        section{
+            height: 100%;
+            width: 100%;
+            border: 20px solid darkolivegreen;
+            background: olivedrab;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section div{
+            position: absolute;
+            border: 6px solid khaki;
+            border-radius: 50%;
+            animation: spin 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+        }
+
+        section div:nth-child(1){
+            right: -10%;
+            bottom: 20%;
+            height: 70%;
+            width: 70%;
+            border-top: none;
+            border-top-left-radius: 65%;
+            border-bottom-right-radius: 85%;
+            border-color: goldenrod;
+            animation-delay: 2.3s;
+            animation-duration: 9s;
+        }
+
+        section div:nth-child(2){
+            top: 50%;
+            left: 10%;
+            height: 40%;
+            width: 60%;
+            border-left: none;
+            border-right: none;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 70%;
+            border-width: 8px;
+            animation-delay: 0.4s;
+        }
+
+        section div:nth-child(3){
+            top: 2%;
+            left: 8%;
+            height: 200px;
+            width: 200px;
+            border-top: none;
+            border-right: none;
+            border-top-left-radius: 90%;
+            border-color: gold;
+            animation-duration: 4s;
+        }
+
+        section div:nth-child(4){
+            top: -50%;
+            right: -30%;
+            height: 500px;
+            width: 500px;
+            border-bottom: none;
+            border-bottom-left-radius: 70%;
+            border-width: 8px;
+            border-color: goldenrod;
+            animation-delay: 1.2s;
+            animation-duration: 9s;
+        }
+
+        section div:nth-child(5){
+            top: 17%;
+            right: 11%;
+            height: 130px;
+            width: 150px;
+            border-left: none;
+            border-width: 8px;
+            border-top-left-radius: 70%;
+            border-bottom-right-radius: 70%;
+            animation-delay: 0.8s;
+            animation-duration: 5s;
+        }
+
+        section div:nth-child(6){
+            bottom: -10%;
+            right: -30%;
+            height: 50%;
+            width: 60%;
+            border-bottom: none;
+            border-color: gold;
+            animation-delay: 1s;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</html>
