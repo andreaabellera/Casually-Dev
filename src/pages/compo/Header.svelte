@@ -95,6 +95,13 @@
                         <span> archive </span> 
                     </div>
                 </a>
+
+                <a href="/resources" aria-label="Dev Resources">
+                    <div id="nav-resources" class="nav" on:click={changeSelect}> 
+                        <section></section>
+                        <span> resources </span> 
+                    </div>
+                </a>
                 
 
                 <a href="/revues" aria-label="Drink Reviews">
@@ -145,6 +152,13 @@
                     </div>
                 </a>
 
+                <a href="/resources" aria-label="Dev Resources">
+                    <div id="nav-resources" class="nav" on:click={changeSelect}> 
+                        <section></section>
+                        <span> resources </span> 
+                    </div>
+                </a>
+
                 <a href="/revues" aria-label="Drink Reviews">
                     <div id="nav-revues" class="nav" on:click={changeSelect}> 
                         <section></section>
@@ -174,6 +188,8 @@
             document.getElementById("nav-blog").classList.add("selected")
         else if(toks.includes("archive"))
             document.getElementById("nav-archive").classList.add("selected")
+        else if(toks.includes("resources"))
+            document.getElementById("nav-resources").classList.add("selected")
         else if(toks.includes("galerie"))
             document.getElementById("nav-galerie").classList.add("selected")
         else if(toks.includes("laruelle") || toks.includes("intermission"))
@@ -268,7 +284,7 @@
     .nav-container{
         position: relative;
         height: 8em;
-        width: 50vw;
+        width: 60vw;
         display: grid;
         grid-template-rows: 30% 1fr;
     }
@@ -286,7 +302,7 @@
     .nav-array{
         z-index: 9;
         display: grid;
-        grid-template-columns: 20% 16% 16% 16% 16% 16%;
+        grid-template-columns: 17% 13% 13% 13% 13% 13% 15%;
         justify-items: center;
         height: 4.2em;
         font-size: 1.3em;
@@ -334,6 +350,10 @@
 
     #nav-archive section{
         background-image: url(https://ipfs.io/ipfs/bafybeiemaommpsincjhizl2ppv26rnbcgxavmrhvhjxr5wr5o6xetqhifm);
+    }
+
+    #nav-resources section{
+        background-image: url(https://ipfs.io/ipfs/bafybeic7uxidilpwenka7pkc6ze3ubbtzt75geqbs62jhi4pxfaiaxqs3y);
     }
 
     #nav-revues section{
@@ -408,6 +428,11 @@
     .nav-array #nav-archive:hover{
         transform: rotateZ(6deg);
     }
+
+    .nav-array #nav-resources:hover{
+        transform: rotateZ(-2deg);
+    }
+
     .nav-array #nav-revues:hover{
         transform: rotateZ(-4deg);
     }
@@ -443,6 +468,12 @@
     .selected{
         font-weight: 600;
         font-size: 120%;
+    }
+
+    @media (max-width: 1250px) {
+        .nav-container{
+            width: 60vw;
+        }
     }
 
     @media (max-width: 800px) {

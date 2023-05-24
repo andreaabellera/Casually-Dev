@@ -1,6 +1,5 @@
 resources:
   - title: UI Design
-    description: n/a
     subcategories: 
       - title: Figma
         description: Recommend! Figma is my personal best software for graphic design, digital prototyping, and collaboration. With community plugins, you also get free graphics, image manipulation and raster-to-vector tools, and keyframe animation tools! Figma has a free plan for students
@@ -65,7 +64,6 @@ resources:
             link: https://vectormaker.co/
 
   - title: Frontend Development
-    description: n/a
     subcategories:
       - title: Diagramming
         resources:
@@ -99,12 +97,7 @@ resources:
           - title: Load Awesome
             link: https://labs.danielcardoso.net/load-awesome/animations.html
 
-      - title: Miscellaneous
-        resources:
-          - title: Sample Dev Portfolios
-            link: https://webofdevs.com/
-
-      - title: CSS Extra!
+      - title: CSS Select Shares
         resources:
           - title: Explore Aesthetics
             link: https://stylestage.dev/styles/
@@ -121,25 +114,23 @@ resources:
           - title: Normalize CSS native styles
             link: https://github.com/necolas/normalize.css/blob/master/normalize.css
 
+      - title: Documentation
+        resources:
+          - title: Markdown Tutorial
+            link: https://www.markdowntutorial.com/
+
+          - title: Online Markdown Editor
+            link: https://stackedit.io/
+
+          - title: Recognizing Contributors
+            link: https://github.com/all-contributors/all-contributors
+
       - title: Miscellaneous
         resources:
-          - title: Turn Raster images to Vector
-            link: https://vectormaker.co/
-
-  - title: Documentation
-    description: n/a
-    subcategories:
-      - title: Markdown Tutorial
-        link: https://www.markdowntutorial.com/
-
-      - title: Online Markdown Editor
-        link: https://stackedit.io/
-
-      - title: Recognizing Contributors
-        link: https://github.com/all-contributors/all-contributors
+          - title: Sample Dev Portfolios
+            link: https://webofdevs.com/
 
   - title: Educational
-    description: n/a
     subcategories:
       - title: General Web Development
         resources:
