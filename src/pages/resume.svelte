@@ -4,11 +4,16 @@
     onMount(()=>{ document.getElementById("resume-direct").click() })
 </script>
 
-<a id="resume-direct" href="https://ipfs.io/ipfs/bafybeienupcvre4ggipbkefeym7f42nta4kzud6g5r7vrl57ifyevrzytm">redirecting..</a>
-
-
 <div class="intermission">
-    <a id="resume-direct" class="pretty-text laBelleAurore" href="https://ipfs.io/ipfs/bafybeienupcvre4ggipbkefeym7f42nta4kzud6g5r7vrl57ifyevrzytm">redirecting..</a>
+    <div id="last-update" class="taviraj"> 
+        Last updated: May 2023 
+    </div>
+    <object title="Andrea Abellera's Resume" data="/resume.pdf" type="application/pdf">
+        <p class="pretty-text gentiumBasic"> 
+            Unable to embed PDF file <br><br>
+            <a href="https://ipfs.io/ipfs/bafybeifuzl7ala7mq2btou4eggom6z6yqekrf5ekhl2br527fbbufc5fbq">View the source file instead</a>
+        </p>
+    </object>
 </div>
 
 <style>
@@ -22,10 +27,32 @@
         text-align: center;
     }
 
+    #last-update{
+        color: var(--mocha);
+        margin-bottom: 3vh;
+    }
+
     .pretty-text {
-        font-size: 2em;
-        margin-top: 1.5vh;
-        width: 90%;
-        color: var(--coffee);
+        font-size: 1.3em;
+        margin: 1vh 0 3vh 10vw;
+        width: 80vw;
+        text-align: center;
+        color: var(--mocha);
+    }
+
+    a{
+        color: var(--passione);
+        text-decoration: underline;
+    }
+
+    object{
+        height: 1000px;
+        width: 60%;
+    }
+
+    @media (max-width: 1000px) {
+        object{
+            width: 100%;
+        }
     }
 </style>
