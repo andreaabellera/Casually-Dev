@@ -7,24 +7,40 @@
     let resourceList = resData.resources
 
     // Page transition
-    let visible, indexVisible, listVisible = false
+    let visible, listVisible = false
     setTimeout(()=>{ visible = true }, 300)
     setTimeout(()=>{ listVisible = true }, 800)
-    setTimeout(()=>{
-        if(!globalThis.isMobile) 
-            indexVisible = true
-    }, 800)
 
-    // Adjust index card position on page
+    // Adjust index card position on desktop
     function checkScroll(){
-        let scroll = document.body.scrollTop
-        let indexCard = document.getElementById("res-index");
-        if(scroll > 20){
-            let scrollOffset = (scroll-20)*0.05
-            indexCard.style.top = Math.max(30, 45-scrollOffset) + "vh"
+        if(!globalThis.isMobile){
+            let scroll = document.body.scrollTop
+            let indexCard = document.getElementById("res-index");
+            if(scroll > 20){
+                let scrollOffset = (scroll-20)*0.05
+                indexCard.style.top = Math.max(30, 45-scrollOffset) + "vh"
+            }
+            else
+                indexCard.style.top = "45vh"
         }
-        else
-            indexCard.style.top = "45vh"
+    }
+
+    // Toggle on/off index card on mobile
+    $: toggle = false
+    function toggleIndex(){ toggle = !toggle }
+
+    // Shift focus on first descendant resource after href anchor click
+    function shiftFocus(){
+        let resId = this.innerText.toLowerCase().replaceAll(' ','-')
+        let inner = this.classList.contains("inner")
+        if(inner){
+            let resGroup = document.getElementById(resId).nextElementSibling
+            resGroup.firstChild.focus()
+        }
+        else{
+            let resGroup = document.getElementById(resId).parentElement
+            resGroup.querySelector(".resource a").focus()
+        }
     }
 </script>
 
@@ -36,18 +52,29 @@
         <Heading title={"RESOURCES"} />
     {/if}
 
-    {#if indexVisible}
-    <div id="res-index" role="region" aria-label="Index of dev resources" in:fly="{{ x: 500, duration: 600 }}">
+    {#if listVisible}
+    <div 
+        id="res-index" 
+        role="region" 
+        aria-label="Index of dev resources" 
+        in:fly="{{ x: 500, duration: 600 }}" 
+        class={toggle ? 'toggled' : ''} 
+        on:click={toggleIndex}
+    >
+        <div id="mbl-hamburger" />
         <div id="res-index-inner" class="gentiumBasic">
+            {#if globalThis.isMobile}
+            <h2> Index of Resources </h2>
+            {/if}
             {#each resourceList as res, _}
             <div class="index-list">
-                <a href={'#' + res.title.toLowerCase().replaceAll(' ','-')}> {res.title} </a>
+                <a href={'#' + res.title.toLowerCase().replaceAll(' ','-')} on:click={shiftFocus}> {res.title} </a>
                 {#if res.subcategories}
                     <ul>
                     {#each res.subcategories as sub, _}
                         <li>
                             <span class="bullet"></span>
-                            <a href={'#' + sub.title.toLowerCase().replaceAll(' ','-')}> {sub.title} </a>
+                            <a href={'#' + sub.title.toLowerCase().replaceAll(' ','-')} on:click={shiftFocus} class="inner"> {sub.title} </a>
                         </li>
                     {/each}
                     </ul>
@@ -60,9 +87,6 @@
 
     <div id="res-list" role="list" aria-label="Dev Resources">
         {#if listVisible}
-            <!-- <p in:fly="{{ y: 500, duration: 600 }}">
-                <i> Kickstart your frontend web development journey or enhance your design workflow or toolbox with free online resources! </i>
-            </p> -->
             
             <!-- Categories     -->
             {#each resourceList as res, _}
@@ -89,39 +113,39 @@
                             {/if}
 
                             <!-- Resources -->
-                            {#if sub.resources}
-                                <div class="resource">
-                                {#each sub.resources as resChild, _}
-                                    <a href={resChild.link} class="ptSans {resChild.highlight ? 'highlight' : ''}">
-                                        {#if !resChild.fallback}
-                                            <iframe 
-                                                title="{resChild.title} preview" 
-                                                src={resChild.link}
-                                                scrolling="no"
-                                                sandbox="" 
-                                                height="650px" 
-                                                width="1500px" 
-                                                loading="eager"
-                                            />
-                                        {:else}
-                                            <iframe 
-                                                title="Go to website" 
-                                                src="/fallback.html" 
-                                                scrolling="no"
-                                                sandbox="" 
-                                                height="650px" 
-                                                width="1500px" 
-                                                loading="eager"
-                                            />
-                                        {/if}
-                                        <h4 class="ptSans"> {resChild.title} </h4>
-                                        {#if resChild.description}
-                                            <p> {resChild.description} </p>
-                                        {/if}
-                                    </a>
-                                {/each}
-                                </div>
-                            {/if}
+                            <div class="resource">
+                            {#each sub.resources as resChild, _}
+                                <a href={resChild.link} class="ptSans {resChild.highlight ? 'highlight' : ''}" aria-label="Link to {resChild.title} website">
+                                    {#if !resChild.fallback}
+                                        <iframe
+                                            tabindex="-1"
+                                            title="{resChild.title} preview" 
+                                            src={resChild.link}
+                                            scrolling="no"
+                                            sandbox="" 
+                                            height="650px" 
+                                            width="1500px" 
+                                            loading="eager"
+                                        />
+                                    {:else}
+                                        <iframe 
+                                            tabindex="-1"
+                                            title="Website preview" 
+                                            src="/fallback.html" 
+                                            scrolling="no"
+                                            sandbox="" 
+                                            height="650px" 
+                                            width="1500px" 
+                                            loading="eager"
+                                        />
+                                    {/if}
+                                    <h4 class="ptSans"> {resChild.title} </h4>
+                                    {#if resChild.description}
+                                        <p> {resChild.description} </p>
+                                    {/if}
+                                </a>
+                            {/each}
+                            </div>
 
                         {/each}
                         </div>
@@ -158,6 +182,17 @@
         margin: -3vh 0 3vh 6vw;
         overflow-y: hidden;
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+    }
+
+    #mbl-hamburger{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 50px;
+        background: repeating-linear-gradient(to bottom, var(--passione), var(--passione) 10px, transparent 11px, transparent 20px);
+        transform: scale(0.5);
+
     }
 
     #res-index-inner{
@@ -293,7 +328,24 @@
         }
 
         #res-index{
-            display: none;
+            margin: 0;
+            top: 16vh;
+            left: -100%;
+            width: 115%;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 12%, 100vw 12%, 100vw 100%, 0% 100%);
+        }
+
+        #res-index.toggled{
+            left: 0;
+        }
+
+        #res-index-inner{
+            font-size: 100%;
+            width: 92%;
+        }
+
+        .index-list{
+            margin-left: 5%;
         }
 
         #res-list{
