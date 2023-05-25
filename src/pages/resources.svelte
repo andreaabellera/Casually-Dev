@@ -212,6 +212,7 @@
 
     #res-index h2{
         margin: 0 0 3vh 0;
+        background: var(--blossom);
     }
 
     .index-list{

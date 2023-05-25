@@ -307,7 +307,7 @@
         align-items: center;
         transform: translateX(3vw);
         /* background-image: linear-gradient(270deg, var(--linen) 10%, rgba(255,255,255,0)); */
-        background: var(--oyster);
+        background: rgb(230, 200, 157);
     }
 
     .nav-array{

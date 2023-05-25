@@ -36,8 +36,8 @@
         </div>
         <div class="footer-right" role="list" aria-label="CasuallyDev's external social media links">
             <div class="footer-social">
-                <a href="https://www.instagram.com/ateawa/" role="listitem" aria-label="Instagram">
-                    <img src="https://ipfs.io/ipfs/bafybeig22agaavqyvfjbfzudd6md64qfox32bun2vrgmwcfi3cluqd4qya" alt="Instagram" />
+                <a href="mailto:casuallyandrea@pm.me" role="listitem" aria-label="Email">
+                    <img src="https://ipfs.io/ipfs/bafybeidx4mk3gtvzt42vjvvrw5turwkkkudzy3ufze3as2lesmj57xpqfu" alt="Email" />
                 </a>
                 <a href="https://github.com/andreaabellera" role="listitem" aria-label="Github">
                     <img src="https://ipfs.io/ipfs/bafybeiarmhb7kqwivorqeokim5py4kubdu7ouwn47w6yop45llogegs55e" alt="Github" />
@@ -45,8 +45,14 @@
                 <a href="https://www.linkedin.com/in/aabellera" role="listitem" aria-label="LinkedIn">
                     <img src="https://ipfs.io/ipfs/bafybeid5jlfpfybb7z6ck2wko5rkirhfmdh2lmgv3oayqu74xvaxaupxku" alt="Linkedin" />
                 </a>
+                <a href="https://www.tiktok.com/@casuallydev" role="listitem" aria-label="Tiktok">
+                    <img src="https://ipfs.io/ipfs/bafybeievy4qz3re6ga334zhrsbqox7uof7hpyufful3j4zlteb3qprvife" alt="Tiktok" />
+                </a>
                 <a href="https://www.reddit.com/user/CosySushi/" role="listitem" aria-label="Reddit">
                     <img src="https://ipfs.io/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" />
+                </a>
+                <a href="https://steamcommunity.com/profiles/76561199085866000/" role="listitem" aria-label="Steam">
+                    <img src="https://ipfs.io/ipfs/bafybeihzhp5hecdk3ydrcdbkqdwr44hrvl5a4uog6oar2fmki6rd3npcja" alt="Steam" />
                 </a>
             </div>
             <div class="ptSans thanks" role="note"> Special thanks to <a href="https://icons8.com/icon/set/social-media/dotty"> ICONS8 </a> </div>
@@ -75,6 +81,7 @@
         display: flex;
         flex-direction: column;
         width: max-content;
+        align-self: center;
     }
 
     .cp{
