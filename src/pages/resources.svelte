@@ -9,7 +9,11 @@
     // Page transition
     let visible, listVisible = false
     setTimeout(()=>{ visible = true }, 300)
-    setTimeout(()=>{ listVisible = true }, 800)
+    setTimeout(()=>{ 
+        listVisible = true
+        // Clip path redraw for Safari
+        document.getElementById("res-index").style.clipPath = "polygon(0% 0%, 100% 0%, 100% 12%, 100vw 12%, 100vw 100%, 0% 100%)"
+    },800)
 
     // Adjust index card position on desktop
     function checkScroll(){
@@ -34,7 +38,7 @@
         let resId = this.innerText.toLowerCase().replaceAll(' ','-')
         let inner = this.classList.contains("inner")
         if(inner){
-            let resGroup = document.getElementById(resId).nextElementSibling
+            let resGroup = document.getElementById(resId).parentElement.nextElementSibling
             resGroup.firstChild.focus()
         }
         else{
@@ -102,15 +106,17 @@
                     {#if res.subcategories}
                         <div class="subcat">
                         {#each res.subcategories as sub, _}
-                            <h3
-                                id={sub.title.toLowerCase().replaceAll(' ','-')}  
-                                class="taviraj subcatTitle"
-                            > 
-                                {sub.title}
-                            </h3>
-                            {#if sub.description}
-                                <p class="subcatPar ptSans"> {sub.description} </p>
-                            {/if}
+                            <div>
+                                <h3
+                                    id={sub.title.toLowerCase().replaceAll(' ','-')}  
+                                    class="taviraj subcatTitle"
+                                > 
+                                    {sub.title}
+                                </h3>
+                                {#if sub.description}
+                                    <p class="subcatPar ptSans"> {sub.description} </p>
+                                {/if}
+                            </div>
 
                             <!-- Resources -->
                             <div class="resource">
@@ -186,8 +192,8 @@
 
     #mbl-hamburger{
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 3px;
+        right: 3px;
         height: 50px;
         width: 50px;
         background: repeating-linear-gradient(to bottom, var(--passione), var(--passione) 10px, transparent 11px, transparent 20px);
@@ -202,6 +208,10 @@
         margin: 3em 0 3em 0;
         display: flex;
         flex-direction: column;
+    }
+
+    #res-index h2{
+        margin: 0 0 3vh 0;
     }
 
     .index-list{
@@ -342,6 +352,7 @@
         #res-index-inner{
             font-size: 100%;
             width: 92%;
+            margin: 2em 0 2em 0;
         }
 
         .index-list{

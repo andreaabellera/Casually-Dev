@@ -1,4 +1,36 @@
 resources:
+  - title: Educational
+    subcategories:
+      - title: General Web Development
+        resources:
+          - title: For Beginners - Try FreeCodeCamp
+            description: Interactive tutorials to get started with WebDev fundamentals
+            link: https://www.freecodecamp.org/learn/
+            fallback: true
+          - title: For Intermediates - Get acquainted with web engineering patterns
+            link: https://www.patterns.dev/
+          - title: For Designers - Complement your skillset with UX
+            link: https://uxtoolbelt.com/
+          - title: A little everywhere? Check out Dev Roadmaps
+            description: Helpful concepts; Don't need to follow
+            link: https://roadmap.sh/
+      
+      - title: Web Accessibility
+        description: Accessibility is a professional standard. Beyond personal tooling and demo prototypes, guidelines should be adhered to for real-world applications
+        resources:
+          - title: Accessibility Principles
+            link: https://www.w3.org/WAI/fundamentals/accessibility-principles/
+          - title: Frontend Dev? Check the WAI-ARIA Documentation
+            link: https://www.w3.org/TR/wai-aria/
+          - title: ARIA Roles List
+            link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+            fallback: true
+          - title: UI/UX Designer? Check the WCAG Documentation
+            link: https://www.w3.org/TR/WCAG20/
+          - title: Tools for Developing Accessible Design
+            link: https://bootcamp.uxdesign.cc/top-5-tools-for-inclusive-design-7594f922793c
+            fallback: true
+
   - title: UI Design
     subcategories: 
       - title: Figma
@@ -76,7 +108,7 @@ resources:
             link: https://fontawesome.com/icons
             fallback: true
 
-      - title: Miscellaneous
+      - title: Miscellaneous UI
         resources:
           - title: Turn Raster images to Vector
             link: https://vectormaker.co/
@@ -152,39 +184,7 @@ resources:
             link: https://github.com/all-contributors/all-contributors
             fallback: true
 
-      - title: Miscellaneous
+      - title: Sample Dev Portfolios
         resources:
-          - title: Sample Dev Portfolios
+          - title: Web of Devs
             link: https://webofdevs.com/
-
-  - title: Educational
-    subcategories:
-      - title: General Web Development
-        resources:
-          - title: For Beginners - Try FreeCodeCamp
-            description: Interactive tutorials to get started with WebDev fundamentals
-            link: https://www.freecodecamp.org/learn/
-            fallback: true
-          - title: For Intermediates - Get acquainted with web engineering patterns
-            link: https://www.patterns.dev/
-          - title: For Designers - Complement your skillset with UX
-            link: https://uxtoolbelt.com/
-          - title: A little everywhere? Check out Dev Roadmaps
-            description: Helpful concepts; Don't need to follow
-            link: https://roadmap.sh/
-      
-      - title: Web Accessibility
-        description: Accessibility is a professional standard. Beyond personal tooling and demo prototypes, guidelines should be adhered to for real-world applications
-        resources:
-          - title: Accessibility Principles
-            link: https://www.w3.org/WAI/fundamentals/accessibility-principles/
-          - title: Frontend Dev? Check the WAI-ARIA Documentation
-            link: https://www.w3.org/TR/wai-aria/
-          - title: ARIA Roles List
-            link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
-            fallback: true
-          - title: UI/UX Designer? Check the WCAG Documentation
-            link: https://www.w3.org/TR/WCAG20/
-          - title: Tools for Developing Accessible Design
-            link: https://bootcamp.uxdesign.cc/top-5-tools-for-inclusive-design-7594f922793c
-            fallback: true
