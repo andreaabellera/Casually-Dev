@@ -203,6 +203,14 @@
             else
                 document.getElementById("nav-chezmoi").classList.add("selected")
         }
+
+        // Adjust icons on mobile
+        if(globalThis.isMobile){
+            let navs = document.querySelectorAll(".nav")
+            for(let nav of navs){
+                nav.style.transform = "scale(0.8) translateY(-8px)"
+            }
+        }
     </script>
 </div>
 
@@ -356,7 +364,7 @@
     }
 
     #nav-resources section{
-        background-image: url(https://ipfs.io/ipfs/bafybeic7uxidilpwenka7pkc6ze3ubbtzt75geqbs62jhi4pxfaiaxqs3y);
+        background-image: url(https://ipfs.io/ipfs/bafybeig2afgdlpkc3end3mhmnrl23itdyoofsk3dmbpyf4rznzpwgotbbq);
     }
 
     #nav-revues section{
