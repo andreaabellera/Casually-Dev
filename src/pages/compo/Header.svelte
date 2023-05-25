@@ -194,7 +194,7 @@
             document.getElementById("nav-resources").classList.add("selected")
         else if(toks.includes("galerie"))
             document.getElementById("nav-galerie").classList.add("selected")
-        else if(toks.includes("laruelle") || toks.includes("intermission"))
+        else if(toks.includes("laruelle") || toks.includes("intermission") || toks.includes("resume"))
             document.getElementById("nav-andrea").classList.add("selected")
         else{
             let navId = toks[toks.length - 1]
