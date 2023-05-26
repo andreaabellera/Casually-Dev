@@ -73,12 +73,20 @@
                             </div>
 
                             <div class="info-row"> 
-                                <b>Let's work together! 🤎</b>
+                                <b>Let's work together!</b>
                                 <br>
-                                Email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
-                                , shoot me a chat through
-                                <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn, </a> 
-                                or see my formal qualifications through a <a href="/resume"> resume </a> 
+                                <a href="/resume">
+                                    <button id="resume-btn" class="taviraj slightLarge">
+                                        View my resume
+                                    </button>
+                                </a>.
+                            </div>
+
+                            <div class="info-row"> 
+                                <b>Relay me a message 🤎</b>
+                                <br>
+                                Shoot me a chat through <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a>
+                                or email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
                             </div>
 
                             {#if globalThis.isMobile}
@@ -247,22 +255,20 @@
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
-    /*.action-btns{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    #resume-btn{
+        background: var(--gold);
+        padding: 0.6em 1.2em 0.6em 1.2em;
+        margin-top: 3vh;
+        box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0);
+        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
-    .action-btn{
-        padding: 3vh 2vw 3vh 2vw;
-        width: 100%;
-    }*/
-
-    /* #tour{
-        border: 4px double var(--bark);
-        background-color: var(--oyster);
-    } */
+    #resume-btn:hover{
+        transition: 0.3s ease-in-out;
+        border: 2px groove var(--oyster);
+        border-radius: 20px;
+    }
 
     @keyframes up{
         0%{
