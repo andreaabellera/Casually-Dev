@@ -1,4 +1,13 @@
 blogs:
+  - id: webdev-journey
+    title: My Journey in Web Development
+    epic: summer-2023
+    date: May 25, 2023
+    tags:
+      - Develop ⚙️
+    image: bafybeicjt36j4ctctgs7gpd5gd4i4fsr6pap6dr5qwxvlnzh5cyhcltzv4
+    blurb: bafybeifwndnwbywo4bf2lstp4zr6t7vsnk7kq5pbrhdnddwfrv3xknotve
+
   - id: ambitious-ui-library
     title: I am Building an Ambitious UI Library
     epic: summer-2023
