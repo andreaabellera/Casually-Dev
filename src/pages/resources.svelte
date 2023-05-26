@@ -13,7 +13,7 @@
         listVisible = true
         // Clip path redraw for Safari
         document.getElementById("res-index").style.clipPath = "polygon(0% 0%, 100% 0%, 100% 12%, 100vw 12%, 100vw 100%, 0% 100%)"
-    },800)
+    },1600)
 
     // Adjust index card position on desktop
     function checkScroll(){
@@ -65,26 +65,28 @@
         class={toggle ? 'toggled' : ''} 
         on:click={toggleIndex}
     >
-        <div id="mbl-hamburger" />
-        <div id="res-index-inner" class="gentiumBasic">
-            {#if globalThis.isMobile}
-            <h2> Index of Resources </h2>
-            {/if}
-            {#each resourceList as res, _}
-            <div class="index-list">
-                <a href={'#' + res.title.toLowerCase().replaceAll(' ','-')} on:click={shiftFocus}> {res.title} </a>
-                {#if res.subcategories}
-                    <ul>
-                    {#each res.subcategories as sub, _}
-                        <li>
-                            <span class="bullet"></span>
-                            <a href={'#' + sub.title.toLowerCase().replaceAll(' ','-')} on:click={shiftFocus} class="inner"> {sub.title} </a>
-                        </li>
-                    {/each}
-                    </ul>
+        <div class="stabilize">
+            <div id="mbl-hamburger" />
+            <div id="res-index-inner" class="gentiumBasic">
+                {#if globalThis.isMobile}
+                <h2> Index of Resources </h2>
                 {/if}
+                {#each resourceList as res, _}
+                <div class="index-list">
+                    <a href={'#' + res.title.toLowerCase().replaceAll(' ','-')} on:click={shiftFocus}> {res.title} </a>
+                    {#if res.subcategories}
+                        <ul>
+                        {#each res.subcategories as sub, _}
+                            <li>
+                                <span class="bullet"></span>
+                                <a href={'#' + sub.title.toLowerCase().replaceAll(' ','-')} on:click={shiftFocus} class="inner"> {sub.title} </a>
+                            </li>
+                        {/each}
+                        </ul>
+                    {/if}
+                </div>
+                {/each}
             </div>
-            {/each}
         </div>
     </div>
     {/if}
@@ -188,6 +190,12 @@
         margin: -3vh 0 3vh 6vw;
         overflow-y: hidden;
         cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+    }
+
+    .stabilize{
+        display: relative;
+        height: 100%;
+        width: 100%;
     }
 
     #mbl-hamburger{

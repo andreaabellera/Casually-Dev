@@ -30,6 +30,9 @@ resources:
           - title: Tools for Developing Accessible Design
             link: https://bootcamp.uxdesign.cc/top-5-tools-for-inclusive-design-7594f922793c
             fallback: true
+          - title: Articles on Design Engineering
+            description: Best design and accessibility blog I've seen
+            link: https://www.sarasoueidan.com/blog/
 
   - title: UI Design
     subcategories: 
