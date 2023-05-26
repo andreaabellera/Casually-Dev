@@ -220,7 +220,6 @@
 
     #res-index h2{
         margin: 0 0 3vh 0;
-        background: var(--blossom);
     }
 
     .index-list{
@@ -352,6 +351,7 @@
             left: -100%;
             width: 115%;
             clip-path: polygon(0% 0%, 100% 0%, 100% 12%, 100vw 12%, 100vw 100%, 0% 100%);
+            min-height: 40vh;
         }
 
         #res-index.toggled{
@@ -361,7 +361,7 @@
         #res-index-inner{
             font-size: 100%;
             width: 92%;
-            margin: 2em 0 2em 0;
+            margin: 2em 0 2em 5vw;
         }
 
         .index-list{
