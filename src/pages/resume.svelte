@@ -1,4 +1,13 @@
-<div class="intermission">
+<script>
+    import { fade } from 'svelte/transition';
+
+    // Page transition
+    let visible = false
+    setTimeout(()=>{ visible = true }, 600)
+</script>
+
+{#if visible}
+<div class="intermission" transition:fade>
     <div id="last-update" class="taviraj"> 
         Last updated: May 2023 
     </div>
@@ -9,6 +18,7 @@
         </p>
     </object>
 </div>
+{/if}
 
 <style>
     .intermission {

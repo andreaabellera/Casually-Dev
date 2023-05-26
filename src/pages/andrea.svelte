@@ -1,6 +1,6 @@
 <script>
     import { fly } from 'svelte/transition'
-	import Heading from './compo/Heading.svelte'
+    import Heading from './compo/Heading.svelte'
     import Blossom from './compo/art/Blossom.svelte'
     import Faves from './compo/Faves.svelte'
 
@@ -37,9 +37,9 @@
                     <div class="info-box-inner">
                         <div class="primary-text" role="document" aria-label="CasuallyDev bio">
                             <div class="griddy-grid">
-                                <div id="bigH" class="greeting">H</div>
-                                <div class="greeting">ello! </div>
-                                <div class="info-row griddy-text"> 
+                                <div id="capital" class="greeting">S</div>
+                                <div class="greeting">alutations! </div>
+                                <div class="info-row griddy-text gentiumBasic slightLarge"> 
                                     My name is Andrea. Welcome to my humble space!
                                 </div>
                             </div>
@@ -73,11 +73,12 @@
                             </div>
 
                             <div class="info-row"> 
-                                <b><i>Relay a message to CasuallyDev</i></b>
+                                <b>Let's work together! 🤎</b>
                                 <br>
-                                Or Andrea, whichever you find comfy 🤎 Shoot me a chat through
-                                <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a> 
-                                or email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
+                                Email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
+                                , shoot me a chat through
+                                <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn, </a> 
+                                or see my formal qualifications through a <a href="/resume"> resume </a> 
                             </div>
 
                             {#if globalThis.isMobile}
@@ -196,7 +197,7 @@
         width: 100%;
     }
 
-    #bigH{
+    #capital{
         font-size: 7.5em;
         margin-top: -0.2em;
         grid-row: 1/3;
@@ -208,6 +209,10 @@
         font-size: 3em;
         margin-top: 1.5vh;
         color: var(--coffee);
+    }
+
+    .griddy-text{
+        color: var(--mocha);
     }
 
     .griddy-grid{
@@ -286,7 +291,7 @@
             grid-template-rows: 88vh auto;
         }
 
-        #bigH{
+        #capital{
             font-size: 5.5em;
             grid-row: 1/2;
             grid-column: 1/2;

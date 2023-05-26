@@ -7,12 +7,12 @@
     ]
 </script>
 
-<div id="faves-ctr">
+<div id="faves-ctr" role="group" aria-label="CasuallyDev's favorites by category">
     <h3 class="laBelleAurore xx-large"> Favorites </h3>
     <div id="fave-array" class={globalThis.isMobile ? 'mbl-override':''}>
         {#each faves as fave}
             <div class="fave-bar">
-                <div class="orb-ctr">
+                <div class="orb-ctr" role="none">
                     <div class="orb"><img src="https://ipfs.io/ipfs/{fave.icon}" alt="{fave.value} icon"/></div>
                 </div>
                 <div class="fave-text gentiumBasic">
