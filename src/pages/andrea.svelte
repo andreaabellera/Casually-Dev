@@ -2,6 +2,7 @@
     import { fly } from 'svelte/transition'
 	import Heading from './compo/Heading.svelte'
     import Blossom from './compo/art/Blossom.svelte'
+    import Faves from './compo/Faves.svelte'
 
     // Page transition
     let visible, visibleC = false
@@ -18,8 +19,8 @@
 
     {#if visibleC}
         <div id="about-ctr-inner" transition:fly="{{y:100, duration: 800}}">
-            <div id="photo-sect" class="sect" role="group" aria-label="CasuallyDev picture">
-                <div class="photo-ctr">
+            <div id="photo-sect" class="sect">
+                <div class="photo-ctr" aria-label="CasuallyDev picture">
                     <div id="fleur1"><Blossom /></div>
                     <div id="fleur2"><Blossom color={"#CDFF9B"} height={"3em"} width={"3em"}/></div>
                     <div id="fleur3"><Blossom color={"#6CA6B8"}/></div>
@@ -27,6 +28,9 @@
                         <div id="photo"></div>
                     </div>
                 </div>
+                {#if !globalThis.isMobile}
+                    <Faves />
+                {/if}
             </div>
             <div id="info-sect" class="sect">
                 <div class="info-box">
@@ -75,6 +79,10 @@
                                 <a href="https://www.linkedin.com/in/aabellera/"> LinkedIn </a> 
                                 or email me at <a href="mailto:casuallyandrea@pm.me"><i>casuallyandrea@pm.me</i></a>
                             </div>
+
+                            {#if globalThis.isMobile}
+                                <Faves />
+                            {/if}
                         </div>
 
                     </div>
@@ -105,15 +113,21 @@
         justify-items: center;
     }
 
+    #photo-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .photo-ctr{
         position: relative;
         width: 70%;
-        height: 100%;
+        height: 32em;
     }
 
     .info-box{
         height: max-content;
-        width: 90%;
+        width: 100%;
         color: var(--ink);
         background-color: var(--bark);
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
@@ -176,6 +190,10 @@
         height: 32em;
         background-color: var(--bark);
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.3);
+    }
+
+    .primary-text{
+        width: 100%;
     }
 
     #bigH{
