@@ -1,4 +1,14 @@
 blogs:
+  - id: retro-may-23
+    title: May 2023 Retrospective
+    epic: summer-2023
+    date: June 9, 2023
+    tags:
+      - Life 💃🏻
+      - Develop ⚙️
+    image: bafybeigufz44gnigzo6zc5qs52j7yrzov3hfsk6xpm7hm2we4q4awttvku
+    blurb: bafybeigeuxr6b75f553p4avnve7q4byj5z272sdex44tp26cr5yvylcmrq
+
   - id: core-values
     title: What are my Core Values?
     epic: summer-2023
