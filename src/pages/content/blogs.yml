@@ -1,4 +1,13 @@
 blogs:
+  - id: core-values
+    title: What are my Core Values?
+    epic: summer-2023
+    date: June 8, 2023
+    tags:
+      - Random 🍡
+    image: bafybeiguvdvtdkck2ntbovya5oo6vlon7e77hoxyjp7wdyhkexxukm4r6q
+    blurb: bafybeigimokumowi7bisag7wj2ebhqbgdqj3dffvzl3r7l4yxxkjix7dpi
+
   - id: webdev-journey
     title: My Journey in Web Development
     epic: summer-2023
