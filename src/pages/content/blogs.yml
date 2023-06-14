@@ -1,4 +1,13 @@
 blogs:
+  - id: crusader-kings-chronicles
+    title: Crusader Kings Chronicles
+    epic: summer-2023
+    date: June 12, 2023
+    tags:
+      - Games 🎲
+    image: bafybeicdz25roq3qvkzhmdcsawquxun7bzieajcsg6vyymiemo2zlhwve4
+    blurb: bafybeiepv6ze75uc6fplopbmidke7ajqqp4vyhgp7yg5iusy3vc3tpigjy
+
   - id: retro-may-23
     title: May 2023 Retrospective
     epic: summer-2023
