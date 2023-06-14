@@ -21,7 +21,7 @@
     <div class="cover" on:mouseenter={expand} on:mouseleave={shrink} on:focus={expand} on:blur={shrink}>
         <div class="cover-inner">
             {#if image}
-            <div class="revueThumb" style="background-image:url(https://ipfs.io/ipfs/{image});"></div>
+            <div class="revueThumb" style="background-image:url(https://dweb.link/ipfs/{image});"></div>
             {:else}
             <div></div>
             {/if}
@@ -41,7 +41,7 @@
         height: 20em;
 		width: 45em;
         margin-bottom: 4vh;
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
         align-items: center;

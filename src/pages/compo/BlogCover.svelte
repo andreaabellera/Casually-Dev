@@ -12,7 +12,7 @@
 
     // Load blurb from IPFS
     setTimeout(async() => {
-        let response = await fetch(`https://ipfs.io/ipfs/${link}`)
+        let response = await fetch(`https://dweb.link/ipfs/${link}`)
         let text = await response.text()
         blurb = text.substring(0, 100) + "..."
     }, 100)
@@ -49,7 +49,7 @@
     <div class="cover">
         <div class="cover-inner">
             {#if image}
-                <div class="blogThumb" style="background-image:url(https://ipfs.io/ipfs/{image});"></div>
+                <div class="blogThumb" style="background-image:url(https://dweb.link/ipfs/{image});"></div>
             {:else if loading}
                 <div class="blogThumb" style="opacity:0.4; box-shadow:none;" > 
                     <Boba
@@ -85,7 +85,7 @@
         height: 15em;
 		width: 42em;
         margin: 0 0 3vh 6vw;
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
         align-items: center;

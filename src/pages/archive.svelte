@@ -56,12 +56,12 @@
         margin-top: -3vh;
         justify-self: center;
         column-count: 3;
-        list-style-image: url("https://ipfs.io/ipfs/bafybeigio35caamtq4f26zhxuckrweggufjiodyzzr3gslxhkddcxznyum");
+        list-style-image: url("https://dweb.link/ipfs/bafybeigio35caamtq4f26zhxuckrweggufjiodyzzr3gslxhkddcxznyum");
     }
 
     #blog-array a:hover{
         text-decoration: underline;
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     @media (max-width: 1150px) {

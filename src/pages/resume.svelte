@@ -14,7 +14,7 @@
     <object title="Andrea Abellera's Resume" data="/resume.pdf" type="application/pdf">
         <p class="pretty-text gentiumBasic"> 
             Unable to embed PDF file <br><br>
-            <a href="https://ipfs.io/ipfs/bafybeifuzl7ala7mq2btou4eggom6z6yqekrf5ekhl2br527fbbufc5fbq">View source instead</a>
+            <a href="https://dweb.link/ipfs/bafybeifuzl7ala7mq2btou4eggom6z6yqekrf5ekhl2br527fbbufc5fbq">View source instead</a>
         </p>
     </object>
 </div>

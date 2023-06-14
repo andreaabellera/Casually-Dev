@@ -14,7 +14,7 @@
     let images = [
         "https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/5371964.jpg",
         "https://storageapi.fleek.co/4ce00652-7eee-4e30-ba5f-e84651fedf6e-bucket/5386360.jpg",
-        "https://ipfs.io/ipfs/bafybeibvafxs5dv4dhljmvii6ckh57whnh643qrkcphgwfxoglyvl6vbx4"
+        "https://dweb.link/ipfs/bafybeibvafxs5dv4dhljmvii6ckh57whnh643qrkcphgwfxoglyvl6vbx4"
     ]
 
     // Switch between images
@@ -51,7 +51,7 @@
         position: relative;
         height: 80vh;
         width: 100%;
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;

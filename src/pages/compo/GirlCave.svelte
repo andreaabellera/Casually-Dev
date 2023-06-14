@@ -8,7 +8,7 @@
     <div class="ladyCavePromos" aria-label="Promotional links">
         <GalerieFeat 
             title={"The Queen Moves Forward"} 
-            image={"https://ipfs.io/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
+            image={"https://dweb.link/ipfs/bafybeiffcxwaruzdgafmeusex7qr3wjcdfz57wsrruzvitbqyca3mkqtvi"}
         />
 
         <div id="midnote">
@@ -53,11 +53,11 @@
             Running the risk of being unpopular, I denounce generative AI malpractices and stand by the protection of the moral rights of artists. While aware of sides of the debate and potential compromises, I assert that many artists cannot bring themselves yet to use a tool that is inherently cannibalistic.
             <br><br>
             
-            <video controls style="width:100%;" height="500" aria-label="The Great AI Debate" poster="https://ipfs.io/ipfs/bafybeifoqf2fgunqolk4axvjj27wl4tfy2j363j5g5dr3pwspm7oju7uri">
-                <source src="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" type="video/mp4">
+            <video controls style="width:100%;" height="500" aria-label="The Great AI Debate" poster="https://dweb.link/ipfs/bafybeifoqf2fgunqolk4axvjj27wl4tfy2j363j5g5dr3pwspm7oju7uri">
+                <source src="https://dweb.link/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" type="video/mp4">
                 <track src="/captions/aiDebate.vtt" label="English" kind="captions" srclang="en-us" default>
                 <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe">link to the video</a> instead.
+                    Your browser doesn't support HTML video. Here is a <a href="https://dweb.link/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe">link to the video</a> instead.
                 </p>
             </video>
             <br><br>
@@ -70,11 +70,11 @@
             <br><br>
             <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/dXBGJ2Iq1uQ" title="Farmer's Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
             <br><br>
-            <video controls style="width:100%;" height="500" aria-label="Farmony Teaser Video" poster="https://ipfs.io/ipfs/bafybeihtfbvfmbowrmxyay6wy5xzdune2s44nqtvlzdnkh4fs3fkodhwly">
-                <source src="https://ipfs.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" type="video/mp4">
+            <video controls style="width:100%;" height="500" aria-label="Farmony Teaser Video" poster="https://dweb.link/ipfs/bafybeihtfbvfmbowrmxyay6wy5xzdune2s44nqtvlzdnkh4fs3fkodhwly">
+                <source src="https://dweb.link/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" type="video/mp4">
                 <track src="/captions/farmony.vtt" label="English" kind="captions" srclang="en-us">
                 <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse">link to the video</a> instead.
+                    Your browser doesn't support HTML video. Here is a <a href="https://dweb.link/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse">link to the video</a> instead.
                 </p>
             </video>
             <br><br>
@@ -86,20 +86,20 @@
             <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/vUs_h9kUxkE" title="Making SVG Motion Graphics for Vue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
             <br><br>
             
-            <video controls style="width:100%;" height="500" aria-label="CSS Art Speedcoding" poster="https://ipfs.io/ipfs/bafybeideh5j74oywqgaa3dinyavu7tu53nscu57epscho7diooknkbyvpe">
-                <source src="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" type="video/mp4">
+            <video controls style="width:100%;" height="500" aria-label="CSS Art Speedcoding" poster="https://dweb.link/ipfs/bafybeideh5j74oywqgaa3dinyavu7tu53nscu57epscho7diooknkbyvpe">
+                <source src="https://dweb.link/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" type="video/mp4">
                 <track src="/captions/baldy.vtt" label="English" kind="captions" srclang="en-us">
                 <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq">link to the video</a> instead.
+                    Your browser doesn't support HTML video. Here is a <a href="https://dweb.link/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq">link to the video</a> instead.
                 </p>
             </video>
             <br><br>
 
-            <video controls style="width:100%;" height="500" aria-label="Using Your Own Font for a Website" poster="https://ipfs.io/ipfs/bafybeih2vzqgtvkdqxb75aza76r4gbdamdztcuvuloctywevrr7angil6i">
-                <source src="https://ipfs.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm" type="video/mp4">
+            <video controls style="width:100%;" height="500" aria-label="Using Your Own Font for a Website" poster="https://dweb.link/ipfs/bafybeih2vzqgtvkdqxb75aza76r4gbdamdztcuvuloctywevrr7angil6i">
+                <source src="https://dweb.link/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm" type="video/mp4">
                 <track src="/captions/useFonts.vtt" label="English" kind="captions" srclang="en-us">
                 <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://ipfs.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm">link to the video</a> instead.
+                    Your browser doesn't support HTML video. Here is a <a href="https://dweb.link/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm">link to the video</a> instead.
                 </p>
             </video>
             <br><br>
@@ -109,7 +109,7 @@
             I worked with <a href="https://vrcity.ca/">VRCity</a>, a VR platform and curriculum gearing teens and young adults for a career in aviation - whether as a pilot, aircraft maintenance engineer, or anything in-between. Here's a vid of life as a dev intern! Also featuring my fellow dev homies.
             <br><br>
             
-            <video controls style="width:100%;" height="500" aria-label="Life as a Delphi Tech Dev" poster="https://ipfs.io/ipfs/bafybeicqp5pku4c2qifv7sc5jseapvq2orr5d2ykne7subapic47ne3b7u">
+            <video controls style="width:100%;" height="500" aria-label="Life as a Delphi Tech Dev" poster="https://dweb.link/ipfs/bafybeicqp5pku4c2qifv7sc5jseapvq2orr5d2ykne7subapic47ne3b7u">
                 <source src="https://ipfs.fleek.co/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi" type="video/mp4">
                 <track src="/captions/delphiInternAfterparty.vtt" label="English" kind="captions" srclang="en-us" default>
                 <p>

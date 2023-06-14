@@ -13,7 +13,7 @@
         {#each faves as fave}
             <div class="fave-bar">
                 <div class="orb-ctr" role="none">
-                    <div class="orb"><img src="https://ipfs.io/ipfs/{fave.icon}" alt="{fave.value} icon"/></div>
+                    <div class="orb"><img src="https://dweb.link/ipfs/{fave.icon}" alt="{fave.value} icon"/></div>
                 </div>
                 <div class="fave-text gentiumBasic">
                     <h4 class="small">{fave.category}</h4>

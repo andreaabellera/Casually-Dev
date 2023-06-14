@@ -221,7 +221,7 @@
         height: auto;
         display: flex;
         right: 0;
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .title-container{
@@ -331,7 +331,7 @@
     }
 
     .nav{
-        cursor: url(https://ipfs.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         background-image: radial-gradient(rgba(0,0,0,0));
         color: var(--ink);
         display: grid;
@@ -348,31 +348,31 @@
     }
 
     #nav-chezmoi section{
-        background-image: url(https://ipfs.io/ipfs/bafybeigkiyocbout26eshome3yvbq7pb2ybif5afsy6u4h56tidkidtvhi);
+        background-image: url(https://dweb.link/ipfs/bafybeigkiyocbout26eshome3yvbq7pb2ybif5afsy6u4h56tidkidtvhi);
     }
 
     #nav-blog section{
-        background-image: url(https://ipfs.io/ipfs/bafybeic7uxidilpwenka7pkc6ze3ubbtzt75geqbs62jhi4pxfaiaxqs3y);
+        background-image: url(https://dweb.link/ipfs/bafybeic7uxidilpwenka7pkc6ze3ubbtzt75geqbs62jhi4pxfaiaxqs3y);
     }
 
     #nav-galerie section{
-        background-image: url(https://ipfs.io/ipfs/bafybeicbzg74h32pofcjhlldhfzr5eyuizxmvnizlfffoxnhkybatwu5bq);
+        background-image: url(https://dweb.link/ipfs/bafybeicbzg74h32pofcjhlldhfzr5eyuizxmvnizlfffoxnhkybatwu5bq);
     }
 
     #nav-archive section{
-        background-image: url(https://ipfs.io/ipfs/bafybeiemaommpsincjhizl2ppv26rnbcgxavmrhvhjxr5wr5o6xetqhifm);
+        background-image: url(https://dweb.link/ipfs/bafybeiemaommpsincjhizl2ppv26rnbcgxavmrhvhjxr5wr5o6xetqhifm);
     }
 
     #nav-resources section{
-        background-image: url(https://ipfs.io/ipfs/bafybeig2afgdlpkc3end3mhmnrl23itdyoofsk3dmbpyf4rznzpwgotbbq);
+        background-image: url(https://dweb.link/ipfs/bafybeig2afgdlpkc3end3mhmnrl23itdyoofsk3dmbpyf4rznzpwgotbbq);
     }
 
     #nav-revues section{
-        background-image: url(https://ipfs.io/ipfs/bafybeihnlbqpr3shznqunbsqh73quw2qwgltvlyftqnayzg3nvv36553xy);
+        background-image: url(https://dweb.link/ipfs/bafybeihnlbqpr3shznqunbsqh73quw2qwgltvlyftqnayzg3nvv36553xy);
     }
 
     #nav-andrea section{
-        background-image: url(https://ipfs.io/ipfs/bafybeidfxeswhhjzirsa7pbjflifmd3knt6wy3cu5isxf2mrq7inzdhpl4);
+        background-image: url(https://dweb.link/ipfs/bafybeidfxeswhhjzirsa7pbjflifmd3knt6wy3cu5isxf2mrq7inzdhpl4);
     }
 
     .nav span{
