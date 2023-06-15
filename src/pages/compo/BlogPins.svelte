@@ -47,7 +47,7 @@
     <div id="pinned-array" role="list" aria-label="Pinned Blogs">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
-            <a href="../blog/{blog.id}" in:zoom="{{duration: 1000}}" role="listitem" aria-label="Read blog post for {blog.title}">
+            <a href="../blog/{blog.id}" in:zoom="{{duration: 1000}}" aria-label="Read blog post for {blog.title}">
                 <BlogPage>
                     {@html blog.cover}
                 </BlogPage>

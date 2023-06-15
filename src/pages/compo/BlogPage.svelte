@@ -1,4 +1,4 @@
-<div class="cover-ctr">
+<div class="cover-ctr" role="listitem">
     <div class="cover-inner">
         <div class="cover">
             <slot> 
