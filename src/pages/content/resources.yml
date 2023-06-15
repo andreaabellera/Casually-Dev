@@ -1,7 +1,7 @@
 resources:
   - title: Educational
     subcategories:
-      - title: General Web Development
+      - title: Web Development
         resources:
           - title: For Beginners - Try FreeCodeCamp
             description: Interactive tutorials to get started with WebDev fundamentals
@@ -191,3 +191,29 @@ resources:
         resources:
           - title: Web of Devs
             link: https://webofdevs.com/
+
+  - title: Data Visualization
+    subcategories:
+      - title: DataViz Challenges
+        resources:
+          - title: Makeover Monday
+            link: https://www.makeovermonday.co.uk/
+          - title: Workout Wednesday
+            link: https://workout-wednesday.com/
+      
+      - title: Data is Beautiful
+        resources:
+          - title: Tableau Viz of the Day
+            link: https://public.tableau.com/app/discover/viz-of-the-day
+            fallback: true
+          - title: Flowing Data
+            link: https://flowingdata.com/
+            fallback: true
+
+      - title: JS DataViz Libraries
+        resources:
+          - title: D3 for Graphs
+            link: https://d3js.org/
+          - title: Mapbox for Geolocation
+            link: https://www.mapbox.com/
+            fallback: true

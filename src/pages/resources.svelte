@@ -12,7 +12,7 @@
     setTimeout(()=>{ 
         listVisible = true
         // Clip path redraw for Safari
-        document.getElementById("res-index").style.clipPath = "polygon(0% 0%, 100% 0%, 100% 12%, 100vw 12%, 100vw 100%, 0% 100%)"
+        document.getElementById("res-index").style.clipPath = "polygon(0% 0%, 100% 0%, 100% 9%, 96% 12%, 100vw 12%, 100vw 100%, 0% 100%)"
     },1600)
 
     // Adjust index card position on desktop
@@ -22,10 +22,13 @@
             let indexCard = document.getElementById("res-index");
             if(scroll > 20){
                 let scrollOffset = (scroll-20)*0.05
-                indexCard.style.top = Math.max(30, 45-scrollOffset) + "vh"
+                indexCard.style.top = Math.max(15, 45-scrollOffset) + "vh"
+                indexCard.style.fontSize = "130%"
             }
-            else
+            else{
                 indexCard.style.top = "45vh"
+                indexCard.style.fontSize = "100%"
+            }
         }
     }
 
@@ -350,7 +353,7 @@
             top: 16vh;
             left: -100%;
             width: 115%;
-            clip-path: polygon(0% 0%, 100% 0%, 100% 12%, 100vw 12%, 100vw 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 9%, 96% 12%, 100vw 12%, 100vw 100%, 0% 100%);
             min-height: 40vh;
         }
 
