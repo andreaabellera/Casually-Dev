@@ -1,0 +1,48 @@
+<span class='taviraj'><b>Thought of the day:</b> Is it possible to 'color in' an svg shape with a fractal pattern? I can imagine these adourning dresses and clothing with elaborate and potentially animated patterns. Thinking about it, this can make good journal studies for the future - a deep dive study of the anatomy of an .svg file, and exploring an algorithm or library that can procedurally generate artistic patterns </span>
+    <br><br>
+    <img src='https://dweb.link/ipfs/bafybeigc3s6tda4eov6mc5q3oqwhkjatcxiqqctn2gmkcj55cckdcgjybe' alt='Casually CSS Banner' style='height: 100%; width: 100%;' class='blogImg' />
+    <br><br>
+    If you have explored Chez Moi and scrolled down further, you will see my banner for Casually CSS. It is a passion project of mine that features individual works as a gallery, and also allows devs to import fun CSS artworks in future use cases!
+    <br><br>
+    <b><i> Sounds crazy, what's the advantage of CSS art over existing vector formats like svg?</b></i><br>
+    Good question, the main advantage, while not completely implemented yet, is props passing. Do you want to change the color of a bike? Change its rear wheel size? brand name? Auto-animate its wheels or make it only animatable by hover? A pre-packaged library offers a fast way of getting fun, customizable, and interactive art on your site with minimal graphics knowledge. Second is robustness. I used a protected device with a firewall once that blocks most content, including fetches from the IPFS. I opened my qtrlex site and none of the images were loaded but to my thrill, the artworks remained intact as they are coming straight from the installed node modules! Third, to share the fun and love of the niche art of CSS. With this, I'd share a little bit of backstory.
+    <br><br>
+    I started making my CSS artworks last June 2021. I was a developer in my first internship and discovered that I can make very interesting edge shapes with border radius, stack elements on top of each other with absolute, and lay elements down concisely with grids. 
+    <br><br>
+    <img src='https://dweb.link/ipfs/bafybeihlbr5kvis3lulu72kp5u5t7gf2xjuoazvqsfdhnapgdq5bbkvo5y' alt='Realization we can make CSS Art' style='height: 100%; width: 100%;' class='blogImg' />
+    <br><br>
+    I started to create common objects, my first one being a spinning <a href='https://andreaabellera.github.io/Casually-CSS/#orange'> orange </a>. Then, I made a <a href='https://andreaabellera.github.io/Casually-CSS/#boba'> boba </a> drink. I was exhilerated, became extra ambitious and made an <a href='https://andreaabellera.github.io/Casually-CSS/#octopus'> octopus </a> the following day. I shew a friend my creations and took requests so that I can make more artworks!
+    <br><br>
+    <img src='https://dweb.link/ipfs/bafybeifrroxl37a6fbk2ghuthe7op5rnyunvpcl3vkpcbrux7saauf4mca' alt='Working on CSS art' style='height: 100%; width: 100%;' class='blogImg' />
+    <br><br>
+    Hence, the idea of Casually CSS is born. I revisited the project after school, warmed up my rustiness by making a few pieces, improved the gallery UI, and looked into npm packaging. It was a thrilling adventure but it's just the beginning! 
+    <br><br>
+    My dream that this can one day become an open source CSS artwork library is coming to life before my eyes but this is just the conception. Only a few friends of mine know of this project in terms of publicity, had one good friend contribute fun character names, and no usages I am aware of as of yet. To prepare Casually CSS for the world, I made some development plans which I hope to document as I blog with qtrlex!
+    <br><br>
+    <span class='laBelleAurore large'> Preparation </span>
+    <br>
+    <ul>
+    <li> Prepare the first 5 package-friendly artworks for global usage. Yes, for me this means reworking the artworks - changing the ems to exs and grid constraints to percentages to make them as consistent as possible when plastered over the smallest to largest containers </li>
+    <li> Make a class or function for each artwork so they will be convenient to import from a node framework (like React). Svelte components are super easy - it takes the HTML and CSS as is. As they are convenient to recycle and pass props to (like changing a size or color), these are already being used around the qtrlex site. </li>
+    </ul>
+    <br>
+    <span class='laBelleAurore large'> Publicity </span>
+    <br>
+    <ul>
+    <li> Create a teaser video and 'jingle' that I can post to my LinkedIn </li>
+    <li> Start sharing my project to student communities and social spaces </li>
+    <li> Join feature trains </li>
+    <li> Push Casually CSS to collections of open-source resources </li>
+    <li> Create a hyperrealistic CSS painting as a ticket to join famed CSS Artists in their guild </li>
+    <li> Super wild idea - take a speedcoding video of my artmaking process, play with final results, and have these shorts up on Tiktok. </li>
+    </ul>
+    <br>
+    <span class='laBelleAurore large'> Enhancements </span>
+    <br>
+    <ul>
+    <li> Improve the gallery UI again. Include artwork ratio and availability of the artwork in the package </li>
+    <li> Look into eliminating 'grid lines' in artworks. Grid lines appear most prominently in parts of an artwork that are animated. Nothing significant can be done as most Casually artworks are grid-based but can look into alternative strategies of making art (like single-div) </li>
+    <li> Actions to automate npm packaging. Right now, I package the library manually. There's benefits to automation for sure, but I'd also like to be wary of tradeoffs or considerations (e.g. Do I necessarily want a new version everytime a commit to main is made?) </li>
+    </ul>
+    <br><br>
+    I'd take this moment now to admit something honestly. I am a young dev, I do not have it all together, and most times I have absolutely no idea what I'm doing. The open source world is a new world to me and I am a stray branch trying to graft myself into a tree. If you happen to be a kind stranger passing by with advice on your pocket for strategy, development, or even just general encouragement, please dont hesitate to contact me as I would really love to hear it.

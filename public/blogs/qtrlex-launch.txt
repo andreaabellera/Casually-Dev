@@ -1,0 +1,21 @@
+Nice to see you here! 
+    My name is Andrea Abellera and I'll share a little about myself as the author-dev of qtrlex. 
+    I study Computer Science and am known to some peers as a developer, designer, and artist. 
+    Outside my laptop, I am a coffee, tea, and spicy food enjoyer. I am a secretly a plant and must be kept under natural light. Maybe I am a dog too because I need to go for walks. 
+    I also am a writer, singer, and lady apologist in training. 
+    <br><br>
+    I built my qtrlex blogsite from scratch using Svelte, a Node.js web anti-framework which the vanilla component artist in me approves. As of yesterday, the alpha site got prepped and ready yet short of hitting my MVP goals. But hey, while this site stays still obscure, let me roll in my faux backend infrastructure and portfolio updates along with my first few content plans.
+    <br><br>
+    <span class='lancelot x-large'> What will be in qtrlex? </span>
+    <br><br>
+    Presently, qtrlex has 2 active (Blog and Journals) and 2 inactive (Galerie and Revues) streams of content. 
+    Down the road, I may consider adding new streams such as a Resources or Friend Feature page, but for this summer, we prioritize activating all four!
+    <br>
+    <ul>
+      <li> <span class='laBelleAurore large'> Blogs </span> - stream for updates, stories, and thoughts on Life, Develop, Programming, Art, Games, or Random for miscellaneous shenanigans </li>
+      <li> <span class='laBelleAurore large'> Journals </span> - stream for sharing guides, tutorials, studies, and other educational content </li>
+      <li> <span class='laBelleAurore large'> Galerie </span> - stream for exhibiting my original artwork and some photos </li>
+      <li> <span class='laBelleAurore large'> Revues </span> - stream for drink reviews. This may extend to food too </li>
+    </ul>
+    <br>
+    Personal summer goals going live on my next post!

@@ -1,0 +1,36 @@
+<span class='taviraj'><b>Brain at 2am:</b> You should have branded qtrlex.ca as qtrl.exe, missed opportunity <br>
+<b>Me to brain:</b> I hate you </span>
+<br><br>
+<i> Fortunately, there cannot be a domain with the ending .exe so I am safe. Take that, brain </i>
+<br><br>
+So goals, what do we have here? I formulated a list and whoa. There's quite a lot so let's break them into categories!
+<br><br>
+<br><span class='laBelleAurore large'> Life Goals </span><br>
+<ul>
+<li> Prioritize work, family, and exec duties over qtrlex. Very important. If life picks up and I slack in meeting goals, that's alright. It will be a stretch to fulfill everything on the list. Things won't always go as planned and expectations can be arranged or shifted. That's why there's going to be retros. </li>
+<li> Maintain a healthy spiritual life. Paramount. Reach 2100 verses </li>
+<li> Need to get some of my gals together to play Minecraft </li>
+<li> Meet my team, continue meeting new people and older friends! </li>
+<li> Explore resources and practice for future tech interviews </li>
+<li> Buy an ipad possibly </li>
+</ul>
+<br>
+<br><span class='laBelleAurore large'> Content and Site Goals </span><br>
+<ul>
+<li> Post at least 1 new algorithm or data structure journal study every week </li>
+<li> Write up to 3 pages for the <i> Competitive Programming Handbook </i> and <i> Casually Art Manuals </i>, seek contributors as well! </li>
+<li> Review 15 drinks and develop a 'Drink Leaderboard' in Revues </li>
+<li> Develop La Ruelle Charmante ('The Charming Road') timeline aspect of my virtual portfolio </li>
+<li> Develop the Galerie and have at least 3 collections and at least 20 cumulative artifacts to exhibit </li>
+</ul>
+<br>
+<br><span class='laBelleAurore large'> Dev Milestone Goals </span><br>
+<ul>
+<li> Ready Casually CSS for distribution and launch a publicity campaign (details on an upcoming blog post) </li>
+<li> The lone adventurer in myself seeks to join a CSS artist's guild if one of such fabled orders exist.. </li>
+<li> Develop an app with SOL (Solana or Solidity, whichever I get first) </li>
+<li> Based on progress with Casually CSS, start scoping for viability of Casually Components </li>
+<li> Inspired to refute a Reddit claim that you cannot make a game with just HTML and CSS, I will make a logical game with just HTML and CSS... </li>
+<li> A retrospective blog post exploring current progress and accomplishments of goals on the beginning week of each month </li>
+<li> Beyond summer, I may evaluate new milestones for life's next page </li>
+</ul>

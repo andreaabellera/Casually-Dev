@@ -1,0 +1,212 @@
+Five years ago, I was a noob.
+<br><br>
+
+You say, "Sure, we all start from somewhere".
+<br><br>
+
+I'll whispering to your ear, "My journey's kinda convoluted, do you want to here my story?"
+<br><br>
+
+Say, you'd sit next to me and hear me out. 
+It will come to a point you'd have no idea, but you can still enjoy this insufferable nerd drone on passionately.
+<br><br>
+
+Many are the Youtube videos or Medium or Hashnode articles that say..
+
+<br><br><span class="large cousine">
+LEARN FRONTEND IN 12 DAYS!
+</span><br><br>
+
+or
+
+<br><br><span class="large cousine">
+THE FRONTEND DEVELOPER <a href="https://roadmap.sh/">ROADMAP</a> FOR 2023
+</span><br><br>
+
+Unfortunately, I am too dumb to learn Frontend in 12 days or follow a roadmap. On a better light, they are inexpedient. One dev's extension is another dev's first experiment.
+Everyone will embark on a webdev journey starting at any node in the way and it can be as simple or twisted as it gets!
+
+<br><br>
+<h2 class='lancelot x-large'> [2019] Starting out blindly </h2>
+<br>
+
+A long time ago, I tried making a webpage using &lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, with a few other tags. I managed to make a Welcome to my Website html file that has a red background and an anime girl png making a waving gesture, with 3 scrollbared sections. 
+Every now and then I would download code of small JS games into my computer. I will edit one or two strings from the HTML, CSS, or JS files. I do not fully understand how they function together but it made me very excited to reopen the HTML file, because I see some changes.
+Dedicated to learn webdev for real, I bought a MEAN stack book. I read through chapter after chapter, followed tutorial after tutorial in a dedicated routine, but I would be honest with myself, I do not really understand a thing. I was hoping that somehow I can pick up knowledge by rote exposure to documentation and examples. But it's a $50+ book..
+<br><br>
+
+<span class="cousine" style="background-color:#3e3e3e; color:#eeeee6;"> Learn WebDev Scheme: FAILED </span>
+<br><br>
+
+<i>/flips table</i>
+<br><br>
+
+I found what seems to be a better method. I went through <a href="https://www.freecodecamp.org/learn/">FreeCodeCamp's lessons</a>. I finished the CSS and Javascript lectures. I took Responsive Web Certification modules, learned Bootstrap, Sass, React. The way FreeCodeCamp is formatted, each lecture is presented with a small challenge that one must finish before they proceed to the next. As I finish problems, I am absolutely convinced I understand the subject matter, with those little check marks serving a dopamine booster, "You did it noob! You learned the thing!" 
+<br><br>
+
+But.. <i>have I truly learned webdev?</i> No. I can only solve challenges, but cannot write or build my own projects yet.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeihfqabfp5ogr3ufzszgxwdkkyllezwneqxpwc7xyng4mmstlixpui' alt='Boy skipping 2 stair steps of JS basics to jump to React' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+My Learn WebDev Scheme has failed.
+
+<br><br>
+<h2 class='lancelot x-large'> [2020-2021] From tactile experience </h2>
+<br>
+
+For the <a href="https://github.com/aspermisa">Asper MISA</a> student club, I volunteered to help out in a Jekyll website. 
+My task is to update data in the team page to use our new team's pictures and bios, reusing the components that are already developed by more experienced past students.
+<br><br>
+
+I learned why HTML class and id are two different entities. The HTML <span class="cousine" style="background-color:#3e3e3e; color:#eeeee6;">class</span> assigns elements to be part of a group that share similar behavior, and an element can have multiple classes, a many-to-many relationship. Meanwhile, the <span class="cousine" style="background-color:#3e3e3e; color:#eeeee6;">id</span> is a unique identifier. HTML, unlike SQL, is not strict but ideally only one element must be mapped to one id like a 1:1 relationship.  
+I also learned how to serve websites with the CLI as opposed to double-clicking an HTML file.
+<br><br>
+
+I also volunteered to help with my university's <a href="https://github.com/umwics">Women in Computer Science</a> website. 
+To my glee, their website's codebase is also built with Jekyll, but my coordinator and an experienced developer are migrating the site to React and Next.js. 
+<br><br>
+
+I tried my hand on my first contribution. I did my best to understand the codebase and with trial and error, I revamped the Contact page from showing lists to showing a set of brand images with external links.
+<br><br>
+
+These are my first achievements outside tutorials. But am I successful at last? Not quite yet. I have a long way to go.
+
+<br><br>
+<h2 class='lancelot x-large'> [2021] Confidence++ </h2>
+<br>
+
+Boldened by an ability to sufficiently understand how business, HTML, CSS and Javascript ties together in a basic way, I led my HCI group and designated our responsibilities in diverse but equally weighted, equally important ways. I made one member focus on coding the HTML, one on coding Javascript, one on content, one on design, and one (myself) on coding the CSS layout. Our milestone 3 involves a high-fidelity prototype and in areas, the start of one's task depends on the finishing of the other. I assigned myse;f project manager, set hard deadlines, and ensured everyone delivered. This <a href="https://github.com/andreaabellera/Imhungry">high-fidelity prototype</a> was one small portion of many our deliverables throughout the semester that were consistently finished ahead of time!
+<br><br>
+
+I later took a request from one of the WICS execs to display volunteer opportunities for our Outreach page. This time, I stepped my game up and made my own custom component that looks like a console that scrolls brand images horizontally, and clicking boxes will change the text displayed inside the component with related links and information. It however, did not make its way to the final site.
+<br><br>
+
+<h2 class='lancelot x-large'> [2021] I cannot React </h2>
+<br>
+
+I attended my first Hackathon and worked with a small group called the 'Uncaught Errors' to develop <a href="https://github.com/andreaabellera/Ecoyou">Ecoyou</a>. By the time, I am a regular user of Figma, a technology I picked up quickly as I enjoyed using it to design graphics. I made UI designs and gave them to the React developer of our group. He turned my design to life like magic.
+I am by a far cry a real React developer as I've only touched React codebases that others architected.
+<br><br>
+
+I decided to try my hand to on architecting a real dynamic webapp. I attended another hackathon, and tried to make something that combines React and Three.js - another library I've been playing with lately because of my due enjoyment in a prior Graphics class. I worked on it for four hours but by the time the demo started, it was still a broken site with mostly a panning animation complete. 
+<br><br>
+
+Motivated to make something more proper with React, I generated a full-stack site with Visual Studio that has a React frontend and a .NET backend. It's fair that the React part of the stack held my full interest at the time. I managed to get route navigation functional and threw in a few custom components in the mix and enjoyed the process! I decided to make it my official portfolio. Unfortunately, I planned and created a lot of my own graphics for it which I lost due to hard drive corruption. I got disheartened and gave up on my portfolio project, though I inferred I, indeed, do not have enough technical prowess in React yet to make my own site. <b>Confession:</b> Most of the code were plastered pieces of code from Ecoyou and random answers from the Internet. I did not have the grasp of how hooks and logic works.
+<br><br>
+
+<h2 class='lancelot x-large'> [2021-2022] Road to Mastery </h2>
+<br>
+
+I had my first internship with Delphi, helping with the web frontend of most of their applications and enhancements. I started working with AJAX, JQuery, and passing data through cross-language architectural seams. A final project that we as interns proposed is to produce an interactive course roadmap utility. I took a backend role to pack our required data in PHP, then worked on the other side to fetch them as JSON and enter them into a NodeJS queue class, which is then contracted by the page script to load into our frontend logic.
+<br><br>
+
+This experience was effectual to my growth because I learned how to write pragmatic Javascript. This helped fill in my gaps rather than a shot-at-the-moon React quest.
+<br><br>
+
+I started making CSS art in my free time after I had an epiphany that CSS is similar to painting. You work in layers and dictate how you want shapes to orient themselves on screen. You can create any picture! I started experimenting with creating simple objects in CSS, until I had enough in my collection and decided they could be a gallery and distributed open-source.
+Thus, <a href="https://github.com/andreaabellera/Casually-CSS">Casually CSS</a> is born. This is my first npm library of CSS artworks, a project that is not a demo or resume filler, but one that I'd like to actively maintain and distribute!
+<br><br>
+
+By the the time I took my 4th year Human-Computer Interaction class, I am comfy with Javascript and CSS. I speedrun our <a href="https://github.com/andreaabellera/Prosimm">Prosimm prototype</a>, a mobile-friendly, fully-responsive prototype powered by one .js file and one .css file.
+<br><br>
+
+Around the same time, I worked on my <a href="https://github.com/andreaabellera/DesCentral-Apps">LibP2P/IPFS</a> project, which enlightened me with ways to work with async JS and dig into the npm skullduggery of library circuitry and plastering external modules when latest production packages are defective.
+<br><br>
+
+I started a new internship in TD, where I did development for our internal tools. I continued to sharpen my Javascript and CSS while building on Atlassian Confluence pages.
+
+<br><br>
+<h2 class='lancelot x-large'> [2022] CasuallyDev </h2>
+<br>
+
+I found the motivation to build a portfolio again! This time, I resumed my quest to learn a framework, but instead of dogging on React, I chose Svelte for its single-file components which closer emulates the vanilla development style.
+This portfolio is now my blogsite, <a href="https://github.com/andreaabellera/Casually-Dev">CasuallyDev</a> - the product of a full summer project on learning Svelte and deploying a site of a custom stack with many complex components from scratch. In developing a personal site, there is no rule to please a person, follow a rubric or engineering rule or branding guide or design trend, or use certain dependencies or integrations. My development is experimental and it was the best comfy feeling - like a homemade pie that's not derived from recipe, but from trial, error, and perfecting over experience.
+
+<br><br>
+<h2 class='lancelot x-large'> [2022] Boss Battles </h2>
+<br>
+
+I jumped into my buddy's idea to develop a mobile product that will allow kids to capture Lego creations and assemble building instructions from block 1 to n, with a motivation that his children who love to play with lego can use the app to produce their own manuals. When he approached me for a potential design, I am thrilled that I'd be able to help him with a dream POC! 
+This is also my first time working with a project outside curricular, club, or contest activities. We built an app with React Native and Typescript. 
+Coming from a Javascript background and being exposed to Typescript for the first time, I spam used the <span class="cousine" style="background-color:#3e3e3e; color:#eeeee6;">any</span> typing, and my sincerest apologies to experienced Typescipt and typed-language main devs for being one of those atrocities.
+<br><br>
+
+<a href="https://github.com/andreaabellera/WebLC3">WebLC3</a> is the big boss that will put everything I have learned so far into test. 
+For this project, we are developing an web-based Assembly language editor and CPU simulator with keyboard interrupts, a feat not for the faint.
+One of my department's most esteemed professors is our client. He looked me and my project partner in the eye, saying, "This has never been done before..."
+<br><br>
+
+Can we, two students with a 5-course load and extracurricular roles, in 4 months, make an impossible product? 
+<br><br>
+
+Interestingly, we did. Our teamwork went smoothly and we achieved our MVP early, which alotted ample time for enhancements, browser considerations, and documentation to be coded in.
+I learned new concepts in rapid succession: state management(globals/stores), component lifecycles, middleware, difference between client vs server side rendering, accessibility, key handling, deployment, and the difference between dev, preview, and prod servers and builds. 
+My counterpart worked with the business logic Typescript, as well as regex, assembly processes and language, workers, shared memory, and I consequently understood the concepts better through his workflow.
+<br><br>
+
+Simultaneously in the year end, I collaborated with a group of colleagues to produce <a href="https://github.com/andreaabellera/Packet-Visual">Packet Visual</a>, which became a chance for me to revisit React development. 
+React is like an RPG boss that destroys you the first time as a young child. After many level ups and completing adventures, you return ready to fight the big boss again!
+<br>
+<i>And you tag along your equally levelled-up party! Scene from childhood favorite game, Breath of Fire II.</i>
+<br><br>
+<img src='https://dweb.link/ipfs/bafybeiae5o7gacz5krtcgqnhuvmlhzh2tals4tilsagy55wybzp2by4tta' alt='Ryuu party from Breath of Fire II fights the Barubary' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+I got the badge of honor to work with frontend and write some logic of our own components, integrate state management libraries, and work around built-in library code to achieve new functionalities. 
+We achieved ~80% of our project plan from being busy seniors, but it made for a unique solution worthy of presenting!
+
+<br><br>
+<h2 class='lancelot x-large'> [2023] A New Journey Begins </h2>
+<br>
+
+The bosses got defeated and a new journey.. starts! There are multiple stages in learning WebDev. 
+At this point in culmination, I am sufficiently confident with the fundamentals 
+<br>
+
+<ul>
+<li> Design things on the website that look nice and nail them down </li>
+<li> Design things on the website that work together functionally and robustly </li>
+</ul>
+
+<br>
+...but there is more when we like to mix-and-match our tools and bring real value to engineering teams
+<br>
+
+<ul>
+<li> Design special configurations </li>
+<li> Design test integrations and suites </li>
+<li> Design the CI/CD delivery </li>
+<li> and more </li>
+</ul>
+
+<br>
+I decided that a new adventure can be diversifying my development stack and publishing <a href="https://github.com/andreaabellera/Casually-Components">Casually Components</a> - my own component library on various Node frontend frameworks.
+I ended up publishing components Angular, React, Vue, Svelte, Solid, Lit - I considered but held back for now from Qwik and Ember.
+<a href="/blog/ambitious-ui-library">This project got pretty ambitious fast</a>. I decided to reduce scope and breaking this down to multiple libraries.
+<br><br>
+
+In a Software Engineering class, my project group developed <a href="https://github.com/andreaabellera/StudyBuddy">StudyBuddy</a>. I worked more extensively with Vue and it became my new favorite framework to work with.
+I integrated testing packages with Jest and Cypress! I designed my own configuration for them to get it working with our codebase, reduce clutter, and improve workflows - stringing commands together to launch test suites simultaneously.
+<br><br>
+
+I observed how Github Actions can automate CI/CD pipelines, how webapps are remotely published to Docker containers, how to write Docker compose to retrieve those containers, and manage local images. It's been enlightening to understand this intersection of WebDev and DevOps. 
+<br><br>
+
+I applied this experience to my own personal project to run an automated workflow to publish a Casually library to Github Packages. However, I decided to save CI/CD for later and manually push my new releases to the npm registry for now.
+<br><br>
+
+On the side, I started working with <a href="https://github.com/andreaabellera/Casually-Docs">Casually Docs</a>, which is made from C# and ASP.NET running their native Razor build, but also with a NodeJS layer running on top importing and building my Casually libraries. A .NET frontend cannot run my React JSX components by nature, but what it can do is work with the Lit component framework. Lit serves as an adapter from NodeJS components to native web components integration.
+It blew my mind that a frontend of a different language ecosystem can use my NodeJS releases!
+<br><br><br>
+
+
+This wraps up my roughly 5 years of experience in Web Development. What a satisfying, convoluted journey it was! 
+<br><br>
+I can attest that, yes! Anyone can gain web development experience outside employment or education.
+I will not call myself a senior dev as most of my years are spent in mad science experiments. 
+Yet, I am blessed to gain exposure to grow in several development areas - simulatenously with my undergrad journey. To commemorate, I made a new <a href="/resources">Resources</a> page in CasuallyDev to share free web resources I amassed over the years, and you can go snag a few into your bookmarks!
+<br><br>
+
+As much as I'd love to continue charging forward, life is going to my primary focus for the next few months. It's time to take a rest.

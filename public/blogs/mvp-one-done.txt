@@ -1,0 +1,14 @@
+I drove myself mad finding the perfect<span class="small"><b>TM</b></span> server for qtrlex. Different routers, Express, Polka and Sapper all inflicted pain. SvelteKit had come so, so close! It gave me problems with the navigator object which I need for mobile compatability.
+I discovered Routify last minute and was blown away by its no-frills routing. It handled even dynamic routes! I was sad when the deploy failed to work so I skipped sleep to debug very obscure Node errors. It turns out I've just been deploying from a wrong build folder. Thankfully, I have a stack that works now, migrating from a Svelte-Rollup app to a Routify-Svelte-Vite app. Bless Routify.
+<br><br>
+
+The last nail in the head is fetching content from the InterPlanetary File System (IPFS) for the fully-decentralized blog of my dreams. I discovered IPFS last Winter semester and worked with it on a project while I fell into the Web3 rabbit hole.
+I've been getting the package from npm but it threw Electron and browser compatability errors. Fortunately, I found a dev from Github who used a pre-packed module that works. With images, I use the IPFS storage in Fleek.co, while the blog content is fetched from IPFS core. It takes a bit to initialise but once it's up, all content is there!
+<br><br>
+
+Interestingly, IPFS is the first async in my site. Propagating data to the beloved frontend components while keeping the UX reasonable is the new challenge. 
+For now, there's loading boxes but I'd do a favor and make more fun loading components. Perhaps, put my Journal feature row at the top of my site but journals have stayed empty content-wise. 
+<br><br>
+
+Yep, I've been delaying my first journal. I'm a lazy dumdum. I already study bare minimum at school, so, here's to motivation for pushing myself to a journalling routine! Wish this unstudious person well. Since I put my energy to this site, I am sooo ready for a retro which I am writing simultaneously with this blog. <br><br>See it tomorrow in June 1! 
+<br><br><br>

@@ -1,0 +1,43 @@
+<span class="large"><b>Welcome to the Casually Art Tutorials</b><br><br></span>
+Wow, CSS art is like magic. But hey, good news! It's derived from a set of procedures - just like programs.
+Do you have what it takes to discover the hidden techniques of CSS artmaking?
+With digestable steps for choice tutorials, teach yourself one stunt a time - one art a time - and let the CSS guru within yourself arise. 
+<br><br>
+
+I'll tell you a secret. To hone the skill of artmaking, you must type down code by hand. Yes. <b>By hand.</b> 
+There is source code at the end of a tutorial, but those who copy-paste shall fail to become gurus. 
+For better accessibility, a <i>Casually Art + Code Bento Box</i> component to replace the images is being created.
+<br><br><br> 
+
+<span class="x-large lancelot"> First Feat, Summon a Blossom </span>
+<br><br>
+
+In this tutorial, we will make the 'Blossom', a cute flower that blooms on trees in summer. Embellish your site with one.
+<br><br>
+
+First, let's create a circular base. The border and white fill are there as visual guide. You base blossom div must have similar height and width. I used an arbitrary magnitude of '20ex'**, but if you already have a square container housing your blossom, set your height and width to 'inherit' instead.
+Why use 'position: relative'? So any div inside the .blossom that uses a 'position: absolute' will be defined within its bounds.
+Let's add a small square inside that will be the center of our blossom (we'll call this square 'mid')
+<br><br>
+
+<span class="small">**<b>Guru note:</b> Lately, I'm getting to the practice of using 'ex' instead of 'em' as it dynamically scales across different container sizes. As .blossom is only applied to the rootmost container, using 'em' is okay.</span>
+<img src='https://ipfs.fleek.co/ipfs/bafybeicblr7heknqgqgjxyuea4326gkm3vq33rai5vh76zoyhau24ib7xm' alt='Blossom tutorial step 1' style='height: 100%; width: 100%;' class='blogImg' />
+
+Next, we draw petals! Each petal is also a div inside the base blossom. We give them a higher z-index than mid so they appear on top of it.
+<img src='https://ipfs.fleek.co/ipfs/bafybeih7wtj3dcwah5txqa4aeyaww63qs2fiuynpeqmbiab47jdqalyaqq' alt='Blossom tutorial step 2' style='height: 100%; width: 100%;' class='blogImg' />
+
+Uh, our petal looks like a bar? Yes, it should. The trick's about to begin. Let's cut the bar in half by putting our petal inside a grid with a 50:50 row (which we call 'half-grid')**. Our petal fills the upper half of the grid, while the lower half is an empty slot! We add border-radius to craft a petal-like shape.
+<br><br>
+
+<span class="small">**<b>Guru note:</b> The rationale for half-grid and not setting the height to 50% is to ensure proceeding rotations anchors around the center. 'transform-origin' ironically gets more complicated and uses more code for this.</span>
+<img src='https://ipfs.fleek.co/ipfs/bafybeihh2s5f6f476z4gr5nq3vsxjd7z4q6ivrgx6qdhqnxpbgpb76kkga' alt='Blossom tutorial step 3' style='height: 100%; width: 100%;' class='blogImg' />
+
+Though we see one petal, it's in fact five petals stacked on the same spot. Give each half-grid a unique rotation by calling 'nth-child'. 72 degrees (360 / 5) is the perfect increment for evenly distributing five petals around the circle.
+<img src='https://ipfs.fleek.co/ipfs/bafybeia6hcvzgrrbbvgejh7frfviapwvxdjhpbalnerfmqe34432zhr4hq' alt='Blossom tutorial step 4 layout' style='height: 100%; width: 100%;' class='blogImg' />
+
+Remove the visual guides and copy the CSS code below to give your blossom a spin animation on hover.
+<img src='https://ipfs.fleek.co/ipfs/bafybeihq4jmrw5hwxneudurxlbriewlq5zs3alrvrd2bbz7tgjpp2jl2ma' alt='Blossom tutorial step 5' style='height: 100%; width: 100%;' class='blogImg' />
+
+
+Congratulations on summoning your first Blossom! You made the Author proud and she grants you access to the complete
+<a href="https://gist.github.com/andreaabellera/474f0d8036643985eb4563866d5e353e">Blossom source code</a>.

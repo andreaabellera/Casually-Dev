@@ -6,13 +6,13 @@
     export let tags = []
     export let title = "Untitled Blog Post"
     export let date = "No date provided"
-    export let link = null;
+    export let id = null
     export let loading = false
     let blurb = "Loading blurb..."
 
     // Load blurb from IPFS
     setTimeout(async() => {
-        let response = await fetch(`https://dweb.link/ipfs/${link}`)
+        let response = await fetch(`/blogs/${id}.txt`)
         let text = await response.text()
         blurb = text.substring(0, 100) + "..."
     }, 100)

@@ -1,0 +1,161 @@
+..and it's more trouble than it's worth.
+<br><br>
+
+I'm in the brink of giving up. But let's see it anyway!
+
+<br><br>
+<h2 class='lancelot x-large'> Casually Components: The Motivation </h2>
+<br>
+
+About two years ago, I started <a href="https://github.com/andreaabellera/Casually-CSS">Casually CSS</a>, my first passion project. Casually CSS allows you to import CSS any artwork from this gallery into any website with one line of code.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeigxceyvmk5rbkatbctihl44f2jq44og5qbffxrqsp2lzat3ffenzq' alt='Loading a pink hippo with green eyes' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+These characters are cute! They are there to show I could work with CSS. They could be decorative for seeing users.  Alas, they don't have practical a use case for this world. 
+The only user so far is me.
+<br><br>
+
+I thought to myself, what if I could bring my art to make something that is considered useful or valuable to my fellow developers. And it struck me - I can make a Component Library!
+From working with fellow developers on projects, I learned almost everyone goes to a component library so they don't need to worry on UI and styles.
+There is Bootstrap, Material UI, Chakra UI, Radix UI, and more. I noticed - they all look the same. Thus, all modern websites being built has the same boring look and feel. Why are all buttons the same blue solid-filled vs outlined ones? Why are cards white with a drop-shadow on white background?
+<br><br>
+
+We can do better! We can make super fun buttons and spice the Internet up!
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeid36abtbwiyfdu27w7533fwfwcuseysnygbqyg4ovpevjlplt34ku' alt='Casually Buttons' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+So I started <a href="https://github.com/andreaabellera/Casually-Components">Casually Components</a> on a cold, rainy Christmas at Vancouver in an AirBNB.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeihhadv3y4z7aq7lopknd5toryqgrjufdgzifjw7bry3bw7h4xpf7i' alt='Scoping plans for Casually Components' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+The vision stage was euphoric. I targetted to make components for 5 major NodeJS frameworks: <a href="https://react.dev/">React</a>, <a href="https://vuejs.org/">Vue</a>, <a href="https://svelte.dev/">Svelte</a>, <a href="https://www.solidjs.com/">Solid</a>, and <a href="https://angular.io/">Angular</a>.
+Down the road, I decided to add <a href="https://lit.dev/">Lit</a> for its powerful interop with sites not built with NodeJS. 
+<br><br>
+
+I have visions of complex components to build but for merit of starting out, I decided to go simple and incubated my first 4 components: Button, SocialButton, Box, and Card. 
+<br><br>
+
+Now, CSS styles are my guilty dev pleasure. In contrast to minimal styles in most UI libraries, Casually Components will be its polar end of the spectrum - Ultra styled. I decided to produce 5 aesthetic skins that will emulate textures of real-world materials: platinum (default light), asphalt (default dark), paper, epoxy, and glass.
+<br><br>
+
+In summary, I have 4 components for 6 frameworks styled with 5 aesthetic skins. Sounds promising! If I want to grow my library, I'll just add more components, aesthetics, or integrations - a 3 dimensional growth. Below is a picture of how my components look like pieced-in together in an ASP.NET webapp (thanks Lit!).
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeiafytkxnawy7duh3zlho43ppech3qsevjtgcmlxxn63d3dzce7jzu' alt='Slotting containers' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+
+<br><br>
+<h2 class='lancelot x-large'> What I achieved so far </h2>
+<br>
+
+I created components for all 6 frameworks and published them. Due to the breadth of the frameworks I targetted, it was quite exciting to dig the gears and nuances of each NodeJS framework, and observe that it was quite easy to rewrite code from one framework to another.
+I set up 6 test sites for the 6 frameworks for visual and runtime testing. The image below are testing my components for Vue.
+<br><br>
+<img src='https://dweb.link/ipfs/bafybeietodr34ye23o4wx23agvrx3evg2au2i7v2uputypexq32d6ci6ki' alt='Rendered components on Vue site' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+So far, my React, Svelte, Vue, and Solid components are functional. Aspects of Lit's and Angular are still broken. Yet now, I know 6 frameworks and have components for each published to the wild!
+For a learner, this was great! But for a maintainer, a humbling moment. The gravity of the scope bites me back.
+
+<br><br>
+<h2 class='lancelot x-large'> Where am I going wrong? </h2>
+<br>
+
+<span class="slightLarge taviraj"><b> Scale </b></span>
+<br>
+Did I mention Casually Components scales on 3 dimensions? No, it's 4 dimensions considering a maintainance layer - the layer dreamy artists don't tend to think about. Ignorance was bliss because now on top of being an artist and developer, we're also now a designer, engineer, and QA. Wear all these hats at once if you hate life.
+I kid! That's just an "I graduated CS" moment. So, what exactly goes to a robust component? I identified 6 aspects from experience.
+<br>
+<ol>
+<li> Documentation </li>
+<li> Accessibility </li>
+<li> Responsivity </li>
+<li> Functional testing </li>
+<li> Visual testing </li>
+<li> iOS / Safari testing (Apple just loves breaking things) </li>
+</ol>
+<br>
+
+On top of making sure your components still run to the present day. 
+<br><br>
+
+This scales work to an additional factor of 6. We go from an estimated 120 hours to 720. Add to this implicit variant variables embedded in the component which we will call an 'n', we now have 720n. This is the estimated hours of work for my dream UI library.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeifir6jhydnqewd76emj76hma2d242ugizcye34cc5g4tdhnjsx2uu' alt='Hours to build Casually Components. Happy Wojak estimated = 120. Depressed Wojak actuality = 720n' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+I underestimated the time that goes into a prod-quality UI component, severely.
+<br><br>
+
+<span class="slightLarge taviraj"><b> Ambitious artistry </b></span>
+<br><br>
+
+The CSS skins I wanted to build got to the moon, I have met my limits. 
+Code a 3D pure CSS element that is fully accessible, responsive, customizable, and scales on mobile? Sorry Andrea, your current levels are insufficient for that. You must upskill before coding that epoxy or glass box.
+<br>
+<blockquote>
+<i>Oh little pink box, you're so cute! Stay static. I don't know how to scale your 8 corners yet based on max-content.</i>
+</blockquote>
+<br>
+<img src='https://dweb.link/ipfs/bafybeigg5j5y72kyfx6bbcnjv6jgysq2bo4vzo3z6kbotniqxi6gitdpju' alt='A div that is a 3D block of epoxy' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+<span class="slightLarge taviraj"><b> I did not normalize CSS </b></span>
+<br>
+Recently, I learned that CSS can be <a>normalized</a>! Normalizing CSS strips all built-in margins, styles, and colors on web elements. The built-in styles serve a purpose - they make unstyled HTML elements distinguishable from each other. For example, <b>&lt;h1&gt;</b> increases font size and weight and adds a little bottom margin, or <b>&lt;a&gt;</b> gets a default blue text color plus underline that turns purple when the link is visited. 
+All these nuances can be removed with rebooting stylesheets. Knowing this would've given me better control over my styles from the get-go.
+
+<br><br>
+<h2 class='lancelot x-large'> For what it's worth.. </h2>
+<br>
+
+I love the concept of SocialButton. I can see this as something I can tell my friends about like "Hey bud, send in your URL as a prop and you'll get a neat, shiny, social media button that's completely styled and has the right logo." 
+You won't need to hunt for logos anymore and store them on the static or public folder of your site.
+While my social media list and smart detection is far from complete, the SocialButton can generate social media buttons for common personal or commercial profiles.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeigcny2cauqzeyfbng2q47xdmbprf5o6yrspgq3praqzlpelqqzlgq' alt='Collection of social media buttons' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+I can start battle-testing, patching, and promoting the components for the four successful frameworks, but I don't want to give up on Lit and Angular yet. The noob in me will learn what it takes to ship components for the last two frameworks. But to put in <b>720n</b> hours of work.. I.. I have a life. Help me, Lord.
+
+<br><br>
+<h2 class='lancelot x-large'> Saving the Project </h2>
+<br>
+
+<img src='https://dweb.link/ipfs/bafybeibfgfviphiv5sr47zl7gqa6vo6b34s4sqtgglqd3sucoutsaadivu' alt='Parrot running from an explosion' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+When devs hit this wall of reality, we "nuke" our projects off existence or just forget it. In a personal project, you are your own client - thrice more likely to self-inflict your own scope creep when the dev in you can say "I can do that!". But also no hard stakes lost when you drop a project off to entropic void.
+I have the choice to shoot Casually Components to oblivion, but I also have the choice to save the project.
+<br><br>
+
+Because I cannot put in 720n hours before a minimal release, I need to slice the long road to glory.
+<br><br>
+
+<b>Divide-and-conquer</b> is the most rational strategy to start rolling products out - because Casually Components as envisioned is a suite of components for 6 frameworks and one ill-prepared component delays the release of the whole library.
+Another answer is reducing scope, but this means sacrificing parts of the vision. This is why we have <i>*heave*</i> backlogs.
+<br><br>
+
+<span class="large laBelleAurore"><i> ..to save the UI library </i></span>
+<br><br>
+
+<ol>
+    <li> Have a separate package release for each framework </li>
+    <li> Release light and dark skins first. Backlog the paper and 3D aesthetic skins (epoxy, glass) for future releases after the base components are robust </li>
+    <li> Find a collaborator for testing </li>
+</ol>
+<br><br>
+
+Yes, a collaborator does sound good. I need one who will embrace this mad science with me, keep me grounded, or both. 
+<br><br>
+
+Comically, I forked an Angular codebase when I learned its maintainer is nuking the repo. The next day, the repo's been nuked. Meanwhile, I have an elegant Angular SPA to study. The project was not saved, just "evacuated in an alternate reality".

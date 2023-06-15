@@ -1,0 +1,61 @@
+Happy August! Pictured in the blog cover is GIANT chess at one of the campgrounds we visited this month. I love chess, my siblings play it too. We inherited the love for chess from no other than our dad who's super passionate with it. My recollections include having chess boards, chess books, chessmaster games at home. Though we also play the game in traditional rules, my sis and I as kids love roleplaying the pieces through a kingdom melodrama. Pawns(princes and princesses) falling in love with the pawns from the other side and their dad(king) and mom(queen) aren't happy with it. And knights pieces become, unsurprisingly - pet horses! 
+<br><br>
+
+I am writing this blog basking on full sunlight. There was a time I fell asleep at a campground table under the stark 2pm sun, it was nice. I became lethargic, fatigued, unhinged the last few days. 
+
+We're crunching out big things in work, plus the occassional summer trips, loaded Sundays, and all side projects. I hack myself awake with coffee everyday. I am highkey tired. I can't find time to write blogs, study, or post my latest sketches and reviews.
+
+And then August 1 came which is a holiday. I said, YES, a day I finally have for myself and I can just do dev all day! Did nothing and stayed awake till 4am to finish Jojolion. I love myself sometimes.
+
+
+<br><br>
+<span class='lancelot x-large'> Retrospective </span>
+<br><br>
+
+<ul>
+<li> Happy 2350 verses! Roughly 150 gained from last month, and 150 more to go to #RoadTo2500
+</li>
+<li> My biggest dev achievement is the Galerie and Revues pages. LaRuelle's super close and bound to finish this week. The components are up, the content is up. They're looking so beautiful and I am so happy!
+</li>
+<li> I solved the Casually CSS issue addressed last month and now the library's good for release! I beat the <a href="https://andreaabellera.github.io/Casually-CSS/#octopus">octopus</a> to shape and now it fits in a box #parentingthing. BUTTT. It keeps its true colors. Because I'd rather eat a tree in half than pass inline styles to every tentacle part I conceived this obstinate kid ;p;
+</li>
+<li> Secret projects A and B are going okay. Slower than faster but it's 
+</li>
+<li> Generally I've just been tired lol
+</li>
+<br><br>
+</ul>
+
+Since August is the last month of summer, I'm very excited but also very anxious. I got into the classes I need to graduate by a close call because my department is a crisis. Back when a crowd of students depart the uni and enter the bus in a stampede until every square foot has 2 students and there's no more space left to stuff more of them. I happen to get in just in time beside the driver, among the three last students coming in. Then with NO reservations the bus has to leave or everyone suffocates dead. That is Computer Science in the UofM.
+Nevertheless, I'm excited by my choice of classes, one being a drawing class to make my last elective fun!
+<br><br>
+
+
+Just like my work internship, we're doing a reality check-in as I'm in my last 3 weeks. In this summer Quaintrellex project's case, 4.
+I prioritized my remaining goals with <a href="https://www.funretrospectives.com/telos-thinking/">Telos Thinking </a>- which asks the question, "To what end". What EXACT reason did I even desired this project for? 
+Then I placed them in sticky notes and plotted them in an <a href="https://www.funretrospectives.com/effort-and-pain/">Effort x Value</a> chart.
+Not going to lie, lots of my projects' motivation is my desire for recognition and asserting dominance. I lobbed them out in repulsion. <i>I just want a quiet life.</i>
+But no, not exactly. An honorable and extraordinary life loving to my last breath is what I actually want. Bring on the noise.
+<br><br>
+
+So with this fourth bloody mosquito smacked on my sketchbook, I decided to do something on my incompetence to write journals.
+
+<br><br>
+<span class='lancelot x-large'> Futurspective </span>
+<br><br>
+
+<ul>
+<li> I'd do a Journal Marathon! Like a movie marathon except it's studying - with popcorn! I'd dedicate a budget for very yummy food deliveries, snacks, and takeouts. But I can only take from that budget if I'm doing it in conjunction with a journal study. I'd let y'all what happens in a month
+</li>
+<li> Bible Memory #RoadTo2500 let's gooo!
+</li>
+<li> Secret project A and B continues! B in particular takes the brunt of August priority
+</li>
+<li> Man, I want to get fit. Me and my bestie are coming in hot this September NGL. I'm going to eat journal junk food but hey.. it's okay ;) 
+</li>
+<li> Casually CSS to undergo a new site development. I'd keep the feel of the good ol' <a href="https://andreaabellera.github.io/Casually-CSS/">gallery</a>, but build on a dynamic site. With full props documentation and interactive UI that will allow visitors to modify artwork properties and animations with number sliders and color pickers. And *winks* let me spew out the HTML, CSS, and component tag for that, bam! This won't be the month's priority so this stays a backlog item and will be finished later. But I'd be getting Casually CSS an official domain and roadshow when it happens and I am so PUMPED
+</li>
+<li> CasuallyDev Tiktok will stay in limbo. I tell ya I want a quiet life (for now). I'd like this to get the dedication it deserves when my summer projects are out the window
+</li>
+<br><br>
+</ul>

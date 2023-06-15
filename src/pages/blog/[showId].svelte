@@ -14,7 +14,6 @@
     export let title = "Untitled Blog Post"
     export let date = "No date provided"
     export let blurb = "Loading blurb..."
-    let link
 
     // Load blog data
     let blogs = blogData.blogs
@@ -22,14 +21,13 @@
         if (blogData.id == id){
             title = blogData.title
             date = blogData.date
-            link = blogData.blurb
             tags = blogData.tags
         }
     }
 
-    // Load blurb from IPFS
+    // Load blurb
     setTimeout(async() => {
-        let response = await fetch(`https://dweb.link/ipfs/${link}`)
+        let response = await fetch(`/blogs/${id}.txt`)
         blurb = await response.text()
     }, 1000)
 

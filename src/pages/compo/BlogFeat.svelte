@@ -41,11 +41,11 @@
             <a href="../blog/{blog.id}">
                 <div in:fly="{{ x: 500, duration: 600 }}" role="listitem" aria-label="Read blog post for {blog.title}">
                     <BlogCover
+                        id = {blog.id}
                         image = {blog.image}
                         tags = {blog.tags}
                         title = {blog.title}
                         date = {blog.date}
-                        link = {blog.blurb}
                     />
                 </div>
             </a>

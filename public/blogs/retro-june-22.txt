@@ -1,0 +1,73 @@
+Happy July, kids! I'd be out Canada Day camping with churchmates. We are bringing tons of food and the dog too.
+So Andrea, you are onto new projects but not documenting them on qtrlex?
+Yes for now. Two are development projects in collaboration with a small team, one is especially meant to be a surprise.
+There's also a chance I will start a group on campus for which I have started praying and drafting for. That would also be a surprise!
+qtrlex may undergo a rebrand to Casuallydev. Goes well in terms of memorability with my Casually projects. Also that's so me, a casual dev.
+<br><br>
+<span class="cousine" style="background-color:#3e3e3e; color:#eeeee6;">Andrea @ casuallydev</span>
+<br>
+Man, that rings so good!
+
+<br><br><br>
+
+<span class='lancelot x-large'> Project debrief </span>
+<br><br>
+
+I paused working on the qtrlex site and shifted focus to Casually CSS this June. The qtrlex MVP 2 would a more appropriate focus for July, along with the secret projects.
+Casually CSS is on fire! (in a good way) It was exciting to see props passed to artworks, with the ability to dynamically update on prop state change!
+Reflecting props is demonstrated in my <a href="https://casuallyroadshow.on.fleek.co/">Casually Roadshow reel</a>. 
+This reel is for desktop-viewing only. Even if you are a butt person, please, view the link on desktop only.
+For instance, artworks will cycle its color through rainbow. This color change is not coded in the artwork - the changing rgb color is passed as a prop.
+<br><br>
+
+Needless, I'm happy with how far the library went in three weeks. The bottlenecks to fully releasing the library are the octopus (nobody mention the octopus..) and a bug that sets the same uuid to components generated simultaneously.
+I learned from a friend that a local storage exists in the browser and I can use it to store any Javascript data. I'll do a research on this peradventure it solves the issue of component uniqueness!
+<br><br>
+
+This Retrospective model is based on <a href="https://www.funretrospectives.com/the-3-ls-liked-learned-lacked/">3Ls: Liked, Learned, Lacked from funretrospectives.com</a>. Check out the other cool retro formats this site has!
+<br><br>
+
+<span class='laBelleAurore large'> Liked </span>
+<br>
+
+<ul>
+<li>The Casually CSS npm library is working, ready! The Preparation phase is done. Just a few bugs to brush off and it's ready for an official release.
+</li>
+<li>I have a Teaser video for Casually CSS! Just need advice or retouches from musical genii to improve my monke jingle 
+</li>
+<li>I reached my summer goal of <b>memorizing 2100 verses</b>. In fact, the Lord blessed me with double. I'm now at 2200+ verses! I moved my summer stretch goal to 2500 verses. This can take preeminence over my dev projects but we'd see where we get! 
+</li>
+<li>I've been meeting people weekly, it's been very uplifting.
+</li>
+<li>Everytime I buy a new drink, I take a picture of it. Since starting last May, I'm now at 21 pictures. Evidence of my expenditures right there. The Starbucks close to home had $3/grande promo for 2 weeks so I took advantage of that. I reached my goal of <b>15 drinks to review!</b> Just need an interface for it.
+</li>
+<br><br>
+</ul>
+
+<span class='laBelleAurore large'> Lacked </span>
+<br>
+
+<ul>
+<li>Get journalling ya lazy bum! I have not finished my first algorithm study. Or started any study after my first one for that matter. Note to self, focus on actually getting myself together and doing these journal studies as it will be super beneficial to know them. Note to self, ease off the commits a bit and study more.
+</li>
+<li>I generally see little value and feel demotivated to practice for future technical interviews. I had this as a life goal but then realized that this falls to the bottom of my summer priorities. I am looking to return to school this Fall and Winter. I want to spend time developing, not drilling. This sits out.
+</li>
+<li>I want to tackle the reliability issue of content (especially images) in my site. While I have fallback styles in case content won't appear, what I really want is for content to <i>appear consistently and quickly</i>. Blurbs are retrieved after a mandatory wait, images are independently linked - the linking is very unreliable. I'd ideally still want to work with IPFS and decentralized solutions, but if nah, CDN or buckets it is.
+</li>
+<br><br>
+</ul>
+
+<span class='laBelleAurore large'> Learned </span>
+<br>
+
+<ul>
+<li>I downloaded Tiktok, started doing a little market research for potential future club promotions or reels of my own. I followed the few student societies that I know were there. The discover "For You" section has been failing to tailor to my interests (I want tips, crafts, insider things, and cute animals please - not girls playing with their racks lol). It's slowly tailoring though. The Following section, I found to be okay. It cycles through my different Following accounts and presents reels not necessarily chronologically-based. 
+The platform has the advantage of being new, not a lot of student societies made accounts but which few ones do get a lot of attention. 
+For instance, @umstudent has a lot of reels. Unlike Insta which goes from latest to oldest, Tiktok can present reels in a random order. It capitalizes on exposition, presentation. Insta keeps superiority at dispensing information on events but who knows how things may change.  
+</li>
+<li>I have not spotted a CSS Artist guild yet. Neither any good feature trains. In terms of publicity and promotions, I'd look for my own avenues. Great modern CSS artworks are in Codepen, I saw a Youtube video of a <a href="https://www.youtube.com/watch?v=2B5rbsOoIUE&list=WL&index=21&t=513s">frontend dev reacting to mind-blowing pure CSS works on Codepen</a>. Unbelievable CSS art still exist around, and so do their artists. These creators are madlads and madladies! I even saw pure CSS games so the proof-of-concept that you can make a game with pure CSS is already tried and true. Needless, I still aim to create my personal purist game (it's in a secret repo for now).
+</li>
+<li>Reflecting more, my friend is right for saying I am a sh*tty leader. I escalated confrontations to conflicts from acting on my pride. There are clash in ideals, disputes in activation. We fail to accept how one's forte is another's Achilles heel. We marvel at the strong, we detest the weak. Unknowing how tables can be turned just as easily - the weak become strong and the strong become weak. We nurture our deep-seated insecurities, hold onto it so strongly. We paint our closest lieges liars as we ourselves refuse to refute it. Even if I have healed, I still feel spikes of sad and vindictive every now and then. But I am thankful. From my experiences, I can see more beauty in the intricacy of humanity. Sometimes, I would just pour out my emotions talking to the dog, it's so funny. May the Lord forgive my infirmities. I have sought solace in His Word as it helps me cast out those ill feelings.
+</li>
+<br><br>
+</ul>

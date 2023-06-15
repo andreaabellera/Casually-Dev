@@ -1,0 +1,54 @@
+<span class="small taviraj"><b>Under construction</b></span>
+<br><br>
+
+<b>Depth-first Search (DFS)</b> and <b>Breadth-first Search (BFS)</b> are the two foundational algorithms to traverse a graph. 
+This journal entry aims to refresh this concept in a high-level and explore applications of the DFS and BFS in programmatic problem solving!
+<br><br>
+
+Imagine your friend is rich and has a mansion. They hold a party giving everyone free $50 Skip gift cards. You don't want to miss the chance to attend.
+You arrived there with a car but there's a problem. Because there are so many attendees, there is no spot left in the main parking. 
+You would need to find a parking space among the streets close by. 
+<br><br>
+
+<img src='https://ipfs.fleek.co/ipfs/bafybeiafnggz4qdr3zr5d27s32wn53zr5g2uh5fm7bog7ansnnsam2m77u' alt='The neighborhood street layout' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+You concur at least one of the streets in the neighborhood has a spot you can park at. How would you search for a parking spot?
+You can do it randomly, drive here and there back and forth but that's not effective. None of the cars are leaving so why revisit a streets you already searched?
+You'd like to do it systematically, so you made a graph of adjacent streets that are connected. 
+<br><br>
+
+<img src='https://ipfs.fleek.co/ipfs/bafybeibh2rpfkkifrwkt2mdwxwft7hjedypv4weyee57jdxxwsgiakc3ye' alt='Street graph where each street is a node' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+<span class="x-large lancelot"> Depth-first Search </span>
+<br><br>
+
+You take a sequence of streets and follow that route.
+<br><br>
+
+<img src='https://ipfs.fleek.co/ipfs/bafybeibkpu2kborjjuq4slp6242ujetuy54lw4exwbd3so5nqqvzxbt2lu' alt='Depth-first search animation' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+If you reach a dead end, you drive back (also known "backtracking") to the last street that has a different path connected that you have not explored yet.
+<br><br>
+
+<span class="x-large lancelot"> Breadth-first Search </span>
+<br><br>
+
+Because you are smart, you realize you can deploy RoboScouts to search up the area. RoboScouts are tiny robots with cameras that can scout a street for parking and locates new streets connected to it. It summons other Roboscouts to go search up the new street. 
+You can only control one RoboScout at a time with your phone.
+<br><br>
+
+<img src='https://ipfs.fleek.co/ipfs/bafybeih56zyohwcaj5iu4ka6vlytt2muimosvdxo4znyf5tj6oz5ddq2je' alt='Breadth-first search animation' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+<span class="x-large lancelot"> Differences </span>
+<br><br>
+
+~~ To be figma'd ~~
+DFS is implemented as a stack, while BFS uses a queue.
+<br><br>
+
+<span class="x-large lancelot"> Applications </span>
+<br><br>

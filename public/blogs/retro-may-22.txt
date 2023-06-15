@@ -1,0 +1,74 @@
+In projects, 'retrospectives' are a review of a sprint to reflect on achievements, challenges, and next steps. 
+In my case, I will write retro of each month under qtrlex to reflect on goals, projects, and life. 
+This first retro is going to be for the month of May 2022.
+<br><br><br>
+
+<span class='lancelot x-large'> Project debrief </span>
+<br><br>
+
+I dreamed of making a portfolio years ago, but took minimal action because I am busy and overthinking how to make it bussing. 
+Eventually, I got a renewed inspiration to get back to personal projects. I worked on art and enhancements for Casually CSS, and eventually shifted my epic to qtrlex.
+As of May 23, the site was launched. As of yesterday, the proof-of-concepts I have envisioned for qtrlex were completed as part of MVP one.
+<br><br>
+Now, I can reshift my focus to my summer goals and making content! I find it difficult to detach myself from this project after being transfixed for so long.
+Part of me just wants to continue on this site and jump to MVP 2 features like the Revues page and drink leaderboard. Blame my excitement on posting drink reviews!
+Since I set my own deadline and requirements, this can take priority maybe :)
+<br><br>
+
+<span class='laBelleAurore large'> Achievements </span>
+<br>
+
+<ul>
+<li>The qtrlex site is up and wild and runnin', my dream of making a site from scratch with scratch components is finally here!
+</li>
+<li>I have a site with modern webapp properties while keeping a highly personalised, cosy look and feel
+</li>
+<li>Developing this site availed me the chance to intensively use Svelte. Also, gotta love a stack that hot reloads, builds and serves in a few heartbeats.
+</li>
+<li>I have a single-page application, openable through any route with a REST API. This means super quick navigation anywhere and everywhere with zero refreshes
+</li>
+<li>I have a backend! A backend that is literally one service node that takes content from my peers because I don't want to keep and maintain my own database
+<br>
+<i>*fanfare noises*</i>
+<br>
+Thank you, thank you
+</li><br><br>
+</ul>
+
+<span class='lancelot x-large'> May 2022 is a bittersweet denouement </span>
+<br><br>
+
+Something happened last Winter 2022, it broke me. I cried as Winter instruction remained online. The massive snowfall had been madness. 
+But above all, I am hurting emotionally. Friends of mine disappointed, disrespected, threw dirt, betrayed me. I inflicted hurt as well. 
+There are friends I made during the pandemic, countless. Some are accomplices, a few grew very close. 
+These close ones have shared my pandemic angst in one dimension or another. Some that encountered me in my lowest valued my dignity, making strong bonds and respect to last. Others railed on it, adding insult to injury.
+Not everything shall be smooth-sailing in a world full of differences. We wanted different logistics, we held different values. Different affiliations, backgrounds. Different performance indicators, priorities, triggers. When one's goodwill is another's evil, one thing is sure. 
+We humans can only hurt each other so far, let God be true and let God be judge. Let Him extricate the worst parts of ourselves from each other, let Him bring recompense and healing. <a href="https://www.kingjamesbibleonline.org/Proverbs-Chapter-16/">Proverbs 16</a> is a beautiful book which I believe people who have been leaders will resonate with strongly.
+<br><br>
+
+Above all, may the human learn.
+<br><br>
+
+I did not expect the coming of May to feel so tangible. 
+For the first time in a long period, I had no new obligations.
+I used to be in contact with people over Discord daily, have meetings everyday. 
+Come May, it trickled down until it's completely gone. 
+<br><br>
+
+I started a new full-time job, for which I am very thankful to God and happy for. 
+By day, I work at TD in a company of very supportive Agile practice leads on amazing projects. 
+After work, I go on 1-3 hour walks around the city. May had been a chilly and rainy month overall but what few days were sunny, I went on long walks to reflect. 
+By night, I envision and develop my site.
+<br><br>
+
+The weekend before qtrlex's launch, I went out with a friend of mine. 
+We went for coffee and Chinese food, I like me a gal I can spoil with coffee. 
+She empathized very deeply, gave her reasonable take on a situation, and gave my qtrlex project great support. 
+We even took the same drink from Starbucks and reviewed it together! If you are reading this, I am thankful you were there for me.
+<br><br>
+
+I run for UofM's Competitive Programming Society. 
+I decided to keep another position as well and I'm glad spite did not let me throw it away.
+This has kept friendships, more to look forward to, and trust that things will be better down the road for Fall term. 
+I even met my co-executive neighbor last Friday and are bound to meet again in the upcoming!
+I'll just need a little more time to revive.

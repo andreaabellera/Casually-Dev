@@ -128,11 +128,11 @@
             <a href={$url("./:showId", {showId: blog.id})} role="listitem" aria-label="Read blog post for {blog.title}">
                 <div in:fly="{{ x: 500, duration: 600 }}">
                     <BlogCover
+                        id = {blog.id}
                         image = {blog.image}
                         tags = {blog.tags}
                         title = {blog.title}
                         date = {blog.date}
-                        link = {blog.blurb}
                     />
                 </div>
             </a>
@@ -142,7 +142,6 @@
                 loading={true}
                 title = {"Loading Content..."}
                 date = {""}
-                link = {blog.blurb}
             />
         </div>
         {/if}

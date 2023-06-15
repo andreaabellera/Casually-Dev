@@ -1,0 +1,94 @@
+I'm back!
+<br><br>
+It's nice to dust this dev diary. Fall and Winter passed. It's Spring again, and I'm almost graduating. I could never, ever, write all my retrospectives from the past nine months as it had been immensely eventful. All soppiness aside and senior-year stories for another day, I returned to the Casually-Dev codebase with fresh, new eyes.
+
+<br><br>
+<span class='lancelot x-large'> And my Brain got Hemorrhage </span>
+<br><br>
+
+Returning to an old project is as cringe as examining one's gushy teenage lost-love poems and dog-filtered selfies. Sincerely, your younger self living in the moment.
+We have the Andrea the older, the critic who we'll abbreviate as C. We have Andrea the younger, the developer who we'll call D. Here, C the critic is roasting D the dev for her awful code.
+
+<pre style="white-space:pre-wrap;word-wrap:break-word;width:inherit">
+<b>C:</b> You know, instead of re-running code in all components like isMobile, you can run it once and store the data. Svelte stores, localStorage, and globals exist. Hello?
+  <b>D:</b> Forgive me, I was a noob
+
+<b>C:</b> So, you weren't aware you can use a globalized object? Why were you attempting to initiate an IPFS node in every component that needs it?
+  <b>D:</b> Sorry! I don't know how to use globalThis back then. I took what Github Copilot recommended me but do not truly understand how the code's supposed to work
+  <b>D:</b> P.S. I stopped using Github Copilot. I don't learn from what I write
+
+<b>C:</b> OKAY, SO. Your content is reliant on ifps.cat() to fetch plaintext. Plaintext! Why go through the trouble of setting up an IPFS node when you can use the Fetch API and get your results about instantly?
+  <b>D:</b> *speechless*
+
+<b>C:</b> You lazy bum, you only have two journals and one's unfinished! Are you giving up your journal stream?
+  <b>D:</b> As context last year, I blindly followed a suggestion from an MBTI post that people my personality type (ESFJ or emotional people-people) must sit down and study out complex systems to balance our weak spots. I identified that as a programmer that I am weak at low-level coding and algorithms. I took this as a blaring weakness I must fix because, what programmer is weak with algorithms? Would I even call myself a programmer? Can I lead a programming team if I am bad? I must be better!
+  <b>D:</b> I learned later that I best understand systems, algorithms, structures, and processes through tactile experience. I am not good in understanding by the book
+  <b>D:</b> One thing I learned about myself is that I have little patience studying and writing tutorials. This is why my Journals content stream failed. I can't sit myself to write a Medium article on how to step-by-step code an xyz component, even if it's in my capacity
+  <b>D:</b> On the flip side, I am more motivated when actively producing, executing, or interpersonally connecting and encouraging. This is what I'd like to continue doing!
+
+<b>C:</b> Your code is a mess. You wouldn't let your visitors see a dirty house. Why would you let your colleagues see your dirty code?
+  <b>D:</b> That's true, it can benefit from some cleanup
+
+<b>C:</b> Would you continue using IPFS? Or as if Software Eng 2 hasn't taught you enough, get a proper database or headless CMS
+  <b>D:</b> IPFS FTW! Who doesn't want to freeload their files for no charge?
+  <b>D:</b> I'm a heart-on-my-sleeve typeof gal, the idea of immortalizing pieces of my content on a distributed content storage system is more attractive than unsettling
+  <b>D:</b> But you're right, I'm considering the possibility of letting them die with me
+
+<b>C:</b> Please rebuild that laughingstock of your site and focus on showcasing projects instead. This is why you don't get hired by MAANG
+  <b>D:</b> I'd keep my humanity. I'll nerd however I want. Blogs FTW
+  <b>D:</b> Give me time, one day. I'd love to take my time to build up the passion projects now, and be proud of them later!
+  <b>D:</b> I need no MAANG clout
+</pre>
+
+<br>
+Now that the roster of frameworks and libraries I can use increased, <b>rebuilding</b> or migrating this site is the most tempting answer. Start fresh, code will be cleaner! But.. is it worth all the work?
+I thought of rewriting this site in C# which means converting all Javascript logic and Svelte components to another framework. But.. why would you do that for a site that already works fast and smooth and solid?
+
+<br><br>
+I'd say no! Not for now. Slap Critic in the face, the site is great! And I'm happy that my young self happened to spin a few brilliant design decisions that made my return easy.
+<ul>
+  <li> YAML defining content meta is great. It's very easy to update, and extend with new attributes </i>
+  <li> Robust UI components! They handle content fallbacks, responsivity, and component scaling well </li>
+  <li> Mobile site is gorgeous! </li>
+</ul>
+<br><br>
+
+Last year, I hit a wall on how to make content load fast from IPFS, which in nature, is supposed to be fast. After all, this serves libgen <s>that downloads your textbook PDF in a minute</s>. I wrote a patch on IPFS access from forced recreation to polling a global node. I fixed my component dynamic states. Now, content loads sufficiently fast! But even better, I got rid of IPFS setup entirely and went gung-ho fetch!
+.. All my content is loaded in 0.1 seconds. From 120+ seconds, to 0.1 seconds. All because I was too dense to think outside the box.
+
+<br><br>
+<i><span class='laBelleAurore'>*bashfully smirks*</span></i>
+<br><br>
+
+At this point, I decided this site is too ok to destroy. Time to reboot this project under a new epic! 
+For Summer 2023, follow the adventures of the same girl, now a lady, as she settles into a new province, make her own food, and find a place to live! 
+About time I lay a welcome mat? Discreetly curtsy? Wipe my stalagmites with a napkin? 
+<br><br>
+
+Yes. This Girl cave is now a Lady cave. Now take your shoes off, slip on a pair of fluffy slippers, and make yourself home!
+
+<br><br>
+<span class='lancelot x-large'> New Feature: Epics and Archives </span>
+<br><br>
+
+Blog posts will now belong to epics - a specified timeline of blogs. I'm going to use the term <b>epic</b> as an atrocious Agile fan but also because the pilgrim's road to glory is EPIC!
+Thus, our homepage ChezMoi and Blog page will only include subsets of blogs that belong to our epic of Summer 2023. All my blogs from last year are archived, accessible under the new <a href="/archive">/archive</a> page. I'll integrate a site feature soon that allows navigation to different epics - akin to time travel!
+
+<br><br>
+<span class='lancelot x-large'> Renovations: Girl Cave </span>
+<br><br>
+
+My initial concept of a Girl Cave is akin to a teenager's bedroom wall of posters. It will gradually be renovated into a presentable display, worthy of becoming the living area's centerpiece. So the next time you enter ChezMoi, you no longer have to stare at a wall of everything, everywhere all at once, with no context. I will take each project, each video, each featured creation, and make them shine!
+
+<br><br>
+<span class='lancelot x-large'> Sunsetting: Journals </span>
+<br><br>
+
+I will no longer write educational journals as my last year's endeavour failed gloriously. If I feel inclined to share small studies or snippets of tutorials, they shall be in the form of a blog. I will be replacing my ChezMoi journal showcase with pinned blog posts.
+
+<br><br>
+<span class='lancelot x-large'> Notice: Résumé and LaRuelle temporary closing </span>
+<br><br>
+
+LaRuelle is my personal achievement roadmap, and I'm taking it down a temporary measure. I rushed through LaRuelle's implementation and as powerful as my Timeline component can be on desktop, it stays as the clunkiest part of my site's UI on mobile. On top of all, my entries need to be updated.
+So, LaRuelle is <i><b>fermée</b></i> - closed for now. <s>It's still a valid route, just not navigable with UI</s>. In one way or another, it shall come back bigger, better, as part of an EPIC goal!

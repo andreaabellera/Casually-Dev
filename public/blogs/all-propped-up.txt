@@ -1,0 +1,60 @@
+Sometimes visitors would come to our house and dine. I would be coding across the living room where my work table is, large swaths of html and browser logs 80% of the time. Siblings say it's my hobby. Internally grinning, I wonder: who in the world has coding for a hobby? I have literal artworks also up in literal frames which parents point to me as harbinger of.
+Pfft classic nerd. My work and projects require it, don't blame meeee.
+<br><br>
+
+I am to be blamed, my dedication to Casually CSS was a fault. 
+Sometimes, I would play the orchestrator reel. 
+My brother thinks my Hippo is cute. He called my Bison ugly. But we call each other ugly all the time. 
+Ugly is a compliment. A term of endearment of the highest order. My parents have since then been desensitized.
+Seriously though, if you find my artworks ugly tell me :P (nicely, with feedback/suggestions please) so I can make them better.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeigxceyvmk5rbkatbctihl44f2jq44og5qbffxrqsp2lzat3ffenzq' alt='Importing a pink Hippo in Casually CSS by passing props to Svelte tags' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+Meanwhile, I designed my artworks to take in props.
+Props, in Casually CSS, is a string, number or object that you pass to hack an artwork. Just like parameters. 
+If you are familiar with a some art pieces, such as iconic Hippo, passing a bodyColor and eyeColor will change these attributes in the artwork.
+<br><br>
+
+E.g. <br>
+<span class="cousine">
+Hippo bodyColor='pink' eyeColor='green'  
+</span>
+<br>
+will give you a pink hippo with green eyes.
+<br><br>
+
+Components, in Casually CSS, are artworks themselves. Place them as many times as you want and it will add the artwork code at the locations you dictate it to be.
+For my site, I want to launch Hippos across the screen. But one is not enough. I want 5 hippos.
+<br><br>
+
+<span class="cousine">
+Hippo bodyColor='pink' eyeColor='green' <br>
+Hippo bodyColor='pink' eyeColor='green' <br>
+Hippo bodyColor='pink' eyeColor='green' <br>
+Hippo bodyColor='pink' eyeColor='green' <br>
+Hippo bodyColor='pink' eyeColor='green' <br>
+</span><br>
+
+or programatically,
+<br><br>
+
+<span class="cousine">
+{#each Array(5)}
+    Hippo bodyColor='pink' eyeColor='green'
+{/each}
+</span>
+<br><br>
+
+In summary, I've been making a circus.
+<br><br>
+
+I have started the teaser video for Casually CSS! It's all under the repo 'svelte-frame-orchestrator.'
+What I lack in video editing skills, I'd make up with coding. This helper project aims to 'play' a sequence of component frames in an interval, akin to a slideshow. 
+Instead of document slides like PowerPoint, or video frames like .mp4 clips, you can play no-reload webpages.
+<br><br>
+
+My next quest is to make a jingle. I've never made beats or music before but I'm eager to learn.
+I'm going to refine my frames some more when the jingle is ready, I'd definitely make a post when the teaser's out!
+<br><br>

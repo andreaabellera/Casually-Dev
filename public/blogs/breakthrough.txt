@@ -1,0 +1,49 @@
+Tell me, tell me! What's up?
+<br><br>
+
+I no longer need to rework my individual CSS artworks to make them responsive. 
+All I needed is to add a factor of <b>scale</b> to my art relative to its container. This makes an artwork grow or shrink to fit, all while preserving its original appearance as is! This saves me from so much present and future work on the library.
+<br><br>
+
+Here's a behind-the-scene footage of your friendly Gallery Curator testing digital artifacts for quality.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeidrvdpsjf6yb44kwmmyagky2x5t7ltizyckrnsaiflhl3ljamf4ge' alt='Testing in Casually Mad Lab (create.test.html)' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+<span class='laBelleAurore large'> Meanwhile, life </span>
+<br><br>
+
+Weather had arrived to ideal state for walks. I fell in love with taking photos of nature. 
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeichaakhqg3cp2jaqsz7wxtgfku4saux53u3bwlpimufu4h4q2cyue' alt='Duck Lake' style='height: 100%; width: 100%;' class='blogImg' />
+<br>
+
+<img src='https://dweb.link/ipfs/bafybeiabeqpfhvok6qsj4bizyi2d6k5eo662fnmcfajuhrbikdpvbmfcfe' alt='Tree by river' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+It's also the prime season the blossoms bloom before they go.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeiepdaa5z57zrukhktfsji5t36qu7ixjgx7iyitnqwrywgirczzrfq' alt='White blossom tree top' style='height: 100%; width: 100%;' class='blogImg' />
+<br>
+
+<img src='https://dweb.link/ipfs/bafybeigzypeygqnptorijh4zb5vut5rsr5gyxijle7icz7tyfeaacjl4gm' alt='Pink blossom tree top at dusk' style='height: 100%; width: 100%;' class='blogImg' />
+<br>
+
+<img src='https://dweb.link/ipfs/bafybeigcrlavaf3uu262taygcl67rrqcin7ex753uhuuyblbzuimrzmvci' alt='Holding white blossoms' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+Aren't they beautiful? <br>
+I made a tutorial last week on creating a Blossom with CSS. You can find it <span class="taviraj"><b>Casually Art Tutorials</b></span> under my Journals.
+<br><br>
+
+My sleep has become stable, ample, and my life's a routine. Last retrospective, I yearned for healing. This healing finally came. 
+If there can be an instrument for life right now, I will cue strings. Rhythmic. Working one day at a time towards something bigger. I managed to set aside qtrlex to focus on other summer goals.
+One is memorizing verses by heart. I recently finished devotions in Proverbs and Ecclesiastes and garnered a set of strongly resonating verses. The goal of 2100 is within hand's reach.
+<br><br>
+
+A friend of mine contacted me on using Casually CSS for a web development workshop, with a walkthrough of the gallery to show students cool things that can be made with HTML and CSS.
+I was immediately excited! I think I got a motivation boost to prepare Casually CSS some more.
+
