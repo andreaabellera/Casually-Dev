@@ -1,0 +1,18 @@
+Hey, sleuth! What'cha doing snooping around my Archives, codebase, or commit history? 
+Congratulations, you just stumbled by one of my site's experimental and upcoming features!
+<br><br>
+
+<span class="large"><b><i> Data Visualizations </i></b></span>
+<br><br>
+
+Below is a graph I embedded from Tableau public. I'm going to showcase fire graphs and dashboards on my site soon. Enjoy!
+<br><br>
+
+<div style='height: 100%; width: 100%;' class="blogViz">
+    <tableau-viz id="tableauViz" src="https://public.tableau.com/views/June2023ExpensesSample/DailyExpenses?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        toolbar="bottom" hide-tabs>
+    </tableau-viz>
+</div>
+
+<br>
+<span class="small">Next challenge is make this responsive 😀</i></span>

@@ -1,4 +1,11 @@
 blogs:
+  - id: tableau-test
+    title: A Stray Graph
+    epic: uncharted
+    date: June 16, 2023
+    tags:
+      - Develop ⚙️
+
   - id: crusader-kings-chronicles
     title: Crusader Kings Chronicles
     epic: summer-2023
