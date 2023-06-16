@@ -125,7 +125,7 @@
     <div id="blog-array" role="list" aria-label="Blogs">
     {#each blogs as blog, i}
         {#if visibles[i] && blog}
-            <a href={$url("./:showId", {showId: blog.id})} role="listitem" aria-label="Read blog post for {blog.title}">
+            <a href={$url("./:showId", {showId: blog.id})} aria-label="Read blog post for {blog.title}">
                 <div in:fly="{{ x: 500, duration: 600 }}">
                     <BlogCover
                         id = {blog.id}

@@ -10,11 +10,13 @@
     export let loading = false
     let blurb = "Loading blurb..."
 
-    // Load blurb from IPFS
+    // Load blurb
     setTimeout(async() => {
-        let response = await fetch(`/blogs/${id}.txt`)
-        let text = await response.text()
-        blurb = text.substring(0, 100) + "..."
+        if(id){
+            let response = await fetch(`/blogs/${id}.txt`)
+            let text = await response.text()
+            blurb = text.substring(0, 100) + "..."
+        }
     }, 100)
 
     function randTime() {
