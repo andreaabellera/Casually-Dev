@@ -1,0 +1,186 @@
+I identified my new adventure 🔭 and it's not just Frontend Development.
+<br><br><br>
+
+Before I go, I'd visit a few important terms I use in my blog. It's familiar if your field is in tech or project management. But I'd like to debrief it for readers of all walks of life.
+<br><br>
+
+<b>What is an epic?</b>
+<br><br>
+
+<a href="https://www.atlassian.com/agile/project-management/epics-stories-themes">Read Atlassian's definitions in this article</a> as they have worded in-depth if you want a technical description.
+<br><br>
+
+An "epic" is a set of goals. This blog is written to describe each of my goals this Summer 2023. An epic is a headline to describe a project, that goes like "Launch my startup" or "Create an app". But, Andrea doesn't know what good headline is suitable to collectively call her projects to start an art business, publish a UI library, memorize verses, and produce content and a mobile app on data analytics. So she just calls them "My Summer 2023 Goals". Or shorten it, "Summer 2023"!
+<br><br>
+
+The "Summer 2023" blogging timeline will run from the start of May to the end of August 2023. Before September, I'll make a decision to either take a break from blogging, or to start a fresh epic called "Fall-Winter 2023" from September to December 2023 with a new set of goals. Every beginning of a new month (or quarter of the epic), I will write a retrospective blog.
+<br><br>
+
+<b>What is a retrospective blog?</b>
+<br><br>
+
+A retrospective* blog or "retro" is a journal looking back on the progress I made last month, and describing what I will do for the month I write my retro blog in. It can be expressive and descriptive, or it can be concise and bulleted. It can include lessons on where I went well, where I went wrong, and how to do better. It can celebrate achievements, it can visit regrets. It can outline next steps and actions. It's a highly personal and informal report where "showing how it went" and actionable insights are secondary. Introspection comes first.
+<br><br>
+
+<span class="small"><i>* To my fellow project bugs, yes, my sprints are one month long</i></span>
+<br><br>
+
+<h2 class='lancelot x-large'> Primary Goals </h2>
+<br>
+
+In project management, primary goals are coined as "stories". They are prioritized goals which we're sure to visit each month.
+<br><br>
+
+<h3 class='taviraj large'> Become a Sous Chef </h3>
+<br>
+
+This one's a personal development goal inspired by an achievement in Stardew Valley called <b>"Sous Chef" - Cook 25 different recipes</b>. I'm taking this to real life to upskill my cooking. However, this is more than what meets the eyes. There are limits on budget, storage, time to spend on the kitchen, how much my tummy can take - but most of all - I tried to be a sous chef, but instead I became a sus chef! 
+<br><br>
+
+Revising, "Sous Chef" - Cook 25 different recipes <b>properly</b>. The important part is that the main components of my meal is fresh, not pre-packed or pre-mixed, and that the final result is balanced and delicious. Except baked goodies and desserts, they can get away with mostly butter.. 
+<br><br>
+
+My objective for Sous chef is to be a better cook and eat healthy while living alone, more details will be in a blog that will follow 😋 Here is <i>Nilagang baka</i> - a traditional Filipino beef stew and one of my favorite entries so far.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeig6sgnia2mymxdm7mdnvpqwazpwrqyzkqy63evsxyyyeap5vd5gaa' alt='Nilagang baka on a pot fresh from simmering' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+<h3 class='taviraj large'> Start an Art Business </h3>
+<br>
+
+One windy May day, I sat on an empty bleacher in a park. I was mulling in melancholy and pain when God impressed in me to start a painting business in Toronto. I was elated, dumbfounded, but I walked home that day not forgetting.
+<br><br>
+
+An art business is teenage Andrea's dream that's shelved. I've long decided art is a hobby for me, not a profession. I'll make art for leisure without the money. For years, I stopped producing art to focus on university. And then, it came back.
+<br><br>
+
+But my adult perspective towards art now is different from my teenage one. I do not need an online following. Neither fame nor followers. Not a wide selection of services, not a loud exhibition.
+<br><br>
+
+Just a small start. 
+<br><br>
+
+I do need a little data, a quoting system, choice targets, and a gradual trickling in of materials. A slow progression with the people I care about most in mind.
+<br><br>
+
+For me, painting is not a side hustle to make more money. Money is a bonus. This is to fulfill a dream to bring about joy, beauty, expression. To tap into the core of what makes us human with heartfelt, physically tangible, and deliberate strokes. Here's my most recent painting - "Compassionate", 2023.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeigoj7rvu4m2p2b5hguwwjeq3ztub24rrq2lvxc2ll75dwbdp6jgom' alt='My painting: Compassionately, and gently offering a hand to a butterfly' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+<h3 class='taviraj large'> Take my UI library to a new direction </h3>
+<br>
+
+Instead of maintaining <span style="color:#8E2929;"><b>6 libraries for different frameworks</b></span>, why not make <b>one library of native web components</b>?
+<br><br>
+
+Then, it struck me. Native web components are cross-language, cross-platform, cross-framework, and all architectural complexities interoperable. One library means one lifecycle, one build, one test flow to maintain. Only one issues section to track. It does not have the juvenile tech skill machismo clout. But it does make life exponentially easier.
+<br><br>
+
+I got taught that "reusable components" are a feature of dynamic web. It never was. It only was marketed to us students to be this way. They say frameworks are the future. They say HTML/CSS/JS are beginner stuff and you're not market worthy until you learn Tailwind and React. But, no! We've been rabbits.
+<br><br>
+
+I conceded. 
+<br><br>
+
+It turns out we can use complex, proppable, customizable, reusable components on a standalone HTML file. If it works on a standalone HTML file, well, that makes it better!
+<br><br>
+
+The final straw was Tableau. After using its native web component <code>&lt;tableau-viz&gt;</code>, I thought - I'm not afraid to dump what I worked at. <b>I want this ease of integration so bad.</b> Most impressively, the component's custom tag and options rendered on my Svelte blog correctly from a portion of a fetched string. Meanwhile, lots of frameworks fail to do this because they cannot render components as strings, only refs. I am mindblown.
+<br><br>
+
+With all the perks and simultaneously solving my issue of <a href="/blog/ambitious-ui-library">720n hours</a>, I'm archiving my current monorepo for Casually Components and starting a new one. I'd continue use Lit if it's fit.
+<br><br>
+
+I have various Casually Projects and this is my masterlist of goals for them this epic.
+<br>
+
+<ul>
+<li> <b>[Casually-Dev]</b> Reopen LaRuelle - a collaborator-friendly, employer-friendly Portfolio section for my CasuallyDev site with updated information, project links, experiences and skills</li>
+<li> <b>[Casually-Components]</b> Release Casually Components web components library in a battle-tested state with 5 components: Box, Button, Card, Emoji*, Social Button </li>
+<li> <b>[Casually-Docs]</b> Publish Casually Docs using the subdomain <span class="cousine" style="background-color:#3e3e3e; color:#eeeee6;"> components.casually.dev </span> under Blazor </li>
+</ul>
+
+<br>
+<aside class="small">* Emoji is inspired from custom emojis we use in Discord servers - an inline image element that adapts to the size of the font. You can pass an image source or pass an id to use an emoji in my repository! I'm considering collecting well-propagated memes or my own CC assets, as long as they are safe to use.</aside>
+
+<br><br>
+
+<h3 class='taviraj large'> Run the Road to 5000 </h3>
+<br>
+
+When I was 19, I made a decision on a bed in Bible College. Before I turn 25, I want to have memorized 5000 Bible verses by heart. It is not too far away, and I am getting closer. I will no longer disclose the current numbers as the Road to 5000 continues and goes on. But for the sake of the epic, I will quantify a goal. 
+<br><br>
+
+4400 before August ends.
+
+<br><br>
+
+<h3 class='taviraj large'> Fun Data Visualizations </h3>
+<br>
+
+Not getting anyone's information. Only mine 😉
+<br><br>
+
+In my day job, I develop dashboards from data and immensely enjoy it. This will give you a peek on what I do at work, analytics rock. This epic is more life-holistic and my summer project will benefit with some analytics and viz sharing as my goals progress.
+<br><br>
+
+This brings me back to the good days I'm studying Management Information Systems in university. I had a professor who on book, may come across as opinionated. They criticize graph type, form, and aesthetic - Pie and donut charts are bad, dark mode is bad, and treemaps - don't even think about it. On lectures, she shared graphs created by classmates anonymously, unapologetically showing those she thinks are bad graphs and pointing what's wrong (too crowded, bad color, vague or uninsightful) and how to improve. At the same time she shows which graphs are good and why. <b>I'm thankful for her.</b> Most of her principles are based on best design and communication practices suited for the everyday viewer and business eye, and still bring many points with me to this day.
+<br><br>
+
+I will share dashboards, styled like retrospectives! Unlike my blogs which are gushy and nerdy, I intend the vizzes to be concise for family and friends to enjoy.
+
+<br><br>
+
+<h2 class='lancelot x-large'> Stretch Goals </h2>
+<br>
+
+In project management, stretch goals are called "backlogs". They are stories or goals which are lower in priority, usually an enhancement for a primary goal. Or a fun idea, because why not?
+<br><br>
+
+<h3 class='taviraj large'> Personal mobile dashboard </h3>
+<br>
+
+I'll take to mobile development to make a personal use dashboard app for my iOS with Tableau API integration. It's awesome to cater my features to my summer goal stories and have real-time reporting. 
+<br><br>
+
+My wishlist includes
+<br>
+
+<ul>
+<li> Meta expense analysis </li>
+<li> Diet analysis </li>
+<li> Pricing my painting services </li>
+<li> Mobile data usage by function </li>
+<li> Wishlist hitting </li>
+</ul>
+<br><br>
+
+<h3 class='taviraj large'> Learning frontend </h3>
+<br>
+
+A.k.a the dev's daydreams
+<br>
+
+<ul>
+<li> Continue my quest to learn Angular, Django, or ASP.NET MVC </li>
+<li> Create a Jekyll theme with a CasuallyDev blog flavor </li>
+<li> Develop the retro-flavoured <a href="https://github.com/andreaabellera/The-Website-a-10-year-old-Dreamed-Of"> website that a 10-year-old dreamed of</a> </li>
+</ul>
+
+<br><br>
+
+<h3 class='taviraj large'> Making reels </h3>
+<br>
+
+I don't have an audience or target following, just goals to create them for fun! These more knowledge-sharing reels will be posted on Tiktok. More personal reels will be created for private social media
+<br>
+<ul>
+<li> Web accessibility series</li>
+<li> Developer vs UI Designer vs Graphic Artist</li>
+<li> How to develop (some) component shorts </li>
+</ul>
+
+

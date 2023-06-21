@@ -1,4 +1,15 @@
 blogs:
+  - id: summer-23-goals
+    title: My Summer 2023 Goals
+    epic: summer-2023
+    date: June 20, 2023
+    tags:
+      - Develop ⚙️
+      - Programming 👩🏻‍💻
+      - Art 🖼️
+      - Life 💃🏻
+    image: bafybeiashlxrenkpzlb6fh2pizypeptokuebtrmw3w6tpsidtnn5d2ihoe
+
   - id: tableau-test
     title: A Stray Graph
     epic: uncharted
@@ -273,8 +284,8 @@ blogs:
     image: bafybeiheb6a7nwh7inr2k3jrmiobutg7owtp3mqawe6p6tqzlqzi6w6xya
     cover: "<p class='laBelleAurore slightSmall'> Introducing my passion project </p> <p class='taviraj slightLarge'> CASUALLY CSS </p>"
 
-  - id: summer-goals
-    title: My Summer Goals
+  - id: summer-22-goals
+    title: My Summer 2022 Goals
     epic: summer-2022
     date: May 25, 2022
     tags:
