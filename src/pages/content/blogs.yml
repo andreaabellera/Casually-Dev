@@ -1,4 +1,11 @@
 blogs:
+  - id: web-component-test
+    title: Some Stray Buttons
+    epic: uncharted
+    date: June 27, 2023
+    tags:
+      - Develop ⚙️
+
   - id: summer-23-goals
     title: My Summer 2023 Goals
     epic: summer-2023

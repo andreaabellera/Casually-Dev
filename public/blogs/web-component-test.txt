@@ -1,0 +1,36 @@
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+
+Hehehehhee whoooo babey check this out! Deez BUTTONS are embedded in the body of my blog.
+
+<casually-button text="I am a cool Light Button"></casually-button>
+<br><br>
+
+It has an alternate skin for..
+
+<casually-button skin="asphalt" text="THE DARK MODE ENJOYERS"></casually-button>
+<br><br>
+
+And it also comes in an alternate shape!
+<casually-button shape="wedge" text="Napakasakit kumonekta sa socket na masakit"></casually-button>
+<casually-button shape="wedge" skin="asphalt" text="Nakukuryente kita kapag ako'y nakakabit ⚡"></casually-button>
+<br><br>
+
+They are actual buttons. Try it. Click on them! 
+<br><br>
+
+They'll take you to Casually UI's repository where these buttons are being developed 😊
+<br><br>
+
+As fantastic as it is to see them in action, it reminds me that I have a long list of refinements to go before publishing them to the wild.
+<br><br>
+
+If you're one of the lucky ones,
+<br> where the text or graphics is 
+<br> overflowing off the screen
+<br> on your mobile phone,
+<br>
+<br> Bear with me.
+<br><br>
+
+<span class="xx-large">❤️</span>
