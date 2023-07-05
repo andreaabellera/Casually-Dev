@@ -1,4 +1,12 @@
 blogs:
+  - id: new-lifestyle-cooking-focus
+    title: New Lifestyle - Cooking Focus
+    epic: summer-2023
+    date: July 5, 2023
+    tags:
+      - Life 💃🏻
+    image: bafybeifv62amucesst36qjfzewz5l3y7jcfz2tjkne7egnun6ysb7j4twe
+
   - id: web-component-test
     title: Some Stray Buttons
     epic: uncharted
