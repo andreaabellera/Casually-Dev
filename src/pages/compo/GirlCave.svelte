@@ -79,8 +79,14 @@
             </video>
             <br><br>
             
-            <!-- CasuallyDev Shorts -->
-            In the future, I'd like to have a channel which will be mostly <b>CasuallyDev shorts</b>. It will feature small snippets of my development adventures and coding shenanigans!
+            <!-- CasuallyDev Reels -->
+            I have a Tiktok where I share small snippets of my creative adventures and coding shenanigans! I'm not very active there so I may take a while to respond.
+            <br><br>
+
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@casuallydev" data-unique-id="casuallydev" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@casuallydev?refer=creator_embed">@casuallydev</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            <br>
+
+            Featuring a few of my videos! 💐
             <br><br>
 
             <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/vUs_h9kUxkE" title="Making SVG Motion Graphics for Vue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
@@ -117,6 +123,7 @@
                 </p>
             </video>
             <br><br>
+
         </div>
     </div>
 </div>
