@@ -1,0 +1,173 @@
+June was a slow month with personal projects, but a massive surge on personal growth. I cannot begin with words to describe how June was to me - the month I moved from my home and family in Winnipeg to living alone in Toronto. This retrospective is late is due to a loss of words - as I expected it to be and warned you about in my past blog 😛 I tried journalling over and over, and I cannot muster coming up with something that will not sound too sappy. Well, this iteration is still sappy, and it's okay. I stopped many old habits especially huge ones in regards to social media. Started many new ones. Discovered that godliness with contentment is great gain. I feel I was sent back to 2019, where there is no pressure, no men, no interpersonal conflicts, no anxiety, no burnouts, no heartbreaks, no racing, no envy, no top 10 real life betrayals, no disappointments, no despondence. Life is very silent, very beautiful.
+<br><br>
+
+<b>Andrea, are you homesick?</b> Is it not lonely being away from family?
+<br><br>
+
+I miss them for sure. But the fact is that when I moved farther from them is the time I became closer to them. I go on calls with my mom, play with my siblings. Tell them new stories from a new life and a new world. Hear about changes back home that I miss.
+<br><br>
+
+In Winnipeg, I was a 24/7 student. My life = university + uni roles + uni friends + coding projects. I live alongside my parents and siblings almost passively, I have my world, they have theirs. We get together for eating, church, ministry, and have deep talks many times, but how I'd describe my past four years was truly school-occupied. I kept my life to myself. I recall my last date with mom in Five Guys, it was the one time I confided the entirety of my university experience to her. One year to the next, a role to the another, one team to the next, one a business/project partner to another. She said to me, "Andrea, I can see a theme. You're perpetually disappointed and stressed. Perpetually carrying burdens you aren't happy to carry. You're making life harder than it is supposed to be." I account much of these to my own immaturity and my desire for interpersonal validation from people I work with, my desire to be seen as someone great, my desire to be loved. But I have grown by being broken.
+<br><br>
+
+My mom is right - I was making life harder than it's supposed to be.
+<br><br>
+
+And moving away from Winnipeg was the agent. I saw my past in its objective entirety, that I was <b>hard on others, hard on myself</b>. There's a time and place for achievement, excellence, and speedy executions, but I slowly accepted that these things are really just cherries on the top. They are neither the essence of life nor living. A peaceful life is the best life.
+<br><br>
+
+Life is supposed to be chill, life is supposed to be forgiving. And it is more beautiful than what I try to make it to be.
+<br><br>
+
+<h2 class='lancelot x-large'> General Progress Overview </h2>
+<br>
+
+June was my month of settling in a new place. I deliberately allowed myself to take it slowly, develop a new routine, give space to personal growth and new social life to blossom, and not rush my epic's goals. 
+<br><br>
+
+As a result, I've fallen a little behind all my summer stories. But no love lost! Even if I don't reach the desired state or numbers by September. It's better that I take it surely than hit KPIs like it's my day job. All in all, CasuallyDev is a channel for my passions, my little hidey-hole in the web, and a motivator 😊 Better that I keep my love in what I do - than be frustrated and lose it for the illusion that I'm not doing well enough.
+<br><br>
+
+<h2 class='lancelot x-large'> Sous Chef (9/25) </h2>
+<br>
+
+We made some dishes that qualifies for the Sous Chef registry this month! We just got off the ground and we started with a solid 7. Let's celebrate the <i>entrées</i>, shall we?
+<br>
+<ol>
+<li> Basa asparagus tofu miso </li>
+<li> Nilagang baka (Filipino beef broth stew) </li>
+<li> Chicken sopas (Filipino creamy chicken noodle soup) </li> 
+<li> Chicken alfredo </li>
+<li> Tomato mie goreng (Indonesian stir-fry; Not the instant noodle) </li>
+<li> Shrimp szechuan noodle soup </li>
+<li> Mushroom, spinach, and cheese omelet </li>
+<li> Prawn spaghetti </li>
+<li> Chicken tinola </li>
+</ol>
+<br>
+
+Next for this list is Beef Stroganoff, which I gathered ingredients and going to cook over the weekend 🧡 Potentially next week, I may try my hand on some Sinigang and a gourmet chicken and garlic herb croissant idea. Wish me success!
+<br><br>
+
+I'm slowly getting better and more efficient with shopping, cooking, and eating - and having all those portions correspond correctly 😄 My budgeting is getting better as well as I started becoming acquainted with the prices of goods. I recall grocery shopping with a friend in Galleria, I immediately grabbed a pack of Top Dogs because they're selling $1 cheaper than what the grocery store closest to home offers. Sometimes, my strong memory backfires on me, sometimes it works in my favor - this is one of those better use cases.
+<br><br>
+
+<h2 class='lancelot x-large'> Art Business </h2>
+<br>
+
+Our art business is not yet off the ground, nor anytime soon, but I've been planting ideas. I acquired new materials including new brushes and I'm excited to use them! I'm thinking of doing a few casual paintings to exercise my hand on the acrylic pads.
+<br><br>
+
+A CK community ambassador from Paradox, the developer of Crusader Kings which is a game <a href="/blog/crusader-kings-chronicles">I wrote a blog about</b></a>, contacted me about commissions in case they'd like to spice up their HQ. That allowed me to promptly form a system for my painting prices. Regardless of whether or not they'll follow through as a client, I thought it was super cool that I had a chance to meet and chat with a staff of a game I love! I learned about their cool community and LAN events such as PDXCON and The Grandest LAN party. These take place in their home base in Sweden, but just gonna say, r/maybemaybemaybe?
+<br><br>
+
+My dream target market (though I won't call them market as I seek to give over gain) are individuals. Giving surprises to people who helped me over the years. Giving unique gifts for those who are hoping to celebrate a special event in their lives. Like a wedding, a baby, graduation, or a home acquisition. If my journey through Toronto is showing me something, it's that getting to know people's lives is getting intricately richer. 
+<br><br>
+
+I'm aiming to finish my <a href="https://github.com/andreaabellera/quoting">price quoting website</a> and roll out <b>at least 2 personal creations</b> this July.
+<br><br>
+
+<h2 class='lancelot x-large'> Casually UI </h2>
+<br>
+
+I created this <a href="https://github.com/andreaabellera/Casually-UI">new repository</a> for my dream native web components library. Each component is its own npm package, and Casually UI is essentially a package of <i>all</i> the packaged components. I don't know if these nested packaging and import styles are unorthodox as I haven't seen it done before. But I'll keep rolling with it unless instructed otherwise. I don't expect people to use my projects in the meantime, I just love creating! Components are published but not functional yet, it's a way to secure them in the npm registry under <code>v.0.0.0</code> so that I get a sure ownership of the package names that I want.
+<br><br>
+
+So far, <a href="https://www.webcomponents.org/element/casually-button">my button component that is the only one published on webcomponents.org</a> with a usable body and props. It's far from production ready, but I'll make my button serve an effective starting template for the other components that will follow. For this reason, I will be focusing on this component for the month.
+<br><br>
+
+My goals for Casually UI this month are the following:
+<ul>
+<li> Set up a testing framework and write functional and automated test suites to access my components from <code>test</code> root </li>
+<li> [Optional] Potentially integrate a test workflow to run prior to releases </li>
+<li> Fix relative linking of asset resources to component </li>
+<li> Add hover and focus animations on Button </li>
+<li> A11y patch Button </li>
+<li> Create Casually UI logo and add component visuals to README </li>
+</ul>
+<br>
+
+<h2 class='lancelot x-large'> Data Visualization </h2>
+<br>
+
+Tada! I published my first Tableau dashboard based on my June month's expenses. I am not ashamed of my spending habits, fight me. My Viz's theme is a comparison of how much I've been spending on things I need to survive versus things I want to stay satisfied. There's no groundbreaking insight to see as I have nothing to compare yet. But like water is wet, <b>Wants tend to cost more than Needs </b> and <b>I spent quite a lot on Hobbies and Food</b> this month. I have more ideas - like break down those food by grocery types to see how much fresh food I'm buying versus processed, but I'm going to rest with this for now as I work to wrestle my way through filters and custom formula. Tableau is more hectic than Power BI 🥹 I'm still learning how to make views look nice on mobile, forgive the scrunched last graph if you're on a phone.
+<br><br>
+
+<div style='height: 100%; width: 100%;' class="blogViz">
+    <tableau-viz id="tableauViz" src="https://public.tableau.com/views/NeedvsWantComparison/NeedsvsWantsDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        toolbar="bottom" hide-tabs width="100%" height="50vh">
+    </tableau-viz>
+</div>
+
+<br><br>
+
+<h2 class='lancelot x-large'> June Life Summary: Staying Low </h2>
+<br>
+
+Toronto is a single and young person's dream. There's lots of night life, the city is no short of amenities, clubs, and festivals. We have trains leading to everywhere. There are free swimming pools, lots of waterfronts. There are tons of conferences happening at hotels, convention centers, and universities on locale. 
+<br><br>
+
+But I chose a different adventure - to live as a common local on a tight budget.
+<br><br>
+
+I'm sparsely at Downtown. You'll find me more often at the mall close to home, buying groceries. You'd sometimes find me out in not-too-distant parks. On Sunday, I'm at church. We have our lunches there and each member brings theirs to share if they can, communal-style. I have met many friends, most are Filipinos and Christians from my church. I've long considered myself to be heterophilous, but good Lord knows this is where I need to be. For the first time in a long time, I was not the person dragging others, inviting them, the one speaking, the one putting all her effort to maintain friendships. Instead, I became the recipient. The one being dragged being invited everywhere. It is a beautiful feeling to switch sides into the stranger and the new girl. I still consider myself an actor, but adopting a more passive role in my relationships had brought me ease and relief that I had not felt for a long time.
+<br><br>
+
+<h2 class='lancelot x-large'> A Verdict of Ontario </h2>
+<br>
+
+If I'm not putting my funds on a faux last stand, I am spending them to visit districts and get acquainted with local municipalities. I'm slowly building a profile of areas around Toronto and their demographics, crime, and accessibility. I am getting to know Ontario with all its pros and cons. Its overarching downside is the heavy traffic which plague key city roads and the 401 highway, which so many people rely on to get from point A to B. That tells you exactly why it's congested. The overarching upside is the commuter's transit system. Yes, crowding happens, delays and re-routes happens, but forget the complaints to be expected from locals on the media, I found it to be objectively superb and a very organized system. Presto's self-service and versatility for availing bus and train rides is most impressive. Transport interiors are well-maintained, bus arrivals and tracking had been frequent and for the most part reliable. Generally, travelling and strolling around the city had been safe. Food is cheaper than Winnipeg's. Fast food prices did not have a difference, but man, they have some serious competitors here because local, smaller chains provide novel food selections in more affordable prices. My favorite breakfast place had been <a href="https://www.hazukido.ca/">Hazukido</a>, where I get a gourmet croissant and coffee for $5-7, a small, hearty portion that's perfect for a light morning appetite, and more energizing than a fast food breakfast meal.
+<br><br>
+
+A note on our demographic, there's a significant population of Filipinos but we're not a majority (which I like). I find that Toronto Filipinos tend to hold more tightly to their culture, language, roots, and their own kind. Those that are born here speak Tagalog and use Facebook. In contrary, I find the Winnipeg Filipinos are more americanized, also more xenophilic. It's a surprise to me when I learned how Filipinos are more traditional in Toronto: that cosmopolitan megacity! As I got to know the backgrounds of my countrymen more deeply, I learned that a lot are overseas workers and students with VISAs who's trying to get their first foothold in Canada. Filipinos in Winnipeg, on the other hand, are more likely admitted by professional merit and tend to have permanent residency.
+<br><br>
+
+<b>My verdict: Ontario's a good place.</b> I would not be certain the this is the best place to live long-term, but it is one I can see myself investing in. I'm bound to pay off my student loans in a month, it follows that I'm actively planning to own a property here.
+<br><br>
+
+That's until I looked into housing and mortgages. Facts hit me like a brick. I heard no shortage of complaints on how "impossible" it is to own a house as a young adult in 2023 but I wanted none of that defeatism. 
+<br><br>
+
+But nope. 
+<br><br>
+
+I calculated my mortgage affordability. It turns out, I need a close-to or six figure income or a couple years of savings to be pre-approved for a small detached home. I looked into the market in Mississauga. It's insane. 
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeiftwp5bxi7z73amwv32kjnfvrjoz33vfvhxuiezn3xzp5klfu4doy' alt='Mississauga housing sales hit 1.1M CAD average price' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+I'm not despondent. My financial plan is gearing towards homeownership. I'm only starting out, so there's no rush, no stress.
+<br><br>
+
+I may look into Ontario licensing and cars first on the shorter term as it is a goal of mine to start driving and being automobile mobile for next epic! 😄
+<br><br>
+
+I have faith, a lot of faith. God has given me an earnest that this is where I must be, and that great things will come by his hand in this place of opportunity. Though in the meantime, Toronto had been more of a place of respite for me. 
+<br><br>
+
+<h2 class='lancelot x-large'> Spiritual Retrospective </h2>
+<br>
+
+Last May, I walked with God through the valley of death. I wrote a short story titled "Accursed" - the story of a girl where every man she loves, dies. On her third lover's death, she started believing that indeed, she had a curse. Against her will, she loved a fourth one, and he too died. With woes, she cried to heaven - how she had it under control and the judgement is undeserved, how she rather would have died herself, or how she rather would have been devoid of love.
+<br><br>
+
+At first, God told her that she is not accursed, which she refused to believe and she continued to question and cry. So God told her,
+<br><br>
+
+"Cast not the blame on yourself. Is it a hard thing that I give, and take away?" <a href="https://www.kingjamesbibleonline.org/Job-1-21/"><i>[Job 1:21]</i></a>
+<br><br>
+
+The girl conceded, realizing that she would rather choose to love, than not having known it at all.
+<br><br>
+
+The story ends after the thought, where the corpse of her last lover abruptly turns to dust and is swept away from her embrace.
+<br><br>
+
+"The fourth one is naught. The girl laid in peace."
+<br><br>
+
+Last Sunday, I was kneeling at the altar. I had a conversation with God with these thoughts, "Did you lead me here because I have to run away from Manitoba? I never thought that I would need to run, but you knew I needed to. You secured me a job. It was my passage and sustenance. But I see that my job is not the highlight of you bringing me here. There's something else that's larger. I have a family in Mississauga that treated me dearly. I have a church in Toronto that welcomed me without reservations. Your hand is slowly becoming greater than my own. You gave me my dream at 2021, that I may be satisfied. You have ended the past month in a very interesting, imperfect way, that has left me deeply intrigued and looking forward for more. I worked hard to 4000 verses, not knowing nor expecting that there would be something at the end of the marathon at 5000. But I knew that your Word is my delight, and that I will one day use it for your glory. As Noah, as Abraham, I set forth, without truly seeing the reason why, I set forth. But now I see. You have prepared for me to be here."
+<br><br>
+
+Beautiful, limerent, sombre nights continue as I wait for God's next move. My life is itchingly, beautifully, incomplete. Yet perfect in its incompleteness like a novel that has pages left. Like an show that's not its season's end. It has left within me a flame bigger-than-life. I anticipate the future. I live the best present. The best of the best I could never have asked for.

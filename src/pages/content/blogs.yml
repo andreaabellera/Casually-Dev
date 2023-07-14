@@ -1,4 +1,17 @@
 blogs:
+  - id: retro-june-23
+    title: June 2023 Retrospective
+    epic: summer-2023
+    date: July 14, 2023
+    tags:
+      - Develop ⚙️
+      - Programming 👩🏻‍💻
+      - Art 🖼️
+      - Life 💃🏻
+      - Games 🎲
+      - Random 🍡
+    image: bafybeiftwp5bxi7z73amwv32kjnfvrjoz33vfvhxuiezn3xzp5klfu4doy
+
   - id: new-lifestyle-cooking-focus
     title: New Lifestyle - Cooking Focus
     epic: summer-2023
