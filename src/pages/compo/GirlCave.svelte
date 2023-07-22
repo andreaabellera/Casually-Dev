@@ -49,65 +49,11 @@
             <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/5lfjivcDNBQ" title="LibP2P and IPFS Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>    
             <br><br>
             
-            <!-- The Great AI Debate -->
-            Running the risk of being unpopular, I denounce generative AI malpractices and stand by the protection of the moral rights of artists. While aware of sides of the debate and potential compromises, I assert that many artists cannot bring themselves yet to use a tool that is inherently cannibalistic.
-            <br><br>
-            
-            <video controls style="width:100%;" height="500" aria-label="The Great AI Debate" poster="https://4everland.io/ipfs/bafybeifoqf2fgunqolk4axvjj27wl4tfy2j363j5g5dr3pwspm7oju7uri">
-                <source src="https://4everland.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe" type="video/mp4">
-                <track src="/captions/aiDebate.vtt" label="English" kind="captions" srclang="en-us" default>
-                <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://4everland.io/ipfs/bafybeidkuxd4o6c6ojagxitfwhl4hap2mky5qnttmzw7e2txmgatmrgahe">link to the video</a> instead.
-                </p>
-            </video>
-            <br><br>
-            
-            <!-- Game Jam Teasers -->
-            I took part in several Hackathons and Game Jams - but the <a href="https://www.youtube.com/channel/UCIoKCiOQl9L8xNExupEPpxQ">Game Music Jam</a> is special to me as 1.) it is a two-stage jam where <b>developers produce the game</b> on a first week and <b>musicians produce music inspired from the game</b> the following week, 2.) it is founded by two of my great friends, and 3.) I've been part of the admin team but simulateneously fully dived-in to the experience! Here are three of my team's entries from our three consecutive seasons. <span class="small"><i>Farms are a recurring theme for some reason. I am a game artist in all the occasions.</i></span> 
-            <br><br>
-            
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/JKZDh6bA_3Y" title="Recollection Day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
-            <br><br>
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/dXBGJ2Iq1uQ" title="Farmer's Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
-            <br><br>
-            <video controls style="width:100%;" height="500" aria-label="Farmony Teaser Video" poster="https://4everland.io/ipfs/bafybeihtfbvfmbowrmxyay6wy5xzdune2s44nqtvlzdnkh4fs3fkodhwly">
-                <source src="https://4everland.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse" type="video/mp4">
-                <track src="/captions/farmony.vtt" label="English" kind="captions" srclang="en-us">
-                <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://4everland.io/ipfs/bafybeiaflcmffan2magm7xvccpn2swfecf442zqpx6rhmagyessrtvgwse">link to the video</a> instead.
-                </p>
-            </video>
-            <br><br>
-            
             <!-- CasuallyDev Reels -->
-            I have a Tiktok where I share small snippets of my creative adventures and coding shenanigans! I'm not very active there so I may take a while to respond.
+            I have a Tiktok where I share small snippets of my creative adventures and coding shenanigans! 💐 I'm not very active there so I may take a while to respond.
             <br><br>
 
             <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@casuallydev" data-unique-id="casuallydev" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@casuallydev?refer=creator_embed">@casuallydev</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-            <br>
-
-            Featuring a few of my videos! 💐
-            <br><br>
-
-            <iframe style="width:100%;" height="500" src="https://www.youtube-nocookie.com/embed/vUs_h9kUxkE" title="Making SVG Motion Graphics for Vue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
-            <br><br>
-            
-            <video controls style="width:100%;" height="500" aria-label="CSS Art Speedcoding" poster="https://4everland.io/ipfs/bafybeideh5j74oywqgaa3dinyavu7tu53nscu57epscho7diooknkbyvpe">
-                <source src="https://4everland.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq" type="video/mp4">
-                <track src="/captions/baldy.vtt" label="English" kind="captions" srclang="en-us">
-                <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://4everland.io/ipfs/bafybeiasfyuculte5cldzl4g3numniwjlfiua466vx25ot34cvcvbehdsq">link to the video</a> instead.
-                </p>
-            </video>
-            <br><br>
-
-            <video controls style="width:100%;" height="500" aria-label="Using Your Own Font for a Website" poster="https://4everland.io/ipfs/bafybeih2vzqgtvkdqxb75aza76r4gbdamdztcuvuloctywevrr7angil6i">
-                <source src="https://4everland.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm" type="video/mp4">
-                <track src="/captions/useFonts.vtt" label="English" kind="captions" srclang="en-us">
-                <p>
-                    Your browser doesn't support HTML video. Here is a <a href="https://4everland.io/ipfs/bafybeif5yzlzi4ztma4ejx6vdznqgxvaey37zospbdf43t7rwuupuzqsgm">link to the video</a> instead.
-                </p>
-            </video>
             <br><br>
             
             <!-- Delphi -->
