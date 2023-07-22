@@ -1,0 +1,49 @@
+I'm happy to report I'm at <b>14/25 entries</b> in my Sous Chef project. I may hit my goal on time!
+<br><br>
+
+It's fair to say that this cooking project snagged my Fascination bonus for the epic. Probably way too much, because confession: I don't want to program much these days. I want to make food.
+<br><br>
+
+I grew majority of my life believing I can't enjoy cooking. Unlike art or programming, you eat your product. It was so strange. How can I enjoy that's just supposed to be gone in one to three sittings?
+<br><br>
+
+For art, you can display a piece for a lifetime? Some even gets passed down generations! You can take pictures of them, collect them, so if there's some art in your space you can't keep and have to throw, a record's there to be enjoyed! For coding, your website is up while you pay for domains and hosts. Even if an solution gets old, decommissioned, or forsaken, the code is still there. You can also keep whatever funny half-project you had on Github or your content can float as chunks of bytes on IPFS while servers last.
+<br><br>
+
+But cooking? All those hard work making fire bombastic food for.. nothing? Just a full tummy for a day?
+<br><br>
+
+Why bother?
+<br><br>
+
+I live to be mistaken.
+<br><br>
+
+<img src='https://dweb.link/ipfs/bafybeifoefpjhlwuca4ko4vyt3cw5ph4354ofdiho64jku44twju62cxma' alt='A delicious bowl of Beef Pho by CasuallyDev' style='height: 100%; width: 100%;' class='blogImg' />
+<br>
+<span class="small taviraj"><i>Above: My homemade beef Pho (Vietnamese noodle soup) </i>🙂</span>
+<br><br>
+
+
+I read another developer's blog about how he enjoyed cooking because it engaged his engineer mind. I thought of my dad, who was an engineer back in his day, but got possessed by a chef and cooks bomb dishes for large gatherings. There's a good sample of university mates who are highly skilled in programming but also have a serious obsession with cooking. Is there a correlation?
+<br><br>
+
+I saw for myself. It does engage the creative and technical mind. And I love slicing food, it's so fun! Personal meals are like mini projects or daily challenges. Something small and short-term and it won't demand your commitment or motivation for days and months, unlike tech projects. They are a one-sitting deal, like small art pieces. Finishing a dish feels just like a done painting or closed issue. Now, after it's gone, I realized it's not a loss. The knowledge that I successfully made the dish stays with me and so does the process. I can repeat what I did and make it better.
+<br><br>
+
+With meal planning also comes the bookeeping and boyyy I enjoy it! I track my nutritional intake (not strictly to prohibit my happiness) to ensure I don't miss on any core vitamins for extended periods of time. My bookeeping mind goes like "Andrea, buy fresh juice, you haven't had any vitamin C for a while" or "Buy 2% milk, you haven't had calcium for a while." Sometimes, my mind will scream at me to consume the half of green papaya that's been in the crisper for a week or yoghurt that's going to expire in 2 days. As I get ingredients for every new meal, I must deque the old inventory.
+<br><br>
+
+<h2 class='lancelot x-large'> Solution? </h2>
+<br>
+
+I thought of an app called <b>Revercipe</b>, which is a reverse recipe search. You start by inputing the leftover ingredients you hope to get rid of and the app will output relevant, creative recipes that will make use of them. As data sources, it will use Recipe APIs. The recommendations will give primary weight on maximizing unions and secondary weight on minimizing disjoints on the ingredient set. We don't want to give a recipe that will suggest the user to buy more ingredients that they don't have - for all you know they need a good ref cleanup! Simple ideas like a Pineapple-Orange-Banana shake will come up high in the recommendations for users who are hoping to get rid of Pineapple, Orange, Fresh parsley, Peanut butter, Ginger, Wheat noodles, and Banana.
+<br><br>
+
+So, in the most scornful, tired CS student voice you can muster, say, "Cool app, bro", because LOL TRUE it's not my priority to build it either. Let me put another item in my backlog or shelved dreams.
+<br><br>
+
+<h2 class='lancelot x-large'> Mega Fly Art Update! </h2>
+<br>
+
+This coming week, I volunteered at church to be a coach for painting and sketching for an upcoming art camp and interschool competition. I'm so excited! Anyone can develop a skill for art, all they need is familiarity with some systematic techniques that will put them ahead of the game. I'll be sharing some of my tried-and-true methods and Lord willing, we win 🧡

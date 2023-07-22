@@ -1,4 +1,13 @@
 blogs:
+  - id: just-chefing-in
+    title: Just Chefing In
+    epic: summer-2023
+    date: July 22, 2023
+    tags:
+      - Art 🖼️
+      - Life 💃🏻
+    image: bafybeieiuxe5kzcn4cjx733vvaxkfaewyktvnuxlptbwwrze2yts42lfzy
+
   - id: retro-june-23
     title: June 2023 Retrospective
     epic: summer-2023
