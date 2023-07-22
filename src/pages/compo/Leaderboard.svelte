@@ -61,9 +61,9 @@
                         </div>
                     </div>
                     {#if item.thumb}
-                        <div id="lbImage" style="background-image:url(https://dweb.link/ipfs/{item.thumb});"></div>
+                        <div id="lbImage" style="background-image:url(https://4everland.io/ipfs/{item.thumb});"></div>
                     {:else}
-                        <div id="lbImage" style="background-image:url(https://dweb.link/ipfs/bafybeietxv3j7ap373tsqtcl5p4mcbo6vyamyrwajlw4ib3n25zxjqp3xi);">
+                        <div id="lbImage" style="background-image:url(https://4everland.io/ipfs/bafybeietxv3j7ap373tsqtcl5p4mcbo6vyamyrwajlw4ib3n25zxjqp3xi);">
                             <div> No Picture </div>
                         </div>
                     {/if}
@@ -89,7 +89,7 @@
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         margin: 3vh 0 3vh 6vw;
         overflow-y: hidden;
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .cover-inner{

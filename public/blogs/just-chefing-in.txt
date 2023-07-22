@@ -19,9 +19,9 @@ Why bother?
 I live to be mistaken.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeifoefpjhlwuca4ko4vyt3cw5ph4354ofdiho64jku44twju62cxma' alt='A delicious bowl of Beef Pho by CasuallyDev' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeifoefpjhlwuca4ko4vyt3cw5ph4354ofdiho64jku44twju62cxma' alt='A delicious bowl of Beef Pho by CasuallyDev' style='height: 100%; width: 100%;' class='blogImg' />
 <br>
-<span class="small taviraj"><i>Above: My homemade beef Pho (Vietnamese noodle soup) </i>🙂</span>
+<span class="small"><i>Above: My homemade beef Pho (Vietnamese noodle soup) </i></span>
 <br><br>
 
 

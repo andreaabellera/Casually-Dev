@@ -47,7 +47,7 @@ I found what seems to be a better method. I went through <a href="https://www.fr
 But.. <i>have I truly learned webdev?</i> No. I can only solve challenges, but cannot write or build my own projects yet.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeihfqabfp5ogr3ufzszgxwdkkyllezwneqxpwc7xyng4mmstlixpui' alt='Boy skipping 2 stair steps of JS basics to jump to React' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeihfqabfp5ogr3ufzszgxwdkkyllezwneqxpwc7xyng4mmstlixpui' alt='Boy skipping 2 stair steps of JS basics to jump to React' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 My Learn WebDev Scheme has failed.
@@ -151,7 +151,7 @@ React is like an RPG boss that destroys you the first time as a young child. Aft
 <br>
 <i>And you tag along your equally levelled-up party! Scene from childhood favorite game, Breath of Fire II.</i>
 <br><br>
-<img src='https://dweb.link/ipfs/bafybeiae5o7gacz5krtcgqnhuvmlhzh2tals4tilsagy55wybzp2by4tta' alt='Ryuu party from Breath of Fire II fights the Barubary' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeiae5o7gacz5krtcgqnhuvmlhzh2tals4tilsagy55wybzp2by4tta' alt='Ryuu party from Breath of Fire II fights the Barubary' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 I got the badge of honor to work with frontend and write some logic of our own components, integrate state management libraries, and work around built-in library code to achieve new functionalities. 

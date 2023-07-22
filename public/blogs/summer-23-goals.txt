@@ -43,7 +43,7 @@ Revising, "Sous Chef" - Cook 25 different recipes <b>properly</b>. The important
 My objective for Sous chef is to be a better cook and eat healthy while living alone, more details will be in a blog that will follow 😋 Here is <i>Nilagang baka</i> - a traditional Filipino beef stew and one of my favorite entries so far.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeig6sgnia2mymxdm7mdnvpqwazpwrqyzkqy63evsxyyyeap5vd5gaa' alt='Nilagang baka on a pot fresh from simmering' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeig6sgnia2mymxdm7mdnvpqwazpwrqyzkqy63evsxyyyeap5vd5gaa' alt='Nilagang baka on a pot fresh from simmering' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 <h3 class='taviraj large'> Start an Art Business </h3>
@@ -67,7 +67,7 @@ I do need a little data, a quoting system, choice targets, and a gradual trickli
 For me, painting is not a side hustle to make more money. Money is a bonus. This is to fulfill a dream to bring about joy, beauty, expression. To tap into the core of what makes us human with heartfelt, physically tangible, and deliberate strokes. Here's my most recent painting - "Compassionate", 2023.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeigoj7rvu4m2p2b5hguwwjeq3ztub24rrq2lvxc2ll75dwbdp6jgom' alt='My painting: Compassionately, and gently offering a hand to a butterfly' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeigoj7rvu4m2p2b5hguwwjeq3ztub24rrq2lvxc2ll75dwbdp6jgom' alt='My painting: Compassionately, and gently offering a hand to a butterfly' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 <h3 class='taviraj large'> Take my UI library to a new direction </h3>

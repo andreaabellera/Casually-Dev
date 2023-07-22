@@ -192,7 +192,7 @@
         box-shadow: 0.05em 0.15em 0.5em rgba(0,0,0,0.2);
         margin: -3vh 0 3vh 6vw;
         overflow-y: hidden;
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .stabilize{
@@ -239,7 +239,7 @@
 
     #res-index-inner a, #res-index-inner ul{
         margin: 0;
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     #res-index-inner li{
@@ -249,7 +249,7 @@
     #res-index-inner li .bullet{
         height: 15px;
         width: 15px;
-        background-image: url(https://dweb.link/ipfs/bafybeiagcqt3aymf4ee4kekmra6gce5k3tcd7ypc6c6lxatugmdxmdhtwa);
+        background-image: url(https://4everland.io/ipfs/bafybeiagcqt3aymf4ee4kekmra6gce5k3tcd7ypc6c6lxatugmdxmdhtwa);
         background-size: cover;
         transform: rotate(-90deg);
         margin-right: 10px;
@@ -265,7 +265,7 @@
     }
 
     #res-list a{
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     #res-list h2{

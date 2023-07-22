@@ -113,7 +113,7 @@
     }
 
     .bison:hover{
-    cursor: url(https://dweb.link/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
+    cursor: url(https://4everland.io/ipfs/bafybeiafet7hldlwiwpj5bbftxizcspsvi3ernckqpklgbuup2lq6rtq6m), pointer;
     }
 
     .bison-upper{

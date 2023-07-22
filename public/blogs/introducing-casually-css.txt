@@ -1,6 +1,6 @@
 <span class='taviraj'><b>Thought of the day:</b> Is it possible to 'color in' an svg shape with a fractal pattern? I can imagine these adourning dresses and clothing with elaborate and potentially animated patterns. Thinking about it, this can make good journal studies for the future - a deep dive study of the anatomy of an .svg file, and exploring an algorithm or library that can procedurally generate artistic patterns </span>
     <br><br>
-    <img src='https://dweb.link/ipfs/bafybeigc3s6tda4eov6mc5q3oqwhkjatcxiqqctn2gmkcj55cckdcgjybe' alt='Casually CSS Banner' style='height: 100%; width: 100%;' class='blogImg' />
+    <img src='https://4everland.io/ipfs/bafybeigc3s6tda4eov6mc5q3oqwhkjatcxiqqctn2gmkcj55cckdcgjybe' alt='Casually CSS Banner' style='height: 100%; width: 100%;' class='blogImg' />
     <br><br>
     If you have explored Chez Moi and scrolled down further, you will see my banner for Casually CSS. It is a passion project of mine that features individual works as a gallery, and also allows devs to import fun CSS artworks in future use cases!
     <br><br>
@@ -9,11 +9,11 @@
     <br><br>
     I started making my CSS artworks last June 2021. I was a developer in my first internship and discovered that I can make very interesting edge shapes with border radius, stack elements on top of each other with absolute, and lay elements down concisely with grids. 
     <br><br>
-    <img src='https://dweb.link/ipfs/bafybeihlbr5kvis3lulu72kp5u5t7gf2xjuoazvqsfdhnapgdq5bbkvo5y' alt='Realization we can make CSS Art' style='height: 100%; width: 100%;' class='blogImg' />
+    <img src='https://4everland.io/ipfs/bafybeihlbr5kvis3lulu72kp5u5t7gf2xjuoazvqsfdhnapgdq5bbkvo5y' alt='Realization we can make CSS Art' style='height: 100%; width: 100%;' class='blogImg' />
     <br><br>
     I started to create common objects, my first one being a spinning <a href='https://andreaabellera.github.io/Casually-CSS/#orange'> orange </a>. Then, I made a <a href='https://andreaabellera.github.io/Casually-CSS/#boba'> boba </a> drink. I was exhilerated, became extra ambitious and made an <a href='https://andreaabellera.github.io/Casually-CSS/#octopus'> octopus </a> the following day. I shew a friend my creations and took requests so that I can make more artworks!
     <br><br>
-    <img src='https://dweb.link/ipfs/bafybeifrroxl37a6fbk2ghuthe7op5rnyunvpcl3vkpcbrux7saauf4mca' alt='Working on CSS art' style='height: 100%; width: 100%;' class='blogImg' />
+    <img src='https://4everland.io/ipfs/bafybeifrroxl37a6fbk2ghuthe7op5rnyunvpcl3vkpcbrux7saauf4mca' alt='Working on CSS art' style='height: 100%; width: 100%;' class='blogImg' />
     <br><br>
     Hence, the idea of Casually CSS is born. I revisited the project after school, warmed up my rustiness by making a few pieces, improved the gallery UI, and looked into npm packaging. It was a thrilling adventure but it's just the beginning! 
     <br><br>

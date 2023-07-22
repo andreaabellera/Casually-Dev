@@ -10,7 +10,7 @@ I'm in the brink of giving up. But let's see it anyway!
 About two years ago, I started <a href="https://github.com/andreaabellera/Casually-CSS">Casually CSS</a>, my first passion project. Casually CSS allows you to import CSS any artwork from this gallery into any website with one line of code.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeigxceyvmk5rbkatbctihl44f2jq44og5qbffxrqsp2lzat3ffenzq' alt='Loading a pink hippo with green eyes' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeigxceyvmk5rbkatbctihl44f2jq44og5qbffxrqsp2lzat3ffenzq' alt='Loading a pink hippo with green eyes' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 These characters are cute! They are there to show I could work with CSS. They could be decorative for seeing users.  Alas, they don't have practical a use case for this world. 
@@ -25,13 +25,13 @@ There is Bootstrap, Material UI, Chakra UI, Radix UI, and more. I noticed - they
 We can do better! We can make super fun buttons and spice the Internet up!
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeid36abtbwiyfdu27w7533fwfwcuseysnygbqyg4ovpevjlplt34ku' alt='Casually Buttons' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeid36abtbwiyfdu27w7533fwfwcuseysnygbqyg4ovpevjlplt34ku' alt='Casually Buttons' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 So I started <a href="https://github.com/andreaabellera/Casually-Components">Casually Components</a> on a cold, rainy Christmas at Vancouver in an AirBNB.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeihhadv3y4z7aq7lopknd5toryqgrjufdgzifjw7bry3bw7h4xpf7i' alt='Scoping plans for Casually Components' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeihhadv3y4z7aq7lopknd5toryqgrjufdgzifjw7bry3bw7h4xpf7i' alt='Scoping plans for Casually Components' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 The vision stage was euphoric. I targetted to make components for 5 major NodeJS frameworks: <a href="https://react.dev/">React</a>, <a href="https://vuejs.org/">Vue</a>, <a href="https://svelte.dev/">Svelte</a>, <a href="https://www.solidjs.com/">Solid</a>, and <a href="https://angular.io/">Angular</a>.
@@ -47,7 +47,7 @@ Now, CSS styles are my guilty dev pleasure. In contrast to minimal styles in mos
 In summary, I have 4 components for 6 frameworks styled with 5 aesthetic skins. Sounds promising! If I want to grow my library, I'll just add more components, aesthetics, or integrations - a 3 dimensional growth. Below is a picture of how my components look like pieced-in together in an ASP.NET webapp (thanks Lit!).
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeiafytkxnawy7duh3zlho43ppech3qsevjtgcmlxxn63d3dzce7jzu' alt='Slotting containers' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeiafytkxnawy7duh3zlho43ppech3qsevjtgcmlxxn63d3dzce7jzu' alt='Slotting containers' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 
@@ -58,7 +58,7 @@ In summary, I have 4 components for 6 frameworks styled with 5 aesthetic skins. 
 I created components for all 6 frameworks and published them. Due to the breadth of the frameworks I targetted, it was quite exciting to dig the gears and nuances of each NodeJS framework, and observe that it was quite easy to rewrite code from one framework to another.
 I set up 6 test sites for the 6 frameworks for visual and runtime testing. The image below are testing my components for Vue.
 <br><br>
-<img src='https://dweb.link/ipfs/bafybeietodr34ye23o4wx23agvrx3evg2au2i7v2uputypexq32d6ci6ki' alt='Rendered components on Vue site' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeietodr34ye23o4wx23agvrx3evg2au2i7v2uputypexq32d6ci6ki' alt='Rendered components on Vue site' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 So far, my React, Svelte, Vue, and Solid components are functional. Aspects of Lit's and Angular are still broken. Yet now, I know 6 frameworks and have components for each published to the wild!
@@ -89,7 +89,7 @@ On top of making sure your components still run to the present day.
 This scales work to an additional factor of 6. We go from an estimated 120 hours to 720. Add to this implicit variant variables embedded in the component which we will call an 'n', we now have 720n. This is the estimated hours of work for my dream UI library.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeifir6jhydnqewd76emj76hma2d242ugizcye34cc5g4tdhnjsx2uu' alt='Hours to build Casually Components. Happy Wojak estimated = 120. Depressed Wojak actuality = 720n' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeifir6jhydnqewd76emj76hma2d242ugizcye34cc5g4tdhnjsx2uu' alt='Hours to build Casually Components. Happy Wojak estimated = 120. Depressed Wojak actuality = 720n' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 I underestimated the time that goes into a prod-quality UI component, severely.
@@ -105,7 +105,7 @@ Code a 3D pure CSS element that is fully accessible, responsive, customizable, a
 <i>Oh little pink box, you're so cute! Stay static. I don't know how to scale your 8 corners yet based on max-content.</i>
 </blockquote>
 <br>
-<img src='https://dweb.link/ipfs/bafybeigg5j5y72kyfx6bbcnjv6jgysq2bo4vzo3z6kbotniqxi6gitdpju' alt='A div that is a 3D block of epoxy' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeigg5j5y72kyfx6bbcnjv6jgysq2bo4vzo3z6kbotniqxi6gitdpju' alt='A div that is a 3D block of epoxy' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 <span class="slightLarge taviraj"><b> I did not normalize CSS </b></span>
@@ -122,7 +122,7 @@ You won't need to hunt for logos anymore and store them on the static or public 
 While my social media list and smart detection is far from complete, the SocialButton can generate social media buttons for common personal or commercial profiles.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeigcny2cauqzeyfbng2q47xdmbprf5o6yrspgq3praqzlpelqqzlgq' alt='Collection of social media buttons' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeigcny2cauqzeyfbng2q47xdmbprf5o6yrspgq3praqzlpelqqzlgq' alt='Collection of social media buttons' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 I can start battle-testing, patching, and promoting the components for the four successful frameworks, but I don't want to give up on Lit and Angular yet. The noob in me will learn what it takes to ship components for the last two frameworks. But to put in <b>720n</b> hours of work.. I.. I have a life. Help me, Lord.
@@ -131,7 +131,7 @@ I can start battle-testing, patching, and promoting the components for the four 
 <h2 class='lancelot x-large'> Saving the Project </h2>
 <br>
 
-<img src='https://dweb.link/ipfs/bafybeibfgfviphiv5sr47zl7gqa6vo6b34s4sqtgglqd3sucoutsaadivu' alt='Parrot running from an explosion' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeibfgfviphiv5sr47zl7gqa6vo6b34s4sqtgglqd3sucoutsaadivu' alt='Parrot running from an explosion' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 When devs hit this wall of reality, we "nuke" our projects off existence or just forget it. In a personal project, you are your own client - thrice more likely to self-inflict your own scope creep when the dev in you can say "I can do that!". But also no hard stakes lost when you drop a project off to entropic void.

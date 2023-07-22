@@ -9,7 +9,7 @@ Ugly is a compliment. A term of endearment of the highest order. My parents have
 Seriously though, if you find my artworks ugly tell me :P (nicely, with feedback/suggestions please) so I can make them better.
 <br><br>
 
-<img src='https://dweb.link/ipfs/bafybeigxceyvmk5rbkatbctihl44f2jq44og5qbffxrqsp2lzat3ffenzq' alt='Importing a pink Hippo in Casually CSS by passing props to Svelte tags' style='height: 100%; width: 100%;' class='blogImg' />
+<img src='https://4everland.io/ipfs/bafybeigxceyvmk5rbkatbctihl44f2jq44og5qbffxrqsp2lzat3ffenzq' alt='Importing a pink Hippo in Casually CSS by passing props to Svelte tags' style='height: 100%; width: 100%;' class='blogImg' />
 <br><br>
 
 Meanwhile, I designed my artworks to take in props.

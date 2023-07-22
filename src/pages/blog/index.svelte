@@ -179,7 +179,7 @@
         border: none;
         background: none;
         color: var(--mocha);
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), auto;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), auto;
     }
 
     .epic-activated, #filter-btn:focus{
@@ -241,7 +241,7 @@
     }
 
     .filter-box-content button:hover{
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         border: 2px groove var(--oyster);
         transition: 0.1s ease-in-out;
     }

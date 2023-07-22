@@ -12,7 +12,7 @@
     <div class="cover" role="group" aria-label="Epic display for {title}">
         <div class="cover-inner">
             {#if image}
-                <div class="epicThumb" style="background-image:url(https://dweb.link/ipfs/{image});"></div>
+                <div class="epicThumb" style="background-image:url(https://4everland.io/ipfs/{image});"></div>
             {/if}
             <div class="epicContent">
                 <div class="epicTitle"> {title} </div>
@@ -31,7 +31,7 @@
         height: 13em;
 		width: 42em;
         margin: 0 0 3vh 6vw;
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
         display: grid;
         justify-items: center;
         align-items: center;
@@ -51,7 +51,7 @@
         color: rgba(0,0,0,0);
         font-family: 'La Belle Aurore', cursive;
         font-size: 1.75em;
-        cursor: url(https://dweb.link/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
+        cursor: url(https://4everland.io/ipfs/bafybeicuryldiwjiv5qynwnswb6qxv2lujyxvcv3oodzrbegtq247jubvm), pointer;
     }
 
     .cover-border:hover{
