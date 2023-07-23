@@ -1,4 +1,250 @@
 collections:
+  - title: Paintings
+    images: 
+    - id: compassionate
+      title: Compassionate
+      image: https://4everland.io/ipfs/bafybeidagfk42sdwrgevwkvkwyak5o7kra434mg5dg4ak7eqifjvsj5oxu
+      adjust: 0 20%
+      year: 2023
+      info: Gently offering a hand to a butterfly. Design used from Crusader Kings 3, Paradox Entertainment
+
+    - id: just-a-york-girl
+      title: Just a York Girl
+      image: https://4everland.io/ipfs/bafybeihyatkqilff2uxfq5r5bazfkae2vo4gzjhpnqh4dqhol2ftxy74du
+      adjust: 0 50%
+      year: 2023
+      info: A brown lady with a white dress posing on a bench in front of a building
+
+    - id: lobster-plant
+      title: Lobster Plant
+      image: https://4everland.io/ipfs/bafybeiddtr2mto66g434z34kwxpste4kxx2vs3jvgdvu647xpzgyuiraye
+      adjust: 0 20%
+      year: 2017
+      info: Vibrant chains of leaves akin to lobster claws
+
+    - id: christmas-rebeca
+      title: Christmas Rebeca
+      image: https://4everland.io/ipfs/bafybeidjmx63d5avct2uwcyjrggabwflbc6myoynshswwatt3ytgdj4bpy
+      adjust: 0 20%
+      year: 2017
+      info: A gift for a friend
+
+    - id: river-entity
+      title: River Entity
+      image: https://4everland.io/ipfs/bafybeigth33fk7pgdj7qnpjl2grectuhuodei2clwsbupjsqhuzkdidykq
+      adjust: 0 20%
+      year: 2017
+      info: My painting of Aerial Grace half-submerged on the riverbank came out quite eerily
+
+    - id: jeepney
+      title: Jeepney
+      image: https://4everland.io/ipfs/bafybeicop3hxfwlrk6zq4lqdtqhjom7gim7mgbr2ajbql6hipceqwet5fi
+      adjust: 0 12%
+      year: 2017
+      info: Jeepneys were my staple commuter ride to school back in the Philippines. Jeepney owners vividly embellish their vehicles with paintings and decals, the painting had one that says 'God with us'
+
+    - id: gaia-shoes
+      title: Gaia Shoes
+      image: https://4everland.io/ipfs/bafybeihe53awiy5hzlwwf2rpvocovi6lc4xkguqdsambt4zibievftboz4
+      adjust: 0 55%
+      year: 2016
+      info: A shoe terraformed to look like a chunk constituting the earth, sea, and sky. Rainbows depict laces, and tiny live animals are drawn interacting with respective environments
+
+    - id: desert-rose
+      title: Desert Rose
+      image: https://4everland.io/ipfs/bafybeihry3pugxwhux64rhv5buji7iq346u5jhhkxfbksr5c7jlq7mpytu
+      adjust: 0 30%
+      year: 2017
+      info: Pink flowers with sturdy leaves that are common in Filipino neighborhood gardens
+
+    - id: dahlias
+      title: Dahlias
+      image: https://4everland.io/ipfs/bafybeia3poxuczswge2g2deb54epsjchbb5ptlgf3wfoj5qzarjrpcz7ku
+      adjust: 0 50%
+      year: 2017
+      info: Mixed media paint of dahlias. When deliberating my next piece, I thought of those flowers are they seem adorable
+
+    - id: 2017
+      title: 2017
+      image: https://4everland.io/ipfs/bafybeicgzpuhtmof4lbvhd2nxmwhcagx6cpaluhwvp746m4zntbr4aszmy
+      adjust: 0 30%
+      year: 2018
+      info: We were prompted to make a piece that summarizes 2017 but with a twist - add narwhals. I painted myself in back view and everyday sweater, gazing on a bridge I visited last year camping, seeing apparitions of narwhals fly by
+
+    - id: strawberry-gingerbread-slice
+      title: Strawberry Gingerbread Slice
+      image: https://4everland.io/ipfs/bafybeid5fhf6r3jrxwpesf7in3l75q7dew6ubjrvth3c6twb4qfsr4mm5q
+      adjust: 0 25%
+      year: 2016
+      info: A slice of cake with chocolate sauce, strawberries, and whipped cream. When my sister saw me with the baking book, my sister asked in disbelief if I'm going to start baking. No, I'm going to be painting. I hope I can make the real ones someday though!
+
+    - id: jiuzhaigou-mystic-waters
+      title: Jiuzhaigou Mystic Waters
+      image: https://4everland.io/ipfs/bafybeibs6oqor4nwa36nihpuimor7udrla3e2iqjjvfj3fbzmge56ptdne
+      adjust: 0 30%
+      year: 2016
+      info: Scene of waterfalls merging to a stream. I saw this image in a National Geographic magazine and thought this would be really cool to paint
+
+  - title: Spotted on my High School hall
+    images: 
+    - id: broken-and-bleeding
+      title: Broken and Bleeding
+      image: https://4everland.io/ipfs/bafybeien3asqhwozqu37rhg7vyygvmvtpum3h5kclalzaqcvmdhdyotcve
+      adjust: 0 50%
+      year: 2017
+      info: Oil painting impression of Jesus Christ, in burden of the cross he carried to crucifixion
+
+    - id: carrying-of-the-cross
+      title: Carrying of the Cross
+      image: https://4everland.io/ipfs/bafybeibdawrao6r4fd7ztbkec5rhvnykw42sor74rkdvrynbldjwhnlcqe
+      adjust: 0 50%
+      year: 2017
+      info: Sketched impression of the Romans pressing against Jesus Christ as he carries His cross
+
+    - id: marbles
+      title: Marbles
+      image: https://4everland.io/ipfs/bafybeiaff56uxz3drqtokmg6grzbgmp2md3zilfgbaekrz2akvn35renhe
+      adjust: 0 50%
+      year: 2017
+      info: Still life painting of glossy marbles sporting different patterns
+
+    - id: thermodynamic
+      title: Thermodynamic
+      image: https://4everland.io/ipfs/bafybeic7bwwgeojfrdwwijui4vwoihgmxuoulimfcr23qllmisntwordbq
+      adjust: 0 50%
+      year: 2017
+      info: A Red(hot) and Blue(cool) men wrestling on a radiating background as a muscular anatomy study
+
+  - title: Drawings at 15
+    images: 
+    - id: family-portraits
+      title: Family Portraits
+      image: https://4everland.io/ipfs/bafybeig2ctjb2bjd2uqkxapeicysq6qnmyn4jvsytowq3ljz6nwu2gimce
+      adjust: 0 20%
+      year: 2015
+      info: My first major client work where I drew a set of portraits for a family friend
+
+    - id: mari-art-trade
+      title: Mari Art Trade
+      image: https://4everland.io/ipfs/bafybeiantijg32oijsqqmhd4l6zr7asic6d4hx74x3qdovno3ldf4zjw5e
+      adjust: 0 20%
+      year: 2015
+      info: An art trade I made for a friend on Deviantart
+
+    - id: psychedelic-spring
+      title: Psychedelic Spring
+      image: https://4everland.io/ipfs/bafybeigeneux7hizvrmswvyryjfmsx35j6wp7rgyimy3kzue2jhdlls57i
+      adjust: 0 10%
+      year: 2015
+      info: Lovelien holding a sceptre atop a colorful spiral staircase overlooking a lake, beacon, birds, and butterflies. Tangly wild vines and chibi polar bear cubs are playing about
+
+    - id: nyx-ethereal
+      title: Nyx Ethereal
+      image: https://4everland.io/ipfs/bafybeiakhx5ope72duvthzc3ltt2jsryb3tji2gjduxhdsnejf5knebi5u
+      adjust: 0 10%
+      year: 2015
+      info: An early impression of Nyx Ethereal, a festival that commemorates the beginning of the Fall season. Aerial Grace in ceremonial garb is on the castle balcony with other nobles
+
+    - id: ice-dragon-chamber
+      title: Ice Dragon Chamber
+      image: https://4everland.io/ipfs/bafybeibcxndtubgn2ioh4jvaeshdlsz4glkdqvikigwxjfe2yiriib5aqu
+      adjust: 0 10%
+      year: 2015
+      info: Fanart of Ninian the dragon shapeshifter and her brother, Nil, from Fire Emblem - Blazing Blade/Rekka no Ken
+
+    - id: battle-of-hogwarts
+      title: Battle of Hogwarts
+      image: https://4everland.io/ipfs/bafybeic4u7ls2gqd36jk7urrjuv7epve5d3xzocatd3cu4vmm5pg34liia
+      adjust: 0 10%
+      year: 2015
+      info: Inspired from a scene in Harry Potter - Deathly Hallows, Hermione fights wizards casting spells through the woods at night
+
+    - id: enter-the-eventide
+      title: Enter the Eventide
+      image: https://4everland.io/ipfs/bafybeihposdg4gmnwa7uvpkspknfxfgwofi32p3ngeedf7y5kd4xf5ua7y
+      adjust: 0 10%
+      year: 2015
+      info: A thief(Lance) dressed in royal garb enters a tower through the window
+
+    - id: fated-to-be-ultimate
+      title: Fated to be Ultimate
+      image: https://4everland.io/ipfs/bafybeidiwzesbkzxadg6nxh23kplom2v2mimpcpuik5xbd2qfxc3anq7gq
+      adjust: 0 10%
+      year: 2015
+      info: Immortal princess Fate climbs a mountain amidst a thunderstorm 
+
+    - id: anarchion-mcs
+      title: Anarchion Main Characters
+      image: https://4everland.io/ipfs/bafybeibsaufkkbmxa3bfn2wsewh3obgwfelhdfpuiy7tpe6rozzzqnjxii
+      adjust: 0 10%
+      year: 2015
+      info: Headshots of my main characters from an abandoned story because each one of them is a mary sue/gary stu
+
+    - id: varein
+      title: Varein
+      image: https://4everland.io/ipfs/bafybeiaygmd62qjc2mlm72d4rmyfnovpbeng7wlfohwfkwtqd7qtlqctzq
+      adjust: 0 20%
+      year: 2015
+      info: A tall knight lad(Klein) wielding a lance protectively embraces his lady(Varugia). Oh boy, pointed chins were so on-trend in anime then
+
+  - title: Pixel Art
+    images: 
+    - id: farmony-player
+      title: Farmony Player
+      image: https://4everland.io/ipfs/bafybeicx5cvfv2cgf3qlgp2ampkkolg3uobjjlkg2v36wwzzyey4nb23su
+      adjust: 0% 20%
+      year: 2022
+      info: The player half-body sprite in Farmony
+
+    - id: farmony-plants
+      title: Farmony Plants
+      image: https://4everland.io/ipfs/bafybeic3jkhnusyhn3yzqnw5cv3apwp47tszpadl5cfjjzlvafn75vrzpa
+      adjust: 0% 20%
+      year: 2022
+      info: The plants and their corresponding seeds to collect in Farmony
+
+    - id: ashu-hamster
+      title: Ashu the Hamster
+      image: https://4everland.io/ipfs/bafybeianely6apikeee4ybcqwdag4cgv2rq4vcky4swp75mz37mjoff6bq
+      adjust: 0% 20%
+      year: 2021
+      info: This dancing hamster is .devClub's 2021-22 mascot! 
+
+    - id: dafam-christmas-2020
+      title: DaFam Christmas 2020
+      image: https://4everland.io/ipfs/bafybeihojvlmm42r5mp4z4wox52vme4n3oluqkgtvvbgvcagfvs6r5qw2y
+      adjust: 0 17%
+      year: 2020
+      info: A Christmas scene and my gift to my community of artists! Everyone gets featured through small symbolisms and knickknacks
+
+    - id: sprite-arlette-louise
+      title: Arlette and Louise
+      image: https://4everland.io/ipfs/bafybeicoiddhf6nqdyf3gggbdusiuglk23yrwye5k4rm3epz67i54kqkem
+      adjust: 0 17%
+      year: 2022
+      info: A gift for a friend
+
+    - id: sprite-hudson
+      title: Hudson
+      image: https://4everland.io/ipfs/bafybeihxgmpcefc47yfet4rftapjkoiwtojlszh37jrtwt4jbopo5p6kmi
+      adjust: 0 17%
+      year: 2022
+      info: A gift for a friend
+
+    - id: sprite-ryuuko
+      title: Ryuuko
+      image: https://4everland.io/ipfs/bafybeiblbwbqi454qsvkgpuejoa6fym76qcdeqtm4ug7ggxoij42hhxpai
+      adjust: 0 17%
+      year: 2022
+      info: A gift for a friend
+
+    - id: chubby-whale
+      title: Chubby Whale
+      image: https://4everland.io/ipfs/bafybeibolkc7cveghrb73u4z3nr2oi556xxlmpcwdw54yaxnaeyeearpoy
+      adjust: 0 0
+      year: 2020
+      info: A pink lil' whale who surfs the pastel seas
+
   - title: Damoiselles of Aet
     images: 
     - id: the-maidens
@@ -158,207 +404,3 @@ collections:
       adjust: 0 18%
       year: 2020
       info: Floraime protesting being in a cute outfit
-
-  - title: Spotted on my High School hall
-    images: 
-    - id: broken-and-bleeding
-      title: Broken and Bleeding
-      image: https://4everland.io/ipfs/bafybeien3asqhwozqu37rhg7vyygvmvtpum3h5kclalzaqcvmdhdyotcve
-      adjust: 0 50%
-      year: 2017
-      info: Oil painting impression of Jesus Christ, in burden of the cross he carried to crucifixion
-
-    - id: carrying-of-the-cross
-      title: Carrying of the Cross
-      image: https://4everland.io/ipfs/bafybeibdawrao6r4fd7ztbkec5rhvnykw42sor74rkdvrynbldjwhnlcqe
-      adjust: 0 50%
-      year: 2017
-      info: Sketched impression of the Romans pressing against Jesus Christ as he carries His cross
-
-    - id: marbles
-      title: Marbles
-      image: https://4everland.io/ipfs/bafybeiaff56uxz3drqtokmg6grzbgmp2md3zilfgbaekrz2akvn35renhe
-      adjust: 0 50%
-      year: 2017
-      info: Still life painting of glossy marbles sporting different patterns
-
-    - id: thermodynamic
-      title: Thermodynamic
-      image: https://4everland.io/ipfs/bafybeic7bwwgeojfrdwwijui4vwoihgmxuoulimfcr23qllmisntwordbq
-      adjust: 0 50%
-      year: 2017
-      info: A Red(hot) and Blue(cool) men wrestling on a radiating background as a muscular anatomy study
-
-  - title: Whatever I Painted
-    images: 
-    - id: river-entity
-      title: River Entity
-      image: https://4everland.io/ipfs/bafybeigth33fk7pgdj7qnpjl2grectuhuodei2clwsbupjsqhuzkdidykq
-      adjust: 0 20%
-      year: 2017
-      info: My painting of Aerial Grace half-submerged on the riverbank came out quite eerily
-
-    - id: lobster-plant
-      title: Lobster Plant
-      image: https://4everland.io/ipfs/bafybeiddtr2mto66g434z34kwxpste4kxx2vs3jvgdvu647xpzgyuiraye
-      adjust: 0 20%
-      year: 2017
-      info: Vibrant chains of leaves akin to lobster claws
-
-    - id: jeepney
-      title: Jeepney
-      image: https://4everland.io/ipfs/bafybeicop3hxfwlrk6zq4lqdtqhjom7gim7mgbr2ajbql6hipceqwet5fi
-      adjust: 0 12%
-      year: 2017
-      info: Jeepneys were my staple commuter ride to school back in the Philippines. Jeepney owners vividly embellish their vehicles with paintings and decals, the painting had one that says 'God with us'
-
-    - id: gaia-shoes
-      title: Gaia Shoes
-      image: https://4everland.io/ipfs/bafybeihe53awiy5hzlwwf2rpvocovi6lc4xkguqdsambt4zibievftboz4
-      adjust: 0 55%
-      year: 2016
-      info: A shoe terraformed to look like a chunk constituting the earth, sea, and sky. Rainbows depict laces, and tiny live animals are drawn interacting with respective environments
-
-    - id: desert-rose
-      title: Desert Rose
-      image: https://4everland.io/ipfs/bafybeihry3pugxwhux64rhv5buji7iq346u5jhhkxfbksr5c7jlq7mpytu
-      adjust: 0 30%
-      year: 2017
-      info: Pink flowers with sturdy leaves that are common in Filipino neighborhood gardens
-
-    - id: dahlias
-      title: Dahlias
-      image: https://4everland.io/ipfs/bafybeia3poxuczswge2g2deb54epsjchbb5ptlgf3wfoj5qzarjrpcz7ku
-      adjust: 0 50%
-      year: 2017
-      info: Mixed media paint of dahlias. When deliberating my next piece, I thought of those flowers are they seem adorable
-
-    - id: 2017
-      title: 2017
-      image: https://4everland.io/ipfs/bafybeicgzpuhtmof4lbvhd2nxmwhcagx6cpaluhwvp746m4zntbr4aszmy
-      adjust: 0 30%
-      year: 2018
-      info: We were prompted to make a piece that summarizes 2017 but with a twist - add narwhals. I painted myself in back view and everyday sweater, gazing on a bridge I visited last year camping, seeing apparitions of narwhals fly by
-
-    - id: strawberry-gingerbread-slice
-      title: Strawberry Gingerbread Slice
-      image: https://4everland.io/ipfs/bafybeid5fhf6r3jrxwpesf7in3l75q7dew6ubjrvth3c6twb4qfsr4mm5q
-      adjust: 0 25%
-      year: 2016
-      info: A slice of cake with chocolate sauce, strawberries, and whipped cream. When my sister saw me with the baking book, my sister asked in disbelief if I'm going to start baking. No, I'm going to be painting. I hope I can make the real ones someday though!
-
-    - id: jiuzhaigou-mystic-waters
-      title: Jiuzhaigou Mystic Waters
-      image: https://4everland.io/ipfs/bafybeibs6oqor4nwa36nihpuimor7udrla3e2iqjjvfj3fbzmge56ptdne
-      adjust: 0 30%
-      year: 2016
-      info: Scene of waterfalls merging to a stream. I saw this image in a National Geographic magazine and thought this would be really cool to paint
-
-  - title: I Peaked at 15
-    images: 
-    - id: mari-art-trade
-      title: Mari Art Trade
-      image: https://4everland.io/ipfs/bafybeiantijg32oijsqqmhd4l6zr7asic6d4hx74x3qdovno3ldf4zjw5e
-      adjust: 0 20%
-      year: 2015
-      info: An art trade I made for a friend on Deviantart
-
-    - id: psychedelic-spring
-      title: Psychedelic Spring
-      image: https://4everland.io/ipfs/bafybeigeneux7hizvrmswvyryjfmsx35j6wp7rgyimy3kzue2jhdlls57i
-      adjust: 0 10%
-      year: 2015
-      info: Lovelien holding a sceptre atop a colorful spiral staircase overlooking a lake, beacon, birds, and butterflies. Tangly wild vines and chibi polar bear cubs are playing about
-
-    - id: nyx-ethereal
-      title: Nyx Ethereal
-      image: https://4everland.io/ipfs/bafybeiakhx5ope72duvthzc3ltt2jsryb3tji2gjduxhdsnejf5knebi5u
-      adjust: 0 10%
-      year: 2015
-      info: An early impression of Nyx Ethereal, a festival that commemorates the beginning of the Fall season. Aerial Grace in ceremonial garb is on the castle balcony with other nobles
-
-    - id: ice-dragon-chamber
-      title: Ice Dragon Chamber
-      image: https://4everland.io/ipfs/bafybeibcxndtubgn2ioh4jvaeshdlsz4glkdqvikigwxjfe2yiriib5aqu
-      adjust: 0 10%
-      year: 2015
-      info: Fanart of Ninian the dragon shapeshifter and her brother, Nil, from Fire Emblem - Blazing Blade/Rekka no Ken
-
-    - id: battle-of-hogwarts
-      title: Battle of Hogwarts
-      image: https://4everland.io/ipfs/bafybeic4u7ls2gqd36jk7urrjuv7epve5d3xzocatd3cu4vmm5pg34liia
-      adjust: 0 10%
-      year: 2015
-      info: Inspired from a scene in Harry Potter - Deathly Hallows, Hermione fights wizards casting spells through the woods at night
-
-    - id: enter-the-eventide
-      title: Enter the Eventide
-      image: https://4everland.io/ipfs/bafybeihposdg4gmnwa7uvpkspknfxfgwofi32p3ngeedf7y5kd4xf5ua7y
-      adjust: 0 10%
-      year: 2015
-      info: A thief(Lance) dressed in royal garb enters a tower through the window
-
-    - id: fated-to-be-ultimate
-      title: Fated to be Ultimate
-      image: https://4everland.io/ipfs/bafybeidiwzesbkzxadg6nxh23kplom2v2mimpcpuik5xbd2qfxc3anq7gq
-      adjust: 0 10%
-      year: 2015
-      info: Immortal princess Fate climbs a mountain amidst a thunderstorm 
-
-    - id: anarchion-mcs
-      title: Anarchion Main Characters
-      image: https://4everland.io/ipfs/bafybeibsaufkkbmxa3bfn2wsewh3obgwfelhdfpuiy7tpe6rozzzqnjxii
-      adjust: 0 10%
-      year: 2015
-      info: Headshots of my main characters from an abandoned story because each one of them is a mary sue/gary stu
-
-    - id: varein
-      title: Varein
-      image: https://4everland.io/ipfs/bafybeiaygmd62qjc2mlm72d4rmyfnovpbeng7wlfohwfkwtqd7qtlqctzq
-      adjust: 0 20%
-      year: 2015
-      info: A tall knight lad(Klein) wielding a lance protectively embraces his lady(Varugia). Oh boy, pointed chins were so on-trend in anime then
-
-  - title: Sprite Fun!
-    images: 
-    - id: ashu-hamster
-      title: Ashu the Hamster
-      image: https://4everland.io/ipfs/bafybeianely6apikeee4ybcqwdag4cgv2rq4vcky4swp75mz37mjoff6bq
-      adjust: 0% 20%
-      year: 2021
-      info: This dancing hamster is .devClub's 2021-22 mascot! 
-
-    - id: dafam-christmas-2020
-      title: DaFam Christmas 2020
-      image: https://4everland.io/ipfs/bafybeihojvlmm42r5mp4z4wox52vme4n3oluqkgtvvbgvcagfvs6r5qw2y
-      adjust: 0 17%
-      year: 2020
-      info: A Christmas scene and my gift to my community of artists! Everyone gets featured through small symbolisms and knickknacks
-
-    - id: sprite-arlette-louise
-      title: Arlette and Louise
-      image: https://4everland.io/ipfs/bafybeicoiddhf6nqdyf3gggbdusiuglk23yrwye5k4rm3epz67i54kqkem
-      adjust: 0 17%
-      year: 2022
-      info: A gift for a friend
-
-    - id: sprite-hudson
-      title: Hudson
-      image: https://4everland.io/ipfs/bafybeihxgmpcefc47yfet4rftapjkoiwtojlszh37jrtwt4jbopo5p6kmi
-      adjust: 0 17%
-      year: 2022
-      info: A gift for a friend
-
-    - id: sprite-ryuuko
-      title: Ryuuko
-      image: https://4everland.io/ipfs/bafybeiblbwbqi454qsvkgpuejoa6fym76qcdeqtm4ug7ggxoij42hhxpai
-      adjust: 0 17%
-      year: 2022
-      info: A gift for a friend
-
-    - id: chubby-whale
-      title: Chubby Whale
-      image: https://4everland.io/ipfs/bafybeibolkc7cveghrb73u4z3nr2oi556xxlmpcwdw54yaxnaeyeearpoy
-      adjust: 0 0
-      year: 2020
-      info: A pink lil' whale who surfs the pastel seas
