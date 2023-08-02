@@ -48,9 +48,6 @@
                 <a href="https://www.tiktok.com/@casuallydev" role="listitem" aria-label="Tiktok">
                     <img src="https://4everland.io/ipfs/bafybeievy4qz3re6ga334zhrsbqox7uof7hpyufful3j4zlteb3qprvife" alt="Tiktok" />
                 </a>
-                <a href="https://www.reddit.com/user/CosySushi/" role="listitem" aria-label="Reddit">
-                    <img src="https://4everland.io/ipfs/bafybeidby7xke7qssamj7iwna4utqljf2ymlxi2spz6ly54yr3qwlkftci" alt="Reddit" />
-                </a>
                 <a href="https://steamcommunity.com/profiles/76561199085866000/" role="listitem" aria-label="Steam">
                     <img src="https://4everland.io/ipfs/bafybeihzhp5hecdk3ydrcdbkqdwr44hrvl5a4uog6oar2fmki6rd3npcja" alt="Steam" />
                 </a>

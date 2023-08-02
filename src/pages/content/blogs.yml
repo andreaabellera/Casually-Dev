@@ -1,4 +1,13 @@
 blogs:
+  - id: all-about-adulting
+    title: All About Adulting
+    epic: summer-2023
+    date: August 1, 2023
+    tags:
+      - Random 🍡
+      - Life 💃🏻
+    image: bafybeiduausuixuhslm3le7byii3wiyz7kdmzo7tr2cjkhrnwcktlap7zy
+
   - id: just-chefing-in
     title: Just Chefing In
     epic: summer-2023
