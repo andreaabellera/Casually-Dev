@@ -185,7 +185,7 @@
         background-color: var(--oyster);
         height: max-content;
         min-height: 45vh;
-        width: 25vw;
+        width: 28vw;
         display: grid;
         justify-items: center;
         align-items: center;

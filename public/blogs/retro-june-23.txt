@@ -95,7 +95,7 @@ Tada! I published my first Tableau dashboard based on my June month's expenses. 
 
 <div style='height: 100%; width: 100%;' class="blogViz">
     <tableau-viz id="tableauViz" src="https://public.tableau.com/views/NeedvsWantComparison/NeedsvsWantsDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-        toolbar="bottom" hide-tabs width="100%" height="50vh">
+        toolbar="bottom" hide-tabs width="100%" height="100vh">
     </tableau-viz>
 </div>
 

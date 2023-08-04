@@ -31,7 +31,7 @@
 <div class="blog-feat-ctr" in:fly="{{ x: -2000, duration: 800 }}" out:fly="{{ x: -200, duration: 800 }}" role="article" aria-label="Feature of latest {cap} blog posts">
     {#if !globalThis.isMobile}
     <div class="blog-heading">
-        <Heading title={"BLOG"} />
+        <Heading title={"LATEST BLOGS"} />
     </div>
     {/if}
 
@@ -61,23 +61,6 @@
         {/if}
     {/each}
     </div>
-
-    <div class="filter">
-        <div class="filter-box">
-            <div class="filter-box-title lancelot"> FILTER  </div>
-            <div class="filter-box-content ptSans"> 
-               An introductory plaque to the blog perhaps
-            </div>
-        </div>
-    </div>
-
-    {#if visibles[3]}
-    <!-- <div class="blog-sm" transition:fly="{{ y: 50, duration: 800 }}">
-        <a href="/blog">
-            <div id="blog-see-more" class="laBelleAurore"><div> see more blogs </div></div>
-        </a>
-    </div> -->
-    {/if}
 </div>
 
 <style>
@@ -106,26 +89,12 @@
         grid-column: 1/3;
     }
 
-    /* .blog-sm{
-        grid-row: 3/4;
-        grid-column: 1/3;
-    } */
-
-    .filter{
-        display: none;
-        justify-items: center;
-    }
-
     @media (max-width: 600px) {
         #blog-array{
             width: 100%;
             margin-top: 0vh;
             margin-left: 0vw;
             grid-column: 1/3;
-        }
-
-        .filter{
-            display: none;
         }
     }
 </style>

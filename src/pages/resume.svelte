@@ -4,17 +4,33 @@
     // Page transition
     let visible = false
     setTimeout(()=>{ visible = true }, 600)
+
+    let lastUpdated = "August 2023"
+
+    function download(){
+        fetch("resume.pdf").then(resp => resp.arrayBuffer()).then(resp => {
+            let file = new Blob([resp], {type: 'application/pdf'});
+            let url = window.URL.createObjectURL(file)
+            let link = document.createElement('a')
+            link.href = url;
+            link.download = "Andrea Abellera - Resume " + lastUpdated
+            link.click()
+            window.URL.revokeObjectURL(url)
+        })
+    }
 </script>
 
 {#if visible}
 <div class="intermission" transition:fade>
     <div id="last-update" class="taviraj"> 
-        Last updated: May 2023 
+        Last updated: {lastUpdated}
     </div>
     <object title="Andrea Abellera's Resume" data="/resume.pdf" type="application/pdf">
         <p class="pretty-text gentiumBasic"> 
             Unable to embed PDF file <br><br>
-            <a href="https://4everland.io/ipfs/bafybeifuzl7ala7mq2btou4eggom6z6yqekrf5ekhl2br527fbbufc5fbq">View source instead</a>
+            <span on:click={download} on:keypress={download} role="link" tabindex="0">
+                Click here to download instead
+            </span>
         </p>
     </object>
 </div>
@@ -42,7 +58,7 @@
         color: var(--coffee);
     }
 
-    a{
+    p span{
         color: var(--passione);
         text-decoration: underline;
     }
