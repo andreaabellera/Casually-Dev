@@ -62,7 +62,7 @@
             <br><br>
             
             <video controls style="width:100%;" height="500" aria-label="Life as a Delphi Tech Dev" poster="https://4everland.io/ipfs/bafybeicqp5pku4c2qifv7sc5jseapvq2orr5d2ykne7subapic47ne3b7u">
-                <source src="https://ipfs.fleek.co/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi" type="video/mp4">
+                <source src="https://brown-fuzzy-mole-747.mypinata.cloud/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi" type="video/mp4">
                 <track src="/captions/delphiInternAfterparty.vtt" label="English" kind="captions" srclang="en-us" default>
                 <p>
                     Your browser doesn't support HTML video. Here is a <a href="https://ipfs.fleek.co/ipfs/bafybeidvyc6vfqtds5wsuixeisisuc4s674pecok6s2ifwmfigyd6xweoi">link to the video</a> instead.
