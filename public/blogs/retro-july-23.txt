@@ -1,0 +1,159 @@
+
+
+Homesickness is kicking in. Strangely, I find myself longing for New Zealand. We went there last December with my whole family and met all my relatives who I have not seen for nine to fifteen years. There are some cousins I'm seeing for the first time. All the cousins I used to grow up with have very interesting stories and paths in life. I am happy to see my titos and titas settled in this new country and abundantly blessed. They don't have a lot, no immigrant is rich. But we are rich in our support towards each other (even our own immigrant family in Canada sent support) so everyone can get sheltered and set when they land. Though we don't have much financially, I can see God's hand in everyone. My titos and titas are strong in the Lord's testimony, active in church, and live in great terms.
+<br><br>
+
+I have a tito and tita who we helped settle in NZ. His family has lesser capital and purchasing power than others, but he has the cool current home in Tauranga,hours away from Auckland. Tourist-worthy beaches and gorgeous islands are an eyeshot across the street. He works in a sushi restaurant where, considering tourism, is essential. "I only have $20 left in my bank account", according to him, but he still went out of the way to treat his nephews and nieces with ice cream.
+<br><br>
+
+
+<h2 class='lancelot x-large'> Easing Back </h2>
+<br>
+
+I'm behind on all my projects, veeery much so. I'm been tired and busy - and no, that's not a mere excuse. My day job revved up and I'm coming to office more frequently, which takes the real estate of my early mornings and late afternoons. I became a member of my local church in Toronto and am joining more events and minitries that take the real estate of my evenings.
+<br><br>
+
+Suddenly, this post from <a href="https://www.reddit.com/r/ExperiencedDevs/comments/156h668/do_you_still_do_personal_projects_on_the_side/">r/ExperiencedDevs</a> made more sense. Realistically, most devs don't dev outside their dev work. That's not unbecoming for a dev. Moreso, I think it's about time for CasuallyDev to live up to the title 😂 I was SeriouslyDev for too long!
+<br><br>
+
+
+P.S. I mentioned I deleted my Reddit for good but ExperiencedDevs is a gold mine for stalking them seniors. The <a href="https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/">top post</a>.
+<br><br>
+
+To debrief, 
+<ul>
+<li> 7 new recipes were added to the Sous Chef registry </li>
+<li> I held art classes for teens and sold my first painting! </li>
+<li> Nothing, nah, nada happened in terms of developing my Casually UI library </li>
+<li> I can make interactive dashboards in Tableau now and it's exciting! </li>
+<li> Verse memory count is behind but I'm doing my best. To hit my target of 4400, I must memorize ~150 verses for the next three weeks while tending to the upkeep of ~4250 verses. It gets exponentially heavier to progress but we do </li>
+<li> I got data and design for my 30 personal projects I plan to feature in my LaRuelle portfolio, I'm just an implementation away 🙂 </li>
+<li> <s>I've dreamt up a super fire new UI idea for this site, don't mind me</s> </li>
+</ul>
+<br>
+
+Even with being behind, I am not moving or lessening my targets. Next month's retrospective is still as planned - probably delayed like this month's and last month's so just keeping it up 😎 If I succeed, hallelujah praise the Lord. If I fail, no love lost. The grand retro will be a celebration of victories, be it small or large, be it at 1% or 101% of the goal.
+<br><br>
+
+
+<h2 class='lancelot x-large'> Data Visualization </h2>
+<br>
+
+I've been working on more dashboards for my job. It's been fun. I want to practice my new niche from dev-centric art to data-centric art, given time.
+<br><br>
+
+One thing I did not expect is the steep learning curve of Tableau. I thought my dev, art, and business backgrounds will conspire to make it easy. Then, I realize I've fallen behind in math and stats 😂 But hey, it's the reason where tiny "aha" moments feel like big wins! Tableau is a whole new world. It uses a different system from PowerBI and SQL and data manipulation libraries taught in classes. It's not just haha drag-drop go brrrrr. The blank editor that meets me when creating a new calculated field is a different tier of cryptic. Everytime that modal opens, a wizard over my shoulder whispers raspily, "Write that formula. Make magic happen. The universe believes in you."
+<br><br>
+
+<img src='https://4everland.io/ipfs/bafybeic2kcpszdt44yx62bs5jt6xhx3cwwtxhtv5mxv7ihdhbnqxvav7xu' alt='Confused woman thinking of Level of Detail, Cascading Filters, Parameters, Formula' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+Overall, Tableau itself is very holistic. The mathematician, scientist, designer, artist, and ops folk can all find their favorite bits in the data storytelling or dashboard implementation process.
+<br><br>
+
+<img src='https://4everland.io/ipfs/bafybeibvqhkfpj64qkdpknjj4z7gxcpglefjp3nen6pugqqsd25uxnshpe' alt='Tableau returns The calculation is valid on a calculated field' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+Here's my Dashboard of the month - a Summer Garden planner! I discovered how to work with cascading filters, sets, parameters, and interactive actions to one-up last month's static dashboard.
+<br><br>
+
+<tableau-viz id="tableauViz" src="https://public.tableau.com/views/MySummerGarden/SummerGardenDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" hide-tabs width="100%" height="100vh">
+</tableau-viz>
+
+<br><br>
+Next month, I plan to create a data story - basically a series of related dashboards! About time I truly roast my own spending habits. 
+<br><br>
+
+
+<h2 class='lancelot x-large'> Sous Chef (16/25) </h2>
+<br>
+
+I paused my Sous Chef project after realizing I had a financial setback of eight thousand bucks. I thought I'm getting all my student debt paid as of the end of this month, and start saving towards my first time homeowner's account but this wasn't the case. I wrote a journal to God which I haven't published on my blog. Disheartened like a runner in his last ten meters or a golf ball sliding down the sure hole - but suddenly - the finish line or goal post moved a lap further away. I came to terms with the extra debt I owe. But with this, I decided to go on a budget siege.
+<br><br>
+
+Siege in war is when troops surround a city to cut down the supply of the inhabitants living within their walls. It's a slow process of killing the people inside and make them more likely to take war demands.
+<br><br>
+
+Anyway, I set my Sous Chef project on the shelf and went for a food siege. With $35, I stocked up on the cheapest food I can find including noodle packs and sardines. I willed myself to not spend on <i>anything else for food</i> for a fortnight (2 weeks) until my next paycheque. Obviously, I broke it a little. Like a siege, it's a slow death to only feed on MSGs. Back at home, fruits are left to languish. Here, I languish for fruits.
+<br><br>
+
+One fortnight siege was over and I planned to go for another fortnight siege. This time at $40 with more fruits and veggies. God looked at me like, what? You're earning enough to provide for yourself but you're still choosing to starve? Are you frustrating my provision or questioning my power to feed you? Am I not your God? He then sent an ate and tita who made me bring home meals and I had a supply of fresh food for a full week. My ate also guided me with cutting techniques and cooking Japchae! I haven't touched any of my stockpiled food till 7 days later, it was the first time I had to throw away bad stock. It's humbling.
+<br><br>
+
+I'm ending my siege and resuming my Sous Chef cooking project soon 😃 Despite the slow down, here are our current entrées in a solid number of 16!
+<ol>
+<li> Basa asparagus tofu miso </li>
+<li> Nilagang baka (Filipino beef broth stew) </li>
+<li> Chicken sopas (Filipino creamy chicken noodle soup) </li> 
+<li> Chicken alfredo </li>
+<li> Tomato mie goreng (Indonesian stir-fry; Not the instant noodle) </li>
+<li> Shrimp szechuan noodle soup </li>
+<li> Mushroom, spinach, and cheese omelet </li>
+<li> Prawn spaghetti </li>
+<li> Chicken tinola </li>
+<li> Beef stroganoff </li> 
+<li> Garlic herb chicken bread </li>
+<li> Green papaya curry </li>
+<li> Dad's marinated chicken </li>
+<li> Mac and cheese with broccoli </li>
+<li> Cheese biscuit </li>
+<li> Chicken Japchae (Korean glass-noodles stir-fry) </li>
+</ol>
+<br>
+
+
+<h2 class='lancelot x-large'> Art Business </h2>
+<br>
+
+My goal was to create two paintings this month and lo, it was so! But I'll only show one. I completely butchered the other and it's a painting of my face, may it rest in pieces 😛
+<br><br>
+
+The highlight of this month in the art front is the opportunity to teach painting classes to the teens at my church. I'm proud of seeing them create these masterpieces! Prouder than when I'll be just painting by myself for three days.
+<br><br>
+
+<img src='https://4everland.io/ipfs/bafybeier4lrzvcnd6wllygv56ewfv255eyp5foattnjpimxccedgdnrj6q' alt='Student masterpieces' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+This piece I demoed is my first painting sold. I did not put it up for sale but it's been bought. Seeing our art happily finding new homes is the best feeling for an artist!
+<br><br>
+
+<img src='https://4everland.io/ipfs/bafybeifwrpvqd4nk77ktuq57ne2if7wibrsjuqbt5eklsor3bcprt2e3zm' alt='Lighthouse demo painting' style='height: 100%; width: 100%;' class='blogImg' />
+<br><br>
+
+The quoting website did not get any progress this month. My lazy head is deferring that goal to this month instead.
+
+<br><br>
+
+
+<h2 class='lancelot x-large'> Casually UI </h2>
+<br>
+
+Nothing was achieved for this goal this month. I was so lazy, lol. Let's carry forward our goals from last month to this month, shall we?
+<ul>
+<li> Set up a testing framework and write functional and automated test suites to access my components from <code>test</code> root </li>
+<li> [Optional] Potentially integrate a test workflow to run prior to releases </li>
+<li> Fix relative linking of asset resources to component </li>
+<li> Add hover and focus animations on Button </li>
+<li> A11y patch Button </li>
+<li> Create Casually UI logo and add component visuals to README </li>
+</ul>
+<br><br>
+
+
+<h2 class='lancelot x-large'> Brace yourselves, Winter is Coming </h2>
+<br>
+
+I'm excited for Fall and Winter, as a professed summer lover. Naw, I'm not pulling treachery on my favorite season. I'm still a sun addict and a lover of hot, bright, and blinding things. However, I'm looking forward to experience downtown Toronto covered in snow. I'm ready to don on my warmer clothing and brace myself relapsing to Starbucks. Ahem, let's not talk about that yet.
+<br><br>
+
+Now, I've been in Canada for almost ten years. I'm no stranger to the bulky upkeep, mobility nerf of Winter commutes, and SAD. I know my excitement will turn to exhaustion. But it's alright, it's better to charge forward happy!
+<br><br>
+
+This year, I'm planning two visits to my Winnipeg. The citizens that I sieged are crying to treat myself to Canada's Wonderland and a two-day stay in Montreal.
+<br><br>
+
+
+We have one month left for this epic! Next month, September, is the season's end and the start of a new trimester. Will I start a new epic or take a break? Will my retrospective be 2 weeks delayed again? Stay tuned and see!
+<br><br>
+
+<img src='https://4everland.io/ipfs/bafybeigl67i76qarjqc2psrgnyeeum3s7hymj2dpuzropw2gftlmuomuv4' alt='Northgard' style='height: 100%; width: 100%;' class='blogImg' />

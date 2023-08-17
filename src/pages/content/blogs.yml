@@ -1,4 +1,17 @@
 blogs:
+  - id: retro-july-23
+    title: July 2023 Retrospective
+    epic: summer-2023
+    date: August 10, 2023
+    tags:
+      - Develop ⚙️
+      - Programming 👩🏻‍💻
+      - Art 🖼️
+      - Life 💃🏻
+      - Games 🎲
+      - Random 🍡
+    image: bafybeih5tp6lfpb6r54dgkmelue7a72fvtybtdf7vvqujuth4z2yn3jmd4
+
   - id: all-about-adulting
     title: All About Adulting
     epic: summer-2023
