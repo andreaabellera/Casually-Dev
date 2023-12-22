@@ -1,4 +1,11 @@
 blogs:
+  - id: missing-dev
+    title: The Case of the Missing Dev
+    epic: summer-2023
+    date: December 22, 2023
+    tags:
+      - Life 💃🏻
+
   - id: retro-july-23
     title: July 2023 Retrospective
     epic: summer-2023

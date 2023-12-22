@@ -1,0 +1,62 @@
+Once upon a summer's end, CasuallyDev went outside to touch dead grass and never came back.
+<br><br>
+
+Or was the final retrospective more than 3 months delayed an unacceptable performance, she fired herself from the job. Or was she stolen away in the TTC or who knows what lurks the corners of the GTA.
+<br><br>
+
+Whatever happened to our favorite dev, she left her cave with doors opened.
+<br>
+<hr>
+<br>
+
+I hired a bunch of forensic interns to crack the case of the missing dev. They found notes littering her work desk, each one dated beyond September. "What? These look like unpublished blog posts", supposed the forward-deployed forensic engineer intern.
+<br><br>
+
+"This one is December 12", noted the forensic quality analyst intern. "There's a probability she's still alive, unless she died."
+<br><br>
+
+"But, what does those notes say?", inquired the forensic project manager intern.
+<br><br>
+
+Forensic quality analyst read the notes, "She just lost a hackathon. She says she still has yet to win-"
+<br><br>
+
+Forensic engineer intercepts, "You should see this poem!"<br><br>
+<i>
+"My Father looks on me and gives, a loaf and not a stone.<br>
+He showers me with perfect gifts, for all my needs were known."<br><br>
+</i>
+"Holey firewalls! She's got a Daddy in Toronto", exclaimed forensic engineer."<br>
+"Nah, she's just religious. For all we know, she's donated herself to the church", dismissed the forensic PM. <br>
+"Hand me a note."
+<br><br>
+
+"This one said she's lost her fire for programming and nowadays just want to make food", said forensic quality analyst.
+<br><br>
+
+"She's debt-free, write that down", said the forensic PM. Opening the Slack, forensic PM sighed, "We need to head back for our in-person standup."
+<br><br>
+
+"Drat, I'm feeling lazy. Can I join remote?", murmured forensic engineer.
+<br><br>
+
+"Yes, but camera on. I hate telling stupid devs we need faces for a better culture. You'll never understand what it's like to be a PM and not see my people", said the forensic PM.
+<br><br>
+
+"Well, you got the easiest job of all of us", said the forensic engineer.
+<br><br>
+
+"I'm both of you or neither. Man, ChatGPT sucks with Tableau", said the forensic quality analyst.
+<br><br>
+
+"Maybe, you're just not prompting well-enough", guessed forensic PM. <br>
+"Maybe analysts aren't just using it enough", said forensic engineer. "You know, scrum boi, there are free libraries. We don't need Tableau. Have you heard of Recharts? Most based vizzes ever. Used them for an open-source personal project"
+<br><br>
+
+"Perfect! Can you make us an app?", forensic PM remarked. Forensic engineer wheezed, "You know well I have no capacity!" <br>
+<br><br>
+
+Forensic quality analyst muttered, "Backlog."
+<br><br>
+
+The interns aliased the notes as <b>The Forbidden Diaries</b>, filed away to the cloud servers of the Forensic Unicorns Group, cutting-edge cybersecurity consultancy for the modern web started by a recent grad.
