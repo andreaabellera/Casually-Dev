@@ -5,7 +5,7 @@
     let visible = false
     setTimeout(()=>{ visible = true }, 600)
 
-    let lastUpdated = "August 2023"
+    let lastUpdated = "February 2024"
 
     function download(){
         fetch("resume.pdf").then(resp => resp.arrayBuffer()).then(resp => {
